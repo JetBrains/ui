@@ -22,7 +22,7 @@ To check out and run a local copy of the site follow the steps described below.
 ### Checking Out Site Repository
 To check out the source code run the following command:
 ```
-git clone https://github.com/mishinalina/test_idea_guide.git
+git clone git@github.com:JetBrains/ui.git
 ```
 
 ### Building and Previewing
