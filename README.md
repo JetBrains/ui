@@ -28,7 +28,7 @@ git clone git@github.com:JetBrains/ui.git
 ### Building and Previewing
 To start the web-server run:
 ```
-cd test_idea_guide/
+cd ui/
 bundle exec jekyll serve
 ```
 Jekyll will build the site and start a web server, which can be viewed in your browser at [http://localhost:4000/](http://localhost:4000/).
