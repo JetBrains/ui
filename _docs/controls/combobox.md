@@ -21,7 +21,7 @@ Follow guidelines for [drop-down]( {{ site.baseurl }}/controls/dropdown/) and al
 * If a user types in an item already in the list, or types in a few characters that match the first characters of an item in the list, that item is highlighted if the list is opened.  
 ![]( {{ site.baseurl }}/images/combobox/combobox_typed_item.png) 
 * If user enters too long item, truncate it, do not resize combo box.
-* If a user types in an invalid value, highlight field with red and show error message and supported range in tooltip. Do not allow to save changes.
+* If a user types in an invalid value, highlight field with red and show error message in tooltip. Do not change values automatically. Do not allow to close dialog, while incorrect value is entered. For more details see [Validation errors]( {{ site.baseurl }}/controls/validation_errors/).
 ![]( {{ site.baseurl }}/images/combobox/combobox_error.png) 
 
 ## Mac OS default 
