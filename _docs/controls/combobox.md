@@ -1,7 +1,7 @@
 ---
 title: Combo box
 category: Controls
-order: 2
+order: 1
 ---
 
 A combo box is a combination of a drop-down list and an input field, thus allowing users to specify custom choices.  

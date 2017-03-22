@@ -1,7 +1,7 @@
 ---
 title: Drop-down
 category: Controls
-order: 3
+order: 2
 ---
 
 A drop-down list is a list of predefined values. Custom values are not supported.  
