@@ -5,8 +5,7 @@ order: 4
 ---
 
 Radiobutton is used to choose one option from several mutually exclusive options.
-<br/>![]( {{ site.baseurl }}/images/radiobutton/two_radiobutton.png)
-
+![]( {{ site.baseurl }}/images/radiobutton/two_radiobutton.png)
 
 Radio buttons are used for selecting
 * objects,
