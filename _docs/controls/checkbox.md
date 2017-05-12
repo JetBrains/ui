@@ -42,7 +42,7 @@ Use checkbox for:
 * Labels
     * Checkbox is the answer "yes", so do not use negation in labels.
     * Use sentence-style capitalization.
-    * Learn recommendations for [UI text]( {{ site.baseurl }}/principles/UI_text/).
+    * Learn recommendations for [UI text]( {{ site.baseurl }}/principles/ui_text/).
 
 ## Alignment with other elements
 * An independent checkbox is left-aligned with elements above and below it:
