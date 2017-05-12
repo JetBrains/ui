@@ -10,7 +10,7 @@ A checkbox describes a state or action that can be either on or off.
   ![]( {{ site.baseurl }}/images/checkbox/one_checkbox.png)
 
 
-Checkboxes and radio buttons are used for selecting:
+Checkboxes are used for selecting:
 * objects,
 * attributes or states,
 * modifications of default behavior (settings).
@@ -33,7 +33,9 @@ Use checkbox for:
 <br />
 ![]( {{ site.baseurl }}/images/checkbox/checkbox_horizontally.png)
 * Clicking on body of mark selects/removes checkbox.
-* _When options can be grouped, you can use an indeterminate checkbox to represent the whole group. Use indeterminate state check box when a user selects some, but not all, sub-items in the group._
+* When options can be grouped, you can use an indeterminate checkbox to represent the whole group. Use indeterminate state check box when a user selects some, but not all, sub-items in the group.
+<br />
+![]( {{ site.baseurl }}/images/checkbox/checkbox_indeterminate.png)
 * Use indentation to show hierarchy within a group.
 <br />
 ![]( {{ site.baseurl }}/images/checkbox/checkbox_hierarchy.png)
