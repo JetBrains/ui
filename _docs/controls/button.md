@@ -30,7 +30,7 @@ But use a link if:
     * Indicate a command that needs additional information (including confirmation) by adding an ellipsis at the end of the button label. Not all button whose implicit verb is to "show another window" take an ellipsis. Ellipsis needed only if additional information is required to perform the action.
     * The label contains no more than four words.
     * Label is written with a capital letter and should explicitly report what will happen if you click on button.
-    * Learn recommendations for [UI text]( {{ site.baseurl }}/principles/UI_text/).
+    * Learn recommendations for [UI text]( {{ site.baseurl }}/principles/ui_text/).
 
 ## Mac OS default
 ![]( {{ site.baseurl }}/images/button/mac_button.png)
