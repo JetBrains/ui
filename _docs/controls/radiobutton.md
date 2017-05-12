@@ -4,8 +4,8 @@ category: Controls
 order: 4
 ---
 
-Radio button is used to choose one option from several mutually exclusive options.
-<br/>![]( {{ site.baseurl }}/images/radiobutton/two_radiobutton.png)
+Radiobutton is used to choose one option from several mutually exclusive options.
+![]( {{ site.baseurl }}/images/radiobutton/two_radiobutton.png)
 
 
 Radio buttons are used for selecting

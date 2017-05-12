@@ -8,10 +8,10 @@ html {
 body {
 	height: 100%;
 	max-height: 100%;
-	font-family: "ProximaNova", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 	letter-spacing: 0.02rem;
-	font-size: 1.75em;
-	line-height: 1.75em;
+	font-size: 1.8em;
+	line-height: 1.8em;
 	color: #333;
 	font-weight: 400;
 	-webkit-font-feature-settings: 'kern' 1;
@@ -36,7 +36,7 @@ table {
 	-webkit-font-feature-settings: 'dlig' 1, 'liga' 1, 'lnum' 1, 'kern' 1;
 	-moz-font-feature-settings: 'dlig' 1, 'liga' 1, 'lnum' 1, 'kern' 1;
 	-o-font-feature-settings: 'dlig' 1, 'liga' 1, 'lnum' 1, 'kern' 1;
-	font-family: "ProximaNova", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 	text-rendering: geometricPrecision;
 }
 
@@ -70,17 +70,17 @@ h3 {
 }
 
 h4 {
-	font-size: 1.75rem;
+	font-size: 1.8rem;
 	font-weight: bold;
 }
 
 h5 {
-	font-size: 1.75rem;
+	font-size: 1.8rem;
 	font-weight: bold;
 }
 
 h6 {
-	font-size: 1.75rem;
+	font-size: 1.8rem;
 	font-weight: bold;
 }
 
@@ -101,7 +101,7 @@ figure {
 	-webkit-font-feature-settings: 'liga' 1, 'onum' 1, 'kern' 1;
 	-moz-font-feature-settings: 'liga' 1, 'onum' 1, 'kern' 1;
 	-o-font-feature-settings: 'liga' 1, 'onum' 1, 'kern' 1;
-	margin: 0 0 1.75em 0;
+	margin: 0.4em 0 0 0;
 	text-rendering: geometricPrecision;
 }
 
@@ -212,7 +212,7 @@ kbd {
 
 @media only screen and (max-width: 500px) {
 	hr {
-		margin: 1.75em 0;
+		margin: 1.8em 0;
 	}
 
 	p,

@@ -128,7 +128,7 @@ header {
 	}
 
 	.open-nav {
-		background-image: url(/images/menu.svg);
+		//background-image: url(/images/menu.svg);
 		background-color: transparent;
 		background-repeat: no-repeat;
 		background-size: 100%;
@@ -241,7 +241,7 @@ nav > ul {
 
 .nav-item {
 	display: block;
-	font-family: "ProximaNova", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 	line-height: 1;
 	margin: 0;
 
@@ -409,7 +409,7 @@ h4 svg {
 }
 
 .badge {
-	font-family: "ProximaNova", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 	padding: 2px 5px;
 	text-transform: uppercase;
 	font-size: 0.8rem;
@@ -444,7 +444,15 @@ blockquote {
 img {
 	//max-width: 100%;
 	height: auto;
-	margin: 20px 0 25px 0;
+	margin: 30px 0 30px 0;
+}
+
+img + em {
+	display: block;
+	font-size: 1.6rem;
+	font-style: normal;
+	color: #aaa;
+	margin: -30px 0 30px 0;
 }
 
 .editor-link {
