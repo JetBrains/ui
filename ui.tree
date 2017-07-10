@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE product-profile
+        SYSTEM "http://helpserver.labs.intellij.net/help/product-profile.dtd">
+<product-profile id="ui"
+                 name="IntelliJ UI Guidelines"
+                 start-page="combobox.xml" icon="uiForm.png">
+
+    <toc-element toc-title="Controls">
+
+        <toc-element id="button.xml"/>
+        <toc-element id="checkbox.xml"/>
+        <toc-element id="combobox.xml"/>
+        <toc-element id="radiobutton.xml"/>
+        <toc-element id="dropdown.xml"/>
+
+    </toc-element>
+
+    <toc-element toc-title="Principles">
+        <toc-element id="numeric_fields.xml"/>
+        <toc-element id="ui_text.xml"/>
+    </toc-element>
+
+</product-profile>

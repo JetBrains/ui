@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic
+        SYSTEM "http://helpserver.labs.intellij.net/help/html-entities.dtd">
+<topic xsi:noNamespaceSchemaLocation="http://helpserver.labs.intellij.net/help/topic.v2.xsd"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       title="Combo box"
+       id="combobox">
+    <markdown>
+        <![CDATA[
+A combo box is a combination of a drop-down list and an input field, thus allowing users to specify custom choices.  
+![](combobox_example.png)
+Use combo box if:
+
+* The possible choices are unconstrained, but it's possible to enumerate the most likely choices. If not, then use an [input field](combobox.xml) instead.
+* The elements are **things** (nouns) or **states** (adjectives). If you need to provide a menu of commands (verbs), use an [action menu](action_menu) instead.
+* The previous user input should be preserved:  
+![Combo box](combobox_previous_input.png)
+[Combo box](combobox.xml)
+* There are other combo boxes on the window (for consistency).
+* There is not enough space for bigger controls (e.g. for slider).
+
+## Guidelines
+Follow guidelines for [drop-down](dropdown.xml) and also the following principles:
+
+* Clicking on an arrow button in combo box should open its combo box list. Clicking on any other combo box area should turn on the input mode.
+* Display a representative default selection.
+* If a user types in an item already in the list, or types in a few characters that match the first characters of an item in the list, that item is highlighted if the list is opened.  
+![alt](combobox_typed_item.png)
+* If user enters too long item, truncate it, do not resize combo box.
+* If a user types in an invalid value, highlight field with red and show error message in tooltip. Do not change values automatically. Do not allow to close dialog, while incorrect value is entered. For more details see [Validation errors](validation_errors).
+![](combobox_error.png)
+
+## Mac OS default 
+![](mac_os_combobox.png)
+
+## IntelliJ, Darcula 
+Sizing and spacing should be the same for IntelliJ as for Darcula.
+![](darcula_combobox.png)
+
+## Windows 10
+![](windows_combobox.png)
+]]>
+    </markdown>
+</topic>

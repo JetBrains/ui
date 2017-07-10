@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<platforms>
+    <platform id="primary">
+        <prefix default="true" product="!ac" display-name="Windows/Linux Default" id="Default"/>
+        <prefix product="ac,cl" display-name="IntelliJ IDEA Classic (Windows)" id="IntelliJ IDEA Classic (Windows)"/>
+        <prefix product="!ac,rm,db" display-name="GNOME" id="Default for GNOME"/>
+        <prefix product="!ac,rm,db" display-name="KDE" id="Default for KDE"/>
+        <prefix product="!ac,rm" display-name="XWin" id="Default for XWin"/>
+        <prefix product="!ac" display-name="Emacs" id="Emacs"/>
+        <prefix product="ij" display-name="JBuilder" id="JBuilder"/>
+        <prefix product="!ac,db" display-name="Visual Studio" id="Visual Studio"/>
+        <prefix product="!ac,db,ws" display-name="NetBeans 6.5" id="NetBeans 6.5"/>
+        <prefix product="!ac,db" display-name="Eclipse" id="Eclipse"/>
+        <prefix product="rm" display-name="TextMate" id="TextMate" />
+        <delimiter>+</delimiter>
+        <src>keymap-%currentId%.xml</src>
+        <mappings>ctrl:Ctrl;control:Ctrl;alt:Alt;shift:Shift;command:⌘;meta:⌘</mappings>
+        <directory-separator>\</directory-separator>
+    </platform>
+    <platform id="secondary">
+        <prefix default="true" product="!ac" display-name="Default (Mac OS X 10.5+)" id="Mac OS X 10.5+"/>
+        <prefix product="!ac,cl,db" display-name="Mac OS X" id="Mac OS X"/>
+        <prefix product="!ac,db" display-name="Eclipse (Mac OS X)" id="Eclipse (Mac OS X)"/>
+        <prefix default="true" product="ac" display-name="Default" id="Default"/>
+        <prefix product="!db,ws" display-name="IntelliJ IDEA Classic (Mac OS X)" id="IntelliJ IDEA Classic (OS X)"/>
+        <prefix display-name="Xcode" id="Xcode" product="!db,ws"/>
+        <prefix display-name="Visual Studio" id="Visual Studio" product="!ws,cl"/>
+        <prefix display-name="ReSharper" id="ReSharper" product="!db,ws"/>
+        <prefix display-name="ReSharper (Mac OS X)" id="ReSharper OSX" product="!db,ws"/>
+        <prefix display-name="Emacs (Mac OS X)" id="Emacs"  product="!db,ws"/>
+        <src>keymap-%currentId%.xml</src>
+        <mappings>ctrl:^;control:Control;alt:⌥;shift:⇧;command:⌘;meta:⌘</mappings>
+        <directory-separator>/</directory-separator>
+    </platform>
+</platforms>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic
+        SYSTEM "http://helpserver.labs.intellij.net/help/html-entities.dtd">
+<topic xsi:noNamespaceSchemaLocation="http://helpserver.labs.intellij.net/help/topic.v2.xsd"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       title="Radio button"
+       id="radiobutton">
+    <markdown>
+        <![CDATA[
+Radio button is used to choose one option from several mutually exclusive options.
+![](two_radiobutton.png)
+
+Radio buttons are used for selecting
+* objects,
+* attributes or states,
+* modifications of default behavior (settings).
+
+Use radio buttons for choice of two or more mutually exclusive options.
+In other cases:
+* Use [checkboxes](checkbox.xml) if the user can select multiple options.
+* If there are only two mutually exclusive options, combine them into one checkbox. For example, use the "I agree" checkbox instead of the two radio buttons for "I agree" and "I do not agree".
+* Use the slider to select from a number range.
+
+A group of radio buttons is best to contain from two to five options. Use [a combobox](combobox.xml) if the number of options is more than five, the screen space is limited, or the setting is rarely used. (If a layout combines various UI elements for one setting, a combobox can be used for options even if their number is less than five.)
+![](radiobutton_combobox.png)
+
+
+## Guidelines
+
+* A radio button selects only one option from several
+* Clicking on body of mark selects/removes radio button.
+* A group of radio buttons always has a preceding label or a group header that explains what the options are for:
+![](radiobutton_header.png)
+* The group of 2-3 radio buttons can be aligned horizontally.
+![](horizontally_radiobutton.png)
+* Labels
+    * Radio button is the answer "yes", so do not use negation in labels.
+    * Use sentence-style capitalization.
+    * Learn recommendations for [UI text](combobox.xml).
+
+## Mac OS default
+![](mac_os_radiobutton.png)
+
+## Darcula 
+![](darcula_radiobutton.png)
+
+## Windows 10
+
+![](win_radiobutton.png)
+]]>
+    </markdown>
+</topic>
