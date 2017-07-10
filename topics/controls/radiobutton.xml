@@ -11,12 +11,14 @@ Radio button is used to choose one option from several mutually exclusive option
 ![](two_radiobutton.png)
 
 Radio buttons are used for selecting
+
 * objects,
 * attributes or states,
 * modifications of default behavior (settings).
 
 Use radio buttons for choice of two or more mutually exclusive options.
 In other cases:
+
 * Use [checkboxes](checkbox.xml) if the user can select multiple options.
 * If there are only two mutually exclusive options, combine them into one checkbox. For example, use the "I agree" checkbox instead of the two radio buttons for "I agree" and "I do not agree".
 * Use the slider to select from a number range.

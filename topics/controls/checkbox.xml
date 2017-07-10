@@ -13,34 +13,43 @@ The marked checkbox corresponds to the answer "yes"
 ![](one_checkbox.png)
 
 Checkboxes are used for selecting:
+
 * objects,
 * attributes or states,
 * modifications of default behavior (settings).
 
 Use checkbox for:
+
 * Select stand alone object or several objects from group. Use [radio button](radiobutton.xml) if only one option from the list can be selected.
 * Yes/no choice which does not lead to immediate action. Use Toggle to initiation immediate action.
 
 ## Guidelines
+
 * A checkbox toggles between two states that are completely opposite as "on/off". If two states of a setting are not completely opposite, use two radio buttons and label them accordingly.
 
 ![](two_radiobuttons.png)
+
 * A group of checkboxes may not have a common label or header though it is advisable to add one. The group header makes finding a necessary setting faster.
 
 ![](checkbox_header.png)
+
 * Checkboxes can also be grouped just by extra vertical space. First items in each group define group contents and help finding a group of settings faster, similar to group headers.
 
 ![](vertical_space.png)
+
 * The group of 2-3 checkboxes can be aligned horizontally.
 
 ![](checkbox_horizontally.png)
+
 * Clicking on body of mark selects/removes checkbox.
 * When options can be grouped, you can use an indeterminate checkbox to represent the whole group. Use indeterminate state check box when a user selects some, but not all, sub-items in the group.
 
 ![](checkbox_indeterminate.png)
+
 * Use indentation to show hierarchy within a group.
 
 ![](checkbox_hierarchy.png)
+
 * Labels
     * Checkbox is the answer "yes", so do not use negation in labels.
     * Use sentence-style capitalization.
@@ -50,6 +59,7 @@ Use checkbox for:
 
 * An independent checkbox is left-aligned with elements above and below it:
 ![](alignment_left.png)
+
 * When a checkbox depends on an element it follows, the following alignments are possible:
    * If a preceding input element has a short label, left-align the checkbox with the element.
    ![](alignment_depends.png)

@@ -13,6 +13,7 @@ Button initiate an immediate action.
 
 Use button to initiate an immediate action.
 But use a link if:
+
 * The command leads to another window (except navigation buttons Back and Next).
 * The command is embedded in a body of text.
 * The command leads to reference material (except Help button).
@@ -20,6 +21,7 @@ But use a link if:
 
 
 ## Guidelines
+
 * If the same command button appears in more than one window, use the same label text.
 * Do not use the buttons to change status as "on/off". Instead, use the toggle, radio buttons, or checkboxes.
 * For each button in group of buttons use the same width.
