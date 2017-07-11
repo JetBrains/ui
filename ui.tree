@@ -3,21 +3,10 @@
         SYSTEM "http://helpserver.labs.intellij.net/help/product-profile.dtd">
 <product-profile id="ui"
                  name="IntelliJ UI Guidelines"
-                 start-page="combobox.xml" icon="uiForm.png">
+                 start-page="button.xml" icon="uiForm.png">
 
-    <toc-element toc-title="Controls">
+    <include from="uip" target="controls" use-filter="!private"/>
 
-        <toc-element id="button.xml"/>
-        <toc-element id="checkbox.xml"/>
-        <toc-element id="combobox.xml"/>
-        <toc-element id="radiobutton.xml"/>
-        <toc-element id="dropdown.xml"/>
-
-    </toc-element>
-
-    <toc-element toc-title="Principles">
-        <toc-element id="numeric_fields.xml"/>
-        <toc-element id="ui_text.xml"/>
-    </toc-element>
+    <include from="uip" target="principles" use-filter="!private"/>
 
 </product-profile>

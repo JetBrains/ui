@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE product-profile
+        SYSTEM "http://helpserver.labs.intellij.net/help/product-profile.dtd">
+<product-profile id="uip"
+                 name="IntelliJ UI Private Guidelines"
+                 start-page="combobox.xml" icon="uiForm.png">
+
+    <toc-element toc-title="Controls" include-id="controls">
+
+        <toc-element id="button.xml"/>
+        <toc-element id="checkbox.xml" filter="private"/>
+        <toc-element id="combobox.xml" filter="private"/>
+        <toc-element id="radiobutton.xml"/>
+        <toc-element id="dropdown.xml"/>
+
+    </toc-element>
+
+    <toc-element toc-title="Principles" include-id="principles">
+        <toc-element id="numeric_fields.xml"/>
+        <toc-element id="ui_text.xml"/>
+    </toc-element>
+
+</product-profile>
