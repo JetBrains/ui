@@ -8,7 +8,7 @@
             web-path="/img/ui-guidelines/"/>
 
 
-    <product src="ui.tree" version="1.0" teamcity-build-path="" web-path="/ui-guidelines/public/"/>
-    <product src="uip.tree" version="1.0" teamcity-build-path="" web-path="/ui-guidelines/private/"/>
+    <product src="ui.tree" version="public/1.0" teamcity-build-path="" web-path="/ui-guidelines/public/"/>
+    <product src="uip.tree" version="private/1.0" teamcity-build-path="" web-path="/ui-guidelines/private/"/>
 
 </ihp>
