@@ -23,6 +23,8 @@ If the input has a specific format, select one of the following controls:
 
 * Use [Text Area](text_area.xml) if input is a long phrase (e.g. commit message) or multi-line (e.g. code snippet). If place is constrained, use [Expandable input field](Input_field_types).
 
+[comment]: <> (TODO: Add link to subsection.)
+
 * Slider if a precise value does not matter or if it’s possible to provide feedback on the effect of setting changes. If place is constrained, use an  input field.
 * Search Field.
 * Calendar.
@@ -68,7 +70,7 @@ The label displays the type of information the field requires. Follow the rules:
 Placeholder is a grey text placed inside an input field. Follow the rules:
 
 * Use sentence-style capitalization.
-* Do not use ending punctuation or ellipsis.
+* Do **not** use ending punctuation or ellipsis.
 * Hide placeholder when user starts typing, not on input field focus.
 
 The placeholder should be used in the following cases:
@@ -81,7 +83,7 @@ The placeholder should be used in the following cases:
 
     ![](placeholder_default.png)
 
-    If user overwrites value, the value can be reset by removing value from the input field or clicking on Reset to default link on the right:
+    If user overwrites value, the value can be reset by removing value from the input field or clicking on *Reset to default* link on the right:
 
     ![](placeholder_reset.png)
 
@@ -181,7 +183,7 @@ If user types in an invalid value, highlight field with red and show error messa
 
 ![](error.png)
 
-Do not change the values automatically. Do not allow to save changes, while incorrect value is entered. For more details see Validation errors.
+Do not change the values automatically. Do not allow to save changes, while incorrect value is entered. For more details see [Validation errors](validation_errors.xml).
 
 
 
@@ -189,7 +191,7 @@ Do not change the values automatically. Do not allow to save changes, while inco
 ### Colors and fonts
 Label font: default. Input font: default or Editor font for code snippets.
 
-[comment]: <> (Add link to Layout section.)
+[comment]: <> (TODO: Add table with colors.)
 
 ### Sizes
 Sizes are the same for all themes:
