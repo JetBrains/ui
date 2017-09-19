@@ -7,17 +7,17 @@
 
     <toc-element toc-title="Controls" include-id="controls">
 
-        <toc-element id="button.xml"/>
+        <toc-element id="input_field.xml"/>
         <toc-element id="checkbox.xml" filter="private"/>
         <toc-element id="combobox.xml" filter="private"/>
-        <toc-element id="radiobutton.xml"/>
-        <toc-element id="dropdown.xml"/>
+        <toc-element id="radiobutton.xml" filter="private"/>
+        <toc-element id="dropdown.xml" filter="private"/>
 
     </toc-element>
 
     <toc-element toc-title="Principles" include-id="principles">
-        <toc-element id="numeric_fields.xml"/>
-        <toc-element id="ui_text.xml"/>
+        <toc-element id="numeric_fields.xml" filter="private"/>
+        <toc-element id="ui_text.xml" filter="private"/>
     </toc-element>
 
 </product-profile>
