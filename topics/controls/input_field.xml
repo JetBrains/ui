@@ -173,7 +173,7 @@ If users are more likely to reenter the entire value, not edit the existing one,
 
     ![](completion_tooltip.png)
 
-    Show completion popup when user starts typing or presses <shortcut key="Ctrl+Space"/> Ctrl+Space.
+    Show completion popup when user starts typing or presses Ctrl+Space.
 
 * Use [Control Buttons](button.xml) to help user enter data. For example, ![](browseButton.png) to browse disk.
 
