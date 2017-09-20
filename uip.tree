@@ -6,15 +6,13 @@
                  start-page="combobox.xml" icon="uiForm.png">
 
     <toc-element toc-title="Controls" include-id="controls">
-
-        <toc-element id="input_field.xml">
+        <toc-element id="input_field.xml"/>
         <toc-element id="progress_bar.xml"/>
         <toc-element id="text_area.xml"/>
-        <toc-element id="checkbox.xml" filter="private"/>
-        <toc-element id="combobox.xml" filter="private"/>
-        <toc-element id="radiobutton.xml" filter="private"/>
-        <toc-element id="dropdown.xml" filter="private"/>
-
+        <toc-element filter="private" id="checkbox.xml"/>
+        <toc-element filter="private" id="combobox.xml"/>
+        <toc-element filter="private" id="radiobutton.xml"/>
+        <toc-element filter="private" id="dropdown.xml"/>
     </toc-element>
 
     <toc-element toc-title="Principles" include-id="principles">
