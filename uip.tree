@@ -8,7 +8,7 @@
     <toc-element toc-title="Controls" include-id="controls">
 
         <toc-element id="input_field.xml">
-        </toc-element>
+        <toc-element id="progress_bar.xml"/>
         <toc-element id="text_area.xml"/>
         <toc-element id="checkbox.xml" filter="private"/>
         <toc-element id="combobox.xml" filter="private"/>

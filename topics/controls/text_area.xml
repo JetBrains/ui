@@ -126,7 +126,7 @@ Recommended sizes for all themes are:
 ### History
 
 Background: dialog default theme color.
-Font: Windows, GTK+, Intellij — default; Mac OS 2px smaller than default.
+Font: Windows, GTK+, Intellij -- default; Mac OS 2px smaller than default.
 Font color: #787878
 
 ![](style_history.png)
