@@ -18,7 +18,7 @@ A progress bar informs users about the progress of a lengthy operation.
 
     If the operation lasts less than a second, do not show any progress indicator. Displaying any progress indicator for a short duration would be distracting.
 
-    If the operation lasts less than 4 seconds , show progress bar, loader (link) or progress text (link) depending on the available space.
+    If the operation lasts less than 4 seconds , show progress bar, [loader](loader.xml) or [progress text](progress_text.xml) depending on the available space.
 
     ![](time_line.png)
 
@@ -71,7 +71,7 @@ A progress bar informs users about the progress of a lengthy operation.
 
     If there is one process, then start the label with a verb in progressive form, e.g. *Updating indices, Committing changes*, etc.
 
-    If there are several processes in the group, then provide a bold header and label each progress. Header is a verb in progressive form, progress labels are nouns.
+    If there are several processes in the group, then provide a **bold** header and label each progress. Header is a verb in progressive form, progress labels are nouns.
 
     ![](progress_bar_wording_example.png)
 
@@ -128,9 +128,7 @@ A progress bar informs users about the progress of a lengthy operation.
 
     ![](progress_color.png)
 
-    Do not color progress bar to show the final result of a task, use [notifications](notification.xml). If the process finishes hide the progress bar. In case of success show notification for the user-initiated tasks, in case of failure -- for all tasks.
-
-    ![](progress_result_notification.png)
+    Do **not** color progress bar to show the final result of a task, use [notifications](notification.xml). If the process finishes hide the progress bar. In case of success show notification for the user-initiated tasks, in case of failure — for all tasks.
 
 7. **Modal progress bar**
 
@@ -178,7 +176,7 @@ The progress form and sizes are the same in all themes.
 
 ![](progress_bar_colors.png)
 
-Progress bar label font size is default, progress step and substep font size is 2 pt smaller for Mac OS themes and default for Windows and Linux themes. Progress label and step color are default, substep color -- #787878.
+Progress bar label font size is default, progress step and substep font size is 2 pt smaller for Mac OS themes and default for Windows and Linux themes. Progress label and step color are default, substep color — #787878.
 
 ![](progress_bar_size.png)
 
