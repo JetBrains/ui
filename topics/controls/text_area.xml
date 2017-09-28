@@ -10,7 +10,7 @@
 
 Text Area is a rectangular area that allows users to enter or edit multi-line text using keyboard.
 
-![](example.png)
+![](text_area_example.png)
 
 ## When to use
 
@@ -19,14 +19,10 @@ Use Text Area if input is unconstrained and long, or if newline character is a v
 Do **not** use Text Area in the following cases:
 
 * If input consists of several words, use [Input Field](input_field.xml).
-* If there is not enough place for the Text Area, use [Expandable input field]. Or if input is usually short, but can be long or multi-line rarely.
-
-[comment]: <> (TODO: Add link to "Expandable input field" subsection.)
-
+* If there is not enough place for the Text Area, use [Expandable input field](input_field.xml#input_field_type). Or if input is usually short, but can be long or multi-line rarely.
 * If values are added one by one, use [Table](table.xml).
 * If text is read-only, use Textual Output instead.
 
-[comment]: <> (TODO: Describe Textual Output.)
 
 ## How to use
 
@@ -50,22 +46,17 @@ Do **not** use Text Area in the following cases:
 
     Use Context help to explain field behavior.
 
-[comment]: <> (TODO: "Use Context help to explain field behavior" -- comment to the image.)
-
-
 
 ### Placeholder, prefilled values and field focus
 
-Follow the rules for the Input Field: [placeholder, prefilled values, field focus](input_field.xml).
-
-[comment]: <> (TODO: Links to subsections.)
+Follow the rules for the Input Field: [placeholder](input_field.xml#placeholder), [prefilled value](input_field.xml#prefilled_value), [field focus](input_field.xml#field_focus).
 
 
 ### Size and placement
 
 * Recommended sizes:
 
-    ![](size_1.png)
+    ![](text_area_size_1.png)
 
     This is the default sizes, they can be changed if the dialog is resized.
 
@@ -75,13 +66,13 @@ Follow the rules for the Input Field: [placeholder, prefilled values, field focu
 
 * Size Text Area to display an integral number of lines of text:
 
-    ![](size_2.png)
+    ![](text_area_size_2.png)
 
 * Do **not** resize Text Area on input. It will change the position of other controls and they can become hard-discoverable.
 
 * Avoid horizontal scroll bars on multi-line text boxes. Use vertical scrolling and line wrapping instead:
 
-    ![](size_3.png)
+    ![](text_area_size_3.png)
 
     Horizontal scroll bar can be added if Text Area is for the code snippets or for the formatted input:
 
@@ -107,9 +98,9 @@ If the space is limited, the hint can be removed when user enters new line. Most
 
 If user types in an invalid value, highlight text area with red and show error message in a tooltip.
 
-![](error.png)
+![](text_area_error.png)
 
-Do not change the values automatically. Do not allow to save changes, while incorrect value is entered. For more details see [Validation errors](validation_erros.xml).
+Do not change the values automatically. Do not allow to save changes, while incorrect value is entered. For more details see [Validation errors](validation_error.xml).
 
 
 ## Style
@@ -126,7 +117,7 @@ Recommended sizes for all themes are:
 ### History
 
 Background: dialog default theme color.
-Font: Windows, GTK+, Intellij -- default; Mac OS 2px smaller than default.
+Font: Windows, GTK+, Intellij — default; Mac OS 2px smaller than default.
 Font color: #787878
 
 ![](style_history.png)
