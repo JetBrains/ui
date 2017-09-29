@@ -10,14 +10,12 @@
 
 ##Title
 
-<tip>The current Windows guidelines use sentence capitalization for actions. However, many of Microsoft products still title-capitalize actions according to the previous guidelines. Mac OS X also title-capitalizes actions. Since IntelliJ IDEs are cross-platform, we use title capitalization as well.</tip>
-
 ###Use for
-* Actions: buttons, menus and links that invoke an action
-* Tabs
-* Group headers
-* Table headers
-* Dialog and message box headers
+* Actions: buttons, menus, and links that invoke an action
+* Headers in element groups, tables, dialogs and message boxes
+
+<tip>The current Windows guidelines use sentence capitalization for actions. Some Microsoft products still title-capitalize actions according to the previous guidelines. Mac OS X also title-capitalizes actions. Since IntelliJ IDEs are cross-platform, we use title capitalization as well.</tip>
+
 
 
 ###Rules
@@ -34,11 +32,11 @@ Do not capitalize articles, prepositions and conjunctions: *Side-by-Side, Drag-a
 
 
 ###Examples
-*Compare With…*— the short preposition with is capitalized because it is the last word.
+*Compare With…* — the short preposition with is capitalized because it is the last word.
 
 *Compare with Latest Repository Version* — with is not capitalized when in the middle.
 
-*Check Out from Version Control* — out is a part of the phrasal verb check out and is capitalized.
+*Check Out from Version Control* — *out* is a part of the phrasal verb *check out* and is capitalized.
 
 
 
