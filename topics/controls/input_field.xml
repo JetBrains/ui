@@ -15,20 +15,18 @@ An input field is a rectangular area that allows users to enter or edit one text
 
 ## When to use
 
-Use an input field if it’s not possible to enumerate less than 15 most likely or valid values. Otherwise use a Combo Box or Drop-down.
+Use an input field if it’s not possible to enumerate less than 15 most likely or valid values. Otherwise use a [Combo Box](combo_box.xml) or [Drop-down](drop_down.xml).
 
 If the input has a specific format, select one of the following controls:
 
 * If the previous user input should be preserved, use a Combo Box.
 
-* Use [Text Area](text_area.xml) if input is a long phrase (e.g. commit message) or multi-line (e.g. code snippet). If place is constrained, use [Expandable input field](Input_field_types).
-
-[comment]: <> (TODO: Add link to subsection.)
+* Use [Text Area](text_area.xml) if input is a long phrase (e.g. commit message) or multi-line (e.g. code snippet). If place is constrained, use [Expandable input field](Input_field_types.xml).
 
 * Slider if a precise value does not matter or if it’s possible to provide feedback on the effect of setting changes. If place is constrained, use an  input field.
-* Search Field.
-* Calendar.
-* Color Box.
+* [Search Field](search.xml).
+* [Calendar](calendar.xml).
+* [Color Box](color_box.xml).
 
 
 ## How to use
@@ -38,11 +36,13 @@ If the input has a specific format, select one of the following controls:
 The label displays the type of information the field requires. Follow the rules:
 
 * A label accompanies each input field.
-* Labels should be [short and descriptive](ui_text.xml) so the user can quickly scan the form.
+* Labels should be [short and descriptive](concise_text.xml) so the user can quickly scan the form.
 * Write the label either as a noun and end the label with a colon:
+
     ![](label_noun.png)
 
     Or as a phrase with no ending punctuation:
+
     ![](label_sentence.png)
 
 * Do **not** use labels to indicate user actions:
@@ -51,12 +51,15 @@ The label displays the type of information the field requires. Follow the rules:
 * Use sentence-style capitalization.
 
 * Place label on the left and align with the text baseline:
+
     ![](label_left.png)
 
     If place is constranted, place label above the input field:
+
     ![](label_top.png)
 
 * If an input field is disabled, disable the label:
+
     ![](label_disabled.png)
 
 * Make the label text selectable. The user may want to find this option on the Internet or to send question about the option to support.
@@ -66,7 +69,7 @@ The label displays the type of information the field requires. Follow the rules:
 
 
 
-### Placeholder
+### <a name="placeholder"></a>Placeholder
 Placeholder is a grey text placed inside an input field. Follow the rules:
 
 * Use sentence-style capitalization.
@@ -98,12 +101,12 @@ The placeholder should be used in the following cases:
 
 
 
-### Prefilled value
+### <a name="prefilled_value"></a>Prefilled value
 Prefill field if it has default or frequently used values. Use default text color for prefilled values:
 
 ![](prefill.png)
 
-Do not prefill with “Unnamed”. It takes time to read it and does not help user to fill the form.
+Do **not** prefill with “Unnamed”. It takes time to read it and does not help user to fill the form.
 
 ![](prefill_unnamed.png)
 
@@ -129,7 +132,7 @@ Do not prefill with “Unnamed”. It takes time to read it and does not help us
 
     ![](fields_line.png)
 
-    For alignment with other element see [Elements alignment section](elements_alignmet.xml).
+    For alignment with other element see [Elements alignment section](elements_alignment.xml).
 
 * If there are several input fields in a column, it’s recommended that they are left aligned and have the same width:
 
@@ -140,20 +143,20 @@ Do not prefill with “Unnamed”. It takes time to read it and does not help us
     ![](fields_stack_alignment_groups.png)
 
 
-### Field focus
+### <a name="field_focus"></a>Field focus
 When input field gets focus, put the caret at the end of the text:
-
-![](focus_all.png)
-
-If users are more likely to reenter the entire value, not edit the existing one, select all the text on input focus:
 
 ![](focus_end.png)
 
+If users are more likely to reenter the entire value, not edit the existing one, select all the text on input focus:
+
+![](focus_all.png)
 
 
-### Input field types
 
-* If input can be large and place is constrained, use expandable input field instead of [Text Area](text_area.xml):
+### <a name="input_field_type"></a>Input field types
+
+* If input can be large and place is constrained, use expandable input field:
 
     ![](expandable_1.png)
 
@@ -181,7 +184,7 @@ If users are more likely to reenter the entire value, not edit the existing one,
 ### Validation
 If user types in an invalid value, highlight field with red and show error message in a tooltip.
 
-![](error.png)
+![](input_field_error.png)
 
 Do not change the values automatically. Do not allow to save changes, while incorrect value is entered. For more details see [Validation errors](validation_errors.xml).
 

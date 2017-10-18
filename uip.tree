@@ -17,7 +17,9 @@
 
     <toc-element toc-title="Principles" include-id="principles">
         <toc-element id="numeric_fields.xml" filter="private"/>
-        <toc-element id="ui_text.xml" filter="private"/>
+        <toc-element id="writing.xml" filter="private">
+            <toc-element id="capitalization.xml" filter="private"/>
+        </toc-element>
     </toc-element>
 
 </product-profile>

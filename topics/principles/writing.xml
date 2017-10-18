@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic
+        SYSTEM "http://helpserver.labs.intellij.net/help/html-entities.dtd">
+<topic xsi:noNamespaceSchemaLocation="http://helpserver.labs.intellij.net/help/topic.v2.xsd"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       title="Writing"
+       id="writing">
+    <markdown>
+        <![CDATA[
+How to write UI texts:
+
+* [Writing short and clear texts](concise_text.xml)
+
+* [Capitalization](capitalization.xml)
+
+* [Punctuation](punctuation.xml)
+
+* [Articles](articles.xml)
+
+  ]]>
+    </markdown>
+</topic>
