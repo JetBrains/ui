@@ -20,7 +20,7 @@
         <pdf-bullet>blt_pdf.png</pdf-bullet>
         <web-root>http://www.jetbrains.com/idea/</web-root>
         <web-community-path>Developer Community:http://www.jetbrains.net/devnet/community/idea/kb</web-community-path>
-
+        <fail-on-missing-links>false</fail-on-missing-links>
         <download-page/>
         <search-scope/>
         <fallback-url/>
