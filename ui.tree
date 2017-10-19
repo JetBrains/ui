@@ -3,7 +3,7 @@
         SYSTEM "http://helpserver.labs.intellij.net/help/product-profile.dtd">
 <product-profile id="ui"
                  name="IntelliJ UI Guidelines"
-                 start-page="button.xml" icon="uiForm.png">
+                 start-page="input_field.xml" icon="uiForm.png">
 
     <include from="uip" target="controls" use-filter="!private"/>
 
