@@ -20,13 +20,13 @@
 <body>
 <div id="root" class="layout">
     <div data-reactroot="" class="layout">
-        <header class="header">
-            <div class="layout__container header__container">
-                <div class="group group--align-left header__title">{{ site.title }}</div>
-            </div>
-        </header>
         <div class="app">
             <div class="app__nav">
+                <header class="header">
+                    <div class="layout__container header__container">
+                        <div class="group group--align-left header__title">{{ site.title }}</div>
+                    </div>
+                </header>
                 <div class="nav">
                     <form action="{{ site.baseurl }}/search/" method="get">
                         <input type="text" name="q" id="search-input" placeholder="Search Guidelines">
@@ -74,5 +74,6 @@
         </div>
     </div>
 </div>
+<script type="text/javascript" src="{{ site.baseurl }}/scripts/retina.min.js"></script>
 </body>
 </html>
