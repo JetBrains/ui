@@ -9670,7 +9670,7 @@ br + kbd {
     content: '\2013';
     text-align: right;
     color: #999;
-    line-height: 1.6em
+    line-height: 1.6em;
 }
 
 .article .note li, .article .tip li, .article .todo li, .article .warning li, .note .article li, .note .list__item, .tip .article li, .tip .list__item, .todo .article li, .todo .list__item, .warning .article li, .warning .list__item {
@@ -9691,7 +9691,7 @@ br + kbd {
 }
 
 .article li {
-    margin-left: -1.3rem;
+    /*margin-left: -3%;*/
 }
 
 .article ol, .list._decimal {

@@ -1,6 +1,6 @@
 ---
 title: Capitalization
-category: Writing
+category: Text
 ---
 
 ## Title
