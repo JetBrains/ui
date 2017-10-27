@@ -1,7 +1,6 @@
 ---
 title: How to Write Guidelines
-category: 
-order: 100
+category: Resources
 ---
 
 This page describes the workflow and basic rules of writing articles for IntelliJ IDEA UI Guidelines.
