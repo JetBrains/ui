@@ -125,7 +125,7 @@ The “Correct/Incorrect” can be placed above the image or on the left:
 If there is one image and it’s not big, cross out the image with 1px line instead of “Incorrect” header:
 ![](/images/how_to_write_guidelines/incorrect.png)
 
-Correct: #18B04B, incorrect and line: #FF001B.
+Correct: <span style="color:#18B04B">#18B04B</span>, incorrect and line: <span style="color:#FF001B">#FF001B</span>.
 
 ![](/images/how_to_write_guidelines/correct_incorrect_sizes.png)
 
@@ -138,7 +138,7 @@ Font-style: Gotham Book
 Font-size: 14px  
 Line height: 20px  
 Max width: 300px  
-Color:  #999999  
+Color:  <span style="color:#999999">#999999</span>  
 
 Place callouts around the image at a distance of at least 30px:
 ![](/images/how_to_write_guidelines/callout_1.png)
@@ -146,7 +146,7 @@ Place callouts around the image at a distance of at least 30px:
 Or use leader lines to sign specific items on the image:
 ![](/images/how_to_write_guidelines/callout_2.png)
 
-**Leader line** is 1px line, color: #000000 op. 0.3.
+**Leader line** is 1px line, color: <span style="color:#000000">#000000</span> op. 0.3.
 
 Line is vertical or horizontal. It can be bent once if there is not enough space for the text. Do not intersect lines.
 
@@ -169,9 +169,9 @@ Use the Hex Code format to specify colors:
 Use colored rectangles to specify sizes inside the element and lines to specify external sizes:
 ![](/images/how_to_write_guidelines/insets.png)   
 
-Main rectangle: #DA769D op. 0.4.  
-Secondary rectangle: #6D9AE6 op. 0.4.  
-Text and line: #BD136B, #0054C0. Distance between image and line, between line and text is 5px. Align all sizes on the right.  
+Main rectangle: <span style="color:#DA769D">#DA769D</span> op. 0.4.  
+Secondary rectangle: <span style="color:#6D9AE6">#6D9AE6</span> op. 0.4.  
+Text and line: <span style="color:#BD136B">#BD136B</span>, <span style="color:#0054C0">#0054C0</span>. Distance between image and line, between line and text is 5px. Align all sizes on the right.  
 
 Use line to show that text is aligned with an element:
 ![](/images/how_to_write_guidelines/alignment.png)   

@@ -169,6 +169,6 @@ The progress form and sizes are the same in all themes.
 
 ![](/images/progress_bar/progress_bar_colors.png)
 
-Progress bar label font size is default, progress step and substep font size is 2 pt smaller for Mac OS themes and default for Windows and Linux themes. Progress label and step color are default, substep color — #787878.
+Progress bar label font size is default, progress step and substep font size is 2 pt smaller for Mac OS themes and default for Windows and Linux themes. Progress label and step color are default, substep color — <span style="color:#787878">#787878</span>.
 
 ![](/images/progress_bar/progress_bar_size.png)

@@ -116,7 +116,7 @@ Recommended sizes for all themes are:
 ![](/images/text_area/style_history.png) 
 Background: dialog default theme color.  
 Font: Windows, GTK+, Intellij — default; Mac OS 2px smaller than default.  
-Font color: #787878.
+Font color: <span style="color:#787878">#787878</span>.
 
 
 

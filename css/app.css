@@ -10589,6 +10589,12 @@ table .note ol, table .note ul, table .tip ol, table .tip ul, table .todo ol, ta
     }
 }
 
+.separator {
+    background: #e6e6e6;
+    height: 1px;
+    margin: 20px 0 20px 0;
+}
+
 .nav {
     display: -webkit-flex;
     display: -ms-flexbox;

@@ -96,7 +96,7 @@ How to use these parts:
 
 * Use non-breaking spaces in an action name and shortcut, so it does not break in two lines.
 
-* Grey text color #999999, both for light themes and Darcula.
+* Grey text color <span style="color:#999999">#999999</span>, both for light themes and Darcula.
 
 * The link should be the non-underlined kind (see example of such link in the Settings dialog, the topmost node “Appearance & Behavior”).
 
