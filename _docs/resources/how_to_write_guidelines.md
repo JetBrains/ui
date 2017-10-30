@@ -129,6 +129,8 @@ Correct: <span style="color:#18B04B">#18B04B</span>, incorrect and line: <span s
 
 ![]({{site.baseurl}}/images/how_to_write_guidelines/correct_incorrect_sizes.png)
 
+Save all images in two sizes: example.png and example@2x.png.
+
 
 ### Callouts
 
