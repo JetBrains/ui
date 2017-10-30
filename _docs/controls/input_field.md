@@ -5,7 +5,7 @@ category: Controls
 
 An input field is a rectangular area that allows users to enter or edit one text line using the keyboard.  
 
-![]( /images/input_field/example.png)
+![]( {{ site.baseurl }}/images/input_field/example.png)
 
 
 ## When to use
@@ -33,31 +33,31 @@ The label displays the type of information the field requires. Follow the rules:
 * A label accompanies each input field.
 * Labels should be [short and descriptive](/principles/concise_text/) so the user can quickly scan the form.
 * Write the label either as a noun and end the label with a colon:  
-    ![]( /images/input_field/label_noun.png) 
+    ![]( {{ site.baseurl }}/images/input_field/label_noun.png) 
     Or as a phrase with no ending punctuation:
-    ![]( /images/input_field/label_sentence.png)
+    ![]( {{ site.baseurl }}/images/input_field/label_sentence.png)
 
 * Do **not** use labels to indicate user actions:  
-    ![]( /images/input_field/user_action.png)
+    ![]( {{ site.baseurl }}/images/input_field/user_action.png)
 
 * Use sentence-style capitalization.
 
 * Place label on the left and align with the text baseline:
 
-    ![]( /images/input_field/label_left.png)
+    ![]( {{ site.baseurl }}/images/input_field/label_left.png)
 
     If place is constranted, place label above the input field:
 
-    ![]( /images/input_field/label_top.png)
+    ![]( {{ site.baseurl }}/images/input_field/label_top.png)
 
 * If an input field is disabled, disable the label:
 
-    ![]( /images/input_field/label_disabled.png)
+    ![]( {{ site.baseurl }}/images/input_field/label_disabled.png)
 
 * Make the label text selectable. The user may want to find this option on the Internet or to send question about the option to support.
 
 * If there are several input fields on the form, it’s recommended to make labels approximately the same length to avoid gaps between labels and fields. For example:  
-    ![]( /images/input_field/several_labels_length.png)  
+    ![]( {{ site.baseurl }}/images/input_field/several_labels_length.png)  
 
 
 
@@ -72,35 +72,35 @@ The placeholder should be used in the following cases:
 
 1. Use placeholder to indicate that input field is [optional](/principles/required_fields/):  
 
-    ![]( /images/input_field/placeholder_optional.png)
+    ![]( {{ site.baseurl }}/images/input_field/placeholder_optional.png)
 
 2. Use placeholder to show inherited default value:  
 
-    ![]( /images/input_field/placeholder_default.png)
+    ![]( {{ site.baseurl }}/images/input_field/placeholder_default.png)
 
     If user overwrites value, the value can be reset by removing value from the input field or clicking on *Reset to default* link on the right:
 
-    ![]( /images/input_field/placeholder_reset.png)
+    ![]( {{ site.baseurl }}/images/input_field/placeholder_reset.png)
 
 
 3. Do **not** use placeholder to show examples. User can decide that the field is already filled. Provide examples or explanation under the input field (see [Context help]( /principles/context_help/)):
 
-    ![]( /images/input_field/placeholder_examples.png)
+    ![]( {{ site.baseurl }}/images/input_field/placeholder_examples.png)
 
 4. Do **not** use placeholder as field label. When the field is filled, it is difficult to understand what kind of field it is.  
 
-    ![]( /images/input_field/placeholder_label.png)
+    ![]( {{ site.baseurl }}/images/input_field/placeholder_label.png)
 
 
 
 ### Prefilled value
 Prefill field if it has default or frequently used values. Use default text color for prefilled values:
 
-![]( /images/input_field/prefill.png)
+![]( {{ site.baseurl }}/images/input_field/prefill.png)
 
 Do **not** prefill with “Unnamed”. It takes time to read it and does not help user to fill the form.
 
-![]( /images/input_field/prefill_unnamed.png)
+![]( {{ site.baseurl }}/images/input_field/prefill_unnamed.png)
 
 
 
@@ -108,41 +108,41 @@ Do **not** prefill with “Unnamed”. It takes time to read it and does not hel
 
 * Choose width appropriate for the most common values, but not less than 65px. Field width helps user to understand what value is expected and to make sure that they filled the field correctly.
 
-    ![]( /images/input_field/size_1.png)
+    ![]( {{ site.baseurl }}/images/input_field/size_1.png)
 
-    ![]( /images/input_field/size_2.png)
+    ![]( {{ site.baseurl }}/images/input_field/size_2.png)
 
 * If input value is longer than field width, show the beginning of the value when field becomes inactive:
 
-    ![]( /images/input_field/size_long_name.png)
+    ![]( {{ site.baseurl }}/images/input_field/size_long_name.png)
 
 * Stack multiple input fields vertically:
 
-    ![]( /images/input_field/fields_stack.png)
+    ![]( {{ site.baseurl }}/images/input_field/fields_stack.png)
 
     If space is constrained, the fields can be placed horizontally. It’s not recommended, as it complicates reading. Leave plenty of space between the end of the input field and the label of the next:
 
-    ![]( /images/input_field/fields_line.png)
+    ![]( {{ site.baseurl }}/images/input_field/fields_line.png)
 
     For alignment with other element see [Elements alignment section]( /principles/elements_alignment/).
 
 * If there are several input fields in a column, it’s recommended that they are left aligned and have the same width:
 
-    ![]( /images/input_field/fields_stack_alignment.png)
+    ![]( {{ site.baseurl }}/images/input_field/fields_stack_alignment.png)
 
     If there are several groups of settings in the form, the fields can be aligned in the groups to avoid big gaps between labels and input fields:
 
-    ![]( /images/input_field/fields_stack_alignment_groups.png)
+    ![]( {{ site.baseurl }}/images/input_field/fields_stack_alignment_groups.png)
 
 
 ### Field focus
 When input field gets focus, put the caret at the end of the text:
 
-![]( /images/input_field/focus_end.png)
+![]( {{ site.baseurl }}/images/input_field/focus_end.png)
 
 If users are more likely to reenter the entire value, not edit the existing one, select all the text on input focus:
 
-![]( /images/input_field/focus_all.png)
+![]( {{ site.baseurl }}/images/input_field/focus_all.png)
 
 
 
@@ -150,34 +150,34 @@ If users are more likely to reenter the entire value, not edit the existing one,
 
 * If input can be large and place is constrained, use expandable input field:
 
-    ![]( /images/input_field/expandable_1.png)
+    ![]( {{ site.baseurl }}/images/input_field/expandable_1.png)
 
-    ![]( /images/input_field/expandable_2.png)
+    ![]( {{ site.baseurl }}/images/input_field/expandable_2.png)
 
 
 * If input data is numeric, follow [Numeric fields]( /principles/numeric_fields/) guidelines.
 * If input data is secured, replace it with dots:
 
-    ![]( /images/input_field/password.png)
+    ![]( {{ site.baseurl }}/images/input_field/password.png)
 
 * If there are many predefined values (e.g. code snippets, commit author), add completion to the input field:
 
-    ![]( /images/input_field/completion.png)
+    ![]( {{ site.baseurl }}/images/input_field/completion.png)
 
     Input field with completion looks the same as regular input field. When empty input field gets focus, show tooltip after delay to indicate that code completion is supported:
 
-    ![]( /images/input_field/completion_tooltip.png)
+    ![]( {{ site.baseurl }}/images/input_field/completion_tooltip.png)
 
     Show completion popup when user starts typing or presses <kbd>Ctrl+Space</kbd>.
 
-* Use [Control Buttons]( /controls/button/) to help user enter data. For example, browse disk button: ![]( /images/input_field/browseButton.png)  
+* Use [Control Buttons]( /controls/button/) to help user enter data. For example, browse disk button: ![]( {{ site.baseurl }}/images/input_field/browseButton.png)  
 
 
 
 ### Validation
 If user types in an invalid value, highlight field with red and show error message in a tooltip.
 
-![]( /images/input_field/error.png)
+![]( {{ site.baseurl }}/images/input_field/error.png)
 
 Do not change the values automatically. Do not allow to save changes, while incorrect value is entered. For more details see [Validation errors]( /principles/validation_errors/).
 
@@ -192,13 +192,13 @@ Input font: default or Editor font for code snippets.
 
 ### Sizes
 Sizes are the same for all themes:
-![]( /images/input_field/sizes.png)
+![]( {{ site.baseurl }}/images/input_field/sizes.png)
 
 
 ### Spacing
 
-![]( /images/input_field/sizes_label.png)
+![]( {{ site.baseurl }}/images/input_field/sizes_label.png)
 
-![]( /images/input_field/sizes_button.png)
+![]( {{ site.baseurl }}/images/input_field/sizes_button.png)
 
-![]( /images/input_field/sizes_several.png)
+![]( {{ site.baseurl }}/images/input_field/sizes_several.png)

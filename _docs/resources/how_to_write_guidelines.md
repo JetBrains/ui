@@ -103,31 +103,31 @@ Provide images with insets and colors (see “Images” section below).
 Illustrate all statements with interface examples. Use **default Mac OS** or **Windows** theme as the main themes for illustrations. Add a section with examples for Darcula theme in the Google doc, but do not move it to the official guidelines.
 
 Provide an image description ends with colon before the image:
-![](/images/how_to_write_guidelines/example_1.png)
+![]({{ site.baseurl }}/images/how_to_write_guidelines/example_1.png)
 
 Or under the image without period at the end:
 
-![](/images/how_to_write_guidelines/example_1.png)
+![]({{ site.baseurl }}/images/how_to_write_guidelines/example_1.png)
 *Image description*
 
 Several not wide images can be placed in two or three columns:
-![](/images/how_to_write_guidelines/example_2.png)
+![]({{ site.baseurl }}/images/how_to_write_guidelines/example_2.png)
 
 If there is a set of images that illustrates the sequence of states, place them horizontally or vertically and link with an arrow:
-![](/images/how_to_write_guidelines/example_3.png)
+![]({{ site.baseurl }}/images/how_to_write_guidelines/example_3.png)
 
 If there is a common mistake in UI, provide Correct/Incorrect images:
-![](/images/how_to_write_guidelines/corret_incorrect.png)
+![]({{ site.baseurl }}/images/how_to_write_guidelines/corret_incorrect.png)
 
 The “Correct/Incorrect” can be placed above the image or on the left:
-![](/images/how_to_write_guidelines/correct_incorrect_vertical.png)
+![]({{ site.baseurl }}/images/how_to_write_guidelines/correct_incorrect_vertical.png)
 
 If there is one image and it’s not big, cross out the image with 1px line instead of “Incorrect” header:
-![](/images/how_to_write_guidelines/incorrect.png)
+![]({{ site.baseurl }}/images/how_to_write_guidelines/incorrect.png)
 
 Correct: <span style="color:#18B04B">#18B04B</span>, incorrect and line: <span style="color:#FF001B">#FF001B</span>.
 
-![](/images/how_to_write_guidelines/correct_incorrect_sizes.png)
+![]({{ site.baseurl }}/images/how_to_write_guidelines/correct_incorrect_sizes.png)
 
 
 ### Callouts
@@ -141,46 +141,46 @@ Max width: 300px
 Color:  <span style="color:#999999">#999999</span>  
 
 Place callouts around the image at a distance of at least 30px:
-![](/images/how_to_write_guidelines/callout_1.png)
+![]({{ site.baseurl }}/images/how_to_write_guidelines/callout_1.png)
 
 Or use leader lines to sign specific items on the image:
-![](/images/how_to_write_guidelines/callout_2.png)
+![]({{ site.baseurl }}/images/how_to_write_guidelines/callout_2.png)
 
 **Leader line** is 1px line, color: <span style="color:#000000">#000000</span> op. 0.3.
 
 Line is vertical or horizontal. It can be bent once if there is not enough space for the text. Do not intersect lines.
 
 Leave 1px between the line and the element to which it refers or place line over the element:
-![](/images/how_to_write_guidelines/leader_lines_1.png)
+![]({{ site.baseurl }}/images/how_to_write_guidelines/leader_lines_1.png)
 
 Lines go beyond the image by 20px:
-![](/images/how_to_write_guidelines/leader_lines_2.png)
+![]({{ site.baseurl }}/images/how_to_write_guidelines/leader_lines_2.png)
 
 Text position:
-![](/images/how_to_write_guidelines/leader_lines_3.png)
+![]({{ site.baseurl }}/images/how_to_write_guidelines/leader_lines_3.png)
 
 If line is horizontal, center it with the first comment line.
 
 ### Colors, insets and sizes
 
 Use the Hex Code format to specify colors:
-![](/images/how_to_write_guidelines/colors.png)
+![]({{ site.baseurl }}/images/how_to_write_guidelines/colors.png)
 
 Use colored rectangles to specify sizes inside the element and lines to specify external sizes:
-![](/images/how_to_write_guidelines/insets.png)   
+![]({{ site.baseurl }}/images/how_to_write_guidelines/insets.png)   
 
 Main rectangle: <span style="color:#DA769D">#DA769D</span> op. 0.4.  
 Secondary rectangle: <span style="color:#6D9AE6">#6D9AE6</span> op. 0.4.  
 Text and line: <span style="color:#BD136B">#BD136B</span>, <span style="color:#0054C0">#0054C0</span>. Distance between image and line, between line and text is 5px. Align all sizes on the right.  
 
 Use line to show that text is aligned with an element:
-![](/images/how_to_write_guidelines/alignment.png)   
+![]({{ site.baseurl }}/images/how_to_write_guidelines/alignment.png)   
 
 Specify the element sizes in the following format:
-![](/images/how_to_write_guidelines/sizes.png)
+![]({{ site.baseurl }}/images/how_to_write_guidelines/sizes.png)
 
 If there are many properties for different themes, put them in the table:
-![](/images/how_to_write_guidelines/themes.png)
+![]({{ site.baseurl }}/images/how_to_write_guidelines/themes.png)
 
 ## Code snippet
 <div class="code-block__wrapper">#Code Snippet example

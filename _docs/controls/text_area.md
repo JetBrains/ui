@@ -5,7 +5,7 @@ category: Controls
 
 Text Area is a rectangular area that allows users to enter or edit multi-line text using keyboard.
 
-![](/images/text_area/text_area_example.png)
+![]({{ site.baseurl }}/images/text_area/text_area_example.png)
 
 ## When to use
 
@@ -28,11 +28,11 @@ Do **not** use Text Area in the following cases:
 
 * Follow the rules for the [Input Field](/controls/input_field/). If label is on the left, align it with the first input line:
 
-    ![](/images/text_area/label.png)
+    ![]({{ site.baseurl }}/images/text_area/label.png)
 
 * The label is required for all empty Text Areas. If Text Area is **prefilled** and it’s clear from the context what appears in Text Area, the label can be omitted. For example, the Text Area is used to preview file and code templates:
 
-    ![](/images/text_area/no_label.png)
+    ![]({{ site.baseurl }}/images/text_area/no_label.png)
 
     If new file template is added and the Text Area is empty, the label is required.
 
@@ -40,7 +40,7 @@ Do **not** use Text Area in the following cases:
 
 * Do **not** use Group separator instead of Text Area label. The horizontal line is redundant here:
 
-    ![](/images/text_area/do_not_label.png)
+    ![]({{ site.baseurl }}/images/text_area/do_not_label.png)
     *Use Context help to explain field behavior.*
 
 
@@ -53,7 +53,7 @@ Follow the rules for the Input Field: [placeholder](/controls/input_field#placeh
 
 * Recommended sizes:
 
-    ![](/images/text_area/size_1.png)
+    ![]({{ site.baseurl }}/images/text_area/size_1.png)
 
     This is the default sizes, they can be changed if the dialog is resized.
 
@@ -63,17 +63,17 @@ Follow the rules for the Input Field: [placeholder](/controls/input_field#placeh
 
 * Size Text Area to display an integral number of lines of text:
 
-    ![](/images/text_area/size_2.png)
+    ![]({{ site.baseurl }}/images/text_area/size_2.png)
 
 * Do **not** resize Text Area on input. It will change the position of other controls and they can become hard-discoverable.
 
 * Avoid horizontal scroll bars on multi-line text boxes. Use vertical scrolling and line wrapping instead:
 
-    ![](/images/text_area/size_3.png)
+    ![]({{ site.baseurl }}/images/text_area/size_3.png)
 
     Horizontal scroll bar can be added if Text Area is for the code snippets or for the formatted input:
 
-    ![](/images/text_area/horizontal_scroll.png)
+    ![]({{ site.baseurl }}/images/text_area/horizontal_scroll.png)
 
     Use context menu to enable soft-wrapping.
 
@@ -84,7 +84,7 @@ Follow the rules for the Input Field: [placeholder](/controls/input_field#placeh
 
 If the previous user input should be preserved, use <kbd>⌥↑</kbd> and <kbd>⌥↓</kbd> on Mac OS and <kbd>Alt+Up/Down</kbd> on Windows and Linux to navigate through the history. If the field gets focus and history is available, add a note on the bottom of the input field:
 
-![](/images/text_area/history.png)
+![]({{ site.baseurl }}/images/text_area/history.png)
 
 Preserve the currently entered value, so that user can return back to it while navigating through the history.
 
@@ -95,7 +95,7 @@ If the space is limited, the hint can be removed when user enters new line. Most
 
 If user types in an invalid value, highlight text area with red and show error message in a tooltip.
 
-![](/images/text_area/error.png)
+![]({{ site.baseurl }}/images/text_area/error.png)
 
 Do not change the values automatically. Do not allow to save changes, while incorrect value is entered. For more details see [Validation errors](/principles/validation_errors/).
 
@@ -109,11 +109,11 @@ Do **not** highlight Text Area on selection, only if validation error occurs.
 
 Recommended sizes for all themes are:
 
-![](/images/text_area/sizes.png)
+![]({{ site.baseurl }}/images/text_area/sizes.png)
 
 ### History
 
-![](/images/text_area/style_history.png) 
+![]({{ site.baseurl }}/images/text_area/style_history.png) 
 Background: dialog default theme color.  
 Font: Windows, GTK+, Intellij — default; Mac OS 2px smaller than default.  
 Font color: <span style="color:#787878">#787878</span>.

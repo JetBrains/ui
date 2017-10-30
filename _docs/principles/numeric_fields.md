@@ -19,30 +19,30 @@ The general guidelines for numeric fields:
 * In numeric input fields, combo boxes and sliders provide ability to use up and down arrow keys to increase value by constant step.
 
 * Ensure that the length of control accommodates the length of the expected input: 
-![]( /images/numeric_fields/control_length.png)
+![]( {{ site.baseurl }}/images/numeric_fields/control_length.png)
 
 
 * Select the most convenient unit:
-![]( /images/numeric_fields/unit.png)
+![]( {{ site.baseurl }}/images/numeric_fields/unit.png)
 
 * Do not abbreviate units if there is enough space. An exception can be a slider.
-![]( /images/numeric_fields/unit_text.png)
+![]( {{ site.baseurl }}/images/numeric_fields/unit_text.png)
 
 * If one unit is used for all items, label the units after the field.
-![]( /images/numeric_fields/one_unit.png)
+![]( {{ site.baseurl }}/images/numeric_fields/one_unit.png)
 If several units are used, label the units inside the field.
-![]( /images/numeric_fields/multi_unit.png)
+![]( {{ site.baseurl }}/images/numeric_fields/multi_unit.png)
 
 * Do not assign special meanings to specific numeric or string values. Use meta-options instead.
-![]( /images/numeric_fields/meta_option.png)
+![]( {{ site.baseurl }}/images/numeric_fields/meta_option.png)
 *On the second example to set “Same as language level” empty string should be entered*
 
 * If invalid value is entered, highlight field with red and show error message and supported range in tooltip.  
-![]( /images/numeric_fields/error.png)
+![]( {{ site.baseurl }}/images/numeric_fields/error.png)
 Do not change values automatically. Do not allow to close dialog, while incorrect value is entered. For more details see [Validation errors]( /controls/validation_errors/).
 
 * Do not use spinner.   
-![]( /images/numeric_fields/spinner.png)
+![]( {{ site.baseurl }}/images/numeric_fields/spinner.png)
 Spinner is good if it's needed to change parameter to 1-3 points using mouse. As IntelliJ IDEA users usually use keyboard, spinner button just clutters the screen.
 
 

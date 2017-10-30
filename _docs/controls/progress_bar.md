@@ -15,7 +15,7 @@ A progress bar informs users about the progress of a lengthy operation.
 
     If the operation lasts less than 4 seconds , show progress bar, [loader](/controls/loader/) or [progress text](/controls/progress_text/) depending on the available space.
 
-    ![](/images/progress_bar/time_line.png)
+    ![]({{ site.baseurl }}/images/progress_bar/time_line.png)
 
 3. Show determinate progress bar, if the operation has a defined duration and it is useful to know how much time left to wait. For example user is likely to work with other tasks during the waiting period or is looking forward to what will appear after completion.
 
@@ -23,7 +23,7 @@ A progress bar informs users about the progress of a lengthy operation.
 
 5. Show progress in the Status bar for operations that run in the background, e.g. Updating indices:
 
-    ![](/images/progress_bar/modeless_progress.png)
+    ![]({{ site.baseurl }}/images/progress_bar/modeless_progress.png)
 
 
 
@@ -31,17 +31,17 @@ A progress bar informs users about the progress of a lengthy operation.
 
 1. Use **determinate** progress bar, if the process duration is known:
 
-    ![](/images/progress_bar/determinate_example.png)
+    ![]({{ site.baseurl }}/images/progress_bar/determinate_example.png)
 
     Otherwise use **indeterminate** progress bar:
 
-    ![](/images/progress_bar/indetermintae_example.png)
+    ![]({{ site.baseurl }}/images/progress_bar/indetermintae_example.png)
 
     If an indeterminate process reaches a point where its duration can be determined, switch to a determinate progress bar:
 
-    ![](/images/progress_bar/progress_bar_indeterminate.png)
+    ![]({{ site.baseurl }}/images/progress_bar/progress_bar_indeterminate.png)
 
-    ![](/images/progress_bar/progress_bar_determinate.png)
+    ![]({{ site.baseurl }}/images/progress_bar/progress_bar_determinate.png)
 
 
 2. Hide the progress bar as soon as process completes.
@@ -56,11 +56,11 @@ A progress bar informs users about the progress of a lengthy operation.
 
     Place label over the progress bar:
 
-    ![](/images/progress_bar/progress_bar_label_above.png)
+    ![]({{ site.baseurl }}/images/progress_bar/progress_bar_label_above.png)
 
     If the vertical space is limited, the progress label with a colon can be placed on the left:
 
-    ![](/images/progress_bar/progress_bar_label_left.png)
+    ![]({{ site.baseurl }}/images/progress_bar/progress_bar_label_left.png)
 
     **Wording**
 
@@ -68,7 +68,7 @@ A progress bar informs users about the progress of a lengthy operation.
 
     If there are several processes in the group, then provide a **bold** header and label each progress. Header is a verb in progressive form, progress labels are nouns.
 
-    ![](/images/progress_bar/progress_bar_wording_example.png)
+    ![]({{ site.baseurl }}/images/progress_bar/progress_bar_wording_example.png)
 
 
     Do **not** use ellipsis at the end of the progress bar label.
@@ -77,11 +77,11 @@ A progress bar informs users about the progress of a lengthy operation.
 
     Under the progress bar provide the progress details in one line:
 
-    ![](/images/progress_bar/progress_bar_comment.png)
+    ![]({{ site.baseurl }}/images/progress_bar/progress_bar_comment.png)
 
     The length of the comment is limited by the length of the progress bar:
 
-    ![](/images/progress_bar/progress_bar_comment_long.png)
+    ![]({{ site.baseurl }}/images/progress_bar/progress_bar_comment_long.png)
 
     The process comment can be **unit of time** (preferably): time left or **unit of work**: current step, currently processed file, number of processed files/amount of information, percentage completed, etc.
 
@@ -98,17 +98,17 @@ A progress bar informs users about the progress of a lengthy operation.
     * The remaining time is unpredictable.
     * Intermediate steps will help the user to understand why the process lasts so long or hangs.
 
-        ![](/images/progress_bar/progress_bar_determinate.png)
+        ![]({{ site.baseurl }}/images/progress_bar/progress_bar_determinate.png)
 
     * If space is limited show percentage completed:
 
-        ![](/images/progress_bar/horizontaly.png)
+        ![]({{ site.baseurl }}/images/progress_bar/horizontaly.png)
 
     **When not to provide comment**
 
     Do not provide comments that are meaningless for the user, for example:
 
-    ![](/images/progress_bar/progress_bar_text_incorrect.png)
+    ![]({{ site.baseurl }}/images/progress_bar/progress_bar_text_incorrect.png)
 
 
     **Wording**
@@ -119,7 +119,7 @@ A progress bar informs users about the progress of a lengthy operation.
 
     If the process consists of the substeps that can fail and do not terminate the process, then use green and red colors to show the intermediate status. For example, show the status of the running tests:
 
-    ![](/images/progress_bar/progress_color.png)
+    ![]({{ site.baseurl }}/images/progress_bar/progress_color.png)
 
     Do **not** color progress bar to show the final result of a task, use [notifications](/principles/notifications/). If the process finishes hide the progress bar. In case of success show notification for the user-initiated tasks, in case of failure — for all tasks.
 
@@ -127,7 +127,7 @@ A progress bar informs users about the progress of a lengthy operation.
 
     If progress appears in the dialog box, then use progress name as dialog header. Progress bar comment appears above the progress bar:
 
-    ![](/images/progress_bar/progress_bar_label_dialog.png)
+    ![]({{ site.baseurl }}/images/progress_bar/progress_bar_label_dialog.png)
 
     Show progress in the dialog box if user should wait until the process is completed to continue working with the app.
 
@@ -135,11 +135,11 @@ A progress bar informs users about the progress of a lengthy operation.
 
     Show the progress bar modeless, if the process can run in background. For example, background processes in the Status bar (link):
 
-    ![](/images/progress_bar/background_process.png)
+    ![]({{ site.baseurl }}/images/progress_bar/background_process.png)
 
     Modeless progress bar in the VCS Log tool window on refresh:
 
-    ![](/images/progress_bar/vcs_log.png)
+    ![]({{ site.baseurl }}/images/progress_bar/vcs_log.png)
 
 9. **Process control**
 
@@ -147,28 +147,28 @@ A progress bar informs users about the progress of a lengthy operation.
 
     Use the Stop icon, if there are several processes at the same time in one dialog or there is not enough space for the button (e.g. Status bar):
 
-    ![](/images/progress_bar/tasks_dialog.png)
+    ![]({{ site.baseurl }}/images/progress_bar/tasks_dialog.png)
 
     Always place the Stop icon on the right next to the progress bar. On hover over the Stop icon make it darker and show “Stop” or “Cancel” comment under the progress bar:
 
-    ![](/images/progress_bar/hover_stop_icon.png)
+    ![]({{ site.baseurl }}/images/progress_bar/hover_stop_icon.png)
 
     If the process takes a long time and can prevent user from performing the tasks, then provide an option to pause a process using a Pause button or Pause icon:
 
-    ![](/images/progress_bar/pause.png)
+    ![]({{ site.baseurl }}/images/progress_bar/pause.png)
 
     It is **not** recommended to provide an option to pause the process. It is preferable, that the process runs in the background and does not interfere with the user.
 
     If the user has paused the process, then change the Pause button label to Resume or Pause icon to Resume icon, add “Paused” comment:
 
-    ![](/images/progress_bar/resume.png)
+    ![]({{ site.baseurl }}/images/progress_bar/resume.png)
 
 ## Insets, colors and fonts
 
 The progress form and sizes are the same in all themes.
 
-![](/images/progress_bar/progress_bar_colors.png)
+![]({{ site.baseurl }}/images/progress_bar/progress_bar_colors.png)
 
 Progress bar label font size is default, progress step and substep font size is 2 pt smaller for Mac OS themes and default for Windows and Linux themes. Progress label and step color are default, substep color — <span style="color:#787878">#787878</span>.
 
-![](/images/progress_bar/progress_bar_size.png)
+![]({{ site.baseurl }}/images/progress_bar/progress_bar_size.png)
