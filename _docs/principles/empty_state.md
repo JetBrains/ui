@@ -13,7 +13,7 @@ Empty UI areas described here are:
 
 ## Tool windows, lists, trees and tables
 Instructions text for these UI areas has three parts:  
-![]({{ site.baseurl }}/images/empty_state/...) 
+![]({{site.baseurl}}/images/empty_state/...) 
 
 How to use these parts:
 
@@ -22,26 +22,26 @@ How to use these parts:
 * General pattern is “_No [entity] added._”
   * The verb: in the end of the reason text, write the action that is needed to fill the UI area. It shows that the UI area can be filled by the user and not by an external system. If _added, created, configured_ or other such verbs are synonyms in a particular case, prefer the verb _added_ for consistency.
   * End the reason text with a dot.
-![]({{ site.baseurl }}/images/empty_state/...)
+![]({{site.baseurl}}/images/empty_state/...)
 *Avoid ”Nothing to show”, not informative.*
 
 
 * The entity can be elaborated:
-![]({{ site.baseurl }}/images/empty_state/...) 
+![]({{site.baseurl}}/images/empty_state/...) 
 *“Tasks to run before launch” better explains what the area is for than just tasks.* 
 
 
 * The entity should be clear to users:  
-![]({{ site.baseurl }}/images/empty_state/...) 
+![]({{site.baseurl}}/images/empty_state/...) 
 *The word mapping introduces a new entity while there are already two in the table header — path and SQL dialect. In the instructions, it is better to use already existing entities to connect them to what users see on the screen.*
-![]({{ site.baseurl }}/images/empty_state/...)
+![]({{site.baseurl}}/images/empty_state/...)
 *The word individual is used in contrast with the project SQL dialect above the table. The verb specified is used instead of added because, in the table, SQL dialects are not added but selected from a drop-down list in the SQL Dialect column.*
 
 
 ### 2. Actions to make the area not empty
 * Required part. Makes easier to understand what action to start with, compared to searching for a necessary icon on a toolbar. Educates about a shortcut.
 * Use one or two actions. Three and more would make it harder to choose what to start from. 
-![]({{ site.baseurl }}/images/empty_state/...) 
+![]({{site.baseurl}}/images/empty_state/...) 
 *Instructions with two actions.*
 
 * Pattern: “[Action link] [(Shortcut)]”. Do not add a dot after an action. If two actions, put a comma between them.
@@ -55,7 +55,7 @@ How to use these parts:
 * If an action opens a popup, open it at the same position where it would be opened with a corresponding toolbar button. This would explain what toolbar icon opens the popup.
 
 * If an action that fills an empty area cannot be tied to a link, explain what to do. Treat the explanation text as a usual text, both for wording and syntax:
-![]({{ site.baseurl }}/images/empty_state/...) 
+![]({{site.baseurl}}/images/empty_state/...) 
 *TODO items are actually detected not by the word “TODO” in a comment but by the regexp pattern specified in the settings. The instruction text should be formatted as “...write [first pattern from settings] in a source code comment” to account for a rare case when the default pattern has been redefined.*
 
 
@@ -63,12 +63,12 @@ How to use these parts:
 * Optional part. 
 
 * **For tool windows**, provide if there is a help topic that explains the concept and the whole set of functionality behind it, like a “Getting started” topic. Show as a link to the topic with the question mark icon in the beginning:
-![]({{ site.baseurl }}/images/empty_state/...) 
+![]({{site.baseurl}}/images/empty_state/...) 
 
 * **For tables, trees and lists**, provide according to [these rules](/principles/context_help). Show as a help tooltip or as an inline text. Compared to complex tool windows, smaller UI areas rarely require in-depth explanation. A short help text should be enough and it does not require switching contexts.
-![]({{ site.baseurl }}/images/empty_state/...) 
+![]({{site.baseurl}}/images/empty_state/...) 
 *Do not use a help topic link in a table and UI areas other than tool windows.* 
-![]({{ site.baseurl }}/images/empty_state/...) 
+![]({{site.baseurl}}/images/empty_state/...) 
 *Place an inline help text under the table. See the Context help topic for where to show help for other UI elements and layouts.*
 
 
@@ -85,9 +85,9 @@ How to use these parts:
  
 * The master area is usually a list or a tree, and if empty, its instructions text should follow the guidelines for lists and trees.
 
-![]({{ site.baseurl }}/images/empty_state/...) 
+![]({{site.baseurl}}/images/empty_state/...) 
 
-![]({{ site.baseurl }}/images/empty_state/...) 
+![]({{site.baseurl}}/images/empty_state/...) 
 *The link “Add Java application configuration” is a shortcut to creating a new configuration instead of clicking the + button in the toolbar. See more on actions below.*
 
 
@@ -101,16 +101,16 @@ How to use these parts:
 * The link should be the non-underlined kind (see example of such link in the Settings dialog, the topmost node “Appearance & Behavior”).
 
 * The text is center-aligned. If possible, the center for the help topic link should be calculated with an 11 px inset on the left. This helps visually aligning the help link with the lines above it.
-![]({{ site.baseurl }}/images/empty_state/...) 
+![]({{site.baseurl}}/images/empty_state/...) 
 
 * Fields and vertical spaces:
-![]({{ site.baseurl }}/images/empty_state/...)
+![]({{site.baseurl}}/images/empty_state/...)
 
 * The text should wrap when a UI area’s width changes:
-![]({{ site.baseurl }}/images/empty_state/...)
-![]({{ site.baseurl }}/images/empty_state/...)
+![]({{site.baseurl}}/images/empty_state/...)
+![]({{site.baseurl}}/images/empty_state/...)
 
 In Darcula:
-![]({{ site.baseurl }}/images/empty_state/...)
+![]({{site.baseurl}}/images/empty_state/...)
 
 
