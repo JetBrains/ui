@@ -5,11 +5,11 @@ order: 1
 ---
 
 Select the required control for numeric field depending on type of the data. Use: 
-* [radio button]( /controls/radio_button/) if number of choices is less than 3;
-* [dropdown]( /controls/dropdown/) if the possible number of choices is between 3 and 15 and choices are constrained;
-* [combo box]( /controls/combobox/) if also unconstrained input is needed;
-* [input field]( /controls/input_field/) if number of valid values is greater than 15 and specific value is required;
-* [slider]( /controls/slider/) if number of choices is more than 4. Also if specific value does not matter (e.g. delay in milliseconds) or it's possible to provide feedback on the effect of setting changes.
+* [radio button]({{site.baseurl}}/controls/radio_button/) if number of choices is less than 3;
+* [dropdown]({{site.baseurl}}/controls/dropdown/) if the possible number of choices is between 3 and 15 and choices are constrained;
+* [combo box]({{site.baseurl}}/controls/combobox/) if also unconstrained input is needed;
+* [input field]({{site.baseurl}}/controls/input_field/) if number of valid values is greater than 15 and specific value is required;
+* [slider]({{site.baseurl}}/controls/slider/) if number of choices is more than 4. Also if specific value does not matter (e.g. delay in milliseconds) or it's possible to provide feedback on the effect of setting changes.
 
 For more details see the controls pages linked above.
 
@@ -39,7 +39,7 @@ If several units are used, label the units inside the field.
 
 * If invalid value is entered, highlight field with red and show error message and supported range in tooltip.  
 ![]({{site.baseurl}}/images/numeric_fields/error.png)
-Do not change values automatically. Do not allow to close dialog, while incorrect value is entered. For more details see [Validation errors]( /controls/validation_errors/).
+Do not change values automatically. Do not allow to close dialog, while incorrect value is entered. For more details see [Validation errors]({{site.baseurl}}/controls/validation_errors/).
 
 * Do not use spinner.   
 ![]({{site.baseurl}}/images/numeric_fields/spinner.png)

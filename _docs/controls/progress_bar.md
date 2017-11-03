@@ -7,13 +7,13 @@ A progress bar informs users about the progress of a lengthy operation.
 
 ## When to use
 
-1. Use progress bar if the space is not constrained. If space is limited, such as in a text field or near a control, use a [loader](/controls/loader/) or [progress text](/controls/progress_text/).
+1. Use progress bar if the space is not constrained. If space is limited, such as in a text field or near a control, use a [loader]({{site.baseurl}}/controls/loader/) or [progress text]({{site.baseurl}}/controls/progress_text/).
 
 2. If the operation lasts more than **1 seconds** or has unpredictable duration, it is preferably to show progress bar as it provides more information about the process than other progress indicators.
 
     If the operation lasts less than a second, do not show any progress indicator. Displaying any progress indicator for a short duration would be distracting.
 
-    If the operation lasts less than 4 seconds , show progress bar, [loader](/controls/loader/) or [progress text](/controls/progress_text/) depending on the available space.
+    If the operation lasts less than 4 seconds , show progress bar, [loader]({{site.baseurl}}/controls/loader/) or [progress text]({{site.baseurl}}/controls/progress_text/) depending on the available space.
 
     ![]({{site.baseurl}}/images/progress_bar/time_line.png)
 
@@ -121,7 +121,7 @@ A progress bar informs users about the progress of a lengthy operation.
 
     ![]({{site.baseurl}}/images/progress_bar/progress_color.png)
 
-    Do **not** color progress bar to show the final result of a task, use [notifications](/principles/notifications/). If the process finishes hide the progress bar. In case of success show notification for the user-initiated tasks, in case of failure — for all tasks.
+    Do **not** color progress bar to show the final result of a task, use [notifications]({{site.baseurl}}/principles/notifications/). If the process finishes hide the progress bar. In case of success show notification for the user-initiated tasks, in case of failure — for all tasks.
 
 7. **Modal progress bar**
 

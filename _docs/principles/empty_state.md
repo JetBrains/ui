@@ -65,7 +65,7 @@ How to use these parts:
 * **For tool windows**, provide if there is a help topic that explains the concept and the whole set of functionality behind it, like a “Getting started” topic. Show as a link to the topic with the question mark icon in the beginning:
 ![]({{site.baseurl}}/images/empty_state/...) 
 
-* **For tables, trees and lists**, provide according to [these rules](/principles/context_help). Show as a help tooltip or as an inline text. Compared to complex tool windows, smaller UI areas rarely require in-depth explanation. A short help text should be enough and it does not require switching contexts.
+* **For tables, trees and lists**, provide according to [these rules]({{site.baseurl}}/principles/context_help). Show as a help tooltip or as an inline text. Compared to complex tool windows, smaller UI areas rarely require in-depth explanation. A short help text should be enough and it does not require switching contexts.
 ![]({{site.baseurl}}/images/empty_state/...) 
 *Do not use a help topic link in a table and UI areas other than tool windows.* 
 ![]({{site.baseurl}}/images/empty_state/...) 

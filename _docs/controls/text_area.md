@@ -13,9 +13,9 @@ Use Text Area if input is unconstrained and long, or if newline character is a v
 
 Do **not** use Text Area in the following cases:
 
-* If input consists of several words, use [Input Field](/controls/input_field).
-* If there is not enough place for the Text Area, use [Expandable input field](/controls/input_field#input-field-types). Or if input is usually short, but can be long or multi-line rarely.
-* If values are added one by one, use [Table](/controls/table/).
+* If input consists of several words, use [Input Field]({{site.baseurl}}/controls/input_field).
+* If there is not enough place for the Text Area, use [Expandable input field]({{site.baseurl}}/controls/input_field#input-field-types). Or if input is usually short, but can be long or multi-line rarely.
+* If values are added one by one, use [Table]({{site.baseurl}}/controls/table/).
 * If text is read-only, use Textual Output instead.
 
 [comment]: <> (TODO: add link to Textual Output)
@@ -26,7 +26,7 @@ Do **not** use Text Area in the following cases:
 
 ### Label
 
-* Follow the rules for the [Input Field](/controls/input_field/). If label is on the left, align it with the first input line:
+* Follow the rules for the [Input Field]({{site.baseurl}}/controls/input_field/). If label is on the left, align it with the first input line:
 
     ![]({{site.baseurl}}/images/text_area/label.png)
 
@@ -46,7 +46,7 @@ Do **not** use Text Area in the following cases:
 
 ### Placeholder, prefilled values and field focus
 
-Follow the rules for the Input Field: [placeholder](/controls/input_field#placeholder), [prefilled value](/controls/input_field#prefilled-value), [field focus](/controls/input_field#field-focus).
+Follow the rules for the Input Field: [placeholder]({{site.baseurl}}/controls/input_field#placeholder), [prefilled value]({{site.baseurl}}/controls/input_field#prefilled-value), [field focus]({{site.baseurl}}/controls/input_field#field-focus).
 
 
 ### Size and placement
@@ -77,7 +77,7 @@ Follow the rules for the Input Field: [placeholder](/controls/input_field#placeh
 
     Use context menu to enable soft-wrapping.
 
-* **Placement**. Follow the rules for the [Input Field](/controls/input_field).
+* **Placement**. Follow the rules for the [Input Field]({{site.baseurl}}/controls/input_field).
 
 
 ## History
@@ -97,11 +97,11 @@ If user types in an invalid value, highlight text area with red and show error m
 
 ![]({{site.baseurl}}/images/text_area/error.png)
 
-Do not change the values automatically. Do not allow to save changes, while incorrect value is entered. For more details see [Validation errors](/principles/validation_errors/).
+Do not change the values automatically. Do not allow to save changes, while incorrect value is entered. For more details see [Validation errors]({{site.baseurl}}/principles/validation_errors/).
 
 
 ## Style
-Use the same colors, fonts and spaces as for the [Input Field](/controls/input_field/).
+Use the same colors, fonts and spaces as for the [Input Field]({{site.baseurl}}/controls/input_field/).
 
 Do **not** highlight Text Area on selection, only if validation error occurs.
 

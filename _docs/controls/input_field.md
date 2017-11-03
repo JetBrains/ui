@@ -10,18 +10,18 @@ An input field is a rectangular area that allows users to enter or edit one text
 
 ## When to use
 
-Use an input field if it’s not possible to enumerate less than 15 most likely or valid values. Otherwise use a [Combo Box](/controls/combo_box/) or [Drop-down](/controls/drop_down).
+Use an input field if it’s not possible to enumerate less than 15 most likely or valid values. Otherwise use a [Combo Box]({{site.baseurl}}/controls/combo_box/) or [Drop-down]({{site.baseurl}}/controls/drop_down).
 
 If the input has a specific format, select one of the following controls:
 
-* If the previous user input should be preserved, use a [Combo Box](/controls/combo_box/).
+* If the previous user input should be preserved, use a [Combo Box]({{site.baseurl}}/controls/combo_box/).
 
-* Use [Text Area](/controls/text_area/) if input is a long phrase (e.g. commit message) or multi-line (e.g. code snippet). If place is constrained, use [Expandable input field](#input-field-types).
+* Use [Text Area]({{site.baseurl}}/controls/text_area/) if input is a long phrase (e.g. commit message) or multi-line (e.g. code snippet). If place is constrained, use [Expandable input field](#input-field-types).
 
-* [Slider](/controls/slider) if a precise value does not matter or if it’s possible to provide feedback on the effect of setting changes. If place is constrained, use an  input field.
-* [Search Field](/controls/search/).
-* [Calendar](/controls/calendar/).
-* [Color Box](/controls/color_box/).
+* [Slider]({{site.baseurl}}/controls/slider) if a precise value does not matter or if it’s possible to provide feedback on the effect of setting changes. If place is constrained, use an  input field.
+* [Search Field]({{site.baseurl}}/controls/search/).
+* [Calendar]({{site.baseurl}}/controls/calendar/).
+* [Color Box]({{site.baseurl}}/controls/color_box/).
 
 
 ## How to use
@@ -31,7 +31,7 @@ If the input has a specific format, select one of the following controls:
 The label displays the type of information the field requires. Follow the rules:
 
 * A label accompanies each input field.
-* Labels should be [short and descriptive](/principles/concise_text/) so the user can quickly scan the form.
+* Labels should be [short and descriptive]({{site.baseurl}}/principles/concise_text/) so the user can quickly scan the form.
 * Write the label either as a noun and end the label with a colon:  
     ![]({{site.baseurl}}/images/input_field/label_noun.png) 
     Or as a phrase with no ending punctuation:
@@ -70,7 +70,7 @@ Placeholder is a grey text placed inside an input field. Follow the rules:
 
 The placeholder should be used in the following cases: 
 
-1. Use placeholder to indicate that input field is [optional](/principles/required_fields/):  
+1. Use placeholder to indicate that input field is [optional]({{site.baseurl}}/principles/required_fields/):  
 
     ![]({{site.baseurl}}/images/input_field/placeholder_optional.png)
 
@@ -83,7 +83,7 @@ The placeholder should be used in the following cases:
     ![]({{site.baseurl}}/images/input_field/placeholder_reset.png)
 
 
-3. Do **not** use placeholder to show examples. User can decide that the field is already filled. Provide examples or explanation under the input field (see [Context help]( /principles/context_help/)):
+3. Do **not** use placeholder to show examples. User can decide that the field is already filled. Provide examples or explanation under the input field (see [Context help]({{site.baseurl}}/principles/context_help/)):
 
     ![]({{site.baseurl}}/images/input_field/placeholder_examples.png)
 
@@ -124,7 +124,7 @@ Do **not** prefill with “Unnamed”. It takes time to read it and does not hel
 
     ![]({{site.baseurl}}/images/input_field/fields_line.png)
 
-    For alignment with other element see [Elements alignment section]( /principles/elements_alignment/).
+    For alignment with other element see [Elements alignment section]({{site.baseurl}}/principles/elements_alignment/).
 
 * If there are several input fields in a column, it’s recommended that they are left aligned and have the same width:
 
@@ -155,7 +155,7 @@ If users are more likely to reenter the entire value, not edit the existing one,
     ![]({{site.baseurl}}/images/input_field/expandable_2.png)
 
 
-* If input data is numeric, follow [Numeric fields]( /principles/numeric_fields/) guidelines.
+* If input data is numeric, follow [Numeric fields]({{site.baseurl}}/principles/numeric_fields/) guidelines.
 * If input data is secured, replace it with dots:
 
     ![]({{site.baseurl}}/images/input_field/password.png)
@@ -170,7 +170,7 @@ If users are more likely to reenter the entire value, not edit the existing one,
 
     Show completion popup when user starts typing or presses <kbd>Ctrl+Space</kbd>.
 
-* Use [Control Buttons]( /controls/button/) to help user enter data. For example, browse disk button: ![]({{site.baseurl}}/images/input_field/browseButton.png)  
+* Use [Control Buttons]({{site.baseurl}}/controls/button/) to help user enter data. For example, browse disk button: ![]({{site.baseurl}}/images/input_field/browseButton.png)  
 
 
 
@@ -179,7 +179,7 @@ If user types in an invalid value, highlight field with red and show error messa
 
 ![]({{site.baseurl}}/images/input_field/error.png)
 
-Do not change the values automatically. Do not allow to save changes, while incorrect value is entered. For more details see [Validation errors]( /principles/validation_errors/).
+Do not change the values automatically. Do not allow to save changes, while incorrect value is entered. For more details see [Validation errors]({{site.baseurl}}/principles/validation_errors/).
 
 
 
