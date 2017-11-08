@@ -125,7 +125,7 @@ The “Correct/Incorrect” can be placed above the image or on the left:
 If there is one image and it’s not big, cross out the image with 1px line instead of “Incorrect” header:
 ![]({{site.baseurl}}/images/how_to_write_guidelines/incorrect.png)
 
-Correct: <span style="color:#18B04B">#18B04B</span>, incorrect and line: <span style="color:#FF001B">#FF001B</span>.
+Correct: <span style="color:#18B04B">#18B04B</span>, incorrect and line: <span style="color:#FF001B">#FF001B</span>. Font size 16px, weight -- medium.
 
 ![]({{site.baseurl}}/images/how_to_write_guidelines/correct_incorrect_sizes.png)
 
