@@ -10,7 +10,7 @@ To check out and run a local copy of the site follow the steps described below.
  * [Mac OS](http://jekyll.tips/jekyll-casts/install-jekyll-on-os-x/)
  * [Windows](http://jekyll.tips/jekyll-casts/install-jekyll-on-windows/)
  * [Linux](http://jekyll.tips/jekyll-casts/install-jekyll-on-linux/)
-2. Install the dependencies with Bundler:  
+2. Install the dependencies with Bundler inside the project directory:  
 
     ```
     bundle install
@@ -45,7 +45,6 @@ To edit the guidelines open it in IDE. Guidelines pages are stored in _docs fold
 ---
 title: Combobox 
 category: Components  
-order: 1
 ---
 ``` 
 
