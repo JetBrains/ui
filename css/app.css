@@ -9850,6 +9850,7 @@ img + em {
     font-size: small;
     color: #999999;
     display: block;
+    line-height: 1.9em;
 }
 
 .article em. i {
