@@ -10,11 +10,11 @@ To check out and run a local copy of the site follow the steps described below.
  * [Mac OS](http://jekyll.tips/jekyll-casts/install-jekyll-on-os-x/)
  * [Windows](http://jekyll.tips/jekyll-casts/install-jekyll-on-windows/)
  * [Linux](http://jekyll.tips/jekyll-casts/install-jekyll-on-linux/)
-2. Install the dependencies with Bundler inside the project directory:  
+2. Install bundler:
 
     ```
-    bundle install
-    ```  
+    gem install bundler
+    ```
 3. Install [IntelliJ IDEA](https://www.jetbrains.com/idea/download/#section=mac) or [WebStorm](https://www.jetbrains.com/webstorm/download/#section=mac)
 
 
@@ -22,11 +22,17 @@ To check out and run a local copy of the site follow the steps described below.
 ### Checking Out Site Repository
 To check out the source code run the following command:
 ```
-git clone git@github.com:JetBrains/ui.git
+git clone https://github.com/JetBrains/ui.git
 ```
+and install the dependencies with Bundler inside the project directory:  
+
+```
+cd ui/
+bundle install
+```  
 
 ### Building and Previewing
-To start the web-server run:
+To start the web-server go to the project directory and run:
 ```
 cd ui/
 bundle exec jekyll serve

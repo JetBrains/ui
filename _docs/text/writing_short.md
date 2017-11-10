@@ -10,13 +10,14 @@ Texts in user interfaces should be short and clear. Short texts save reading tim
 * Use simple sentences: one idea per sentence.
 * Avoid passive voice.
 
+
 This way the same meaning can be expressed with less words. Compare:
-  
-&nbsp;&nbsp;&nbsp;_Those resources that are available locally_ → _Local resources_ 
 
-&nbsp;&nbsp;&nbsp;_Maven has to use_ → _Maven uses_
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;_Those resources that are available locally_ <span style="font-size:large;">→</span> _Local resources_ 
 
-&nbsp;&nbsp;&nbsp;_The use of a secure connection is required_ → _Use secure connection_
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;_Maven has to use_ <span style="font-size:large;">→</span> _Maven uses_
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;_The use of a secure connection is required_ <span style="font-size:large;">→</span> _Use secure connection_
 
 
 ## Remove or elaborate generic words 
@@ -34,14 +35,14 @@ This way the same meaning can be expressed with less words. Compare:
 ## Remove obvious objects and actions 
 * Remove verbs that explain the function of a UI control:
 ![]({{site.baseurl}}/images/writing_short/obvious-specify.png)
-*Text boxes are made for input — an explicit instruction "specify" duplicates the meaning expressed by the text field. Additional information can be given under the field — see [Context help]({{site.baseurl}}/principles/context_help).*  
+*Text boxes are made for input — an explicit instruction "specify" duplicates the meaning expressed by the text field. Additional information can be given under the field — see [Context help]({{site.baseurl}}/principles/context_help).* 
 
-   ![]({{site.baseurl}}/images/writing_short/obvious-prefer.png) *A selected radio button means its option is "preferred".* | ![]({{site.baseurl}}/images/writing_short/obvious-allow.png) *A checked checkbox means its feature is "allowed".*  
+![]({{site.baseurl}}/images/writing_short/obvious-prefer.png) *A selected radio button means its option is "preferred".* | ![]({{site.baseurl}}/images/writing_short/obvious-allow.png) *A checked checkbox means its feature is "allowed".*  
 
 
-* Remove words with meaning that is already expressed in the same label:  
+* Remove words with meaning that is already expressed in the same label:
 
-  ![]({{site.baseurl}}/images/writing_short/obvious-contents.png) *The clipboard’s purpose is to keep information so the infinitive "to keep" is implying the obvious and can be removed.*|![]({{site.baseurl}}/images/writing_short/obvious-functionality.png) *The word “functionality” is already implied by "Drag’n’Drop" and can be removed.*  
+![]({{site.baseurl}}/images/writing_short/obvious-contents.png) *The clipboard’s purpose is to keep information so the infinitive "to keep" is implying the obvious and can be removed.*|![]({{site.baseurl}}/images/writing_short/obvious-functionality.png) *The word “functionality” is already implied by "Drag’n’Drop" and can be removed.*  
 
 
 ## Do not address the user
@@ -61,17 +62,17 @@ A user interface is for a person who uses it. Addressing this person is unnecess
 * Remove duplicates in meaning:
 ![]({{site.baseurl}}/images/writing_short/help-improve-notification.png)
 
-Before | After |
---- | --- | ---
-Help improve IntelliJ IDEA by sending anonymous usage statistics to JetBrains s.r.o. | Help improve IntelliJ IDEA | *The purpose of the header is to attract attention. The shorter and clearer header does that better.*
-if you want to help make IntelliJ IDEA better | Allow sending anonymous usage statistics to JetBrains s.r.o. | *“Help make IntelliJ IDEA better” is already expressed in the message header. The body text now explains how the user can do that.*
-more... | Terms and conditions | *The link more... does not tell what is behind it — unclear for the user why to click it.*
+| Before | After | |
+| --- | --- | --- |
+| Help improve IntelliJ IDEA <span style="color:#cc4700;"> by&nbsp;sending anonymous usage statistics to JetBrains s.r.o. | Help improve IntelliJ IDEA </span> | <span style="color:#999999; font-size: small;"> The purpose of the header is to attract attention. The&nbsp;shorter and clearer header does that better. </span> |
+| <span style="color:#cc4700;"> if you want to help make IntelliJ IDEA better </span> | Allow sending anonymous usage statistics to JetBrains s.r.o. | <span style="color:#999999; font-size: small;"> “Help make IntelliJ IDEA better” is already expressed in the message header. The body text now explains how the user can do that. </span> |
+| <span style="color:#cc4700;"> more... </span> | Terms and conditions | <span style="color:#999999; font-size: small;"> The link "more..." does not tell what is behind it — unclear for the user why to click it. </span> |
 
-Removed |
---- | ---
-click I agree | *The verb "click" is obvious from context: you cannot do much with a link other than click.*
-click... I don’t agree otherwise | *The link "I don’t agree" duplicates the notification “Close” button which appears on hover.*
-![]({{site.baseurl}}/images/writing_short/notificationInfo.png) | *The icon is not needed because the message is purely informative, not an error or a warning. Texts are information by default, there is no need to specify that meaning explicitly.*
+| Removed | |
+| --- | --- |
+| <span style="color:#cc4700;"> click&nbsp;I&nbsp;agree&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> | <span style="color:#999999; font-size: small;"> The verb "click" is obvious from context: you cannot do much with a link other than click. </span> |
+| <span style="color:#cc4700;"> click...&nbsp;I&nbsp;don’t agree&nbsp;otherwise </span> | <span style="color:#999999; font-size: small;"> The link "I don’t agree" duplicates the notification “Close” button which appears on hover. </span> |
+| ![]({{site.baseurl}}/images/writing_short/notificationInfo.png) | <span style="color:#999999; font-size: small;"> The icon is not needed because the message is purely informative, not an error or a warning. Texts are information by default, there is no need to specify that meaning explicitly. </span> |
 
 
 ## Translate from tech to human
@@ -104,32 +105,32 @@ More examples:
 ### Examples
 ![]({{site.baseurl}}/images/writing_short/project-structure.png)
 
-Before | After |
---- | --- | ---
-Project name, Project SDK, Project language level | Name, SDK, Language level | *"Project" can be left only for the first field. All others will be understood as project settings because they appear in the same group of UI elements.*
-This path is used to store | This path stores | *Simple verb form*
-store all project compilation results | stores project compilation output |*“all” is extra because it is implied by default. “results” is another word for “output” — having different words for the same meaning complicates understanding.*
-A directory corresponding to each module is created under this path. This directory contains two subdirectories... | It has a separate directory for each module, with the Production and Test subdirectories. | *“is created” is not relevant to the meaning of this phrase. “two” is obvious from context: you see that there are two subdirectories because only two are named.*
+| Before | After | |
+| --- | --- | --- |
+|<span style="color:#cc4700;">Project</span> name, <span style="color:#cc4700;">Project</span> SDK, <span style="color:#cc4700;">Project</span> language level | Name, SDK, Language level | <span style="color:#999999; font-size: small;"> "Project" can be left only for the first field. All others will be understood as project settings because they appear in the same group of UI elements. </span> |
+| This path <span style="color:#cc4700;">is used</span> to store | This path stores | <span style="color:#999999; font-size: small;"> Simple verb form </span> |
+| store <span style="color:#cc4700;">all</span> project compilation <span style="color:#cc4700;">results</span> | stores project compilation output | <span style="color:#999999; font-size: small;"> “all” is extra because it is implied by default. “results” is another word for “output” — having different words for the same meaning complicates understanding. </span> |
+| A directory corresponding to each module <span style="color:#cc4700;">is created</span> under this path. This directory contains <span style="color:#cc4700;">two</span> subdirectories... | It has a separate directory for each module, with the Production and Test subdirectories. | <span style="color:#999999; font-size: small;"> “is created” is not relevant to the meaning of this phrase. “two” is obvious from context: you see that there are two subdirectories because only two are named. </span> |
 
-Moved |
---- | ---
-This [field name] is default for all project modules. A module specific [field name] can be configured for each of the modules is required. | *This phrase is repeated for all fields. Can be shown only once at the bottom of the dialog.*
+| Moved |   |
+| --- | --- |
+| <span style="color:#cc4700;">This</span> [field name] <span style="color:#cc4700;">is default for all project modules. A module specific</span> [field name] <span style="color:#cc4700;">can be configured for each of the modules is required.</span> | <span style="color:#999999; font-size: small;"> This phrase is repeated for all fields. Can be shown only once at the bottom of the dialog. </span> |
 
 
 
 ![]({{site.baseurl}}/images/writing_short/offline-mode.png)
 
-Before | After |
---- | --- | ---
-visits the remote repositories and checks for updates | checks remote repositories for updates | *“Checks” already includes the meaning of “visits”.*
-When you switch to offline mode | In the offline mode | *The action “switched” is not relevant for the meaning of this phrase. Also, an unnecessary reference to the user — “you”.*
-Maven has to use | Maven uses |*Not relevant that a technology must do something, enough to say it just works this way.*
-those resources that are available locally | local resources |
-reports about the problems if something is missing | reports if something is missing |
+| Before | After | |
+| --- | --- | --- |
+| <span style="color:#cc4700;">visits the</span> remote repositories <span style="color:#cc4700;">and</span> checks for updates | checks remote repositories for updates | <span style="color:#999999; font-size: small;"> “Checks” already includes the meaning of “visits”. </span> |
+| <span style="color:#cc4700;">When you switch to</span> offline mode | In the offline mode | <span style="color:#999999; font-size: small;"> The action “switched” is not relevant for the meaning of this phrase. Also, an unnecessary reference to the user — “you”. </span> |
+| Maven <span style="color:#cc4700;">has to</span> use | Maven uses |<span style="color:#999999; font-size: small;"> Not relevant that a technology must do something, enough to say it just works this way. </span> |
+| <span style="color:#cc4700;">those</span> resources <span style="color:#cc4700;">that are available</span> locally | local resources |
+| reports <span style="color:#cc4700;">about the problems</span> if something is missing | reports if something is missing |
 
-Removed |
---- | ---
-The offline mode is helpful when you need to work offline | *The phrase does not explain when the offline mode is helpful. It should either be elaborated or removed.*
-or when your network connection is slow | *Only one of possible uses for the offline mode and an obvious one. Can be removed for a more concise text.*
+| Removed | |
+| --- | --- |
+| <span style="color:#cc4700;">The offline mode is helpful when you need to work offline</span> | <span style="color:#999999; font-size: small;"> The phrase does not explain when the offline mode is helpful. It should either be elaborated or removed. </span> |
+| <span style="color:#cc4700;">or when your network connection is slow</span> | <span style="color:#999999; font-size: small;"> Only one of possible uses for the offline mode and an obvious one. Can be removed for a more concise text. </span> |
 
 
