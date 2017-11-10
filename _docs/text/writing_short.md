@@ -10,14 +10,13 @@ Texts in user interfaces should be short and clear. Short texts save reading tim
 * Use simple sentences: one idea per sentence.
 * Avoid passive voice.
 
-
 This way the same meaning can be expressed with less words. Compare:
+  
+&nbsp;&nbsp;&nbsp;_Those resources that are available locally_ → _Local resources_ 
 
-   _Those resources that are available locally_ → _Local resources_ 
+&nbsp;&nbsp;&nbsp;_Maven has to use_ → _Maven uses_
 
-   _Maven has to use_ → _Maven uses_
-
-   _The use of a secure connection is required_ → _Use secure connection_
+&nbsp;&nbsp;&nbsp;_The use of a secure connection is required_ → _Use secure connection_
 
 
 ## Remove or elaborate generic words 
