@@ -1920,6 +1920,17 @@ input, textarea {
     text-align: center
 }
 
+.footer__logo::before {
+    position: absolute;
+    top: -9px;
+    right: 20px;
+    bottom: 0;
+    width: 16px;
+    height: 16px;
+    margin: auto;
+    background: url("data:image/svg+xml,%3Csvg version='1.1' xmlns='http://www.w3.org/2000/svg' …,0,9.625-1.75,9.625-7C108.5,57.75,105.875,55.125,98,55.125z'/%3E%3C/svg%3E") 0 0/100% no-repeat;
+}
+
 .footer::before, .footer__logo::before {
     content: ''
 }
@@ -3376,12 +3387,14 @@ input, textarea {
 
 .footer {
     height: 97px;
-    padding: 0 25px 0 80px;
+    padding: 0 25px 0 10%;
     letter-spacing: -.1px;
-    color: #343434;
+    color: #787878;
     background: #fff;
     font-size: 14px;
-    line-height: 18px
+    line-height: 18px;
+    max-width: 800px;
+    border-top: 1px solid #e6e6e6;
 }
 
 .footer::before {
@@ -3389,7 +3402,7 @@ input, textarea {
     right: 0;
     left: 0;
     margin-top: -1px;
-    border-top: 1px solid #e6e6e6
+    /*border-top: 1px solid #e6e6e6;*/
 }
 
 .footer__container {
@@ -5075,7 +5088,7 @@ input, textarea {
 }
 
 .hamburger._white .hamburger__icon, .hamburger._white .hamburger__icon::after, .hamburger._white .hamburger__icon::before {
-    background-color: #fff
+    background-color: #787878
 }
 
 .hamburger._type-rotate .hamburger__icon {
