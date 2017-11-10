@@ -9479,8 +9479,12 @@ br + kbd {
     margin-top: 5px !important
 }
 
-.navigation-links, th {
-    border-bottom: 1px solid #e6e6e6
+.th {
+    /*border-bottom: 1px solid #c5c8cb*/
+}
+
+.navigation-links {
+    border-bottom: 1px solid #c5c8cb
 }
 
 .article img, .article > object, .sideblock img {
@@ -9787,8 +9791,12 @@ br + kbd {
 }
 
 td, th {
-    padding: 15px 2% 15px 0;
+    padding: 10px 3% 15px 0px;
     vertical-align: top
+}
+
+th {
+    /*border-top: 1px solid #c5c8cb*/
 }
 
 td:last-child, th:last-child {
@@ -9796,7 +9804,7 @@ td:last-child, th:last-child {
 }
 
 table > table td, table > table th {
-    padding-right: 6%
+    padding-right: 10%
 }
 
 table.no_head tr:first-child td, table.no_head tr:first-child th {
@@ -9805,9 +9813,9 @@ table.no_head tr:first-child td, table.no_head tr:first-child th {
 
 table {
     clear: left;
-    margin: 0 0 15px;
+    margin: 0 0 40px;
     font-size: 14px;
-    line-height: 19px
+    line-height: 1.5em;
 }
 
 table._layout-fixed {
@@ -9823,10 +9831,6 @@ th {
 
 table.left_header tbody th {
     border-bottom: 0
-}
-
-td {
-    border-top: 1px solid #c5c8cb
 }
 
 .table-wrapper {
@@ -9850,7 +9854,7 @@ img + em {
     font-size: small;
     color: #999999;
     display: block;
-    line-height: 1.9em;
+    line-height: 1.8em;
 }
 
 .article em. i {
