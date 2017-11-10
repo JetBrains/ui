@@ -77,11 +77,14 @@ How to use these parts:
 
 ## Master-detail layout
 * Instructions text for the detail area in a master-detail layout has only the action part.  
-  The detail area is filled when an item is selected in the master part. This behavior is too familiar to be explained — the reason why the area is empty is not needed. 
+
+   The detail area is filled when an item is selected in the master part. This behavior is too familiar to be explained — the reason why the area is empty is not needed.
+     
    The action is an obvious one but it serves as a visual marker to where settings for the selected item appear.
+   
    The help topic, if needed, can be provided in the master area.
    
-* The general pattern for the action is “Select [entity] to configure”.
+* The general pattern for the action is “_Select_ [entity] _to configure_”.
  
 * The master area is usually a list or a tree, and if empty, its instructions text should follow the guidelines for lists and trees.
 
