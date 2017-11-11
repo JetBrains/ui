@@ -34,7 +34,6 @@ bundle install
 ### Building and Previewing
 To start the web-server go to the project directory and run:
 ```
-cd ui/
 bundle exec jekyll serve
 ```
 Jekyll will build the site and start a web server, which can be viewed in your browser at [http://localhost:4000/](http://localhost:4000/).
