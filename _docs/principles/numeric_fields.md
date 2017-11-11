@@ -1,5 +1,5 @@
 ---
-title: Numeric Fields
+title: Numeric fields
 category: Principles
 order: 1
 ---
@@ -35,7 +35,7 @@ If several units are used, label the units inside the field.
 
 * Do not assign special meanings to specific numeric or string values. Use meta-options instead.
 ![]({{site.baseurl}}/images/numeric_fields/meta_option.png)
-*On the second example to set “Same as language level” empty string should be entered*
+*To set “Same as language level” empty string should be entered.*
 
 * If invalid value is entered, highlight field with red and show error message and supported range in tooltip.  
 ![]({{site.baseurl}}/images/numeric_fields/error.png)

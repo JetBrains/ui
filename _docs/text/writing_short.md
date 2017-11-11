@@ -1,5 +1,5 @@
 ---
-title: Writing Short and Clear Text
+title: Writing short and clear text
 category: Text
 ---
 

@@ -1,5 +1,5 @@
 ---
-title: Empty State
+title: Empty state
 category: Principles
 ---
 

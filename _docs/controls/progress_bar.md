@@ -1,5 +1,5 @@
 ---
-title: Progress Bar
+title: Progress bar
 category: Controls
 ---
 

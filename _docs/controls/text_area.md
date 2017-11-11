@@ -1,5 +1,5 @@
 ---
-title: Text Area
+title: Text area
 category: Controls
 ---
 
@@ -113,10 +113,16 @@ Recommended sizes for all themes are:
 
 ### History
 
-![]({{site.baseurl}}/images/text_area/style_history.png) 
-Background: dialog default theme color.  
-Font: Windows, GTK+, Intellij — default; Mac OS 2px smaller than default.  
-Font color: <span style="color:#787878">#787878</span>.
+<table>
+<col width="50%">
+<tr>
+    <td> <img src="{{site.baseurl}}/images/text_area/style_history.png" style="margin: 0"> </td> 
+    <td style="line-height: 24px"> Background: dialog default theme color. <br /> 
+         Font: Windows, GTK+, Intellij — default; Mac OS 2px smaller than default.<br /> 
+         Font color: <span style="color:#787878">#787878</span>. </td>         
+</tr>
+</table>
+
 
 
 

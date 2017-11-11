@@ -1,5 +1,5 @@
 ---
-title: How to Write Guidelines
+title: How to write guidelines
 category: Resources
 ---
 
@@ -19,19 +19,37 @@ The text should be short and clear. Follow the rules:
 
 ### Grammar
 
-* Use present tense.
-
-* Write in the active voice.
-
-* Avoid unnecessary modal verbs.
-
-* Use imperatives.
-
-* Do not address the reader.
-
-* When describing user behavior, write:
-
-* Avoid bracketed text, it complicates reading. If information is important — put it in a new sentence, if not — remove it.
+<table style="font-size:16px">
+<col width="50%">
+<tr>
+    <td> Use present tense.</td>
+    <td style="font-style:italic"> A progress bar <font color="#18B04B">informs </font> user about the progress of a lengthy operation. </td>
+</tr>
+<tr>
+    <td> Write in the active voice. </td>
+    <td style="font-style:italic"> Progress bar <font color="#FF001B">is shown</font>.<br /> Progress bar <font color="#18B04B">appears</font>. </td>
+</tr>
+<tr>
+    <td> Avoid unnecessary modal verbs. </td>
+    <td style="font-style:italic"> Label <font color="#FF001B">should use</font> sentence-style capitalization.<br /> <font color="#18B04B">Use</font> sentence capitalization in labels. </td>
+</tr>
+<tr>
+    <td> Use imperatives. </td>
+    <td style="font-style:italic"><font color="#FF001B">The cursor changes</font> to the pointing hand.<br /> <font color="#18B04B">Change the cursor</font> to the pointing hand. </td>
+</tr>
+<tr>
+    <td> Do not address the reader. </td>
+    <td style="font-style:italic"> Use combobox if..., Follow guidelines... </td>
+</tr>
+<tr>
+    <td> When describing user behavior, write: </td>
+    <td style="font-style:italic"> A <font color="#18B04B"> user looks </font> forward to what will appear after completion. </td>
+</tr>
+<tr>
+    <td> Avoid bracketed text, it complicates reading. If information is important — put it in a new sentence, if not — remove it. </td>
+    <td style="font-style:italic">Provide a header <font color="#FF001B">(bold)</font> for each progress. <br /> Provide a <font color="#18B04B">bold</font> header for each progress. </td>
+</tr>
+</table>
 
 
 ### Contents
@@ -43,20 +61,31 @@ The text should be short and clear. Follow the rules:
 * Split the text to subsections and short paragraphs.
 
 * When giving a recommendation, explain why it is useful.  
-Bad: *If a process is started by a user, provide a notification when the process finishes*.  
-Good: *If a process is started by a user, provide a notification when the process finishes. This way the user, if switched to another task while waiting for a process to finish, would know they can return back and see the results*.
+    * Bad: *If a process is started by a user, provide a notification when the process finishes*.  
+    * Good: *If a process is started by a user, provide a notification when the process finishes. This way the user, if switched to another task while waiting for a process to finish, would know they can return back and see the results*.
 
 *  Add links if you refer to other sections. Links should be descriptive, do not use *Click here* links.
 
 ### Word-level recommendations
 
-* *Would be* — use *is* instead, when possible.
-
-* *Then* — omit if possible.
-
-* *He/she* — replace with *they*.
-
-* Select a word with **bold** to emphasise or with _italic_ to quote.
+<table style="font-size:16px">
+<col width="50%">
+<tr>
+    <td> <i>Would be</i> — use <i>is</i> instead, when possible. </td>
+    <td style="font-style:italic"> Displaying indicator <font color="#FF001B">would be</font> distracting.<br />Displaying indicator <font color="#18B04B">is</font> distracting. </td>
+</tr>
+<tr>
+    <td> <i>Then</i> — omit if possible. </td>
+    <td style="font-style:italic"> If a process is started by the user, <font color="#FF001B">then</font>. provide notification.</td>
+</tr>
+<tr>
+    <td> <i>He/she</i> — replace with <i>they</i>. </td>
+    <td style="font-style:italic"> If a process lasts less than 1 second, the user won’t be able to read the process name and showing it would just distract <font color="#18B04B">them</font>.</td>
+</tr>
+<tr>
+    <td> Select a word with <b>bold</b> to emphasise or with <i>italic</i> to quote. </td>
+</tr>
+</table>
 
 
 ## Structure
