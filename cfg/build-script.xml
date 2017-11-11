@@ -4,10 +4,10 @@
 <root>
     <builds>
         <product id="ui" master="project.ihp" family="idea">
-            <artifact type="web2" platform="primary" local-update="true" local-update-path="ui-guidelines"/>
+            <artifact type="web2" copy-resources="false" platform="primary" local-update="true" local-update-path="ui-guidelines"/>
         </product>
         <product id="uip" master="project.ihp" family="idea">
-            <artifact type="web2" platform="primary" local-update="true" local-update-path="ui-guidelines"/>
+            <artifact type="web2" platform="primary" copy-resources="false" local-update="true" local-update-path="ui-guidelines"/>
         </product>
     </builds>
 </root>
