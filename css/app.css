@@ -8882,14 +8882,14 @@ input, textarea {
 
 .header__nav-toggle {
     display: none;
-    margin-top: -11px;
+    margin-top: 10px;
     margin-bottom: -11px;
-    margin-left: -20px
+    margin-left: 25px;
 }
 
 @media screen and (max-width: 960px) {
     .header__nav-toggle {
-        display: block
+        display: block;
     }
 }
 
@@ -12256,7 +12256,7 @@ table .note ol, table .note ul, table .tip ol, table .tip ul, table .todo ol, ta
 }
 
 @media screen and (max-width: 1200px) {
-    .app__nav  .header{
+    .app__nav, .header {
         width: 260px
     }
 
@@ -12288,6 +12288,10 @@ table .note ol, table .note ul, table .tip ol, table .tip ul, table .todo ol, ta
 
     .app__content {
         padding-left: 40px
+    }
+
+    .header__nav-toggle {
+        margin-left: 25px;
     }
 
     .app__nav {
@@ -12323,6 +12327,10 @@ table .note ol, table .note ul, table .tip ol, table .tip ul, table .todo ol, ta
 @media screen and (max-width: 640px) {
     .app__content {
         padding-left: 20px
+    }
+
+    .header__nav-toggle {
+        margin-left: 10px;
     }
 
     .app__disqus {
