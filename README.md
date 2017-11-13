@@ -1,5 +1,5 @@
-# IntelliJ IDEA Guidelines
-This is a repository for IntelliJ IDEA user interface guidelines.
+# IntelliJ Platform Guidelines
+This is a repository for IntelliJ Platform user interface guidelines.
 
 ## Working With the Site Locally
 To check out and run a local copy of the site follow the steps described below.
