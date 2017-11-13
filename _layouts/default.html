@@ -39,41 +39,48 @@
                     <ul class="toc-tree nav__toc">
                         {% assign grouped = site.docs | group_by: 'category' %}
                         {% for group in grouped %}
-                        <li class="toc-tree__node toc-tree__node--level_0">
-                            <div class="toc-tree__title-wrapper">
-                                {% if group.name != "Resources" %}
-                                <div class="toc-tree__title toc-tree__title--have-childs">{{ group.name }}</div>
-                                <div class="toc-tree__expander">
-                                    <svg class="toc-tree__expander-glyph toc-tree__expander-glyph--expanded">
-                                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#angle-down"></use>
-                                    </svg>
+                            <li class="toc-tree__node toc-tree__node--level_0">
+                                <!--{% if group.name != "Resources" %}-->
+                                <div class="toc-tree__title-wrapper">
+                                    <div class="toc-tree__title toc-tree__title--have-childs">{{ group.name }}</div>
+                                    <div class="toc-tree__expander">
+                                        <svg class="toc-tree__expander-glyph toc-tree__expander-glyph--expanded">
+                                            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#angle-down"></use>
+                                        </svg>
+                                    </div>
                                 </div>
-                            </div>
 
-                            {% assign items = group.items | sort: 'order' %}
+                                {% assign items = group.items | sort: 'order' %}
 
-                            <ul class="toc-tree__nodes-list">
-                                {% for item in items %}
-                                <li class="toc-tree__node toc-tree__node--level_1 {% if item.url == page.url %}toc-tree__title--selected{% endif %}">
-                                    <div class="toc-tree__title-wrapper">
-                                        <a href="{{ site.baseurl }}{{ item.url }}"
-                                           class="toc-tree__title toc-tree__title--link">{{ item.title }}</a></div>
-                                </li>
-                                {% endfor %}
-                            </ul>
-                            {% endif %}
-                        </li>
+                                <ul class="toc-tree__nodes-list">
+                                    {% for item in items %}
+                                    <li class="toc-tree__node toc-tree__node--level_1 {% if item.url == page.url %}toc-tree__title--selected{% endif %}">
+                                        <div class="toc-tree__title-wrapper">
+                                            <a href="{{ site.baseurl }}{{ item.url }}"
+                                               class="toc-tree__title toc-tree__title--link">{{ item.title }}</a></div>
+                                    </li>
+                                    {% endfor %}
+                                </ul>
+                                <!--{% endif %}-->
+                            </li>
                         {% endfor %}
                         <div class="separator"></div>
-                        {% for doc in site.docs %}
-                        {% if doc.category == "Resources" %}
-                        <li class="toc-tree__node toc-tree__node--level_0 {% if item.url == page.url %}toc-tree__title--selected{% endif %}">
-                            <div class="toc-tree__title-wrapper">
-                                <a href="{{ site.baseurl }}{{ doc.url }}"
-                                   class="toc-tree__title toc-tree__title--link">{{ doc.title }}</a></div>
+                        {% assign grouped = site.docs | group_by: 'category' %}
+                        {% for group in grouped %}
+                        <li class="toc-tree__node toc-tree__node--level_0">
+                            {% if group.name == "Resources" %}
+                                {% assign items = group.items | sort: 'order' %}
+                                <ul class="toc-tree__nodes-list">
+                                    {% for item in items %}
+                                    <li class="toc-tree__node toc-tree__node--level_0 {% if item.url == page.url %}toc-tree__title--selected{% endif %}">
+                                        <div class="toc-tree__title-wrapper">
+                                            <a href="{{ site.baseurl }}{{ item.url }}"
+                                               class="toc-tree__title toc-tree__title--link">{{ item.title }}</a></div>
+                                    </li>
+                                    {% endfor %}
+                                </ul>
+                            {% endif %}
                         </li>
-                        <!--<li><a href="{{ doc.url }}">{{ doc.title }}</a></li>-->
-                        {% endif %}
                         {% endfor %}
                     </ul>
                 </div>
@@ -88,7 +95,7 @@
                     </main>
                     <footer class="footer app__footer">
                         <div class="grid-row grid-row--valign-middle grid-row--stretch footer__container footer__container--reduced-right-padding">
-                            <div class="grid-col-4"><a class="footer__feedback-link" href="alina.mishina@jetbrains.com">Contact
+                            <div class="grid-col-4"><a class="footer__feedback-link" href="https://jetbrains.slack.com/archives/C809J128P">Contact
                                 us in Slack</a></div>
                             <div class="grid-col">
                                 <div class="footer__copyright"><!-- react-text: 44 -->© 2000—<!-- /react-text -->
