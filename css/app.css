@@ -9884,7 +9884,7 @@ table.left_header tbody th {
 img + em {
     margin: -30px 0 40px 20px;
     font-style: normal;
-    font-size: small;
+    font-size: 80%;
     color: #999999;
     display: block;
     line-height: 1.8em;

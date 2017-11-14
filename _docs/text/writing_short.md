@@ -42,10 +42,10 @@ This way the same meaning can be expressed with less words. Compare:
 <col width="59%">
 <tr>
     <td> <img src="{{site.baseurl}}/images/writing_short/obvious-prefer.png" style="margin-bottom: 9px; margin-left: 40px;">
-         <p style="color: #999999; font-size: small; margin-left: 40px;">
+         <p style="color: #999999; font-size: 80%; margin-left: 40px;">
          A selected radio button means its option is "preferred".</p> </td>    
     <td> <img src="{{site.baseurl}}/images/writing_short/obvious-allow.png" style="margin-bottom: 9px;">
-         <p style="color: #999999; font-size: small; margin-left: 20px;">
+         <p style="color: #999999; font-size: 80%; margin-left: 20px;">
          A checked checkbox means its feature <br>is "allowed". </p> </td>         
 </tr>
 </table>
@@ -56,10 +56,10 @@ This way the same meaning can be expressed with less words. Compare:
 <col width="59%">
 <tr>
     <td> <img src="{{site.baseurl}}/images/writing_short/obvious-contents.png" style="margin-bottom: 9px; margin-left: 40px;">
-         <p style="color: #999999; font-size: small; margin-left: 40px;">
+         <p style="color: #999999; font-size: 80%; margin-left: 40px;">
          The clipboard’s purpose is to keep information so the infinitive "to keep" is implying the obvious and can be removed.</p> </td>    
     <td> <img src="{{site.baseurl}}/images/writing_short/obvious-functionality.png" style="margin-bottom: 9px;">
-         <p style="color: #999999; font-size: small; margin-left: 20px;">
+         <p style="color: #999999; font-size: 80%; margin-left: 20px;">
          The word “functionality” is already implied by "Drag’n’Drop" and can be removed. </p> </td>         
 </tr>
 </table>
