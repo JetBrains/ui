@@ -7,7 +7,8 @@ category: Text
 
 ### Use for
 * Actions: buttons, menus, and links that invoke an action
-* Headers in element groups, tables, dialogs and message boxes
+* Headers in tables, dialogs, message boxes, notifications and tooltips
+* Labels of UI elements groups 
 
 <aside class="note sideblock _visible">The current Windows guidelines use sentence capitalization for actions. Some Microsoft products still title-capitalize actions according to the previous guidelines. Mac OS X also title-capitalizes actions. Since IntelliJ IDEs are cross-platform, we use title capitalization as well.</aside>
 
@@ -41,7 +42,7 @@ _Compare With…_ — the short preposition with is capitalized because it is th
 ### Use for
 * Labels for UI controls: text boxes, checkboxes, radio buttons, comboboxes, etc.
 * Items in comboboxes, lists, trees and tables
-* Explanatory texts: error messages, tooltips/balloons, instructions and status descriptions
+* Body text in error messages, tooltips, notifications, status descriptions and any kind of instructions (but title-capitalize their headers)
 
 ### Rules
 Capitalize the first word in a sentence, proper nouns and adjectives, and abbreviations.
