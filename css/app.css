@@ -10126,7 +10126,7 @@ table .note ol, table .note ul, table .tip ol, table .tip ul, table .todo ol, ta
     color: #343434;
     font-size: 16px;
     font-weight: 400;
-    line-height: 30px;
+    line-height: 1.6em;
     position: relative;
     padding-right: 265px;
 }
