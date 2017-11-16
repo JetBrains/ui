@@ -269,7 +269,7 @@ If data in the cell is editable or configurable:
   Show down icon only on hover or when corresponding line is selected. A lot of arrows in one column form their own information layers and distract.
  
 * If there are more than 15 variants show completion popup.
-* Do **not** use full size drop-down list control inside tables. It looks inconsistent and has too much details for the table, simple dropdown icon with variants popup is enough.
+* Do **not** use full size drop-down list control inside tables. It looks inconsistent and has too much details for the table, simple drop-down icon with variants popup is enough.
  
   <p class="label incorrect">Incorrect</p>
   
