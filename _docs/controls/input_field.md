@@ -56,8 +56,17 @@ The label displays the type of information the field requires. Follow the rules:
 
 * Make the label text selectable. The user may want to find this option on the Internet or to send question about the option to support.
 
-* If there are several input fields on the form, it’s recommended to make labels approximately the same length to avoid gaps between labels and fields. For example:  
-    ![]({{site.baseurl}}/images/input_field/several_labels_length.png)  
+* If there are several input fields on the form, it’s recommended to make labels approximately the same length to avoid gaps between labels and fields. For example:
+    <table>
+        <tr>
+            <td> <p class="label incorrect">Incorrect</p> </td>
+            <td> <img src="{{site.baseurl}}/images/input_field/several_labels_length.png" style="margin-bottom: -10px; margin-left: 30px"> </td>         
+        </tr>
+        <tr>
+            <td> <p class="label correct">Correct</p> </td>
+            <td> <img src="{{site.baseurl}}/images/input_field/several_labels_length_1.png" style="margin-left: 30px;"> </td>
+        </tr>
+    </table>
 
 
 
@@ -84,9 +93,18 @@ The placeholder should be used in the following cases:
 
 
 3. Do **not** use placeholder to show examples. User can decide that the field is already filled. Provide examples or explanation under the input field (see [Context help]({{site.baseurl}}/principles/context_help/)):
-
-    ![]({{site.baseurl}}/images/input_field/placeholder_examples.png)
-
+    <table>
+    <col width="200px">
+        <tr>
+            <td> <p class="label incorrect">Incorrect</p> </td>
+            <td> <p class="label correct">Correct</p> </td>
+        </tr>
+        <tr>
+            <td> <img src="{{site.baseurl}}/images/input_field/placeholder_examples.png" style="margin-top: -5px; margin-bottom: 5px;"> </td>
+            <td> <img src="{{site.baseurl}}/images/input_field/placeholder_examples_1.png" style="margin-top: -5px; margin-bottom: 5px;"> </td>
+        </tr>
+    </table>
+        
 4. Do **not** use placeholder as field label. When the field is filled, it is difficult to understand what kind of field it is.  
 
     ![]({{site.baseurl}}/images/input_field/placeholder_label.png)
@@ -108,9 +126,24 @@ Do **not** prefill with “Unnamed”. It takes time to read it and does not hel
 
 * Choose width appropriate for the most common values, but not less than 65px. Field width helps user to understand what value is expected and to make sure that they filled the field correctly.
 
-    ![]({{site.baseurl}}/images/input_field/size_1.png)
-
-    ![]({{site.baseurl}}/images/input_field/size_2.png)
+    <table>
+        <tr>
+            <td> <p class="label incorrect">Incorrect</p> </td>
+            <td> <img src="{{site.baseurl}}/images/input_field/size_1.png" style="margin-bottom: -20px; margin-left: 30px"> </td>         
+        </tr>
+        <tr>
+            <td> <p class="label correct" style="margin-top: 10px;">Correct</p> </td>
+            <td> <img src="{{site.baseurl}}/images/input_field/size_2.png" style="margin-top: 10px; margin-left: 30px; margin-bottom: -10px"> </td>
+        </tr>
+        <tr>
+            <td> <p class="label incorrect">Incorrect</p> </td>
+            <td> <img src="{{site.baseurl}}/images/input_field/size_3.png" style="margin-bottom: -20px; margin-left: 30px"> </td>         
+        </tr>
+        <tr>
+            <td> <p class="label correct" style="margin-top: 10px;">Correct </p> </td>
+            <td> <img src="{{site.baseurl}}/images/input_field/size_4.png" style="margin-top: 10px; margin-left: 30px; margin-bottom: 5px;"> </td>
+        </tr>
+    </table>
 
 * If input value is longer than field width, show the beginning of the value when field becomes inactive:
 

@@ -37,32 +37,26 @@ This way the same meaning can be expressed with less words. Compare:
 ![]({{site.baseurl}}/images/writing_short/obvious-specify.png)
 *Text boxes are made for input — an explicit instruction "specify" duplicates the meaning expressed by the text field. Additional information can be given under the field — see [Context help]({{site.baseurl}}/principles/context_help).* 
 
-
-<table>
-<col width="59%">
-<tr>
-    <td> <img src="{{site.baseurl}}/images/writing_short/obvious-prefer.png" style="margin-bottom: 9px; margin-left: 40px;">
-         <p style="color: #999999; font-size: 80%; margin-left: 40px;">
-         A selected radio button means its option is "preferred".</p> </td>    
-    <td> <img src="{{site.baseurl}}/images/writing_short/obvious-allow.png" style="margin-bottom: 9px;">
-         <p style="color: #999999; font-size: 80%; margin-left: 20px;">
-         A checked checkbox means its feature <br>is "allowed". </p> </td>         
-</tr>
-</table>
+    <table>
+    <col width="59%">
+    <tr>
+        <td> <img src="{{site.baseurl}}/images/writing_short/obvious-prefer.png">
+             <em> A selected radio button means its option is "preferred".</em> </td>    
+        <td> <img src="{{site.baseurl}}/images/writing_short/obvious-allow.png">
+             <em> A checked checkbox means its feature <br>is "allowed". </em> </td>         
+    </tr>
+    </table>
 
 * Remove words with a meaning that is already expressed in the label:
-
-<table>
-<col width="59%">
-<tr>
-    <td> <img src="{{site.baseurl}}/images/writing_short/obvious-contents.png" style="margin-bottom: 9px; margin-left: 40px;">
-         <p style="color: #999999; font-size: 80%; margin-left: 40px;">
-         The clipboard’s purpose is to keep information so the infinitive "to keep" is implying the obvious and can be removed.</p> </td>    
-    <td> <img src="{{site.baseurl}}/images/writing_short/obvious-functionality.png" style="margin-bottom: 9px;">
-         <p style="color: #999999; font-size: 80%; margin-left: 20px;">
-         The word “functionality” is already implied by "Drag’n’Drop" and can be removed. </p> </td>         
-</tr>
-</table>
+   <table>
+   <col width="59%">
+   <tr>
+       <td> <img src="{{site.baseurl}}/images/writing_short/obvious-contents.png">
+            <em> The clipboard’s purpose is to keep information so the infinitive "to keep" is implying the obvious and can be removed.</em> </td>    
+       <td> <img src="{{site.baseurl}}/images/writing_short/obvious-functionality.png">
+            <em> The word “functionality” is already implied by "Drag’n’Drop" and can be removed. </em> </td>         
+   </tr>
+    </table>
 
 
 ## Do not address the user

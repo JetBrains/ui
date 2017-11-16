@@ -39,8 +39,11 @@ Do **not** use Text Area in the following cases:
 * Do **not** put second part of the label or units on the right of the Text Area.
 
 * Do **not** use Group separator instead of Text Area label. The horizontal line is redundant here:
-
-    ![]({{site.baseurl}}/images/text_area/do_not_label.png)
+    <p class="label incorrect">Incorrect</p> 
+    ![]({{site.baseurl}}/images/text_area/label_incorrect.png)
+    
+    <p class="label correct">Correct</p> 
+    ![]({{site.baseurl}}/images/text_area/label_correct.png)
     *Use Context help to explain field behavior.*
 
 
@@ -63,18 +66,38 @@ Follow the rules for the Input Field: [placeholder]({{site.baseurl}}/controls/in
 
 * Size Text Area to display an integral number of lines of text:
 
-    ![]({{site.baseurl}}/images/text_area/size_2.png)
+    <table>
+        <tr>
+            <td> <p class="label incorrect">Incorrect</p> </td>
+            <td> <img src="{{site.baseurl}}/images/text_area/size_2.png" style="margin-bottom: -10px; margin-left: 30px"> </td>         
+        </tr>
+        <tr>
+            <td> <p class="label correct" style="margin-top: 10px;">Correct</p> </td>
+            <td> <img src="{{site.baseurl}}/images/text_area/size_3.png" style="margin-top: 10px; margin-left: 30px; margin-bottom: -10px"> </td>
+        </tr>
+    </table>
+
 
 * Do **not** resize Text Area on input. It will change the position of other controls and they can become hard-discoverable.
 
 * Avoid horizontal scroll bars on multi-line text boxes. Use vertical scrolling and line wrapping instead:
 
-    ![]({{site.baseurl}}/images/text_area/size_3.png)
+    <table>
+        <tr>
+            <td> <p class="label incorrect">Incorrect</p> </td>
+            <td> <img src="{{site.baseurl}}/images/text_area/size_4.png" style="margin-bottom: -10px; margin-left: 30px"> </td>         
+        </tr>
+        <tr>
+            <td> <p class="label correct" style="margin-top: 10px;">Correct</p> </td>
+            <td> <img src="{{site.baseurl}}/images/text_area/size_5.png" style="margin-top: 10px; margin-left: 30px; margin-bottom: -10px"> </td>
+        </tr>
+    </table>
 
     Horizontal scroll bar can be added if Text Area is for the code snippets or for the formatted input:
 
+    <p class="label correct">Correct</p>
     ![]({{site.baseurl}}/images/text_area/horizontal_scroll.png)
-
+    
     Use context menu to enable soft-wrapping.
 
 * **Placement**. Follow the rules for the [Input Field]({{site.baseurl}}/controls/input_field).
