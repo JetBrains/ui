@@ -9572,6 +9572,24 @@ br + kbd {
     color: #500500
 }
 
+.article .label {
+    font-weight:600;
+    font-size:16px;
+    letter-spacing: 0.5px;
+
+    margin-left: 20px;
+    margin-bottom: -10px;
+}
+
+.article .incorrect {
+    color:#FF001B;
+}
+
+.article .correct {
+    color:#18B04B;
+}
+
+
 .navigation-links__next, .navigation-links__prev {
     position: relative;
     overflow: hidden;

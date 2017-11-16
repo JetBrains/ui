@@ -46,11 +46,11 @@ Do **not** use tables:
  
 * Do **not** add label to explain the table behavior, use context help instead:
   
-  <span style="color:#FF001B; font-weight:600; font-size:16px; margin-left: 20px;">Incorrect</span>
+  <p class="label incorrect">Incorrect</p>
   
   ![]({{site.baseurl}}/images/table/label-help-header.png)
     
-  <span style="color:#18B04B; font-weight:600; font-size:16px; margin-left: 20px;">Correct</span>
+  <p class="label correct">Correct</p>
   
   ![]({{site.baseurl}}/images/table/label-help.png)
    
@@ -65,11 +65,11 @@ Do **not** use tables:
 * Always put label on top of the table.
 * Do **not** use Group separator instead of Table label. The horizontal line is redundant here:
 
-  <span style="color:#FF001B; font-weight:600; font-size:16px; margin-left: 20px;">Incorrect</span>
+  <p class="label incorrect">Incorrect</p>
   
   ![]({{site.baseurl}}/images/table/label-group-incorrect.png)
     
-  <span style="color:#18B04B; font-weight:600; font-size:16px; margin-left: 20px;">Correct</span>
+  <p class="label correct">Correct</p>
   
   ![]({{site.baseurl}}/images/table/label.png)
   
@@ -79,25 +79,25 @@ The table header is a row at the top of the table that helps identify the rows b
 
 * Add header to the table if data in the table is not descriptive or ambiguous. For example, in Environment Variables table header is required, since it can be unclear from the content what is exactly in each column:
 
-  <span style="color:#18B04B; font-weight:600; font-size:16px; margin-left: 20px;">Correct</span>
+  <p class="label correct">Correct</p>
   
   ![]({{site.baseurl}}/images/table/header-needed-correct.png)
     
-  <span style="color:#FF001B; font-weight:600; font-size:16px; margin-left: 20px;">Incorrect</span>
+  <p class="label incorrect">Incorrect</p>
   
   ![]({{site.baseurl}}/images/table/header-needed-incorrect.png)
   
   Do **not** use header if all columns in the table have self-descriptive content, for example, names, dates, color previews, etc. For example, header in the File History is redundant:
   
-  <span style="color:#18B04B; font-weight:600; font-size:16px; margin-left: 20px;">Correct</span>
+  <p class="label correct">Correct</p>
   
   ![]({{site.baseurl}}/images/table/history.png)
     
-  <span style="color:#FF001B; font-weight:600; font-size:16px; margin-left: 20px;">Incorrect</span>
+   <p class="label incorrect">Incorrect</p>
   
   ![]({{site.baseurl}}/images/table/history-header-redundant.png)
   
-* The labels in the header should be short and descriptive. Try to avoid headers which are too long for the content in the rows below. [How to write texts]({{site.baseurl}}/principles/writing_short/).
+* The labels in the header should be short and descriptive. Try to avoid headers which are too long for the content in the rows below. [How to write texts]({{site.baseurl}}/text/writing_short/).
 * Write headers as nouns.
 * Use title-style capitalization. 
 * Fix header when scrolling the table. Header provides useful context on columns and should not be hidden.
@@ -127,11 +127,11 @@ Add [toolbar]({{site.baseurl}}/controls/toolbar/) to provide actions which manip
 
 * Choose column width appropriate for the most common values, but no less than 65 px. Too wide for content columns make it harder to read the data between columns in the table.
 
-  <span style="color:#18B04B; font-weight:600; font-size:16px; margin-left: 20px;">Correct</span>
+  <p class="label correct">Correct</p>
   
   ![]({{site.baseurl}}/images/table/fileColors.png)
     
-  <span style="color:#FF001B; font-weight:600; font-size:16px; margin-left: 20px;">Incorrect</span>
+  <p class="label incorrect">Incorrect</p>
   
   ![]({{site.baseurl}}/images/table/fileColorsTooWide.png)
   
@@ -147,13 +147,13 @@ Add [toolbar]({{site.baseurl}}/controls/toolbar/) to provide actions which manip
 
 * Do **not** put vertically distributed elements (for example, diagrams distributed between table rows or column of checkboxes) in the middle of the table, those elements are obstacles for easy scanning of the rows of data:
 
-  <span style="color:#FF001B; font-weight:600; font-size:16px; margin-left: 20px;">Incorrect</span>
+  <p class="label incorrect">Incorrect</p>
   
   ![]({{site.baseurl}}/images/table/history-graph-incorrect.png)
   
   place them closer to the sides instead:
 
-  <span style="color:#18B04B; font-weight:600; font-size:16px; margin-left: 20px;">Correct</span>
+  <p class="label correct">Correct</p>
   
   ![]({{site.baseurl}}/images/table/history.png)
   
@@ -177,13 +177,13 @@ Use stripes:
 Do **not** use stripes:  
 * In a simple data set as guides to track content between columns. The alternating backgrounds create two distinct layers of focus in the tables when there is no difference between the alternating rows of information.
 
-  <span style="color:#FF001B; font-weight:600; font-size:16px; margin-left: 20px;">Incorrect</span>
+  <p class="label incorrect">Incorrect</p>
   
   ![]({{site.baseurl}}/images/table/table-zebra-incorrect.png)
   
   Default line height, [proper column width](#sizes-and-placement) and highlighting row on hover should provide enough guidance to track content. For example, the same table without stripes, with bigger line height and adjusted column width: 
   
-  <span style="color:#18B04B; font-weight:600; font-size:16px; margin-left: 20px;">Correct</span>
+  <p class="label correct">Correct</p>
   
   ![]({{site.baseurl}}/images/table/table.png)
   
@@ -195,11 +195,11 @@ Do **not** use stripes:
   
 Do **not** add borders between rows or columns, they add unnecessary noise to the table:
 
-  <span style="color:#FF001B; font-weight:600; font-size:16px; margin-left: 20px;">Incorrect</span>
+  <p class="label incorrect">Incorrect</p>
   
   ![]({{site.baseurl}}/images/table/inner-borders-incorrect.png)
 
-  <span style="color:#18B04B; font-weight:600; font-size:16px; margin-left: 20px;">Correct</span>
+  <p class="label correct">Correct</p>
   
   ![]({{site.baseurl}}/images/table/inner-borders.png)
   
@@ -271,7 +271,7 @@ If data in the cell is editable or configurable:
 * If there are more than 15 variants show completion popup.
 * Do **not** use full size combobox inside tables. It looks inconsistent and has too much details for the table, simple dropdown icon with variants popup is enough.
  
-  <span style="color:#FF001B; font-weight:600; font-size:16px; margin-left: 20px;">Incorrect</span>
+  <p class="label incorrect">Incorrect</p>
   
   ![]({{site.baseurl}}/images/table/combo-incorrect.png)
 
@@ -280,26 +280,26 @@ If data in the cell is editable or configurable:
 <table>
 <col width="60%">
 <tr>
-    <td> <p style="color: #999999; font-size: small; margin-left: 40px;">
+    <td> <p style="color: #999999; margin-left: 20px;">
          Column width (not including scrollbar)</p> </td>    
     <td> min 65  </td>         
 </tr>
 
 <tr>
-    <td> <p style="color: #999999; font-size: small; margin-left: 40px;">
+    <td> <p style="color: #999999; margin-left: 20px;">
          Table width </p> </td>    
     <td> min 350 </td>         
 </tr>
 
 <tr>
-    <td> <p style="color: #999999; font-size: small; margin-left: 40px;">
+    <td> <p style="color: #999999; margin-left: 20px;">
         Row height</p> </td>    
     <td> font size * 1,8 
          (default: 22)
     </td>         
 </tr>
 <tr>
-    <td> <p style="color: #999999; font-size: small; margin-left: 40px;">
+    <td> <p style="color: #999999; margin-left: 20px;">
         Header height</p> </td>    
     <td> font size * 2,1 
          (default: 25)
@@ -309,24 +309,24 @@ If data in the cell is editable or configurable:
 
 ### Spacing
 <table>
-<col width="60%">
+<col width="40%">
 <tr>
-    <td> <img src="{{site.baseurl}}/images/table/bytecode-version-mes.png">  </td>         
-    <td> <p style="color: #999999; font-size: small; margin-left: 40px;  margin-top: 30px;"> Label </p></td>    
+    <td> <p style="color: #999999; margin-left: 20px;  margin-top: 30px;"> Label </p></td>    
+    <td> <img src="{{site.baseurl}}/images/table/bytecode-version-mes.png" style="margin-left: 30px;">  </td>         
 </tr>
 
 <tr>
+    <td> <p style="color: #999999; margin-left: 20px;  margin-top: 30px;">Column content </p></td>    
     <td> <img src="{{site.baseurl}}/images/table/columnMes.png" style="margin-bottom: 9px; margin-left: 40px;"> </td>         
-    <td> <p style="color: #999999; font-size: small; margin-left: 40px;  margin-top: 30px;">Column content </p></td>    
 </tr>
 
 <tr>
+    <td> <p style="color: #999999; margin-left: 20px; margin-top: 30px;"> Combo icon </p></td>    
     <td> <img src="{{site.baseurl}}/images/table/combo-mes.png" style="margin-bottom: 9px; margin-left: 40px;"> </td>         
-    <td> <p style="color: #999999; font-size: small; margin-left: 40px; margin-top: 30px;"> Combo icon </p></td>    
 </tr>
 <tr>
+    <td> <p style="color: #999999; margin-left: 20px; margin-top: 30px;"> Sorted column </p></td>    
     <td> <img src="{{site.baseurl}}/images/table/sorted-mes.png" style="margin-bottom: 9px; margin-left: 40px;"> </td>         
-    <td> <p style="color: #999999; font-size: small; margin-left: 40px; margin-top: 30px;"> Sorted column </p></td>    
 </tr>
 </table>
 
