@@ -65,7 +65,7 @@ If several units are used, label the units inside the field.
 
 * If invalid value is entered, highlight field with red and show error message and supported range in tooltip.  
 ![]({{site.baseurl}}/images/numeric_fields/error.png)
-Do not change values automatically. Do not allow to close dialog, while incorrect value is entered. For more details see [Validation errors]({{site.baseurl}}/controls/validation_errors/).
+Do not change values automatically. Do not allow to close dialog, while incorrect value is entered. For more details see [Validation errors]({{site.baseurl}}/principles/validation_errors/).
 
 * Do not use spinner.   
 ![]({{site.baseurl}}/images/numeric_fields/spinner.png)
