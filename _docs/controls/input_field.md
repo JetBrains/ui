@@ -3,7 +3,7 @@ title: Input field
 category: Controls
 ---
 
-An input field is a rectangular area that allows users to enter or edit one text line using the keyboard.  
+An input field is a rectangular area that allows users to enter or edit one text line.  
 
 ![]({{site.baseurl}}/images/input_field/example.png)
 
