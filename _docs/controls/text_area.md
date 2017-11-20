@@ -3,7 +3,7 @@ title: Text area
 category: Controls
 ---
 
-Text Area is a rectangular area that allows users to enter or edit multi-line text using keyboard.
+Text area is a rectangular area that allows users to enter or edit multi-line text.
 
 ![]({{site.baseurl}}/images/text_area/text_area_example.png)
 

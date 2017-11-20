@@ -38,34 +38,35 @@
                     </form>
                     <ul class="toc-tree nav__toc">
                         {% assign grouped = site.docs | group_by: 'category' %}
-                        {% for group in grouped %}
-                            <li class="toc-tree__node toc-tree__node--level_0">
-                                <!--{% if group.name != "Resources" %}-->
-                                <div class="toc-tree__title-wrapper">
-                                    <div class="toc-tree__title toc-tree__title--have-childs">{{ group.name }}</div>
-                                    <div class="toc-tree__expander">
-                                        <svg class="toc-tree__expander-glyph toc-tree__expander-glyph--expanded">
-                                            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#angle-down"></use>
-                                        </svg>
-                                    </div>
-                                </div>
-
-                                {% assign items = group.items | sort: 'order' %}
-
-                                <ul class="toc-tree__nodes-list">
-                                    {% for item in items %}
-                                    <li class="toc-tree__node toc-tree__node--level_1 {% if item.url == page.url %}toc-tree__title--selected{% endif %}">
+                            {% for group in grouped %}
+                                {% if group.name != "Resources" %}
+                                    <li class="toc-tree__node toc-tree__node--level_0">
                                         <div class="toc-tree__title-wrapper">
-                                            <a href="{{ site.baseurl }}{{ item.url }}"
-                                               class="toc-tree__title toc-tree__title--link">{{ item.title }}</a></div>
+                                            <div class="toc-tree__title toc-tree__title--have-childs">{{ group.name }}</div>
+                                            <div class="toc-tree__expander">
+                                                <svg class="toc-tree__expander-glyph toc-tree__expander-glyph--expanded">
+                                                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#angle-down"></use>
+                                                </svg>
+                                            </div>
+                                        </div>
+
+                                        {% assign items = group.items | sort: 'order' %}
+
+                                        <ul class="toc-tree__nodes-list">
+                                            {% for item in items %}
+                                                {% unless item.type == "Draft"%}
+                                                    <li class="toc-tree__node toc-tree__node--level_1 {% if item.url == page.url %}toc-tree__title--selected{% endif %}">
+                                                        <div class="toc-tree__title-wrapper">
+                                                            <a href="{{ site.baseurl }}{{ item.url }}"
+                                                               class="toc-tree__title toc-tree__title--link">{{ item.title }}</a></div>
+                                                    </li>
+                                                {% endunless %}
+                                            {% endfor %}
+                                        </ul>
                                     </li>
-                                    {% endfor %}
-                                </ul>
-                                <!--{% endif %}-->
-                            </li>
-                        {% endfor %}
+                                {% endif %}
+                            {% endfor %}
                         <div class="separator"></div>
-                        {% assign grouped = site.docs | group_by: 'category' %}
                         {% for group in grouped %}
                         <li class="toc-tree__node toc-tree__node--level_0">
                             {% if group.name == "Resources" %}

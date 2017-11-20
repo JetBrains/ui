@@ -262,14 +262,14 @@ If data in the cell is editable or configurable:
  
 * Show separate dialog for data which is not text, for example, color chooser for colors.
 * Do **not** show separate dialog for editing simple data rows without compound preview (example of compound preview can be found in Editor > Language Injections). For example, there is no need in separate dialog in Appearance & Behaviour > Path Variables table, all editing could be done inplace.
-* If it’s possible to enumerate less than 15 most likely or valid variants show combobox-like configurable with arrow-down icon and popup on click:
+* If it’s possible to enumerate less than 15 most likely or valid variants show lightweight drop-down list with down icon and popup on click:
 
   ![]({{site.baseurl}}/images/table/combo.png)
   
-  Show combo icon only on hover or when corresponding line is selected. A lot of arrows in one column form their own information layers and distract.
+  Show down icon only on hover or when corresponding line is selected. A lot of arrows in one column form their own information layers and distract.
  
 * If there are more than 15 variants show completion popup.
-* Do **not** use full size combobox inside tables. It looks inconsistent and has too much details for the table, simple dropdown icon with variants popup is enough.
+* Do **not** use full size drop-down list control inside tables. It looks inconsistent and has too much details for the table, simple drop-down icon with variants popup is enough.
  
   <p class="label incorrect">Incorrect</p>
   
