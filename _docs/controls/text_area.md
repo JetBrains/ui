@@ -141,7 +141,7 @@ Recommended sizes for all themes are:
 <tr>
     <td> <img src="{{site.baseurl}}/images/text_area/style_history.png" style="margin: 0"> </td> 
     <td style="line-height: 24px"> Background: dialog default theme color. <br /> 
-         Font: Windows, GTK+, Intellij — default; Mac OS 2px smaller than default.<br /> 
+         Font: Windows, GTK+, Intellij — 1px smaller than default; Mac OS 2px smaller than default.<br /> 
          Font color: <span style="color:#787878">#787878</span>. </td>         
 </tr>
 </table>
