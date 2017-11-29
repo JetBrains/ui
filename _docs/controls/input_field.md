@@ -32,6 +32,7 @@ The label displays the type of information the field requires. Follow the rules:
 
 * A label accompanies each input field.
 * Labels should be [short and descriptive]({{site.baseurl}}/text/writing_short/) so the user can quickly scan the form.
+* Use sentence-style capitalization.
 * Write the label either as a noun and end the label with a colon:  
     ![]({{site.baseurl}}/images/input_field/label_noun.png) 
     Or as a phrase with no ending punctuation:
@@ -39,8 +40,6 @@ The label displays the type of information the field requires. Follow the rules:
 
 * Do **not** use labels to indicate user actions:  
     ![]({{site.baseurl}}/images/input_field/user_action.png)
-
-* Use sentence-style capitalization.
 
 * Place label on the left and align with the text baseline:
 
@@ -145,7 +144,7 @@ Do **not** prefill with “Unnamed”. It takes time to read it and does not hel
         </tr>
     </table>
 
-* If input value is longer than field width, show the beginning of the value when field becomes inactive:
+* If input value is longer than field width, show the beginning of the value when the field becomes inactive:
 
     ![]({{site.baseurl}}/images/input_field/size_long_name.png)
 
@@ -153,7 +152,7 @@ Do **not** prefill with “Unnamed”. It takes time to read it and does not hel
 
     ![]({{site.baseurl}}/images/input_field/fields_stack.png)
 
-    If space is constrained, the fields can be placed horizontally. It’s not recommended, as it complicates reading. Leave plenty of space between the end of the input field and the label of the next:
+    If space is constrained, the fields can be placed horizontally. It’s not recommended, as it complicates reading.
 
     ![]({{site.baseurl}}/images/input_field/fields_line.png)
 
