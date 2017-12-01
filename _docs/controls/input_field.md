@@ -123,7 +123,7 @@ Do **not** prefill with “Unnamed”. It takes time to read it and does not hel
 
 ### Sizes and placement
 
-* Choose width appropriate for the most common values, but not less than 65px. Field width helps user to understand what value is expected and to make sure that they filled the field correctly.
+* Choose width appropriate for the most common values, but not less than 64px. Field width helps user to understand what value is expected and to make sure that they filled the field correctly.
 
     <table>
         <tr>
