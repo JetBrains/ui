@@ -10,7 +10,8 @@ This page describes the workflow and basic rules of writing articles for Intelli
 Follow these steps if you want to add a new article to the guidelines:
 1. Write an article in the Google doc.
 2. Share the Google doc with designers team, so they can review and comment the document.
-3. When all comments are resolved, the article can be add to the official guidelines. Follow the instructions on [https://github.com/JetBrains/ui](https://github.com/JetBrains/ui).
+3. When all comments are resolved, send the Google doc to tech writers for grammar review. [Create ticket](https://youtrack.jetbrains.com/newIssue?project=DOC&clearDraft=true&c=Type+Task&c=Assignee+Anna.Gasparyan&c=Subsystem+IntelliJ+IDEA) in YouTrack project “Documentation”, subsystem “IntelliJ IDEA”, auto-assigned to Anna Gasparyan).
+4. After the review, the article can be add to the official guidelines. Follow the instructions on [https://github.com/JetBrains/ui](https://github.com/JetBrains/ui).
 4. Contact developers to add Code Snippets to the article.
 
 ## Text
