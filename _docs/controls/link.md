@@ -12,7 +12,7 @@ Use links for:
 
     ![]({{site.baseurl}}/images/link/deployment-server.png)
     
-    <p style="color: #999999; font-size: 13px; line-height: 23px; margin-top: -24px; margin-left: 20px; margin-bottom: 30px">This option is in the Settings dialog. “Configure servers” opens another page of this dialog.</p>
+    <p style="color: #999999; font-size: 13px; line-height: 23px; margin-top: -24px; margin-left: 20px; margin-bottom: 30px">This option is in the Settings dialog. “Configure servers” opens another page of the same dialog.</p>
 
     ![]({{site.baseurl}}/images/link/color-scheme-by-scope.png)
     *Do not use a button to navigate to another page of a dialog.*    
@@ -70,7 +70,7 @@ Use links for:
    ![]({{site.baseurl}}/images/link/adroid-sdk-correct.png)
    *Even though the “Edit” action is not primary, there is plenty of space to place a button.*
 
-4. **Disclosure** of additional text. Use this pattern only for secondary information when the screen space is constrained. For disclosure of additional UI components in a dialog, use a [collapsible group header]({{site.baseurl}}/components/collapsible_group_header/).
+4. **Invoke additional text**. Use this pattern only for secondary information when the screen space is constrained. To invoke additional UI components in a dialog, use a [collapsible group header]({{site.baseurl}}/components/collapsible_group_header/).
 
     ![]({{site.baseurl}}/images/link/tooltip-disclosure.png)
 
@@ -100,11 +100,11 @@ A link can appear as:
 
     If a link appears in all items of a tree or table: 
     * If this is a button-link, use a toolbar button instead. 
-    * If a drop-down link, use a separate table column of drop-down cells instead (see the Editing Values section in [Table]({{site.baseurl}}/controls/table/)).
+    * If this is a drop-down link, use a separate table column of drop-down cells instead (see the Editing Values section in [Table]({{site.baseurl}}/controls/table/)).
     * If moving a link to a separate table column breaks meaningful formatting, leave as is:
         
         ![]({{site.baseurl}}/images/link/multirepo-push.png)
-        *Links in the “Push Commits” window tree have format “[remote repository] : [branch]”. Moving these links to two separate columns would break formatting that is meaningful here: it helps understanding the relation between the two links. In such case, it is better to leave repeating links in the same column.*
+        *Links in the “Push Commits” window tree have the following format: “[remote repository] : [branch]”. Moving these links to two separate columns would break formatting that is meaningful here: it helps understand the relation between the two links. In such case, it is better to leave repeating links in the same column.*
 
 
 ## Wording
@@ -112,17 +112,20 @@ A link can appear as:
 * Capitalization and ellipsis:
 
     <table style="line-height: 180%; font-size: 80%">
-    <col width="220 px">
-    <col width="200 px">
+    <col width="215 px">
+    <col width="195 px">
+    <th> Link type </th>
+    <th> Style </th>
+    <th> Example </th>
     <tr>
         <td> Navigation link <br>Drop-down link <br> Button-link inside text </td>        
         <td> Sentence capitalization <br>No ellipsis</td>
-        <td> <img src="{{site.baseurl}}/images/link/button-link-sentence.png" style="margin-top: 4px"> </td>
+        <td> <img src="{{site.baseurl}}/images/link/button-link-sentence.png" style="margin-top: 4px; margin-left: 0px"> </td>
     </tr>
     <tr>
-        <td> Stand-alone button-link <br><p style="color: #999999; line-height: 140%; margin-top: 2px">Works as a lightweight button and follows the same rules. </p> </td>
+        <td> Stand-alone button-link <br><p style="color: #999999; line-height: 140%; margin-top: 2px">Works as a lightweight button and&nbsp;follows the same rules. </p> </td>
         <td> Title capitalization <br>Ellipsis if input is required </td>
-        <td> <img src="{{site.baseurl}}/images/link/button-link-title.png" style="margin-top: 4px"> </td>
+        <td> <img src="{{site.baseurl}}/images/link/button-link-title.png" style="margin-top: 4px; margin-left: 0px"> </td>
     </tr>    
     </table>  
 
