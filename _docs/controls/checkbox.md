@@ -142,7 +142,6 @@ Windows:
 ![]({{site.baseurl}}/images/checkbox/spacing_label.png)
 
 * Horizontal alignment with label:
-
 Mac:
 ![]({{site.baseurl}}/images/checkbox/spacing_horizontal_mac.png)
 Darcula:
