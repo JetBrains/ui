@@ -20,7 +20,7 @@ Do **not** use radio buttons in the following cases:
 
 
 Consider using a [Combo Box]({{site.baseurl}}/controls/combo_box):
-* If he number of options is more than four.
+* If the number of options is more than four.
 * If the screen space is limited.
 * If it is assumed that the option will be changed less often than others on the screen.
 * If there are other combo boxes on the window. The list of radio buttons is more noticeable than the combo box, so they will look like more important settings.
