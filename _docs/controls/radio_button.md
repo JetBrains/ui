@@ -33,6 +33,8 @@ Consider using a [Combo Box]({{site.baseurl}}/controls/combo_box):
 
     <p class="label correct">Correct</p>
     ![]({{site.baseurl}}/images/radiobutton/combobox_correct.png)
+
+
 ## How to use
 
 ### Label
