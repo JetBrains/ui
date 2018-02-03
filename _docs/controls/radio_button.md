@@ -75,7 +75,6 @@ A group of radio buttons always has a group label or a parent control with label
 ### Colors and fonts
 Label font: default.
 
-Follow the Focus color palette for focused elements in Mac and Darcula.
 
 Mac:
     ![]({{site.baseurl}}/images/radiobutton/style_mac.png)

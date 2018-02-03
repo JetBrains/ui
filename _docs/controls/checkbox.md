@@ -116,7 +116,6 @@ When a checkbox depends on the element it follows, the following alignments can 
 
 Label font: default.
 
-Follow the Focus color palette for focused and pressed elements in Mac and Darcula.
 
 Mac:
 ![]({{site.baseurl}}/images/checkbox/style_mac.png)
