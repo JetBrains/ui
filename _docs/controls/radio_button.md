@@ -11,29 +11,39 @@ Use the radio button to choose only one parameter from 2—5 options.
 Do **not** use radio buttons in the following cases:
 * If the user might select multiple options, use a [Checkbox]({{site.baseurl}}/controls/checkbox).
 * If there are only two opposite options such as Yes and No, instead use a checkbox:
-    <p class="label incorrect">Incorrect</p>
-    ![]({{site.baseurl}}/images/radiobutton/tworadio_incorrect.png)
-
-    <p class="label correct">Correct</p>
-    ![]({{site.baseurl}}/images/radiobutton/tworadio_correct.png)
+  <table>
+  <col width="200px">
+      <tr>
+          <td> <p class="label incorrect">Incorrect</p> </td>
+          <td> <p class="label correct">Correct</p> </td>
+      </tr>
+      <tr>
+          <td> <img src="{{site.baseurl}}/images/radiobutton/tworadio_incorrect.png" style="margin-top: -5px; margin-bottom: 5px;"> </td>
+          <td> <img src="{{site.baseurl}}/images/radiobutton/tworadio_correct.png" style="margin-top: -5px; margin-bottom: 5px;"> </td>
+      </tr>
+  </table>
 * If the parameter list includes more than 4 number choices with equal steps between, use the slider to select from a number range. Also if the specific value does not matter (e.g. delay in milliseconds) or it’s possible to provide feedback on the effect of the setting changes.
 
 
 Consider using a [Combo Box]({{site.baseurl}}/controls/combo_box):
-* If the number of options is more than four.
+* If the number of options is more than five:
+  <table>
+  <col width="200px">
+      <tr>
+          <td> <p class="label incorrect">Incorrect</p> </td>
+          <td> <p class="label correct">Correct</p> </td>
+      </tr>
+      <tr>
+          <td> <img src="{{site.baseurl}}/images/radiobutton/combobox_incorrect.png" style="margin-top: -5px; margin-bottom: 5px;"> </td>
+          <td> <img src="{{site.baseurl}}/images/radiobutton/combobox_correct.png" style="margin-top: -5px; margin-bottom: 5px;"> </td>
+      </tr>
+  </table>
 * If the screen space is limited.
 * If it is assumed that the option will be changed less often than others on the screen.
 * If there are other combo boxes on the window. The list of radio buttons is more noticeable than the combo box, so they will look like more important settings.
 * If layout combines various UI elements for one setting. In this case a combo box can be used for options even if their number is less than five:
     ![]({{site.baseurl}}/images/radiobutton/combobox.png)
 *The automatic updates setting consists of a checkbox, four lengthy-labeled options in a combo box and a button.*
-* If the number of options is more than five, the screen space is limited, or if it is assumed that the option will be used less often than others on the screen:
-    <p class="label incorrect">Incorrect</p>
-    ![]({{site.baseurl}}/images/radiobutton/combobox_incorrect.png)
-
-    <p class="label correct">Correct</p>
-    ![]({{site.baseurl}}/images/radiobutton/combobox_correct.png)
-
 
 ## How to use
 
