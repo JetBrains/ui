@@ -251,17 +251,21 @@ This icon works as a combo box.
 ### Size and colors
 The font size and colors are the default ones. 
 <table>
-<col width="30%">
-<col width="30%">
+<col width="25%">
+<col width="25%">
+<col width="25%">
+<col width="25%">
     <tr>
         <td style="margin-left: 20px"> Mac OS </td>
         <td> Windows </td>
         <td> Darcula </td>
+        <td> IntelliJ </td>
     </tr>
     <tr>
         <td> <img src="{{site.baseurl}}/images/button/size_margins_mac.png" style="margin: -5px 0 0 0"><em style="margin: 10px 0 0 0">On retina, the button height is 40px.</em></td>
         <td> <img src="{{site.baseurl}}/images/button/size_margins_win.png" style="margin: -5px 0 0 0"></td>
         <td> <img src="{{site.baseurl}}/images/button/size_margins_darcula.png" style="margin: -5px 0 0 0"></td>
+        <td> <img src="{{site.baseurl}}/images/button/size_margins_intellij.png" style="margin: -5px 0 0 0"></td>
     </tr>
 </table>
 <table>
