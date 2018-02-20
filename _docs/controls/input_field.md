@@ -202,7 +202,7 @@ If users are more likely to reenter the entire value, not edit the existing one,
 
     Show completion popup when user starts typing or presses <kbd>Ctrl+Space</kbd>.
 
-* Use [Control Buttons]({{site.baseurl}}/controls/button/) to help user enter the data. For example, browse disk button.  
+* Use [Control Buttons]({{site.baseurl}}/controls/button/#control-button) to help user enter the data. For example, browse disk button.  
 
 
 

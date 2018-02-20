@@ -1,6 +1,6 @@
 ---
-title: Required fields
-category: Principles
+title: Split button
+category: Controls
 type: Draft
 ---
 
