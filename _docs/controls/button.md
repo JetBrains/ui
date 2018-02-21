@@ -138,7 +138,7 @@ The button height is fixed, so the label is always a single line.
 </table>
 The default button confirms the main purpose of a dialog and is triggered by pressing <kbd>Enter</kbd> or <kbd>Ctrl+Enter</kbd>.
 
-**Exception**: If the focus is on an element that uses the Enter key (e.g. a text area or a table row), the default button is triggered only by <kbd>Ctrl+Enter</kbd>.
+**Exception**: If the focus is on an element that uses the <kbd>Enter</kbd> key (e.g. a text area or a table row), the default button is triggered only by <kbd>Ctrl+Enter</kbd>.
 
 The default button should be always present in a dialog. Only one button in a dialog can be the default one. 
 
