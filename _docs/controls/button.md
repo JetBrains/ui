@@ -167,10 +167,10 @@ A focused button behavior varies on Mac OS/Linux and Windows.
 
 * **Windows**
 
-  Any focused button is triggered by pressing <kbd>Enter</kbd> or <kbd>Space</kbd>. The default button is invoked using <kbd>Ctrl+Enter</kbd>.
+  The focused button is triggered by pressing <kbd>Enter</kbd> or <kbd>Space</kbd>. If non-default button gets focus, the default button is invoked using <kbd>Ctrl+Enter</kbd>.
   ![]({{site.baseurl}}/images/button/open_project_dialog_win.png)
-  *On pressing the Tab key, the New Window button gets the focus and is triggered with Enter. The original This Window button is triggered with Ctrl+Enter.*
-  If the focus moves to a control that’s not a button, the original default button becomes the default one.
+  *On pressing the Tab key, the New Window button gets the focus and is triggered with Enter or Space. The original This Window button is triggered with Ctrl+Enter.*
+  If the focus moves to a control that’s not a button, the original default button is triggered by <kbd>Enter</kbd>.
 
 
 ### Disabled
