@@ -75,7 +75,7 @@ The label displays the action the button performs.
 * Add an ellipsis if additional actions such as adding more info or confirming the action are required:
 ![]({{site.baseurl}}/images/button/buttons_with_ellipsis.png)
 
-  Do **not** add ellipsis if another window is opened, but more no more input from the user is required. For example, About, Details. 
+  Do **not** add ellipsis if another window is opened, but no more input from the user is required. For example, About, Details. 
 
 * Do **not** use the word _Now_ in the label because button always trigger an immediate action:
  
@@ -167,7 +167,7 @@ A focused button behavior varies on Mac OS/Linux and Windows.
 
 * **Windows**
 
-  Any focused button is triggered by pressing <kbd>Enter</kbd>. The default button is invoked using <kbd>Ctrl+Enter</kbd>.
+  Any focused button is triggered by pressing <kbd>Enter</kbd> or <kbd>Space</kbd>. The default button is invoked using <kbd>Ctrl+Enter</kbd>.
   ![]({{site.baseurl}}/images/button/open_project_dialog_win.png)
   *On pressing the Tab key, the New Window button gets the focus and is triggered with Enter. The original This Window button is triggered with Ctrl+Enter.*
   If the focus moves to a control that’s not a button, the original default button becomes the default one.
