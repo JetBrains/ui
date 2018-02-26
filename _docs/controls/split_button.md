@@ -34,7 +34,7 @@ For example, it is useful for the Commit actions group in the Commit dialog:
 For example, Force Push can override remote commits from other authors and should not be easily available:
 ![]({{site.baseurl}}/images/split_button/dangerous.png)
 
-   If an action is dangerous but common, do not hide it under the split button, use simple buttons. An action should follow the principles for dangerous actions’ behavior.
+   If an action is dangerous but common, do not hide it under the split button, use simple buttons. An action should follow the [principles for dangerous actions’]({{site.baseurl}}/principles/dangerous_actions/) behavior.
 
 Do **not** use the Split Button in other cases, use simple [Buttons]({{site.baseurl}}/controls/button/) instead. 
 
