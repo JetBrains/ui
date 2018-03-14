@@ -241,7 +241,7 @@ This icon works as a combo box.
         <td> Do not use the Copy button, the content can be selected and copied using the Cmd/Ctrl+C shortcut or the context menu. </td>
     </tr>
     <tr>
-        <td> <img src="{{site.baseurl}}/images/button/copy_button.png" style="margin-top: -5px"></td>
+        <td> <img src="{{site.baseurl}}/images/button/info_button.png" style="margin-top: -5px"></td>
         <td> Do not use the info button to open an external link. Use context help instead.</td>
     </tr>
 </table>
