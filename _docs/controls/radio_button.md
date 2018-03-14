@@ -25,7 +25,7 @@ Do **not** use radio buttons in the following cases:
 * If the parameter list includes more than 4 number choices with equal steps between, use the slider to select from a number range. Also if the specific value does not matter (e.g. delay in milliseconds) or it’s possible to provide feedback on the effect of the setting changes.
 
 
-Consider using a [Combo Box]({{site.baseurl}}/controls/combo_box):
+Consider using a [Dropdown]({{site.baseurl}}/controls/dropdown):
 * If the number of options is more than five:
   <table>
   <col width="200px">
@@ -34,16 +34,16 @@ Consider using a [Combo Box]({{site.baseurl}}/controls/combo_box):
           <td> <p class="label correct">Correct</p> </td>
       </tr>
       <tr>
-          <td> <img src="{{site.baseurl}}/images/radiobutton/combobox_incorrect.png" style="margin-top: -5px; margin-bottom: 5px;"> </td>
-          <td> <img src="{{site.baseurl}}/images/radiobutton/combobox_correct.png" style="margin-top: -5px; margin-bottom: 5px;"> </td>
+          <td> <img src="{{site.baseurl}}/images/radiobutton/dropdown_incorrect.png" style="margin-top: -5px; margin-bottom: 5px;"> </td>
+          <td> <img src="{{site.baseurl}}/images/radiobutton/dropdown_correct.png" style="margin-top: -5px; margin-bottom: 5px;"> </td>
       </tr>
   </table>
 * If the screen space is limited.
 * If it is assumed that the option will be changed less often than others on the screen.
-* If there are other combo boxes on the window. The list of radio buttons is more noticeable than the combo box, so they will look like more important settings.
-* If layout combines various UI elements for one setting. In this case a combo box can be used for options even if their number is less than five:
-    ![]({{site.baseurl}}/images/radiobutton/combobox.png)
-*The automatic updates setting consists of a checkbox, four lengthy-labeled options in a combo box and a button.*
+* If there are other dropdowns on the window. The list of radio buttons is more noticeable than the dropdown, so they will look like more important settings.
+* If layout combines various UI elements for one setting. In this case a dropdown can be used for options even if their number is less than five:
+    ![]({{site.baseurl}}/images/radiobutton/dropdown.png)
+*The automatic updates setting consists of a checkbox, four lengthy-labeled options in a dropdown and a button.*
 
 ## How to use
 
