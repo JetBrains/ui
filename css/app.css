@@ -48,6 +48,47 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 ol, ul {
     list-style: none
 }
+.nav li {
+    position: relative;
+}
+
+.nav li label {
+    display: block;
+}
+
+.nav li label:hover{
+    font-weight: bold;
+}
+
+.nav li input {
+    position: absolute;
+    top: 6px;
+    left: 6px;
+    opacity: 0;
+}
+
+.nav li input + ul {
+    height: 30px;
+    margin: -40px 0 12px 0;
+    background: url("../images/arrow-up.svg") no-repeat 10px 21px;
+    background-size: 10px 6px;
+}
+
+.nav li input + ul > li {
+    display: none;
+}
+
+.nav li input:checked + ul {
+    height:auto;
+    margin: -25px 0 12px 0;
+    padding: 25px 0 0 0;
+    background: url("../images/arrow-down.svg") no-repeat 10px 6px;
+    background-size: 10px 6px;
+}
+
+.nav li input:checked + ul > li {
+    display: block;
+}
 
 blockquote, q {
     quotes: none
