@@ -48,45 +48,61 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 ol, ul {
     list-style: none
 }
-.nav li {
+.nav .tree-element {
     position: relative;
 }
 
-.nav li label {
+.nav .tree-label {
     display: block;
 }
 
-.nav li label:hover{
+.nav .tree-label:hover{
     font-weight: bold;
 }
 
-.nav li input {
+.nav .tree-selector {
     position: absolute;
     top: 6px;
     left: 6px;
     opacity: 0;
 }
 
-.nav li input + ul {
-    height: 30px;
-    margin: -40px 0 12px 0;
-    background: url("../images/arrow-up.svg") no-repeat 10px 21px;
-    background-size: 10px 6px;
+.nav .tree-selector--level-2 {
+    left: 26px;
 }
 
-.nav li input + ul > li {
+.nav .tree-selector  + ul {
+    height: 30px;
+    margin: -40px 0 12px 0;
+    background: url("../images/arrow-right.svg") no-repeat 13px 20px;
+    background-size: 6px 10px;
+}
+
+.nav .tree-selector--level-2  + ul {
+    background: url("../images/arrow-right.svg") no-repeat 32px 20px;
+    margin-bottom: 10px;
+    background-size: 6px 10px;
+}
+
+.nav .tree-selector  + ul > li {
     display: none;
 }
 
-.nav li input:checked + ul {
+.nav .tree-selector:checked + ul {
     height:auto;
-    margin: -25px 0 12px 0;
+    margin: -25px 0 0 0;
     padding: 25px 0 0 0;
-    background: url("../images/arrow-down.svg") no-repeat 10px 6px;
+    background: url("../images/arrow-down.svg") no-repeat 11px 7px;
     background-size: 10px 6px;
 }
 
-.nav li input:checked + ul > li {
+.nav .tree-selector--level-2:checked + ul {
+    background: url("../images/arrow-down.svg") no-repeat 30px 7px;
+    background-size: 10px 6px;
+    margin-bottom: 0;
+}
+
+.nav .tree-selector:checked + ul > li {
     display: block;
 }
 

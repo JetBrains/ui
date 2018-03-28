@@ -1,5 +1,6 @@
 ---
 title: Button
+type: GroupHeader
 category: Controls
 ---
 

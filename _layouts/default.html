@@ -40,28 +40,51 @@
                         {% assign grouped = site.docs | group_by: 'category' %}
                             {% for group in grouped %}
                                 {% if group.name != "Resources" %}
-                                    <li class="toc-tree__node toc-tree__node--level_0">
-                                        <label class="toc-tree__title" for="{{ group.name }}">{{ group.name }}</label>
-                                        <input type="checkbox" checked id="{{ group.name }}" />
+                                    <li class="tree-element toc-tree__node toc-tree__node--level_0">
+                                        <label class="tree-label toc-tree__title" for="{{ group.name }}">{{ group.name }}</label>
+                                        <input class="tree-selector" type="checkbox" checked id="{{ group.name }}" />
 
                                         {% assign items = group.items | sort: 'order' %}
 
                                         <ul class="toc-tree__nodes-list">
                                             {% for item in items %}
-                                                {% unless item.type == "Draft"%}
-                                                    <li class="toc-tree__node toc-tree__node--level_1 {% if item.url == page.url %}toc-tree__title--selected{% endif %}">
-                                                        <div class="toc-tree__title-wrapper">
+                                                    {% if item.type == "GroupHeader" %}
+
+                                                        <li class="tree-element toc-tree__node toc-tree__node--level_1 ">
+
                                                             <a href="{{ site.baseurl }}{{ item.url }}"
-                                                               class="toc-tree__title toc-tree__title--link">{{ item.title }}</a></div>
-                                                    </li>
-                                                {% endunless %}
+                                                               class="toc-tree__title toc-tree__title--link {% if item.url == page.url %}toc-tree__title--selected{% endif %}">{{ item.title }}</a>
+                                                            <input class="tree-selector--level-2 tree-selector" type="checkbox" checked id="{{ item.title }}" />
+
+                                                            <ul class="toc-tree__nodes-list">
+                                                                {% assign subpages = group.items | where:"subpageOf", item.title %}
+                                                                {% for subpage in subpages %}
+                                                                    <li class="toc-tree__node toc-tree__node--level_2 {% if subpage.url == page.url %}toc-tree__title--selected{% endif %}">
+                                                                        <div class="toc-tree__title-wrapper">
+                                                                            <a href="{{ site.baseurl }}{{ subpage.url }}"
+                                                                               class="toc-tree__title toc-tree__title--link">{{ subpage.title }}</a></div>
+                                                                    </li>
+                                                                {% endfor %}
+
+                                                            </ul>
+                                                        </li>
+
+                                                    {% elsif item.type == "Draft" or item.type == "subpage" %}
+
+                                                    {% else %}
+                                                        <li class="toc-tree__node toc-tree__node--level_1 {% if item.url == page.url %}toc-tree__title--selected{% endif %}">
+                                                            <div class="toc-tree__title-wrapper">
+                                                                <a href="{{ site.baseurl }}{{ item.url }}"
+                                                                   class="toc-tree__title toc-tree__title--link">{{ item.title }}</a></div>
+                                                        </li>
+                                                    {% endif %}
                                             {% endfor %}
                                         </ul>
                                     </li>
                                 {% endif %}
                             {% endfor %}
                         <div class="separator"></div>
-                        {% for group in grouped %}
+                        {% for group    in grouped %}
                         <li class="toc-tree__node toc-tree__node--level_0">
                             {% if group.name == "Resources" %}
                                 {% assign items = group.items | sort: 'order' %}
@@ -131,6 +154,5 @@
     $.each(checkboxValues, function(key, value) {
         $("#" + key).prop('checked', value);
     });</script>
-
 </body>
 </html>
