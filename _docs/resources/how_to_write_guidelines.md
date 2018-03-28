@@ -201,17 +201,37 @@ Use the Hex Code format to specify colors:
 ![]({{site.baseurl}}/images/how_to_write_guidelines/colors.png)
 
 Use colored rectangles to specify sizes inside the element and lines to specify external sizes:
-![]({{site.baseurl}}/images/how_to_write_guidelines/insets.png)   
+![]({{site.baseurl}}/images/how_to_write_guidelines/insets.png)
 
-Main rectangle: <span style="color:#DA769D">#DA769D</span> op. 0.4.  
-Secondary rectangle: <span style="color:#6D9AE6">#6D9AE6</span> op. 0.4.  
-Text and line: <span style="color:#BD136B">#BD136B</span>, <span style="color:#0054C0">#0054C0</span>. Distance between image and line, between line and text is 5px. Align all sizes on the right.  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span style="line-height:2;">Main rectangle: <span style="color:#DA769D">#DA769D</span> op. 0.4.  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Secondary rectangle: <span style="color:#6D9AE6">#6D9AE6</span> op. 0.4.  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Text and line: <span style="color:#BD136B">#BD136B</span>, <span style="color:#0054C0">#0054C0</span>.   
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Distance between image and line, between line and text is 5px.  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Align all sizes on the right.  
+</span>
+<br>
 
 Use line to show that text is aligned with an element:
 ![]({{site.baseurl}}/images/how_to_write_guidelines/alignment.png)   
 
 Specify the element sizes in the following format:
 ![]({{site.baseurl}}/images/how_to_write_guidelines/sizes.png)
+
+For text labels, specify insets from the bounding box:
+
+![]({{site.baseurl}}/images/how_to_write_guidelines/boundingBox.png)
+
+![]({{site.baseurl}}/images/how_to_write_guidelines/insetsText.png)
+
+Parameters for regular labels that make bounding boxes in Sketch the same size as in Java (already used in Sketch libraries symbols):
+<span style="line-height:2;">   
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; *Mac OS X*: SF UI Text Medium / 13 size / –0.1 character spacing / 16 line spacing  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; *Windows*: Segoe UI Regular / 12 size / 16 line spacing    
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; *Linux*: Ubuntu Regular / 15 size / 18 line spacing  
+</span>
+
+If unsure about a bounding box size for other font sizes, check with UI Inspector.  
+<br>
 
 If there are many properties for different themes, put them in the table:
 ![]({{site.baseurl}}/images/how_to_write_guidelines/themes.png)
