@@ -223,7 +223,7 @@ Input font: default or Editor font for code snippets.
 [comment]: <> (TODO: Add table with colors.)
 
 ### Sizes
-The input field height is 22px for Windows and Mac, for Darcula 24px. Other sizes are the same for all themes:
+The input field height is 21px for Mac, 22px for Windows, 24px for Darcula and IntelliJ. Other sizes are the same for all themes:
 ![]({{site.baseurl}}/images/input_field/sizes.png)
 
 
