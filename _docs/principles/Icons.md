@@ -158,7 +158,9 @@ Align pixels on the X and Y axis and round to the nearest whole pixel, or 0.5px 
 
 Use the 30°, 45° and 60° angles for diagonal lines as they look sharper than diagonals with other angles.
 
-Round shapes, small details and some letters cannot be aligned to the pixel grid. In Sketch use the View > Canvas > Show Pixels on Zoom <kbd>Ctrl+P</kbd> option to check what an icon will look like when rasterized. In Illustrator use View > Pixel Preview <kbd>Alt+Ctrl+Y</kbd>. Make sure that the significant pixels have sufficient saturation.
+<aside class="note sideblock _visible">To check what an icon will look like when rasterized use the View > Canvas > Show Pixels on Zoom option <kbd>Ctrl+P</kbd> in Sketch, View > Pixel Preview <kbd>Alt+Ctrl+Y</kbd> in Illustrator.</aside>
+
+Round shapes, small details and some letters cannot be aligned to the pixel grid. Make sure that the significant pixels have sufficient saturation.
 
 Reduce the number of anchors, as they increase the size of the image and takes longer to process it.
 
@@ -166,9 +168,9 @@ Reduce the number of anchors, as they increase the size of the image and takes l
 <col width="30%">
 <col width="30%">
 <tr>
-    <td> <p class="label incorrect">Incorrect</p> <br /> <img src="{{site.baseurl}}/images/icons/stroke_anchors_correct.png">
+    <td> <p class="label incorrect">Incorrect</p> <br /> <img src="{{site.baseurl}}/images/icons/stroke_anchors_incorrect.png">
          <em> Unneeded anchors are added.</em> </td>
-    <td>  <p class="label correct">Correct</p> <br /> <img src="{{site.baseurl}}/images/icons/stroke_anchors_incorrect.png"> 
+    <td>  <p class="label correct">Correct</p> <br /> <img src="{{site.baseurl}}/images/icons/stroke_anchors_correct.png"> 
          <em> Use the minimum number of anchors.</em> </td>
 </tr>
 </table>
@@ -239,7 +241,22 @@ Use these colors according to the following rules:
     ![]({{site.baseurl}}/images/icons/colors_actions_grey.png)
 
 2. If an icon falls into one of the categories below, use the corresponding color:
-    ![]({{site.baseurl}}/images/icons/colors_actions_all.png)
+
+    <table>
+        <col width="45%">
+        <col width="15%">
+        <col width="45%">
+        <tr>
+            <td> <span style="font-weight: bold"> Green </span> <br/> Positive actions: run, create <br /><img src="{{site.baseurl}}/images/icons/colors_actions_green.png" style="margin-left:0px; margin-top:40px"> </td>
+            <td></td>
+            <td> <span style="font-weight: bold"> Red </span> <br/> Destructive actions: stop, remove, force <br /><img src="{{site.baseurl}}/images/icons/colors_actions_red.png" style="margin-left:0px; margin-top:40px"> </td>
+        </tr>
+        <tr>
+            <td> <span style="font-weight: bold"> Blue </span> <br/> Accent color to highlight popular icons based on usage statistics, highlight small elements in complex icons <br /><img src="{{site.baseurl}}/images/icons/colors_actions_blue.png" style="margin-left:0px; margin-top:40px"> </td>
+            <td></td>    
+            <td> <span style="font-weight: bold"> Yellow </span> <br/> Warning actions: attract attention to the places (e.g. code) that can be optimized or improved <br /><img src="{{site.baseurl}}/images/icons/colors_actions_yellow.png" style="margin-left:0px; margin-top:40px"> </td>
+        </tr>
+    </table>
 
 
 3. Preserve colors in icons combinations. If an icon is colored in its full size, it should have the same color when reduced. 
