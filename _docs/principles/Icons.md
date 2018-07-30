@@ -280,7 +280,7 @@ If you need a new icon, color it according to its semantics. Make sure that the 
 
 ### Noun icons
 
-A noun icons is an icon that appears in tree. It helps to find the needed item in the list quicker and does not trigger an actions.
+A noun icon is an icon that appears in the tree view to mark different file types. It helps to locate items in the list faster and does not trigger an action.
 
 The palette for noun icons is wider, because there are lots of icons in one set:
 ![]({{site.baseurl}}/images/icons/colors_nouns_palette.png)
