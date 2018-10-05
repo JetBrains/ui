@@ -1,7 +1,6 @@
 ---
 title: Numeric fields
 category: Principles
-order: 1
 ---
 
 Select the required control for numeric field depending on type of the data. Use: 

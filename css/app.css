@@ -9645,6 +9645,10 @@ br + kbd {
     color:#18B04B;
 }
 
+.article .table-line {
+    border-bottom: 1px solid #e6e6e6;
+}
+
 
 .navigation-links__next, .navigation-links__prev {
     position: relative;
@@ -9899,7 +9903,7 @@ br + kbd {
 
 td, th {
     padding: 10px 3% 15px 0px;
-    vertical-align: top
+    vertical-align: top;
 }
 
 th {
@@ -9915,7 +9919,7 @@ table > table td, table > table th {
 }
 
 table.no_head tr:first-child td, table.no_head tr:first-child th {
-    border-top-color: transparent
+    border-top-color: transparent;
 }
 
 table {
@@ -9933,11 +9937,11 @@ th {
     text-align: left;
     font-size: 16px;
     font-weight: 700;
-    line-height: 22px
+    line-height: 22px;
 }
 
 table.left_header tbody th {
-    border-bottom: 0
+    border-bottom: 0;
 }
 
 .table-wrapper {
