@@ -6,7 +6,7 @@ category: Controls
 Radio buttons is used to choose only one option from several mutually exclusive options.
 ![]({{site.baseurl}}/images/radiobutton/radio_example.png)
 ## When to use
-Use the radio button to choose only one parameter from 2—5 options.
+Use the radio button to choose only one parameter from 2—4 options.
 
 Do **not** use radio buttons in the following cases:
 * If the user might select multiple options, use a [Checkbox]({{site.baseurl}}/controls/checkbox).
@@ -26,7 +26,7 @@ Do **not** use radio buttons in the following cases:
 
 
 Consider using a [Dropdown]({{site.baseurl}}/controls/dropdown):
-* If the number of options is more than five:
+* If the number of options is more than four:
   <table>
   <col width="200px">
       <tr>
@@ -41,9 +41,9 @@ Consider using a [Dropdown]({{site.baseurl}}/controls/dropdown):
 * If the screen space is limited.
 * If it is assumed that the option will be changed less often than others on the screen.
 * If there are other dropdowns on the window. The list of radio buttons is more noticeable than the dropdown, so they will look like more important settings.
-* If layout combines various UI elements for one setting. In this case a dropdown can be used for options even if their number is less than five:
+* If layout combines various UI elements for one setting. In this case a dropdown can be used for options even if their number is less than four:
     ![]({{site.baseurl}}/images/radiobutton/dropdown.png)
-*The automatic updates setting consists of a checkbox, four lengthy-labeled options in a dropdown and a button.*
+*The automatic updates setting consists of a checkbox, three lengthy-labeled options in a dropdown and a button.*
 
 ## How to use
 
