@@ -1,5 +1,5 @@
 ---
-title: Context Help
+title: Context help
 category: Principles
 type: Draft
 ---
