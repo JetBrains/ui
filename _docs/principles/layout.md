@@ -78,7 +78,7 @@ Labeled inputs are input fields, spinners, and combo boxes (both editable and no
   
   * If labeled inputs do not appear on nearby lines:
   
-  ![]({{site.baseurl}}/images/layout/1-column-checkboxes-short.png)
+  ![]({{site.baseurl}}/images/layout/1-column-fields-and-checkboxes.png)
   
   * If a labeled input might have a long string of text and appears in a narrow panel, e.g. a [popup]({{site.baseurl}}/components/popup). In this case, place the label above the input and make the input take the whole width of the panel:
   
