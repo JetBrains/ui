@@ -376,7 +376,7 @@ The warning can be shown:
 <col width="20%">
 <col width="20%">
 <col width="20%">
-<th class="table-line"> Mac OS </th>
+<th class="table-line"> </th>
 <th class="table-line"> Mac OS </th>
 <th class="table-line"> Windows </th>
 <th class="table-line"> IntelliJ </th>
@@ -427,7 +427,7 @@ The warning can be shown:
 <col width="20%">
 <col width="20%">
 <col width="20%">
-<th class="table-line"> Mac OS </th>
+<th class="table-line"> </th>
 <th class="table-line"> Mac OS </th>
 <th class="table-line"> Windows, IntelliJ </th>
 <th class="table-line"> Darcula </th>
