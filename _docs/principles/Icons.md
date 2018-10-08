@@ -231,7 +231,8 @@ Do not use gradients or shadows.
 
 ### Action icons
 
-An action icon is an icon that triggers an action. It usually appears on toolbars and in dialogs. There are 5 colors in the actions icons palette.
+An action icon is an icon that triggers an action. It usually appears on toolbars and in dialogs. 
+There are 5 colors in the actions icons palette. Dark version is for Darcula theme.
 
 ![]({{site.baseurl}}/images/icons/colors_actions_palette.png)
 *Action icons palette*
