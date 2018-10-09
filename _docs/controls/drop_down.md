@@ -1,6 +1,7 @@
 ---
 title: Drop-down list
 category: Controls
+type: Draft
 ---
 
 A drop-down list is a type of button that shows a list of choices on clicking it. A drop-down list allows selecting one option.
