@@ -9210,8 +9210,8 @@ input, textarea {
 .code-block__wrapper {
     display: block;
     overflow: auto;
-    padding: 15px 15px 15px 30px;
-    white-space: pre;
+    padding: 10px 15px 10px 30px;
+    white-space: normal;
     letter-spacing: .2px;
     background: #fcfcfc;
     border-color: #eeeeee;
@@ -9221,7 +9221,7 @@ input, textarea {
     font-size: 14px;
     line-height: 1.5625;
     -webkit-font-smoothing: antialiased;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
 
 .table-wrapper .code-block__wrapper {
