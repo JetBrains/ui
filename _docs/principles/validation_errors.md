@@ -84,7 +84,7 @@ Hide the error when the incorrect symbol is deleted.
 **Implementation**: 
 <div class="code-block__wrapper">// Fields initializers
 private JTextField myPort = new JTextField();
-private static final String MESSAGE = "Port value should be between 0 and 65535";
+private static final String MESSAGE = "Port value should be between 0 and 65535.";
 
 // Components initialization
 new ComponentValidator(project).withValidator(v -> {
@@ -181,7 +181,7 @@ When the focus is returned to the field with error, the validation is the same a
     `ValidationInfo` for messages in inline area is created with null component:  
       
      <div class="code-block__wrapper"> new ValidationInfo("The host cannot be reached. Check the address and 
-     credentials");</div>
+     credentials.");</div>
 
 
 ## Tooltip
@@ -387,7 +387,7 @@ The warning can be shown:
 
     There is an extra configuration in `ValidiationInfo` class which turns it into a warning
     info:
-    <div class="code-block__wrapper">new ValidationInto("Target name is not specified", myNameField).asWarning();</div>
+    <div class="code-block__wrapper">new ValidationInto("Target name is not specified.", myNameField).asWarning();</div>
 
 2. On the form under the controls. Show the message with the yellow warning icon.
 
