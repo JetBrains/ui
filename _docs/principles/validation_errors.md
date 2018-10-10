@@ -81,37 +81,39 @@ The details on how and when to use each type of validation are provided below.
 
 Hide the error when the incorrect symbol is deleted.
 
-**Code snippet**: 
-<div class="code-block__wrapper">private JTextField myPort = new JTextField();
-	private static final String MESSAGE = "Port value should be between 0 and 65535";
-	
-	new ComponentValidator(project).withValidator(v -> {
-      String pt = myPort.getText();
-      if (StringUtil.isNotEmpty(pt)) {
-        try {
-          int portValue = Integer.parseInt(pt);
-          if (portValue >= 0 && portValue <= 65535) {
-            v.updateInfo(null);
-          }
-          else {
-            v.updateInfo(new ValidationInfo(MESSAGE, myPort));
-          }
-        }
-        catch (NumberFormatException nfe) {
-          v.updateInfo(new ValidationInfo(MESSAGE, myPort));
-        }
-      }
-      else {
+**Implementation**: 
+<div class="code-block__wrapper">// Fields initializers
+private JTextField myPort = new JTextField();
+private static final String MESSAGE = "Port value should be between 0 and 65535";
+
+// Components initialization
+new ComponentValidator(project).withValidator(v -> {
+  String pt = myPort.getText();
+  if (StringUtil.isNotEmpty(pt)) {
+    try {
+      int portValue = Integer.parseInt(pt);
+      if (portValue >= 0 && portValue <= 65535) {
         v.updateInfo(null);
       }
-    }).installOn(myPort);
-
-    myPort.getDocument().addDocumentListener(new DocumentAdapter() {
-      @Override
-      protected void textChanged(@NotNull DocumentEvent e) {
-        ComponentValidator.getInstance(myPort).ifPresent(v -> v.revalidate());
+      else {
+        v.updateInfo(new ValidationInfo(MESSAGE, myPort));
       }
-    });
+    }
+    catch (NumberFormatException nfe) {
+      v.updateInfo(new ValidationInfo(MESSAGE, myPort));
+    }
+  }
+  else {
+    v.updateInfo(null);
+  }
+}).installOn(myPort);
+
+myPort.getDocument().addDocumentListener(new DocumentAdapter() {
+  @Override
+  protected void textChanged(@NotNull DocumentEvent e) {
+    ComponentValidator.getInstance(myPort).ifPresent(v -> v.revalidate());
+  }
+});
 </div>
 
 
@@ -133,9 +135,9 @@ Hide the field highlighting and the tooltip when the user fixes the invalid valu
 
 When the focus is returned to the field with error, the validation is the same as immediate on input validation.
 
-**Code snippet**: Add `andStartOnFocusLost()` call on `ComponentValidator` before installing it on a component:
-<div class="code-block__wrapper">new ComponentValidator(getDisposable()).withValidator( /*validator code*/)
-.andStartOnFocusLost().installOn(component);</div>
+**Implementation**: Add `andStartOnFocusLost()` call on `ComponentValidator` before installing it on a component:
+<div class="code-block__wrapper">new ComponentValidator(getDisposable()).withValidator(...).
+    andStartOnFocusLost().installOn(component);</div>
 
 ### 3. On sending the form
 
@@ -171,7 +173,7 @@ When the focus is returned to the field with error, the validation is the same a
     
     Make the error message selectable. The user may want to find this message on the Internet or to send a question about the option to support.
     
-    **Code snippet**: By default `DialogWrapper` disables "OK" button until all fields that participate in validation 
+    **Implementation**: By default `DialogWrapper` disables "OK" button until all fields that participate in validation 
     become valid. Explicitly enable "OK" button for each input field:
                       
     <div class="code-block__wrapper">new ValidationInto("Host is unreachable", myHostField).withOkEnabled(); </div>
@@ -331,20 +333,20 @@ Add a red light bulb on the right side of the input field if an action to fix th
 
 When the field in a table loses focus, highlight the text in red and show an error tooltip on mouse hover or when the line gets focus:
 ![]({{site.baseurl}}/images/validation/table_hover.png)
-
+**Implementation**:
 <div class="code-block__wrapper">JTextField cellEditor = new JTextField();
-  cellEditor.putClientProperty(DarculaUIUtil.COMPACT_PROPERTY, Boolean.TRUE);
-  cellEditor.getDocument().addDocumentListener(new DocumentAdapter() {
+cellEditor.putClientProperty(DarculaUIUtil.COMPACT_PROPERTY, Boolean.TRUE);
+cellEditor.getDocument().addDocumentListener(new DocumentAdapter() {
     @Override
     protected void textChanged(@NotNull DocumentEvent e) {
       Object op = cellEditor.getText().contains(".") ? "error": null;
       cellEditor.putClientProperty("JComponent.outline", op);
     }
-  });
+});
 
-  TableColumn col0 = table.getColumnModel().getColumn(0);
-  col0.setCellEditor(new DefaultCellEditor(cellEditor));
-  col0.setCellRenderer(new DefaultTableCellRenderer() {
+TableColumn col0 = table.getColumnModel().getColumn(0);
+col0.setCellEditor(new DefaultCellEditor(cellEditor));
+col0.setCellRenderer(new DefaultTableCellRenderer() {
     @Override
     public Dimension getPreferredSize() {
       Dimension size = super.getPreferredSize();
@@ -352,7 +354,7 @@ When the field in a table loses focus, highlight the text in red and show an err
       size.height = Math.max(size.height, editorSize.height);
       return size;
     }
-  });
+});
 </div>
 
 ### Multi-page dialog
@@ -385,7 +387,7 @@ The warning can be shown:
 
     There is an extra configuration in `ValidiationInfo` class which turns it into a warning
     info:
-    <div class="code-block__wrapper">new ValidationInto("Target name is not specified", myNameField).asWarning()</div>
+    <div class="code-block__wrapper">new ValidationInto("Target name is not specified", myNameField).asWarning();</div>
 
 2. On the form under the controls. Show the message with the yellow warning icon.
 
