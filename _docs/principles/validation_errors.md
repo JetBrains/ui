@@ -84,7 +84,7 @@ Hide the error when the incorrect symbol is deleted.
 **Implementation**: 
 <div class="code-block__wrapper">// Fields initializers
 private JTextField myPort = new JTextField();
-private static final String MESSAGE = "Port value should be between 0 and 65535.";
+private static final String MESSAGE = "The port number should be between 0 and 65535.";
 
 // Components initialization
 new ComponentValidator(project).withValidator(v -> {
@@ -176,7 +176,8 @@ When the focus is returned to the field with error, the validation is the same a
     **Implementation**: By default `DialogWrapper` disables "OK" button until all fields that participate in validation 
     become valid. Explicitly enable "OK" button for each input field:
                       
-    <div class="code-block__wrapper">new ValidationInto("Host is unreachable", myHostField).withOkEnabled(); </div>
+    <div class="code-block__wrapper">new ValidationInto("The host cannot be reached.", myHostField).withOkEnabled(); 
+    </div>
     
     `ValidationInfo` for messages in inline area is created with null component:  
       
