@@ -80,9 +80,9 @@ The details on how and when to use each type of validation are provided below.
 *If the maximum value is exceeded, specify what values are allowed (e.g. a range for numeric values, or the number of symbols).*
 
 Hide the error when the incorrect symbol is deleted.
-
+<br><br>
 **Implementation**: 
-<div class="code-block__wrapper">// Fields initializers
+<div class="code-block__wrapper">{% highlight java %}// Fields initializers
 private JTextField myPort = new JTextField();
 private static final String MESSAGE = "The port number should be between 0 and 65535.";
 
@@ -113,8 +113,7 @@ myPort.getDocument().addDocumentListener(new DocumentAdapter() {
   protected void textChanged(@NotNull DocumentEvent e) {
     ComponentValidator.getInstance(myPort).ifPresent(v -> v.revalidate());
   }
-});
-</div>
+});{% endhighlight %}</div>
 
 
 
@@ -136,8 +135,8 @@ Hide the field highlighting and the tooltip when the user fixes the invalid valu
 When the focus is returned to the field with error, the validation is the same as immediate on input validation.
 
 **Implementation**: Add `andStartOnFocusLost()` call on `ComponentValidator` before installing it on a component:
-<div class="code-block__wrapper">new ComponentValidator(getDisposable()).withValidator(...).
-    andStartOnFocusLost().installOn(component);</div>
+<div class="code-block__wrapper">{% highlight java %}new ComponentValidator(getDisposable()).withValidator(...).
+    andStartOnFocusLost().installOn(component);{% endhighlight %}</div>
 
 ### 3. On sending the form
 
@@ -175,15 +174,13 @@ When the focus is returned to the field with error, the validation is the same a
     
     **Implementation**: By default `DialogWrapper` disables "OK" button until all fields that participate in validation 
     become valid. Explicitly enable "OK" button for each input field:
-                      
-    <div class="code-block__wrapper">new ValidationInto("The host cannot be reached.", myHostField).withOkEnabled(); 
-    </div>
-    
-    `ValidationInfo` for messages in inline area is created with null component:  
-      
-     <div class="code-block__wrapper"> new ValidationInfo("The host cannot be reached. Check the address and 
-     credentials.");</div>
 
+<div class="code-block__wrapper">{% highlight java %}new ValidationInto("The host cannot be reached.", myHostField).withOkEnabled();{% endhighlight %}</div>
+  
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`ValidationInfo` for messages in inline area is created with null component:  
+  
+  <div class="code-block__wrapper">{% highlight java %} new ValidationInfo("The host cannot be reached. Check the address and 
+     credentials.");{% endhighlight %}</div>
 
 ## Tooltip
 
@@ -335,7 +332,7 @@ Add a red light bulb on the right side of the input field if an action to fix th
 When the field in a table loses focus, highlight the text in red and show an error tooltip on mouse hover or when the line gets focus:
 ![]({{site.baseurl}}/images/validation/table_hover.png)
 **Implementation**:
-<div class="code-block__wrapper">JTextField cellEditor = new JTextField();
+<div class="code-block__wrapper">{% highlight java %}JTextField cellEditor = new JTextField();
 cellEditor.putClientProperty(DarculaUIUtil.COMPACT_PROPERTY, Boolean.TRUE);
 cellEditor.getDocument().addDocumentListener(new DocumentAdapter() {
     @Override
@@ -356,7 +353,7 @@ col0.setCellRenderer(new DefaultTableCellRenderer() {
       return size;
     }
 });
-</div>
+{% endhighlight %}</div>
 
 ### Multi-page dialog
    
@@ -384,17 +381,17 @@ A warning can appear on input, focus loss, or on reopening a filled form. For ex
 
 The warning can be shown:
 
-1. In a tooltip for a specific field. Follow the rules for [the error tooltip](#tooltip). 
+* In a tooltip for a specific field. Follow the rules for [the error tooltip](#tooltip). 
 
     There is an extra configuration in `ValidiationInfo` class which turns it into a warning
     info:
-    <div class="code-block__wrapper">new ValidationInto("Target name is not specified.", myNameField).asWarning();</div>
+<div class="code-block__wrapper">{% highlight java %}new ValidationInto("Target name is not specified.", myNameField).asWarning();{% endhighlight %}</div>
 
-2. On the form under the controls. Show the message with the yellow warning icon.
+* On the form under the controls. Show the message with the yellow warning icon.
 
     ![]({{site.baseurl}}/images/validation/warning_inline.png)
 
-3. On the Problems page in complex multi-page dialogs. Show warnings and fix options:
+* On the Problems page in complex multi-page dialogs. Show warnings and fix options:
 
     ![]({{site.baseurl}}/images/validation/problems.png)
     *Problems page in the Project Structure dialog.*
