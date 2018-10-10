@@ -81,6 +81,41 @@ The details on how and when to use each type of validation are provided below.
 
 Hide the error when the incorrect symbol is deleted.
 
+**Code snippet**: 
+<div class="code-block__wrapper">private JTextField myPort = new JTextField();
+	private static final String MESSAGE = "Port value should be between 0 and 65535";
+	
+	new ComponentValidator(project).withValidator(v -> {
+      String pt = myPort.getText();
+      if (StringUtil.isNotEmpty(pt)) {
+        try {
+          int portValue = Integer.parseInt(pt);
+          if (portValue >= 0 && portValue <= 65535) {
+            v.updateInfo(null);
+          }
+          else {
+            v.updateInfo(new ValidationInfo(MESSAGE, myPort));
+          }
+        }
+        catch (NumberFormatException nfe) {
+          v.updateInfo(new ValidationInfo(MESSAGE, myPort));
+        }
+      }
+      else {
+        v.updateInfo(null);
+      }
+    }).installOn(myPort);
+
+    myPort.getDocument().addDocumentListener(new DocumentAdapter() {
+      @Override
+      protected void textChanged(@NotNull DocumentEvent e) {
+        ComponentValidator.getInstance(myPort).ifPresent(v -> v.revalidate());
+      }
+    });
+</div>
+
+
+
 ### 2. On focus loss
 
 **When to use**: If the value that was entered is too short or small, or if a non-allowed value is entered.
@@ -97,6 +132,10 @@ Hide the field highlighting and the tooltip when the user fixes the invalid valu
 ![]({{site.baseurl}}/images/validation/fix_error.png)
 
 When the focus is returned to the field with error, the validation is the same as immediate on input validation.
+
+**Code snippet**: Add `andStartOnFocusLost()` call on `ComponentValidator` before installing it on a component:
+<div class="code-block__wrapper">new ComponentValidator(getDisposable()).withValidator( /*validator code*/)
+.andStartOnFocusLost().installOn(component);</div>
 
 ### 3. On sending the form
 
@@ -131,6 +170,16 @@ When the focus is returned to the field with error, the validation is the same a
     An inline error only appears on clicking the confirmation button. The dialog is resized to fit the error message. Do not leave an empty space for the error in advance.
     
     Make the error message selectable. The user may want to find this message on the Internet or to send a question about the option to support.
+    
+    **Code snippet**: By default `DialogWrapper` disables "OK" button until all fields that participate in validation 
+    become valid. Explicitly enable "OK" button for each input field:
+                      
+    <div class="code-block__wrapper">new ValidationInto("Host is unreachable", myHostField).withOkEnabled(); </div>
+    
+    `ValidationInfo` for messages in inline area is created with null component:  
+      
+     <div class="code-block__wrapper"> new ValidationInfo("The host cannot be reached. Check the address and 
+     credentials");</div>
 
 
 ## Tooltip
@@ -283,6 +332,29 @@ Add a red light bulb on the right side of the input field if an action to fix th
 When the field in a table loses focus, highlight the text in red and show an error tooltip on mouse hover or when the line gets focus:
 ![]({{site.baseurl}}/images/validation/table_hover.png)
 
+<div class="code-block__wrapper">JTextField cellEditor = new JTextField();
+  cellEditor.putClientProperty(DarculaUIUtil.COMPACT_PROPERTY, Boolean.TRUE);
+  cellEditor.getDocument().addDocumentListener(new DocumentAdapter() {
+    @Override
+    protected void textChanged(@NotNull DocumentEvent e) {
+      Object op = cellEditor.getText().contains(".") ? "error": null;
+      cellEditor.putClientProperty("JComponent.outline", op);
+    }
+  });
+
+  TableColumn col0 = table.getColumnModel().getColumn(0);
+  col0.setCellEditor(new DefaultCellEditor(cellEditor));
+  col0.setCellRenderer(new DefaultTableCellRenderer() {
+    @Override
+    public Dimension getPreferredSize() {
+      Dimension size = super.getPreferredSize();
+      Dimension editorSize = cellEditor.getPreferredSize();
+      size.height = Math.max(size.height, editorSize.height);
+      return size;
+    }
+  });
+</div>
+
 ### Multi-page dialog
    
 If validation in a multi-page form can be performed only on clicking the confirmation button, then:
@@ -309,7 +381,11 @@ A warning can appear on input, focus loss, or on reopening a filled form. For ex
 
 The warning can be shown:
 
-1. In a tooltip for a specific field. Follow the rules for [the error tooltip](#tooltip).
+1. In a tooltip for a specific field. Follow the rules for [the error tooltip](#tooltip). 
+
+    There is an extra configuration in `ValidiationInfo` class which turns it into a warning
+    info:
+    <div class="code-block__wrapper">new ValidationInto("Target name is not specified", myNameField).asWarning()</div>
 
 2. On the form under the controls. Show the message with the yellow warning icon.
 
