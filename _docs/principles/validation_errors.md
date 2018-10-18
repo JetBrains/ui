@@ -436,7 +436,8 @@ The warning can be shown:
 
     ![]({{site.baseurl}}/images/validation/add_tfs.png)
 
-* Do not provide ability to close the form with the error. When the form is opened again, the value is reset, so users don’t know if they entered incorrect data.
+* Do not allow to submit the form with the error. When the form is opened again, the value is reset, so users don’t know
+ if they entered incorrect data.
 
     ![]({{site.baseurl}}/images/validation/save.png)
 

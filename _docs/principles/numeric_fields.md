@@ -49,18 +49,6 @@ For more details see the controls pages linked above.
 If several units are used, label the units inside the field.
 ![]({{site.baseurl}}/images/numeric_fields/multi_unit.png)
 
-* Do **not** assign special meanings to specific numeric or string values. Use meta-options instead.
-    <table>
-        <tr>
-            <td> <p class="label incorrect">Incorrect</p> </td>
-            <td> <p class="label correct">Correct</p> </td>
-        </tr>
-        <tr>
-            <td> <img src="{{site.baseurl}}/images/numeric_fields/meta_option_incorrect.png" style="margin-top: -5px; margin-bottom: 5px;"> </td>
-            <td> <img src="{{site.baseurl}}/images/numeric_fields/meta_option_correct.png" style="margin-top: -5px;"> <em style="margin-bottom: 5px;">To set “Same as language level” empty string should be entered.</em>  </td>
-        </tr>
-    </table>
-
 
 * If invalid value is entered, highlight field with red and show error message and supported range in tooltip.  
 ![]({{site.baseurl}}/images/numeric_fields/error.png)

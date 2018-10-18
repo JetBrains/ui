@@ -9210,7 +9210,7 @@ input, textarea {
 .code-block__wrapper {
     display: block;
     overflow: auto;
-    padding: 15px 15px 15px 30px;
+    padding: 15px 15px 15px 25px;
     white-space: pre;
     letter-spacing: .2px;
     background: #fcfcfc;
