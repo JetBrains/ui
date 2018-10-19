@@ -197,10 +197,6 @@ switches to another app.
 
 A submenu is a menu item that shows a list of nested items. A submenu includes a triangular indicator that distinguishes it from other menu items.
 
-There are two types of submenus:
-
-### Items submenu
-
 * Use items submenus to group related options and to show hierarchy:
 	
 	![]({{site.baseurl}}/images/dropdown/submenu_example.png)
@@ -228,8 +224,9 @@ There are two types of submenus:
     
     If the selection moves with the Up and Down arrow keys, show the submenu list on pressing the Right arrow or Enter key.
 
+* Avoid submenus inside submenus. Submenus hide choices too deeply and are difficult to navigate. 
 
-
+<!-- 
 ### Actions submenu
 
 * Use an actions submenu to show actions related to the item:
@@ -239,8 +236,7 @@ There are two types of submenus:
 * Show a submenu list on clicking the triangular icon. 
     
     If the selection moves with the Up and Down arrow keys, show the submenu list on pressing the Right arrow or Enter key.
-
-Avoid submenus inside submenus. Submenus hide choices too deeply and are difficult to navigate.
+-->
 
 
 ## Toolbar drop-down
