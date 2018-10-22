@@ -105,6 +105,13 @@
                 </div>
             </div>
 
+            {% if page.type == "full" %}
+            <div class="app__main full">
+                <div class="app__container">
+                    {{content}}
+                </div>
+            </div>
+            {% else %}
             <div class="app__main">
                 <div class="app__container">
                     <main class="app__content">
@@ -122,6 +129,7 @@
                     </footer>
                 </div>
             </div>
+            {% endif %}
         </div>
     </div>
 </div>
