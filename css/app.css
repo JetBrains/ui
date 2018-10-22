@@ -12358,6 +12358,10 @@ table .note ol, table .note ul, table .tip ol, table .tip ul, table .todo ol, ta
     flex-direction: column;
 }
 
+.app__container .iconsSite {
+    flex: 1;
+}
+
 @media screen and (min-width: 1200px) {
     .app__nav {
         width: 300px
@@ -12365,6 +12369,10 @@ table .note ol, table .note ul, table .tip ol, table .tip ul, table .todo ol, ta
 
     .app__main {
         margin-left: 30%;
+    }
+
+    .app__main.full {
+        margin-left: 300px;
     }
 
     .app__container {
