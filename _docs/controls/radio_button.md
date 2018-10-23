@@ -1,5 +1,6 @@
 ---
 title: Radio button
+codename: JBRadioButton
 category: Controls
 ---
 

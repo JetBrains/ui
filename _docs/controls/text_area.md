@@ -1,5 +1,6 @@
 ---
 title: Text area
+codename: JBTextArea
 category: Controls
 ---
 

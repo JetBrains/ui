@@ -70,7 +70,7 @@
                                                             </ul>
                                                         </li>
 
-                                                    {% elsif item.type == "Draft" or item.type == "subpage" %}
+                                                    {% elsif item.type == "Draft" or item.type == "Subpage" %}
 
                                                     {% else %}
                                                         <li class="toc-tree__node toc-tree__node--level_1 {% if item.url == page.url %}toc-tree__title--selected{% endif %}">
@@ -109,6 +109,7 @@
                 <div class="app__container">
                     <main class="app__content">
                         <article class="article article--without-sideblocks"><h1>{{ page.title }}</h1>
+                            {% if page.codename != nil %} <codename>{{ page.codename }}</codename>{% endif %}
                             {{content}}
                         </article>
                     </main>

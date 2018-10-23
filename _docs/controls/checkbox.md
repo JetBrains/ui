@@ -1,5 +1,6 @@
 ---
 title: Checkbox
+codename: JBCheckBox
 category: Controls
 ---
 

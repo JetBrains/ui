@@ -168,6 +168,25 @@ h1, h2, h3, h4 {
     font-weight: 700
 }
 
+codename {
+    font-family: "Roboto Mono", Menlo, Monaco, Consolas, "Courier New", monospace;
+    -webkit-font-smoothing: antialiased;
+    font-size: 18px;
+    font-weight: 400;
+    color: #999;
+    letter-spacing: .2px;
+    display: block;
+    margin-top: -25px;
+    margin-bottom: 30px;
+}
+
+@media screen and (max-width: 640px) {
+    codename {
+        margin-top: -5px;
+        font-size: 16px;
+    }
+}
+
 h1 {
     margin-top: 80px;
     margin-bottom: 30px;

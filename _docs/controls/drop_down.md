@@ -1,5 +1,6 @@
 ---
 title: Drop-down list
+codename: ComboBox
 category: Controls
 ---
 

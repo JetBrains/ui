@@ -1,5 +1,6 @@
 ---
 title: Input field
+codename: JBTextField
 category: Controls
 ---
 

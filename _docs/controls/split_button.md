@@ -1,6 +1,6 @@
 ---
 title: Split button
-type: subpage
+type: Subpage
 subpageOf: Button
 category: Controls
 ---
