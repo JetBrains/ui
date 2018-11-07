@@ -12367,30 +12367,22 @@ table .note ol, table .note ul, table .tip ol, table .tip ul, table .todo ol, ta
         width: 300px
     }
 
-    .app__main {
-        margin-left: 30%;
-    }
-
-    .app__main.full {
-        margin-left: 300px;
-    }
-
     .app__container {
-        max-width: 1310px
+        padding-left: 30%;
+    }
+
+    .app__container.full {
+        padding-left: 300px;
     }
 }
 
 @media screen and (max-width: 1200px) {
-    .app__nav, .header {
-        width: 260px
-    }
-
-    .app__main {
-        margin-left: 260px
+    .app__nav {
+        width: 300px;
     }
 
     .app__container {
-        max-width: 1348px
+        padding-left: 300px;
     }
 }
 
@@ -12408,11 +12400,11 @@ table .note ol, table .note ul, table .tip ol, table .tip ul, table .todo ol, ta
     }
 
     .app__container {
-        max-width: 1620px
+        padding-left: 0;
     }
 
     .app__content {
-        padding-left: 40px
+        padding-left: 40px;
     }
 
     .header__nav-toggle {
@@ -12420,7 +12412,7 @@ table .note ol, table .note ul, table .tip ol, table .tip ul, table .todo ol, ta
     }
 
     .app__nav {
-        left: -260px
+        left: -300px;
     }
 }
 
@@ -12450,8 +12442,12 @@ table .note ol, table .note ul, table .tip ol, table .tip ul, table .todo ol, ta
 }
 
 @media screen and (max-width: 640px) {
+    .app__container {
+        padding-left: 0;
+    }
+
     .app__content {
-        padding-left: 20px
+        padding-left: 20px;
     }
 
     .header__nav-toggle {
