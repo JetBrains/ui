@@ -1,5 +1,5 @@
 ---
-title: Find an icon
+title: Icons list
 category: Resources
 type: full
 ---
