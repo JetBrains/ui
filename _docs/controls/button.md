@@ -154,7 +154,7 @@ Do **not** use the default button, or make a secondary button the default one if
 All buttons can get focus, even on Mac OS if the **Full Keyboard Access** option is disabled in Preferences > Keyboard > Shortcuts. 
 A focused button behavior varies on Mac OS/Linux and Windows.
 
-* **Mac OS/Linux**
+* **Mac OS**
 
   A focused button is invoked by pressing <kbd>Space</kbd>. Focused and default buttons are **independent**, so when the focus moves from one button to another, the default button does not change.
   
@@ -167,7 +167,7 @@ A focused button behavior varies on Mac OS/Linux and Windows.
   *The This Window button is the default and the focused one, while it’s better to place the focus on the New Window button, so that the user can access both options using the keyboard.*
   
 
-* **Windows**
+* **Windows/Linux**
 
   The focused button is triggered by pressing <kbd>Enter</kbd> or <kbd>Space</kbd>. If non-default button gets focus, the default button is invoked using <kbd>Ctrl+Enter</kbd>.
   ![]({{site.baseurl}}/images/button/open_project_dialog_win.png)
