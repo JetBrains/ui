@@ -100,10 +100,11 @@ Do **not** use an empty value as the default value. If no values are added to a 
 * Move the selection in the menu on pressing Up and Down arrows when an item is hovered. On hover the cursor over the item just move selection, do not update the value.
 
 
-* Filter items in the list on typing:
+<!-- * Filter items in the list on typing:
     
     ![]({{site.baseurl}}/images/dropdown/filter.png)
-    
+-->
+
 * The menu remains opened until the user selects an item, clicks outside the menu, presses the <kbd>Esc</kbd> key or 
 switches to another app.
 
@@ -173,7 +174,7 @@ switches to another app.
   <p class="label correct">Correct</p>
   ![]({{site.baseurl}}/images/dropdown/none_correct.png)
   
-* Preview list items with images/dropdown if they are associated with well-known icons. Use formatting for a list of fonts. It will help users make a choice.
+* Preview list items with images if they are associated with well-known icons. Use formatting for a list of fonts. It will help users make a choice.
   
   ![]({{site.baseurl}}/images/dropdown/preview.png)
   	 	
@@ -242,4 +243,4 @@ For sizes inside the menu list see [Menu list layout]({{site.baseurl}}/controls/
 
 ### Spacing
 
-Follow the rules for the [Input field]({{site.baseurl}}/controls/input_field/).
+Follow the rules for the [input field]({{site.baseurl}}/controls/input_field/).
