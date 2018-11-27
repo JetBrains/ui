@@ -119,8 +119,6 @@ Use bulleted lists when the order of points does not matter, and numbered list w
 
 ### Style
 
-Use bulleted lists when the order of points does not matter, and numbered list when they do.
-
 Describe common properties in the following format:
 
 Font-style: System  
