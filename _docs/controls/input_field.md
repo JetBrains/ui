@@ -11,18 +11,20 @@ An input field is a rectangular area that allows users to enter or edit one text
 
 ## When to use
 
-Use an input field if it’s not possible to enumerate less than 15 most likely or valid values. Otherwise use a [Combo Box]({{site.baseurl}}/controls/combo_box/) or [Drop-down]({{site.baseurl}}/controls/drop_down).
+Use an input field if it’s not possible to enumerate less than 15 most likely or valid values. Otherwise use a [combo
+ Box]({{site.baseurl}}/controls/combo_box/) or [drop-down]({{site.baseurl}}/controls/drop_down).
 
 If the input has a specific format, select one of the following controls:
 
-* If the previous user input should be preserved, use a [Combo Box]({{site.baseurl}}/controls/combo_box/).
+* If the previous user input should be preserved, use a [combo box]({{site.baseurl}}/controls/combo_box/).
 
-* Use [Text Area]({{site.baseurl}}/controls/text_area/) if input is a long phrase (e.g. commit message) or multi-line (e.g. code snippet). If place is constrained, use [Expandable input field](#input-field-types).
+* Use [text area]({{site.baseurl}}/controls/text_area/) if input is a long phrase (e.g. commit message) or multi-line
+ (e.g. code snippet). If place is constrained, use [expandable input field](#input-field-types).
 
 * [Slider]({{site.baseurl}}/controls/slider) if a precise value does not matter or if it’s possible to provide feedback on the effect of setting changes. If place is constrained, use an  input field.
-* [Search Field]({{site.baseurl}}/controls/search/).
+* [Search field]({{site.baseurl}}/controls/search/).
 * [Calendar]({{site.baseurl}}/controls/calendar/).
-* [Color Box]({{site.baseurl}}/controls/color_box/).
+* [Color box]({{site.baseurl}}/controls/color_box/).
 
 
 ## How to use
@@ -203,7 +205,8 @@ If users are more likely to reenter the entire value, not edit the existing one,
 
     Show completion popup when user starts typing or presses <kbd>Ctrl+Space</kbd>.
 
-* Use [Control Buttons]({{site.baseurl}}/controls/button/#control-button) to help user enter the data. For example, browse disk button.  
+* Use [control buttons]({{site.baseurl}}/controls/button/#control-button) to help user enter the data. For example, 
+browse disk button.  
 
 
 

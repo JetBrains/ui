@@ -14,9 +14,10 @@ Use Text Area if input is unconstrained and long, or if newline character is a v
 
 Do **not** use Text Area in the following cases:
 
-* If input consists of several words, use [Input Field]({{site.baseurl}}/controls/input_field).
-* If there is not enough place for the Text Area, use [Expandable input field]({{site.baseurl}}/controls/input_field#input-field-types). Or if input is usually short, but can be long or multi-line rarely.
-* If values are added one by one, use [Table]({{site.baseurl}}/controls/table/).
+* If input consists of several words, use [input field]({{site.baseurl}}/controls/input_field).
+* If there is not enough place for the Text Area, use [expandable input field]({{site
+.baseurl}}/controls/input_field#input-field-types). Or if input is usually short, but can be long or multi-line rarely.
+* If values are added one by one, use [table]({{site.baseurl}}/controls/table/).
 * If text is read-only, use Textual Output instead.
 
 [comment]: <> (TODO: add link to Textual Output)
@@ -27,7 +28,8 @@ Do **not** use Text Area in the following cases:
 
 ### Label
 
-* Follow the rules for the [Input Field]({{site.baseurl}}/controls/input_field/). If label is on the left, align it with the first input line:
+* Follow the rules for the [input field]({{site.baseurl}}/controls/input_field/). If label is on the left, align it 
+with the first input line:
 
     ![]({{site.baseurl}}/images/text_area/label.png)
 
@@ -101,7 +103,7 @@ Follow the rules for the Input Field: [placeholder]({{site.baseurl}}/controls/in
     
     Use context menu to enable soft-wrapping.
 
-* **Placement**. Follow the rules for the [Input Field]({{site.baseurl}}/controls/input_field).
+* **Placement**. Follow the rules for the [input field]({{site.baseurl}}/controls/input_field).
 
 
 ## History
@@ -125,7 +127,7 @@ Do not change the values automatically. Do not allow to save changes, while inco
 
 
 ## Style
-Use the same colors, fonts and spaces as for the [Input Field]({{site.baseurl}}/controls/input_field/).
+Use the same colors, fonts and spaces as for the [input field]({{site.baseurl}}/controls/input_field/).
 
 Do **not** highlight Text Area on selection, only if validation error occurs.
 

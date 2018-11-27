@@ -126,7 +126,8 @@ The button height is fixed, so the label is always a single line.
   
 * If buttons are related to the whole dialog, place them at the bottom and right-align them:
   ![]({{site.baseurl}}/images/button/mac_new_file.png)
-  For more details on buttons placement in Dialogs, see the [Dialog Window section]({{site.baseurl}}/components/dialog_window).
+  For more details on buttons placement in Dialogs, see the [Dialog window section]({{site
+  .baseurl}}/components/dialog_window).
 
   
 ## Button states
@@ -224,7 +225,8 @@ The Plus button works the same way as the Browse button, the only difference is 
 
 
 ### Expand field
-Use the [Expandable input field]({{site.baseurl}}/controls/input_field/#input-field-types) instead of the Show Viewer button to open a popup with a multiline input field. 
+Use the [expandable input field]({{site.baseurl}}/controls/input_field/#input-field-types) instead of the Show Viewer
+ button to open a popup with a multiline input field. 
 ![]({{site.baseurl}}/images/button/input_expand.png)
 
 
