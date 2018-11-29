@@ -459,39 +459,69 @@ The warning can be shown:
 <th class="table-line"> IntelliJ </th>
 <th class="table-line"> Darcula </th>
 <tr class="table-line">
-    <td> Tooltip background </td>
-    <td> #F5E6E7 </td>
-    <td> #F5E6E7 </td>
-    <td> #F5E6E7 </td>
-    <td> #593D41 </td>
+    {% swatch %}
+        {
+            "name": "Tooltip background",
+            "colors": [
+                { "name": "#F5E6E7", "value": "#F5E6E7" },
+                { "name": "#F5E6E7", "value": "#F5E6E7" },
+                { "name": "#F5E6E7", "value": "#F5E6E7" },
+                { "name": "#593D41", "value": "#593D41" }
+            ]
+        }
+    {% endswatch %}
 </tr>
 <tr class="table-line">
-    <td> Tooltip border </td>
-    <td> #E0A8A9 </td>
-    <td> #E0A8A9 </td>
-    <td> #E0A8A9 </td>
-    <td> #73454B </td>
+    {% swatch %}
+        {
+            "name": "Tooltip border",
+            "colors": [
+                { "name": "#E0A8A9", "value": "#E0A8A9" },
+                { "name": "#E0A8A9", "value": "#E0A8A9" },
+                { "name": "#E0A8A9", "value": "#E0A8A9" },
+                { "name": "#73454B", "value": "#73454B" }
+            ]
+        }
+    {% endswatch %}
 </tr>
 <tr class="table-line">
-    <td> Focused field highlighting </td>
-    <td> #F53B3B, op. 50% </td>
-    <td> #F57D7D </td>
-    <td> #E53E4D </td>
-    <td> #8B3C3C </td>
+    {% swatch %}
+        {
+            "name": "Focused field highlighting",
+            "colors": [
+                { "name": "#F53B3B, op. 50%", "value": "rgba(245, 59, 59, 0.5)" },
+                { "name": "#F57D7D", "value": "#F57D7D" },
+                { "name": "#E53E4D", "value": "#E53E4D" },
+                { "name": "#8B3C3C", "value": "#8B3C3C" }
+            ]
+        }
+    {% endswatch %}
 </tr>
 <tr class="table-line">
-    <td> Not focused field highlighting </td>
-    <td> #F7BCBC, op. 50% </td>
-    <td> #EECACA </td>
-    <td> #EBBCBC </td>
-    <td> #725252 </td>
+    {% swatch %}
+        {
+            "name": "Not focused field highlighting",
+            "colors": [
+                { "name": "#F7BCBC, op. 50%", "value": "rgba(247, 188, 188, 0.5)" },
+                { "name": "#EECACA", "value": "#EECACA" },
+                { "name": "#EBBCBC", "value": "#EBBCBC" },
+                { "name": "#725252", "value": "#725252" }
+            ]
+        }
+    {% endswatch %}
 </tr>
 <tr class="table-line">
-    <td> Error text color </td>
-    <td> #FF0000 </td>
-    <td> #FF0000 </td>
-    <td> #FF0000 </td>
-    <td> #FF5261 </td>
+    {% swatch %}
+        {
+            "name": "Error text color",
+            "colors": [
+                { "name": "#FF0000", "value": "#FF0000" },
+                { "name": "#FF0000", "value": "#FF0000" },
+                { "name": "#FF0000", "value": "#FF0000" },
+                { "name": "#FF5261", "value": "#FF5261" }
+            ]
+        }
+    {% endswatch %}
 </tr>
 </table>
 
