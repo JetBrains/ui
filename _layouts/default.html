@@ -182,7 +182,12 @@
             
             $(this).replaceWith(block)
         })
-        $('.block > .anchor').click(function(event) {
+        $('article > h2').each(function() {            
+            $(this).addClass('anchor')
+            $(this).attr('name', $(this).attr('id'))
+        })
+        
+        $('article .anchor').click(function(event) {
             var $anchor = $(this)
             var name = $anchor.attr('name')
 
