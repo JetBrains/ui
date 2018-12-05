@@ -9601,6 +9601,26 @@ br + kbd {
     max-width: 100%
 }
 
+.article > h2 {
+    position: relative;
+    cursor: pointer;
+}
+
+.article > h2:before {
+    position: absolute;    
+    left: -48px;
+    content: '';
+    height: 100%;
+    width: 50px;
+    background: url("../images/link.svg") no-repeat center center;
+    background-size: 16px;
+    display: none;
+}
+
+.article > h2:hover:before {
+    display: block;
+}
+
 .article h2 + table {
     margin-top: -8px
 }
