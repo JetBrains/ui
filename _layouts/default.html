@@ -42,10 +42,20 @@
                             {% for group in grouped %}
                                 {% if group.name != "Resources" %}
                                     <li class="tree-element toc-tree__node toc-tree__node--level_0">
-                                        <label class="tree-label toc-tree__title" for="{{ group.name }}">{{ group.name }}</label>
-                                        <input class="tree-selector" type="checkbox" checked id="{{ group.name }}" />
 
                                         {% assign items = group.items | sort: 'order' %}
+                                        {% assign expand = false %}
+
+                                        {% for item in items %}
+                                            {% if item.url == page.url and item.category == group.name %}
+                                                {% assign expand = true %}
+
+                                            {% endif %}
+                                        {% endfor %}
+
+                                        <label class="tree-label toc-tree__title" for="{{ group.name }}">{{ group.name }}</label>
+                                        <input class="tree-selector" type="checkbox" {% if expand %} checked {% endif %} id="{{ group.name }}" />
+
 
                                         <ul class="toc-tree__nodes-list">
                                             {% for item in items %}
@@ -53,11 +63,11 @@
 
                                                         <li class="tree-element toc-tree__node toc-tree__node--level_1 ">
 
-                                                            <a href="{{ site.baseurl }}{{ item.url }}"
-                                                               class="toc-tree__title toc-tree__title--link {% if item.url == page.url %}toc-tree__title--selected{% endif %}">{{ item.title }}</a>
-                                                            <input class="tree-selector--level-2 tree-selector" type="checkbox" checked id="{{ item.title }}" />
-
-                                                            <ul class="toc-tree__nodes-list">
+                                                        <li class="toc-tree__node toc-tree__node--level_1 {% if item.url == page.url %}toc-tree__title--selected{% endif %}">
+                                                            <div class="toc-tree__title-wrapper">
+                                                                <a href="{{ site.baseurl }}{{ item.url }}"
+                                                                   class="toc-tree__title toc-tree__title--link">{{ item.title }}</a></div>
+                                                                <ul>
                                                                 {% assign subpages = group.items | where:"subpageOf", item.title %}
                                                                 {% for subpage in subpages %}
                                                                     <li class="toc-tree__node toc-tree__node--level_2 {% if subpage.url == page.url %}toc-tree__title--selected{% endif %}">
@@ -66,8 +76,7 @@
                                                                                class="toc-tree__title toc-tree__title--link">{{ subpage.title }}</a></div>
                                                                     </li>
                                                                 {% endfor %}
-
-                                                            </ul>
+                                                                </ul>
                                                         </li>
 
                                                     {% elsif item.type == "Draft" or item.type == "Subpage" %}
@@ -144,9 +153,7 @@
         document.getElementsByClassName("app__nav")[0].style.left = "0px";
     }
 </script>
-
 <script type="text/javascript" src="https://code.jquery.com/jquery-2.2.3.min.js"></script>
-
 <script type="text/javascript">
     var checkboxValues = JSON.parse(localStorage.getItem('checkboxValues')) || {},
         $checkboxes = $(":checkbox");

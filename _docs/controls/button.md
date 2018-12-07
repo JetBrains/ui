@@ -145,7 +145,10 @@ The default button confirms the main purpose of a dialog and is triggered by pre
 
 The default button should be always present in a dialog. Only one button in a dialog can be the default one. 
 
-Do **not** use the default button, or make a secondary button the default one if the users’ most probable action is dangerous, e.g. can lead to data loss:
+If the action is dangerous, e.g. can lead to data loss, provide an easy way to undo the 
+command. See [Dangerous actions]({{site.baseurl}}/principles/dangerous_actions) for more details.
+
+If it's not posible to undo the action, make a secondary button the default one:
 ![]({{site.baseurl}}/images/button/merge_dialog.png)
 
 

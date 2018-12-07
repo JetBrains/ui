@@ -10140,6 +10140,15 @@ table .note ol, table .note ul, table .tip ol, table .tip ul, table .todo ol, ta
     opacity: 1
 }
 
+@media screen and (max-width: 1600px) {
+    .sideblock._visible {
+        float: none;
+        width: 85%;
+        padding: 15px 20px 16px 22px;
+        margin: 20px 0 25px
+    }
+}
+
 .sideblock._restored {
     float: none;
     clear: none;
