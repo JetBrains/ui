@@ -21,15 +21,17 @@ function setAnchors() {
         var $anchor = $(this)
         var name = $anchor.attr('name')
 
-        $('html, body').animate({
-            scrollTop: $anchor.offset().top - 20
-        }, 300, function() {
-            if (history.pushState) {
-                history.pushState(null, '', '#' + name)
-            } else {
-                location.hash = name
-            }
-        })
+        this.scrollIntoView({ 
+            block: 'start',
+            behavior: 'smooth' 
+        });
+        
+        if (history.pushState) {
+            history.pushState(null, '', '#' + name)
+        } else {
+            location.hash = name
+        }
+        
         event.preventDefault()
     })
 }
