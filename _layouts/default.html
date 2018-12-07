@@ -54,7 +54,7 @@
                                                         <li class="tree-element toc-tree__node toc-tree__node--level_1 ">
 
                                                             <a href="{{ site.baseurl }}{{ item.url }}"
-                                                               class="toc-tree__title toc-tree__title--link {% if item.url == page.url %}toc-tree__title--selected{% endif %}">{{ item.title }}</a>
+                                                               class="tree-label toc-tree__title toc-tree__title--link {% if item.url == page.url %}toc-tree__title--selected{% endif %}">{{ item.title }}</a>
                                                             <input class="tree-selector--level-2 tree-selector" type="checkbox" checked id="{{ item.title }}" />
 
                                                             <ul class="toc-tree__nodes-list">
@@ -162,6 +162,7 @@
     // On page load
     $.each(checkboxValues, function(key, value) {
         $("#" + key).prop('checked', value);
-    });</script>
+    });
+</script>
 </body>
 </html>
