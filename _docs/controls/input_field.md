@@ -4,8 +4,7 @@ codename: JBTextField
 category: Controls
 ---
 
-An input field is a rectangular area that allows users to enter or edit one text line.  
-
+An input field is a rectangular area that allows users to enter or edit one text line.
 ![]({{site.baseurl}}/images/input_field/example.png)
 
 
@@ -114,13 +113,11 @@ The placeholder should be used in the following cases:
 
 
 ### Prefilled value
-Prefill field if it has default or frequently used values. Use default text color for prefilled values:
+Prefill field if it has default or frequently used values. Use default text color for prefilled values: ![]({{site
+.baseurl}}/images/input_field/prefill.png)
 
-![]({{site.baseurl}}/images/input_field/prefill.png)
-
-Do **not** prefill with “Unnamed”. It takes time to read it and does not help user to fill the form.
-
-![]({{site.baseurl}}/images/input_field/prefill_unnamed.png)
+Do **not** prefill with “Unnamed”. It takes time to read it and does not help user to fill the form. ![]({{site
+.baseurl}}/images/input_field/prefill_unnamed.png)
 
 
 
@@ -171,12 +168,10 @@ Do **not** prefill with “Unnamed”. It takes time to read it and does not hel
 
 
 ### Field focus
-When input field gets focus, put the caret at the end of the text:
+When input field gets focus, put the caret at the end of the text: ![]({{site.baseurl}}/images/input_field/focus_end
+.png)
 
-![]({{site.baseurl}}/images/input_field/focus_end.png)
-
-If users are more likely to reenter the entire value, not edit the existing one, select all the text on input focus:
-
+If users are more likely to reenter the entire value, not edit the existing one, select all the text on input focus: 
 ![]({{site.baseurl}}/images/input_field/focus_all.png)
 
 
@@ -211,9 +206,8 @@ browse disk button.
 
 
 ### Validation
-If user types in an invalid value, highlight field with red and show error message in a tooltip.
-
-![]({{site.baseurl}}/images/input_field/error.png)
+If user types in an invalid value, highlight field with red and show error message in a tooltip. ![]({{site
+.baseurl}}/images/input_field/error.png)
 
 Do not change the values automatically. Do not allow to save changes, while incorrect value is entered. For more details see [Validation errors]({{site.baseurl}}/principles/validation_errors/).
 
