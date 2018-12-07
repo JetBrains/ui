@@ -42,10 +42,20 @@
                             {% for group in grouped %}
                                 {% if group.name != "Resources" %}
                                     <li class="tree-element toc-tree__node toc-tree__node--level_0">
-                                        <label class="tree-label toc-tree__title" for="{{ group.name }}">{{ group.name }}</label>
-                                        <input class="tree-selector" type="checkbox" checked id="{{ group.name }}" />
 
                                         {% assign items = group.items | sort: 'order' %}
+                                        {% assign expand = false %}
+
+                                        {% for item in items %}
+                                            {% if item.url == page.url and item.category == group.name %}
+                                                {% assign expand = true %}
+
+                                            {% endif %}
+                                        {% endfor %}
+
+                                        <label class="tree-label toc-tree__title" for="{{ group.name }}">{{ group.name }}</label>
+                                        <input class="tree-selector" type="checkbox" {% if expand %} checked {% endif %} id="{{ group.name }}" />
+
 
                                         <ul class="toc-tree__nodes-list">
                                             {% for item in items %}
@@ -142,26 +152,6 @@
     function toggleMenu() {
         document.getElementsByClassName("app__nav")[0].style.left = "0px";
     }
-</script>
-
-<script type="text/javascript" src="https://code.jquery.com/jquery-2.2.3.min.js"></script>
-
-<script type="text/javascript">
-    var checkboxValues = JSON.parse(localStorage.getItem('checkboxValues')) || {},
-        $checkboxes = $(":checkbox");
-
-    $checkboxes.on("change", function(){
-        $checkboxes.each(function(){
-            checkboxValues[this.id] = this.checked;
-        });
-
-        localStorage.setItem("checkboxValues", JSON.stringify(checkboxValues));
-    });
-
-    // On page load
-    $.each(checkboxValues, function(key, value) {
-        $("#" + key).prop('checked', value);
-    });
 </script>
 </body>
 </html>
