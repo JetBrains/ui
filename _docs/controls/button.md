@@ -24,9 +24,8 @@ Use a [link]({{site.baseurl}}/controls/link) instead if:
     ![]({{site.baseurl}}/images/button/link_correct.png)  
     
 Use toolbar buttons instead if there are several buttons related to a table or list:  
-<p class="label incorrect">Incorrect</p> ![]({{site.baseurl}}/images/button/many_buttons.png)
-   
-<p class="label correct">Correct</p> ![]({{site.baseurl}}/images/button/toolbar.png)
+<p class="label incorrect noanchor">Incorrect</p> ![]({{site.baseurl}}/images/button/many_buttons.png)
+<p class="label correct noanchor">Correct</p> ![]({{site.baseurl}}/images/button/toolbar.png)
    
 Use a [split button]({{site.baseurl}}/controls/split_button) instead if: 
    * There are several related actions (more than 2) but the space is limited and/or packed.
@@ -54,9 +53,9 @@ The button should answer the question in the title, so the user can skip the des
         <td> <img src="{{site.baseurl}}/images/button/default_save.png" style="margin-top: -5px"> <em style="margin-bottom: 5px;">The label indicates what happens on the click.</em> </td>
     </tr>
 </table> 
-**Exception**: the Cancel button if it is clear what action is being canceled. For example:
+<span class="noanchor"> **Exception**: the Cancel button if it is clear what action is being canceled. For example:
 ![]({{site.baseurl}}/images/button/mac_new_file.png)
-*Use the Cancel button, not the Don’t Create button.*
+*Use the Cancel button, not the Don’t Create button.* </span>
 	
 The label should be short, not more than 5 words. If it’s not obvious what element the button is related to, add more words to make it clear. Prefer clear labels to short:
 <table>
@@ -77,10 +76,10 @@ Add an ellipsis if additional actions such as adding more info or confirming the
 Do **not** add ellipsis if another window is opened, but no more input from the user is required. For example, About, Details. 
 
 Do **not** use the word _Now_ in the label because button always trigger an immediate action:
-<p class="label incorrect">Incorrect</p> 
+<p class="label incorrect noanchor">Incorrect</p> 
 ![]({{site.baseurl}}/images/button/check_now.png)
  
-<p class="label correct">Correct</p> 
+<p class="label correct noanchor">Correct</p> 
 ![]({{site.baseurl}}/images/button/check_for_updates.png)
 
 Use the _Close_ label only if nothing can be changed in the dialog and there is no confirmation button, for example in the Productivity Guide dialog. In all other cases, use the _Cancel_ button.
@@ -115,7 +114,7 @@ If a button is related to a control, place it to the right of the control if the
 ![]({{site.baseurl}}/images/button/check_for_updates.png)
 Align the button with the text baseline or the control bottom border:
 ![]({{site.baseurl}}/images/button/placement_align.png)
-  
+
 If a button is related to a group of controls, or if the space on the right is limited, place the button under these controls and left-align it:
 ![]({{site.baseurl}}/images/button/placement_bottom.png)
   
@@ -222,7 +221,7 @@ Do **not** place the button on the right of the control:
 
 
 ### Add value
-The Plus button works the same way as the Browse button, the only difference is that the selected value is added, instead of overwriting the existing one. Use an input field with the plus icon instead.
+The Plus button works the same way as the Browse button, the only difference is that the selected value is added, instead of overwriting the existing one. Place the plus icon inside the control.
 ![]({{site.baseurl}}/images/button/plus.png)
 
 
@@ -239,6 +238,7 @@ This icon works as a combo box.
 
 
 ### Copy, Info
+<p></p>
 <table>
 <col width="130px">
     <tr>
@@ -250,6 +250,7 @@ This icon works as a combo box.
         <td> Do not use the info button to open an external link. Use context help instead.</td>
     </tr>
 </table>
+
 
 
 
