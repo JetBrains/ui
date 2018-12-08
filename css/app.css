@@ -9600,24 +9600,23 @@ br + kbd {
     max-width: 100%
 }
 
-.article > h2 {
+.article > .headerAnchor {
     position: relative;
     cursor: pointer;
 }
 
-.article > h2:before {
+.article > .headerAnchor:before {
     position: absolute;    
     left: -48px;
     content: '';
     height: 100%;
     width: 50px;
-    background: url("../images/link.svg") no-repeat center center;
+    background: none;
     background-size: 16px;
-    display: none;
 }
 
-.article > h2:hover:before {
-    display: block;
+.article > .headerAnchor:hover:before {
+    background: url("../images/link.svg") no-repeat center center;
 }
 
 .article h2 + table {
@@ -9646,7 +9645,7 @@ br + kbd {
     position: relative
 }
 
-.article .block .anchor {
+.article .block .paragraphAnchor {
     position: absolute;
     left: -30px;
     text-align: right;
@@ -9656,7 +9655,7 @@ br + kbd {
     margin-top: -20px;
 }
 
-.article .block .anchor:focus {
+.article .block .paragraphAnchor:focus {
     outline: solid 0 transparent
 }
 
@@ -9700,7 +9699,7 @@ br + kbd {
     font-weight:600;
     font-size:16px;
     letter-spacing: 0.5px;
-    margin: 20px 0 -15px 20px;
+    margin: 10px 0 -15px 20px;
 }
 
 .article .incorrect {
