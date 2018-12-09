@@ -154,8 +154,8 @@ If there is one image and it’s not big, cross out the image with 1px line inst
 ![]({{site.baseurl}}/images/how_to_write_guidelines/incorrect.png)
 
 Use html to add Correct/Incorrect label:
-<div class="code-block__wrapper">< p class="label incorrect">Incorrect</p>
-</div>
+<div class="code-block__wrapper">{% highlight html %}<p class="label incorrect">Incorrect</p>
+{% endhighlight %}</div>
 
 ![]({{site.baseurl}}/images/how_to_write_guidelines/correct_incorrect_sizes.png)
 
@@ -234,11 +234,19 @@ If unsure about a bounding box size for other font sizes, check with UI Inspecto
 If there are many properties for different themes, put them in the table:
 ![]({{site.baseurl}}/images/how_to_write_guidelines/themes.png)
 
-## Code snippet
-<div class="code-block__wrapper">#Code Snippet example
-layerB.borderRadius = 45
-</div>
+## Formatting
+Code snippet:
+<div class="code-block__wrapper">{% highlight html %}<div class="code-block__wrapper">
+Code snippet
+</div>{% endhighlight %}</div>
 
+Table line:
+<div class="code-block__wrapper">{% highlight html %}<th class="table-line">{% endhighlight %}</div>
 
+Shortcut:
+<div class="code-block__wrapper">{% highlight html %}<kbd>Ctrl+Space</kbd>{% endhighlight %}</div>
+
+Note:
+<div class="code-block__wrapper">{% highlight html %}<aside class="note sideblock _visible">Note text</aside>{% endhighlight %}</div>
 
 

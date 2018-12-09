@@ -9600,6 +9600,25 @@ br + kbd {
     max-width: 100%
 }
 
+.article > .headerAnchor {
+    position: relative;
+    cursor: pointer;
+}
+
+.article > .headerAnchor:before {
+    position: absolute;    
+    left: -48px;
+    content: '';
+    height: 100%;
+    width: 50px;
+    background: none;
+    background-size: 16px;
+}
+
+.article > .headerAnchor:hover:before {
+    background: url("../images/link.svg") no-repeat center center;
+}
+
 .article h2 + table {
     margin-top: -8px
 }
@@ -9614,13 +9633,40 @@ br + kbd {
 
 .article p {
     margin-top: 0;
-    margin-bottom: 10px
+    margin-bottom: 20px;
+}
+
+.article br {
+    line-height: 35px;
+}
+
+
+.article .block {
+    position: relative
+}
+
+.article .block .paragraphAnchor {
+    position: absolute;
+    left: -30px;
+    text-align: right;
+    font-size: 12px;
+    color: #c9c9c9;
+    padding: 20px 0;
+    margin-top: -20px;
+}
+
+.article .block .paragraphAnchor:focus {
+    outline: solid 0 transparent
 }
 
 @media screen and (max-width: 640px) {
     .article p {
         margin-top: 0;
-        margin-bottom: 6px
+        margin-bottom: 10px
+    }
+
+    .article br {
+        line-height: 28px;
     }
 }
 
@@ -9653,7 +9699,7 @@ br + kbd {
     font-weight:600;
     font-size:16px;
     letter-spacing: 0.5px;
-    margin: 20px 0 -15px 20px;
+    margin: 10px 0 -15px 20px;
 }
 
 .article .incorrect {
@@ -10103,6 +10149,15 @@ table .note ol, table .note ul, table .tip ol, table .tip ul, table .todo ol, ta
     opacity: 1
 }
 
+@media screen and (max-width: 1600px) {
+    .sideblock._visible {
+        float: none;
+        width: 85%;
+        padding: 15px 20px 16px 22px;
+        margin: 20px 0 25px
+    }
+}
+
 .sideblock._restored {
     float: none;
     clear: none;
@@ -10253,7 +10308,7 @@ table .note ol, table .note ul, table .tip ol, table .tip ul, table .todo ol, ta
 }
 
 .article--without-sideblocks {
-    padding-right: 100px
+    padding-right: 100px;
 }
 
 @media screen and (max-width: 960px) {

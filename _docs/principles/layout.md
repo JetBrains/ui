@@ -4,7 +4,8 @@ category: Principles
 ---
 
 Arrange UI controls correctly to help people locate the necessary settings faster and understand how they are related.
-<br><br>
+<br>
+
 This article describes how to arrange:
 
 * [Independent controls](#arrange-independent-controls)
