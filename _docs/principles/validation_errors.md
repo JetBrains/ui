@@ -448,133 +448,23 @@ The warning can be shown:
 ![]({{site.baseurl}}/images/validation/dialog_insets.png)
 
 ### Error colors
-<table>
-<col width="20%">
-<col width="20%">
-<col width="20%">
-<col width="20%">
-<th class="table-line"> </th>
-<th class="table-line"> Mac OS </th>
-<th class="table-line"> Windows </th>
-<th class="table-line"> IntelliJ </th>
-<th class="table-line"> Darcula </th>
-<tr class="table-line">
-    {% swatch %}
-        {
-            "name": "Tooltip background",
-            "colors": [
-                { "name": "#F5E6E7", "value": "#F5E6E7" },
-                { "name": "#F5E6E7", "value": "#F5E6E7" },
-                { "name": "#F5E6E7", "value": "#F5E6E7" },
-                { "name": "#593D41", "value": "#593D41" }
-            ]
-        }
-    {% endswatch %}
-</tr>
-<tr class="table-line">
-    {% swatch %}
-        {
-            "name": "Tooltip border",
-            "colors": [
-                { "name": "#E0A8A9", "value": "#E0A8A9" },
-                { "name": "#E0A8A9", "value": "#E0A8A9" },
-                { "name": "#E0A8A9", "value": "#E0A8A9" },
-                { "name": "#73454B", "value": "#73454B" }
-            ]
-        }
-    {% endswatch %}
-</tr>
-<tr class="table-line">
-    {% swatch %}
-        {
-            "name": "Focused field highlighting",
-            "colors": [
-                { "name": "#F53B3B, op. 50%", "value": "rgba(245, 59, 59, 0.5)" },
-                { "name": "#F57D7D", "value": "#F57D7D" },
-                { "name": "#E53E4D", "value": "#E53E4D" },
-                { "name": "#8B3C3C", "value": "#8B3C3C" }
-            ]
-        }
-    {% endswatch %}
-</tr>
-<tr class="table-line">
-    {% swatch %}
-        {
-            "name": "Not focused field highlighting",
-            "colors": [
-                { "name": "#F7BCBC, op. 50%", "value": "rgba(247, 188, 188, 0.5)" },
-                { "name": "#EECACA", "value": "#EECACA" },
-                { "name": "#EBBCBC", "value": "#EBBCBC" },
-                { "name": "#725252", "value": "#725252" }
-            ]
-        }
-    {% endswatch %}
-</tr>
-<tr class="table-line">
-    {% swatch %}
-        {
-            "name": "Error text color",
-            "colors": [
-                { "name": "#FF0000", "value": "#FF0000" },
-                { "name": "#FF0000", "value": "#FF0000" },
-                { "name": "#FF0000", "value": "#FF0000" },
-                { "name": "#FF5261", "value": "#FF5261" }
-            ]
-        }
-    {% endswatch %}
-</tr>
-</table>
-
-
+{% swatchTable %}
+[
+    "Tooltip.errorBackground",
+    "Tooltip.errorBorder",
+    "Input.errorFocusBorder",
+    "Input.errorFocusBorderInactive",
+    "Text.errorForeground"
+]
+{% endswatchTable %}
 
 ### Warning colors
-
-<table>
-<col width="20%">
-<col width="20%">
-<col width="20%">
-<col width="20%">
-<th class="table-line"> </th>
-<th class="table-line"> Mac OS </th>
-<th class="table-line"> Windows, IntelliJ </th>
-<th class="table-line"> Darcula </th>
-<tr class="table-line">
-    <td> Tooltip background </td>
-    <td> #F5F0E6 </td>
-    <td> #F5F0E6 </td>
-    <td> #594E32 </td>
-</tr>
-<tr class="table-line">
-    <td> Tooltip border </td>
-    <td> #E0CEA8 </td>
-    <td> #E0CEA8 </td>
-    <td> #78550B </td>
-</tr>
-<tr class="table-line">
-    <td> Focused field highlighting </td>
-    <td> #EEB23E, op. 50% </td>
-    <td> #E1A336 </td>
-    <td> #AD7A0F </td>
-</tr>
-<tr class="table-line">
-    <td> Not focused field highlighting </td>
-    <td> #FFDC92, op. 50% </td>
-    <td> #EAD2A1 </td>
-    <td> #6F531F </td>
-</tr>
-<tr class="table-line">
-    <td> Warning text color </td>
-    <td> #E77D00 </td>
-    <td> #E77D00 </td>
-    <td> #DC9B2F </td>
-</tr>
-</table>
-
-
-
-
-
-
-
-
-
+{% swatchTable %}
+[
+    "Tooltip.warningBackground",
+    "Tooltip.warningBorder",
+    "Input.warningFocusBorder",
+    "Input.warningFocusBorderInactive",
+    "Text.warningForeground"
+]
+{% endswatchTable %}
