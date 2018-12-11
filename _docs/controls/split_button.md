@@ -13,7 +13,7 @@ The Split button is a button which has two parts — the main action on the left
 
 Use the split button:
 
-1. When more than 2 related actions are possible but the space is limited and/or packed:
+* When more than 2 related actions are possible but the space is limited and/or packed:
 For example, it is useful for the Commit actions group in the Commit dialog:
 ![]({{site.baseurl}}/images/split_button/button-and-dropdown-menu.png)
 
@@ -32,7 +32,7 @@ For example, it is useful for the Commit actions group in the Commit dialog:
    <p class="label correct">Correct</p>
    ![]({{site.baseurl}}/images/split_button/space-not-limited.png)
 
-2. To hide actions which are dangerous and uncommon. Dangerous means an action can destroy users’ data and cannot be easily undone. It is less possible to accidentally click an action hidden in a menu.  It is recommended to hide even a single related uncommon dangerous action. 
+* To hide actions which are dangerous and uncommon. Dangerous means an action can destroy users’ data and cannot be easily undone. It is less possible to accidentally click an action hidden in a menu.  It is recommended to hide even a single related uncommon dangerous action. 
 For example, Force Push can override remote commits from other authors and should not be easily available:
 ![]({{site.baseurl}}/images/split_button/dangerous.png)
 
