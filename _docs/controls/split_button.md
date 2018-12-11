@@ -109,6 +109,9 @@ For example, the Commit button reduced to its components (the option is disabled
 
 ![]({{site.baseurl}}/images/split_button/reduced.png)
 
+## Placement  
+Follow the rules for the [simple button]({{site.baseurl}}/controls/button/#placement).
+
 ## Keyboard navigation & shortcuts
 
 Trigger the **main** action when the [default]({{site.baseurl}}/controls/button/#default) button shortcut is pressed if the split button is the default one.
