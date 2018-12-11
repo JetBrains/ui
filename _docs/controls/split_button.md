@@ -113,7 +113,7 @@ For example, the Commit button reduced to its components (the option is disabled
 
 Trigger the **main** action when the [default]({{site.baseurl}}/controls/button/#default) button shortcut is pressed if the split button is the default one.
 
-Open the dropdown menu with the first menu item selected on Alt+Shift+Enter. 
+Open the dropdown menu with the first menu item selected on <kbd>Alt+Shift+Enter</kbd>. 
 
 Do **not** show the dropdown menu when the button gains focus.
 
@@ -122,19 +122,19 @@ Do **not** show the dropdown menu when the button gains focus.
 <table>
   <col width="200 px">      
   <tr>
-    <td><p style="margin-top:10px">Enter \ Ctrl+Enter</p></td>
+    <td><p style="margin-top:10px"><kbd>Enter \ Ctrl+Enter</kbd></p></td>
     <td><ul><li>Invoke the default button action</li></ul></td>
   </tr>
   <tr>
-    <td><p style="margin-top:10px">Space</p></td>
+    <td><p style="margin-top:10px"><kbd>Space</kbd></p></td>
     <td><ul><li>Invoke the main action</li></ul></td>
   </tr>
   <tr>
-    <td><p style="margin-top:10px">Arrow Down</p></td>
+    <td><p style="margin-top:10px"><kbd>Arrow Down</kbd></p></td>
     <td><ul><li>Show the dropdown menu with secondary actions and move focus to the first item in the menu</li></ul></td>
   </tr>
   <tr>
-    <td><p style="margin-top:10px">Tab \ Shift + Tab</p></td>
+    <td><p style="margin-top:10px"><kbd>Tab \ Shift + Tab</kbd></p></td>
     <td><ul><li>Move focus to the control next to the split button and hide the drop-down menu</li></ul></td>
   </tr>
 </table>
@@ -145,11 +145,11 @@ Do **not** show the dropdown menu when the button gains focus.
 <table>
   <col width="200 px">      
   <tr>
-    <td><p style="margin-top:10px">Enter \ Space</p></td>
+    <td><p style="margin-top:10px"><kbd>Enter \ Space</kbd></p></td>
     <td><ul><li>Invoke the selected action</li></ul></td>
   </tr>
   <tr>
-    <td><p style="margin-top:10px">Arrow Down \ Up</p></td>
+    <td><p style="margin-top:10px"><kbd>Arrow Down \ Up</kbd></p></td>
     <td>
         <ul>
             <li>Navigate through the elements</li> 
@@ -159,7 +159,7 @@ Do **not** show the dropdown menu when the button gains focus.
     </td>
   </tr>
   <tr>
-    <td><p style="margin-top:10px">Esc</p></td>
+    <td><p style="margin-top:10px"><kbd>Esc</kbd></p></td>
     <td><ul><li>Close the popup and move the focus to the split button</li></ul></td>
   </tr>
 </table>
