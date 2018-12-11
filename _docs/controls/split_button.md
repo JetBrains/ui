@@ -42,7 +42,7 @@ Do **not** use the Split Button in other cases, use simple [Buttons]({{site.base
 
 ## How to use
 
-### Main Action 
+### Main action 
 
 <table>
   <col width="150 px">      
@@ -60,7 +60,7 @@ Do **not** use the Split Button in other cases, use simple [Buttons]({{site.base
 </table>
 
 
-### Control Button
+### Control button
 
 <table>
   <col width="150 px">      
@@ -91,7 +91,7 @@ Do **not** use the Split Button in other cases, use simple [Buttons]({{site.base
 </table>
 
 
-### Dropdown Menu 
+### Dropdown menu 
 
 Place actions related to the main button’s action in the dropdown menu.
 
@@ -99,7 +99,7 @@ Place actions related to the main button’s action in the dropdown menu.
 
 Do **not** duplicate the main action in the dropdown menu, otherwise it is confusing how to trigger the main action — with the button or from the menu.
 
-### Reduce Split Button to Simple Action Buttons
+### Reduce split button to simple action buttons
 
 The Split button can be reduced to simple action buttons which are layed out automatically next to each other. This is controlled by the following option in settings:
 
@@ -109,7 +109,7 @@ For example, the Commit button reduced to its components (the option is disabled
 
 ![]({{site.baseurl}}/images/split_button/reduced.png)
 
-## Keyboard Navigation & Shortcuts
+## Keyboard navigation & shortcuts
 
 Trigger the **main** action when the [default]({{site.baseurl}}/controls/button/#default) button shortcut is pressed if the split button is the default one.
 
@@ -223,7 +223,7 @@ A different width for the split button makes it easier to understand that this b
 
 The Split button height is the same as for the [simple button]({{site.baseurl}}/controls/button/#style).
 
-#### Drop-down Menu
+#### Drop-down menu
 
 Follow the rules for  menus with regard to sizes, colors, fonts and spacing.
 
