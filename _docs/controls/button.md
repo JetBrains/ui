@@ -327,6 +327,7 @@ The font size and colors are the default ones.
         <td> <img src="{{site.baseurl}}/images/button/helpButton_mac.png" style="margin: -5px 0 0 0"></td>
         <td> <img src="{{site.baseurl}}/images/button/helpButton_win.png" style="margin: -2px 0 0 0"></td>
         <td> <img src="{{site.baseurl}}/images/button/helpButton_dark.png" style="margin: -6px 0 0 0"></td>
+        <td> <img src="{{site.baseurl}}/images/button/helpButton_intellij.png" style="margin: -6px 0 0 0"></td>
     </tr>
 </table>
 
