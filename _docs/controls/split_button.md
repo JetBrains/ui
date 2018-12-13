@@ -50,13 +50,6 @@ Do **not** use the Split Button in other cases, use simple [Buttons]({{site.base
     <td><p style="margin-top:10px">Click</p></td>
     <td><ul><li>Invoke the main action</li></ul></td>
   </tr>
-  <tr>
-    <td><p style="margin-top:10px">Hover</p></td>
-    <td>
-         <ul><li>Show a tooltip with shortcuts after a delay (delay for tooltips is configured in Appearance & Behavior > Appearance > Tooltip initial delay):
-                <img src="{{site.baseurl}}/images/split_button/tooltip-button.png" style="margin-top: 30px"></li></ul>   
-    </td>
-  </tr>
 </table>
 
 
@@ -77,7 +70,8 @@ Do **not** use the Split Button in other cases, use simple [Buttons]({{site.base
     <td><p style="margin-top:10px">Hover</p></td>
     <td>
         <ul>
-            <li>Show a tooltip after delay</li> 
+            <li>Show a tooltip after delay (delay for tooltips is configured in Appearance & Behavior > Appearance > Tooltip initial delay):
+                <img src="{{site.baseurl}}/images/split_button/tooltip-button.png" style="margin-top: 30px"></li> 
             <li>
                 The tooltip must not overlap the dropdown menu. Do not show a tooltip under the menu, show it on the opposite side of the button:
                 <p class="label correct">Correct</p>
@@ -101,8 +95,7 @@ Do **not** duplicate the main action in the dropdown menu, otherwise it is confu
 
 ### Reduce split button to simple action buttons
 
-The Split button can be reduced to simple action buttons which are layed out automatically next to each other. This is controlled by the following option in settings:
-
+The Split button can be reduced to simple action buttons which are layed out automatically next to each other. This is controlled by the following option in settings:  
 _Appearance & Behavior > Appearance > Merge buttons in dialogs_
 
 For example, the Commit button reduced to its components (the option is disabled) looks like the following:
