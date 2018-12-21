@@ -3,15 +3,15 @@ title: How to write guidelines
 category: Resources
 ---
 
-This page describes the workflow and basic rules of writing articles for IntelliJ IDEA UI Guidelines.
+<p class="noanchor">This page describes the workflow and basic rules of writing articles for IntelliJ IDEA UI Guidelines.</p>
 
 ## Workflow
 
 Follow these steps if you want to add a new article to the guidelines:
 1. Write an article in the Google doc.
-2. Share the Google doc with designers team, so they can review and comment the document.
+2. Share the Google doc with the designers team, so they can review and comment the document.
 3. When all comments are resolved, send the Google doc to tech writers for grammar review. [Create ticket](https://youtrack.jetbrains.com/newIssue?project=DOC&clearDraft=true&c=Type+Task&c=Assignee+Anna.Gasparyan&c=Subsystem+IntelliJ+IDEA) in YouTrack project “Documentation”, subsystem “IntelliJ IDEA”, auto-assigned to Anna Gasparyan.
-4. After the review, the article can be add to the official guidelines. Follow the instructions on [https://github.com/JetBrains/ui](https://github.com/JetBrains/ui).
+4. After the review, add the article to the guidelines. Follow the instructions on [https://github.com/JetBrains/ui](https://github.com/JetBrains/ui).
 4. Contact developers to add Code Snippets to the article.
 
 ## Text
@@ -61,11 +61,14 @@ The text should be short and clear. Follow the rules:
 
 * Split the text to subsections and short paragraphs.
 
+* Use bulleted lists when the order of points does not matter, and numbered list when they do.
+
 * When giving a recommendation, explain why it is useful.  
-    * Bad: *If a process is started by a user, provide a notification when the process finishes*.  
-    * Good: *If a process is started by a user, provide a notification when the process finishes. This way the user, if switched to another task while waiting for a process to finish, would know they can return back and see the results*.
+    * <span style="color:#FF001B">Bad</span>: *If a process is started by a user, provide a notification when the process finishes*.  
+    * <span style="color:#18B04B">Good</span>: *If a process is started by a user, provide a notification when the process finishes. This way the user, if switched to another task while waiting for a process to finish, would know they can return back and see the results*.
 
 *  Add links if you refer to other sections. Links should be descriptive, do not use *Click here* links.
+
 
 ### Word-level recommendations
 
@@ -91,50 +94,80 @@ The text should be short and clear. Follow the rules:
 
 ## Structure
 
-The article structure can vary depending on whether control, component or principle is described. The general recommendations are provided below.
+If an article is about a control, add a control's class name under the article title:
+
+<div class="code-block__wrapper">
+codename: JButton 
+</div>
+
+Structure a single guideline as follows:
+* Start each guideline with a text description and provide an image *under* it if necessary. Do **not** use a reversed order (image than text).  
+* Place an additional text under the image only if it does not make sense placing it with the text above the image.
+
+Guideline anchors:
+* Each paragraph `<p>` is assigned a numbered anchor. An anchor helps referencing a particular guideline. Structure the article so that each guideline is a single paragraph.
+* To start a new paragraph, add an empty line above.
+* To create a text block without an anchor, do not add an empty line above. Add two spaces in the end of the previous text block.
+* To add extra vertical space without creating a paragraph, use `<br>`. 
+* If some element gets an unnecessary anchor, use the class `noanchor`. Example:  
+<div class="code-block__wrapper">{% highlight html %}<p class="label incorrect noanchor">Incorrect</p>{% endhighlight %}</div>
+
+The article structure can vary depending on whether a control, component or principle is described. Generally, use the sections that are described below.
 
 ### Introduction paragraph
 
 In the first paragraph describe a control, component or principle and provide an illustration. If there are different types of the control, describe all of them.
 
-Provide a code snippet:
-
-<div class="code-block__wrapper">#Code Snippet example
-layerB.borderRadius = 45
-</div>
-
-If the code snippet is too big, put it at the end of the article and provide a link.
-
 ### When to use
-<aside class="note sideblock _visible">Use tips for links to additional materials, sources, useful facts and examples.</aside>
+
 Describe when to use the control or when to apply the principle.
 
-If the control is often used incorrectly, then describe cases when the control should not be used.
+If the control is often used incorrectly, describe cases when the control should not be used.
 
 ### How to use
 
-Provide guidelines on how to use the control, component or principle. For control it can be: how the control behaves, wording and labeling, general recommendations on sizes, how group of controls looks and works, how to use the control with other controls and other specific recommendations.
+Provide guidelines on how to use the control, component or principle. Group guidelines by their subject. For a control it can be: 
+* Behavior details for a single control and for a group of such controls (if applicable)
+* Wording — how to write a label for the control 
+* Using the control with other controls 
+* Any other recommendations specific to this control
 
-Use bulleted lists when the order of points does not matter, and numbered list when they do.
+Use notes for links to additional materials, sources, useful facts and examples. To insert a note, use:
+<div class="code-block__wrapper">{% highlight html %}<aside class="note sideblock _visible">Note text</aside>{% endhighlight %}</div>
+
+Use formatting for <kbd>shortcuts</kbd>:
+<div class="code-block__wrapper">{% highlight html %}<kbd>Ctrl+Space</kbd>{% endhighlight %}</div>
+
+To add a horizontal line in a table, use:
+<div class="code-block__wrapper">{% highlight html %}<th class="table-line">{% endhighlight %}</div>
+
+
+### Sizes and placement
+
+Give recommendations for:
+* Minimum and maximum sizes in pixels
+* How to layout with other controls. Refer to [Layout]({{site.baseurl}}/principles/layout) if possible.
+* Insets between controls in pixels 
+
+Illustrate sizes and insets as [described below]({{site.baseurl}}/resources/how_to_write_guidelines/#colors-insets-and-sizes).
+ 
 
 ### Style
 
-Describe common properties in the following format:
+Provide [an illustration]({{site.baseurl}}/controls/button/#style) how a control or component looks in different look-and-feels.
 
-Font-style: System  
-Font-size: 13px
+List color keys used for this control.
 
-Provide images with insets and colors (see “Images” section below).
+Do not provide font properties and specific hex colors.  
+
 
 ## Images
 
-Illustrate all statements with interface examples. Use **default Mac OS** or **Windows** theme as the main themes for illustrations. Add a section with examples for Darcula theme in the Google doc, but do not move it to the official guidelines.
+Illustrate all statements with interface examples. Use **default Mac OS** theme as the main themes for illustrations. Add a section with examples for Darcula theme in the Google doc, but do not move it to the official guidelines.
 
-Provide an image description ends with colon before the image:
+If an image description appears above the image, end it with a colon:
 ![]({{site.baseurl}}/images/how_to_write_guidelines/example_1.png)
-
-Or under the image without period at the end:
-
+If under, do not use a period at the end:
 ![]({{site.baseurl}}/images/how_to_write_guidelines/example_1.png)
 *Image description*
 
@@ -200,14 +233,11 @@ Use the Hex Code format to specify colors:
 
 Use colored rectangles to specify sizes inside the element and lines to specify external sizes:
 ![]({{site.baseurl}}/images/how_to_write_guidelines/insets.png)
-
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span style="line-height:2;">Main rectangle: <span style="color:#DA769D">#DA769D</span> op. 0.4.  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Secondary rectangle: <span style="color:#6D9AE6">#6D9AE6</span> op. 0.4.  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Text and line: <span style="color:#BD136B">#BD136B</span>, <span style="color:#0054C0">#0054C0</span>.   
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Distance between image and line, between line and text is 5px.  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Align all sizes on the right.  
-</span>
-<br>
+* Main rectangle: <span style="color:#DA769D">#DA769D</span> op. 0.4.  
+* Secondary rectangle: <span style="color:#6D9AE6">#6D9AE6</span> op. 0.4.  
+* Text and line: <span style="color:#BD136B">#BD136B</span>, <span style="color:#0054C0">#0054C0</span>.   
+* Distance between image and line, between line and text is 5px.  
+* Align all sizes on the right.  
 
 Use line to show that text is aligned with an element:
 ![]({{site.baseurl}}/images/how_to_write_guidelines/alignment.png)   
@@ -229,24 +259,20 @@ Parameters for regular labels that make bounding boxes in Sketch the same size a
 </span>
 
 If unsure about a bounding box size for other font sizes, check with UI Inspector.  
-<br>
 
+<!--
 If there are many properties for different themes, put them in the table:
 ![]({{site.baseurl}}/images/how_to_write_guidelines/themes.png)
+-->
 
-## Formatting
-Code snippet:
-<div class="code-block__wrapper">{% highlight html %}<div class="code-block__wrapper">
+## Code snippets
+Provide code snippets along the article to help developers implement the described look and behavior.
+
+If a code snippet is too big, put it at the end of the article and provide a link.
+
+To insert a snippet, use:
+<div class="code-block__wrapper">{% highlight html %}<div class="code-block__wrapper">{{ "{% highlight java " }}%}
 Code snippet
-</div>{% endhighlight %}</div>
-
-Table line:
-<div class="code-block__wrapper">{% highlight html %}<th class="table-line">{% endhighlight %}</div>
-
-Shortcut:
-<div class="code-block__wrapper">{% highlight html %}<kbd>Ctrl+Space</kbd>{% endhighlight %}</div>
-
-Note:
-<div class="code-block__wrapper">{% highlight html %}<aside class="note sideblock _visible">Note text</aside>{% endhighlight %}</div>
+{{ "{% endhighlight " }}%}</div>{% endhighlight %}</div>
 
 

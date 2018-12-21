@@ -52,10 +52,10 @@ The button should answer the question in the title, so the user can skip the des
         <td> <img src="{{site.baseurl}}/images/button/default_OK.png" style="margin-top: -5px"> <em style="margin-bottom: 5px;">Unclear what happens on the click.</em> </td>
         <td> <img src="{{site.baseurl}}/images/button/default_save.png" style="margin-top: -5px"> <em style="margin-bottom: 5px;">The label indicates what happens on the click.</em> </td>
     </tr>
-</table> 
-<span class="noanchor"> **Exception**: the Cancel button if it is clear what action is being canceled. For example:
+</table>  
+**Exception**: the Cancel button if it is clear what action is being canceled. For example:
 ![]({{site.baseurl}}/images/button/mac_new_file.png)
-*Use the Cancel button, not the Don’t Create button.* </span>
+*Use the Cancel button, not the Don’t Create button.*
 	
 The label should be short, not more than 5 words. If it’s not obvious what element the button is related to, add more words to make it clear. Prefer clear labels to short:
 <table>
