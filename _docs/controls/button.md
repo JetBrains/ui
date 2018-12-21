@@ -16,7 +16,7 @@ Use a [link]({{site.baseurl}}/controls/link) instead if:
     ![]({{site.baseurl}}/images/button/link_after.png)
     *The Manage scope link takes to another page of the Settings dialog.*
     **Exception**: Next and Previous buttons in wizard navigation.    
-  * The command is a secondary action that is not related to the primary purpose of the window and the space is constrained. For example, the _Reset_ action in the Settings dialog.
+  * The command is a secondary action that is not related to the primary purpose of the window and the space is constrained.
     <p class="label incorrect">Incorrect</p>
     ![]({{site.baseurl}}/images/button/link_incorrect.png)
     
@@ -100,28 +100,6 @@ On hovering over a button, show a tooltip with the shortcut and the action name 
 </table>
 
 
-### Size
-
-The button width accommodates the length of the label plus standard indents, but not less than the minimum size (see the [Style section](#style)).
-![]({{site.baseurl}}/images/button/sizes.png)     
-    
-The button height is fixed, so the label is always a single line.
-
-
-### Placement
-
-If a button is related to a control, place it to the right of the control if there is enough space for it:
-![]({{site.baseurl}}/images/button/check_for_updates.png)
-Align the button with the text baseline or the control bottom border:
-![]({{site.baseurl}}/images/button/placement_align.png)
-
-If a button is related to a group of controls, or if the space on the right is limited, place the button under these controls and left-align it:
-![]({{site.baseurl}}/images/button/placement_bottom.png)
-  
-If buttons are related to the whole dialog, place them at the bottom and right-align them:
-![]({{site.baseurl}}/images/button/mac_new_file.png)
-For more details on buttons placement in Dialogs, see the [Dialog window section]({{site.baseurl}}/components/dialog_window).
-
   
 ## Button states
 
@@ -181,13 +159,15 @@ A focused button behavior varies on Mac OS/Linux and Windows.
 Disable a button if:
 * It’s an Apply button and no changes have been made in this dialog.
 * The control to which the button is related is disabled.
-* Not all required fields in the dialog are filled. For more details, see the [Required field section]({{site.baseurl}}/principles/required_fields).
+* Not all required fields in the dialog are filled. For more details, see the [Required fields]({{site
+.baseurl}}/principles/required_fields).
 <br/><br/>
 
 Other common buttons are described below. They can be regular or default buttons.
 ### Cancel
 The _Cancel_ button reverts the app to the state before the dialog was invoked, and works equivalent to the <kbd>Esc</kbd> key on Win and Linux, and <kbd>Esc</kbd> or <kbd>Cmd+Period</kbd> on Mac. 
-If a confirmation button is present in a dialog, e.g. OK or Save, it’s recommended to have a button that cancels the dialog, e.g. Cancel, Continue Editing, etc.
+If a confirmation button is present in a dialog, e.g. *OK* or *Save*, it’s recommended to have a button that cancels the
+ dialog, e.g. *Cancel*, *Continue Editing*, etc.
 
 
 ### Apply
@@ -206,7 +186,7 @@ A control button is an icon placed inside  a control:
 Do **not** place the control button on the right of a control:
 ![]({{site.baseurl}}/images/button/control_button.png)
 
-The shortcut for a Control Button is <kbd>Shift+Enter</kbd>.
+The shortcut for a control button is <kbd>Shift+Enter</kbd>.
  
 ### Browse
 A browse button opens a dialog with the disk, a tree view or a table of values. 
@@ -252,29 +232,55 @@ This icon works as a combo box.
 </table>
 
 
+## Sizes and placement
+The button width accommodates the length of the label plus standard indents 14px, but not less than the 72px.
+
+![]({{site.baseurl}}/images/button/sizes.png)     
+    
+The button height is fixed, so the label is always a single line.
+
+
+To lay out  the button that depends on other control, e.g. input field, follow the rules for [dependent controls]({{site
+.baseurl}}/principles/layout/#lay-out-dependent-controls). Otherwise, follow
+ the rules for [independent controls]({{site.baseurl}}/principles/layout/#arrange-independent-controls).
+ 
+ <table>
+ <col width="140px">
+ <col width="200px">
+ <col width="300px">
+     <tr>
+         <td>  </td>
+         <td> Mac OS, Darcula </td>
+         <td> Windows </td>
+     </tr>
+     <tr>
+         <td> <p style="color: #999999; margin-top: 10px;"> Several buttons </p></td>
+         <td> <img src="{{site.baseurl}}/images/button/size_1.png" style="margin: -5px 0 0 0"></td>
+         <td> <img src="{{site.baseurl}}/images/button/size_2.png" style="margin: -5px 0 0 0"></td>
+     </tr>
+ </table>
+ <table>
+ <col width="140px">
+     <tr>
+         <td> <p style="color: #999999; margin-top: 10px;"> Button on the right </p></td>
+         <td> <img src="{{site.baseurl}}/images/button/size_3.png" style="margin: -5px 0 0 0"></td>
+     </tr>
+     <tr>
+         <td>  </td>
+         <td> <img src="{{site.baseurl}}/images/button/size_4.png" style="margin: -5px 0 0 0"></td>
+     </tr>
+     <tr>
+         <td>  </td>
+     </tr>
+     <tr>
+         <td> <p style="color: #999999; margin-top: -5px;"> Button under </p></td>
+         <td> <img src="{{site.baseurl}}/images/button/size_5.png" style="margin: -5px 0 0 0"></td>
+     </tr>
+ </table>
+
 
 
 ## Style
-### Size and colors
-The font size and colors are the default ones. 
-<table>
-<col width="25%">
-<col width="25%">
-<col width="25%">
-<col width="25%">
-    <tr>
-        <td style="margin-left: 20px"> Mac OS </td>
-        <td> Windows </td>
-        <td> Darcula </td>
-        <td> IntelliJ </td>
-    </tr>
-    <tr>
-        <td> <img src="{{site.baseurl}}/images/button/size_margins_mac.png" style="margin: -5px 0 0 0"><em style="margin: 10px 0 0 0">On retina, the button height is 40px.</em></td>
-        <td> <img src="{{site.baseurl}}/images/button/size_margins_win.png" style="margin: -5px 0 0 0"></td>
-        <td> <img src="{{site.baseurl}}/images/button/size_margins_darcula.png" style="margin: -5px 0 0 0"></td>
-        <td> <img src="{{site.baseurl}}/images/button/size_margins_intellij.png" style="margin: -5px 0 0 0"></td>
-    </tr>
-</table>
 <table>
 <col width="21%">
 <col width="22%">
@@ -331,89 +337,81 @@ The font size and colors are the default ones.
     </tr>
 </table>
 
-### Spacing
+
+### Colors
+
 <table>
-<col width="140px">
-<col width="200px">
-<col width="300px">
-    <tr>
-        <td>  </td>
-        <td> Mac OS, Darcula </td>
-        <td> Windows </td>
-    </tr>
-    <tr>
-        <td> <p style="color: #999999; margin-top: 10px;"> Several buttons </p></td>
-        <td> <img src="{{site.baseurl}}/images/button/size_1.png" style="margin: -5px 0 0 0"></td>
-        <td> <img src="{{site.baseurl}}/images/button/size_2.png" style="margin: -5px 0 0 0"></td>
-    </tr>
+ <col width="50%">
+ <th> Regular button </th>
+     <tr class="table-line">
+         <td> Text </td>
+         <td> Button.foreground </td>
+     </tr>
+     <tr class="table-line">
+         <td> Background </td>
+         <td> Button.startBackground<br/>
+              Button.endBackground
+         </td>
+     </tr>
+     <tr class="table-line">
+         <td> Border </td>
+         <td> Button.startBorderColor <br/>
+              Button.endBorderColor 
+         </td>
+     </tr>
+     <tr class="table-line">
+         <td> Inner focused border </td>
+         <td> Button.focusedBorderColor </td>
+     </tr>
+     <tr class="table-line">
+         <td> Outer wider focus border </td>
+         <td> Component.focusColor </td>
+     </tr> 
+     <tr class="table-line">
+         <td> Shadow </td>
+         <td> Button.shadowColor </td>
+     </tr>
+ <th> Default button </th>
+      <tr class="table-line">
+          <td> Text </td>
+          <td> Button.default.foreground </td>
+      </tr>
+      <tr class="table-line">
+          <td> Background </td>
+          <td> Button.default.startBackground<br/>
+               Button.default.endBackground
+          </td>
+      </tr>
+      <tr class="table-line">
+          <td> Border </td>
+          <td> Button.default.startBorderColor <br/>
+               Button.default.endBorderColor 
+          </td>
+      </tr>
+      <tr class="table-line">
+          <td> Inner focused border </td>
+          <td> Button.default.focusedBorderColor </td>
+      </tr>
+      <tr class="table-line">
+          <td> Outer wider focus border </td>
+          <td> IntelliJ: Component.focusColor <br/>
+                Darcula: Button.default.focusColor</td>
+      </tr> 
+      <tr class="table-line">
+          <td> Shadow </td>
+          <td> Button.default.shadowColor </td>
+      </tr>
+  <th> Disabled button </th>
+        <tr class="table-line">
+            <td> Text </td>
+            <td> Button.disabledText </td>
+        </tr>
+        <tr class="table-line">
+            <td> Background </td>
+            <td> Button.background (same as Panel.background) </td>
+        </tr>
+        <tr class="table-line">
+            <td> Border </td>
+            <td> Button.disabledBorderColor </td>
+        </tr>           
 </table>
-<table>
-<col width="140px">
-    <tr>
-        <td> <p style="color: #999999; margin-top: 10px;"> Button on the right </p></td>
-        <td> <img src="{{site.baseurl}}/images/button/size_3.png" style="margin: -5px 0 0 0"></td>
-    </tr>
-    <tr>
-        <td>  </td>
-        <td> <img src="{{site.baseurl}}/images/button/size_4.png" style="margin: -5px 0 0 0"></td>
-    </tr>
-    <tr>
-        <td>  </td>
-    </tr>
-    <tr>
-        <td> <p style="color: #999999; margin-top: -5px;"> Button under </p></td>
-        <td> <img src="{{site.baseurl}}/images/button/size_5.png" style="margin: -5px 0 0 0"></td>
-    </tr>
-</table>
-   
-   
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
