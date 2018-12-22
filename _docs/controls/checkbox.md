@@ -4,167 +4,196 @@ codename: JBCheckBox
 category: Controls
 ---
 
-Сheckbox is used to choose between two mutually exclusive states such as yes/no.
-
 ![]({{site.baseurl}}/images/checkbox/checkbox_example.png)
 
 ## When to use
 
-Use checkbox for:
-* Yes/no choices.
-* Select several objects from the group.
+Use checkboxes for yes/no choices or for selecting several items in a group.
 
-Do **not** use Checkbox in the following cases:
+Do **not** use checkboxes if:
+* Only one option in a group can be selected. Use a [radio button group]({{site.baseurl}}/controls/radio_button) instead.
+* The behavior in the “off” state is unclear from the checkbox label. Use two radio buttons instead and label them accordingly.
+![]({{site.baseurl}}/images/checkbox/when_to_use.png)
+*With the checkbox, it is unclear how the setting works if it’s unchecked. With radio buttons, both states are labeled clearly.*
 
-* If only one option from the list can be selected, use a [Radio Button]({{site.baseurl}}/controls/radio_button).
-* If two states of a setting are not completely opposite as "Yes/No", use two radio buttons and label them accordingly:
-    <p class="label incorrect">Incorrect</p>
-    ![]({{site.baseurl}}/images/checkbox/when_to_use_incorrect.png)
-
-    <p class="label correct">Correct</p>
-    ![]({{site.baseurl}}/images/checkbox/when_to_use_correct.png)
-*"Before" and "after" are opposite, but not as "yes" and "no." One checkbox does not indicate which option will be the opposite.*
 
 ## How to use
 
 ### Label
 
-* A label accompanies each checkbox and appears after the checkbox:
-![]({{site.baseurl}}/images/checkbox/label_verbs_correct.png)
+A label accompanies each checkbox and is placed next to it.
+![]({{site.baseurl}}/images/checkbox/checkbox_label.png)
 
-* Use sentence-style capitalization.
-* Labels should be short and intelligible and written as a phrase or an imperative sentence with no ending punctuation:
-    <p class="label incorrect">Incorrect</p> 
-    ![]({{site.baseurl}}/images/checkbox/label_short_incorrect.png)
-    
-    <p class="label correct">Correct</p> 
-    ![]({{site.baseurl}}/images/checkbox/label_short_correct.png)
-
-* If a label is long, move a part of the label to the second line and align the checkbox with the first line of the label. If the label is too long, [shorten it]({{site.baseurl}}/text/writing_short).
-Do not write labels over more than two lines:
+If a label is long, split it into two lines. Avoid labels that take more than two lines. See recommendations on writing concise labels below.
 ![]({{site.baseurl}}/images/checkbox/label_twoline.png)
 
-* Remove verbs that explain the function of a checkbox.
-  Verbs such as "allow" are extra because are already expressed by the checkbox. The “on” state of a checkbox means its feature is allowed:
-    <p class="label incorrect">Incorrect</p>
-    ![]({{site.baseurl}}/images/checkbox/label_verbs_incorrect.png)
+If a checkbox appears in a table, place the label into the column header and do not repeat it on every row.
+![]({{site.baseurl}}/images/checkbox/checkbox_table.png)
+<br/>
+Writing guidelines:
 
-    <p class="label correct">Correct</p>
-    ![]({{site.baseurl}}/images/checkbox/label_verbs_correct.png)
-* A label describes the checked state of the checkbox. Checkbox is the answer “yes”, do not use negation in labels:
-    <p class="label incorrect">Incorrect</p>
-    ![]({{site.baseurl}}/images/checkbox/label_answeryes_incorrect.png)
+Use sentence-style capitalization. 
 
-    <p class="label correct">Correct</p>
-    ![]({{site.baseurl}}/images/checkbox/label_answeryes_correct.png)
-*Exception: "Don’t show again" checkbox label.*
+Do not use ending punctuation.
 
-* Remove duplicate words at the beginning of labels as described in [recommendation for writing]({{site.baseurl}}/text/writing_short). The repeating part of the sentence can be used in the group header:
-    <p class="label incorrect">Incorrect</p>
-    ![]({{site.baseurl}}/images/checkbox/label_repeats_incorrect.png)
+Use the imperative form of verbs.
+![]({{site.baseurl}}/images/checkbox/label_short.png)
 
-    <p class="label correct">Correct</p>
-    ![]({{site.baseurl}}/images/checkbox/label_repeats_correct.png)
+Do not use negation in labels as it complicates understanding. **Exception**: "Don’t show again" checkbox.
+![]({{site.baseurl}}/images/checkbox/label_answeryes.png)
 
-* A group of checkboxes may not have a header but it is advisable to add one. The group header makes finding a necessary setting faster:
-![]({{site.baseurl}}/images/checkbox/label_header.png)
+Make labels short and intelligible — see [Writing short and clear text]({{site.baseurl}}/text/writing_short).
 
-### Indeterminate checkbox
 
-If the options are grouped, the parent checkbox shows the status of the entire group of children. The parent checkbox has an indeterminate state if all children are not in the same state. Typically, indeterminate checkboxes are used in trees:
-![]({{site.baseurl}}/images/checkbox/indeterminate_tree.png)
-Clicking on the parent checkbox in an indeterminate state will change the state of the entire group to "On" with the first click and "Off" with a second click.
+### Three-state checkbox
 
-An indeterminate checkbox can also show the download status of a remote repository:
+In a group of options, use the parent checkbox to show the status of its children.
+![]({{site.baseurl}}/images/checkbox/indeterminate_checkbox.png)
+*The parent checkbox in checked, indeterminate and unchecked states*
+
+When the user clicks an indeterminate checkbox for the first time, the whole group becomes checked. The second click unchecks the whole group.
+
+An indeterminate checkbox can also show the download status. An example with a remote repository:
 ![]({{site.baseurl}}/images/checkbox/indeterminate_status.png)
-*Repositories “tools-base” and “contrib” are loaded. When loading is finished, the indeterminate checkbox will be replaced with the checked checkbox, if there are commits, or an unchecked checkbox if there are no commits.*
-
-### Placement
-
-* In usual cases checkboxes are grouped by vertical space and left-aligned:
-![]({{site.baseurl}}/images/checkbox/placement_vertical.png)
-* Align depending elements with checkbox label:
-![]({{site.baseurl}}/images/checkbox/placement_align.png)
-* If space is constrained, align the group of 2-3 checkboxes horizontally:
-![]({{site.baseurl}}/images/checkbox/placement_horizontally.png)
-* If the group contains many checkboxes, arrange them in two columns to save vertical space:
-![]({{site.baseurl}}/images/checkbox/placement_two_columns.png)
-* Use gaps to divide groups of checkboxes into subgroups:
-![]({{site.baseurl}}/images/checkbox/placement_gap.png)
-
-  The first items in each group define group contents and help finding a group of settings faster, similar to group headers.
-* A list of checkboxes is easier to read if it contains up to 10 checkboxes. If there are more than 10 checkboxes in a list, arrange them in two columns or divide them into subgroups to make it easier to read.
-* A stand alone checkbox is left-aligned with elements above and below it:
-![]({{site.baseurl}}/images/checkbox/placement_standalone.png)
-When a checkbox depends on the element it follows, the following alignments can be used:
-
-    ![]({{site.baseurl}}/images/checkbox/placement_standalone_textbox.png)
-    *If a preceding input element has a short label, left-align the checkbox with the element.*
-
-    ![]({{site.baseurl}}/images/checkbox/placement_standalone_longlabel.png)
-    *If the label is long or the element itself is narrow, use an indent.*
-
-    ![]({{site.baseurl}}/images/checkbox/placement_standalone_line.png)
-    *If a checkbox label is short, the checkbox can be placed on the same line with an element.*
-
-    ![]({{site.baseurl}}/images/checkbox/placement_standalone_dialog.png)
-    *At the bottom of a dialog, a checkbox can be aligned with buttons.*
-
-* Checkboxes can be used in trees. For more details see [Trees]({{site.baseurl}}/components/trees).
-
-## Style
-### Colors and fonts
-
-Label font: default.
+*Repositories “tools-base” and “contrib” are being loaded. When loading is finished, the indeterminate checkbox will be replaced with the checked checkbox if there are commits, or an unchecked checkbox if there are no commits.*
 
 
-Mac:
-![]({{site.baseurl}}/images/checkbox/style_mac.png)
-![]({{site.baseurl}}/images/checkbox/style_macG.png)
-Darcula:
-![]({{site.baseurl}}/images/checkbox/style_darcula.png)
-Windows:
-![]({{site.baseurl}}/images/checkbox/style_win.png)
+## Sizes and placement
 
-### Sizes
-The checkboxes have a permanent and unchangeable size, it cannot become bigger or smaller.
+If a checkbox depends on another control, e.g. an input field, follow the rules for [dependent controls]({{site.baseurl}}/principles/layout/#lay-out-dependent-controls). Otherwise, follow the rules for [independent controls]({{site.baseurl}}/principles/layout/#arrange-independent-controls).
 
-Mac:
-![]({{site.baseurl}}/images/checkbox/size_mac.png)
-Darcula:
-![]({{site.baseurl}}/images/checkbox/size_darcula.png)
-Windows:
-![]({{site.baseurl}}/images/checkbox/size_win.png)
+If there are more than 4 checkboxes in one column, consider [grouping them]({{site.baseurl}}/principles/layout/#group-controls).  
+<br/>
+Spacing:
 
-### Spacing
-
-* Label:
+Label:
 ![]({{site.baseurl}}/images/checkbox/spacing_label.png)
 
-* Horizontal alignment with label:
+Horizontal alignment with label:  
+Windows theme:
+![]({{site.baseurl}}/images/checkbox/spacing_horizontal_win.png)
 Mac:
 ![]({{site.baseurl}}/images/checkbox/spacing_horizontal_mac.png)
 Darcula:
 ![]({{site.baseurl}}/images/checkbox/spacing_horizontal_darcula.png)
-Windows:
-![]({{site.baseurl}}/images/checkbox/spacing_horizontal_win.png)
 
-* Two-line label:
-![]({{site.baseurl}}/images/checkbox/spacing_twoline.png)
-
-* Vertical group:
+Vertical group:
 ![]({{site.baseurl}}/images/checkbox/spacing_vertical.png)
 
-* Horizontal group:
+Horizontal group:
 ![]({{site.baseurl}}/images/checkbox/spacing_horizontal_group.png)
 
-* Subgroup:
+Subgroup:
 ![]({{site.baseurl}}/images/checkbox/spacing_subgroup.png)
 
-* The distance between columns is at least 35 px. The longer the checkboxes labels are, the bigger the distance between the columns should be:
+The distance between columns is at least 35 px. The longer the checkboxes’ labels are, the bigger the distance between the columns should be:
 ![]({{site.baseurl}}/images/checkbox/placement_two_columns.png)
 
-* Other controls:
+Other controls:
 ![]({{site.baseurl}}/images/checkbox/spacing_combobox.png)
 ![]({{site.baseurl}}/images/checkbox/spacing_longlabel.png)
 ![]({{site.baseurl}}/images/checkbox/spacing_line.png)
+
+
+## Style
+<table>
+<col width="21%">
+<col width="20%">
+<col width="25%">
+<col width="21%">
+<col width="21%">
+    <tr>
+        <td>  </td>
+        <td style="margin-left: 20px"> Mac OS </td>
+        <td> Windows </td>
+        <td> Darcula </td>
+        <td> IntelliJ </td>
+    </tr>
+    <tr>
+        <td> <p style="color: #999999; margin-top: -5px"> Unchecked,<br style="line-height:12px"/> checked,<br style="line-height:12px"/> indeterminate </p></td>
+        <td> <img src="{{site.baseurl}}/images/checkbox/checkboxes-macos.png" style="margin: -5px 0 0 0"></td>
+        <td> <img src="{{site.baseurl}}/images/checkbox/checkboxes-windows.png" style="margin: -5px 0 0 0"></td>
+        <td> <img src="{{site.baseurl}}/images/checkbox/checkboxes-darcula.png" style="margin: -5px 0 0 0"></td>
+        <td> <img src="{{site.baseurl}}/images/checkbox/checkboxes-intellij.png" style="margin: -5px 0 0 0"></td>
+    </tr>
+    <tr>
+        <td>  </td>
+        <td> <p style="color: #999999; margin-top: -5px;"> Enabled,<br style="line-height:12px"/> focused,<br style="line-height:12px"/> disabled </p> </td>
+        <td> <p style="color: #999999; margin-top: -5px;"> Enabled,<br style="line-height:12px"/> focused,<br style="line-height:12px"/> hovered,<br style="line-height:12px"/> disabled </p> </td>
+        <td>   </td>
+        <td>   </td>        
+    </tr>    
+</table>
+
+
+### Colors
+<p class="noanchor"> The color keys can be used only in a UI theme plugin. </p>
+
+<table>
+ <col width="50%">
+      <tr class="table-line">
+         <td> Unchecked background </td>
+         <td> Checkbox.Background.Default <br/>
+              Checkbox.Background.Default.Dark </td>
+     </tr>
+     <tr class="table-line">
+         <td> Checked background </td>
+         <td> Checkbox.Background.Selected <br/>
+              Checkbox.Background.Selected.Dark
+         </td>
+     </tr>
+     <tr class="table-line">
+         <td> Disabled background </td>
+         <td> Checkbox.Background.Disabled <br/>
+              Checkbox.Background.Disabled.Dark
+         </td>
+     </tr>
+     <tr class="table-line">
+         <td> Unchecked border </td>
+         <td> Checkbox.Border.Default <br/>
+              Checkbox.Border.Default.Dark 
+         </td>
+     </tr>
+     <tr class="table-line">
+         <td> Checked border </td>
+         <td> Checkbox.Border.Selected <br/>
+              Checkbox.Border.Selected.Dark 
+         </td>
+     </tr> 
+     <tr class="table-line">
+         <td> Disabled border </td>
+         <td> Checkbox.Border.Disabled <br/>
+              Checkbox.Border.Disabled.Dark 
+         </td>
+     </tr>
+     <tr class="table-line">
+          <td> Focused inner 1px border for unchecked state </td>
+          <td> Checkbox.Focus.Thin.Default <br/>
+               Checkbox.Focus.Thin.Default.Dark 
+          </td>
+      </tr>
+      <tr class="table-line">
+          <td> Focused inner 1px border for checked state </td>
+          <td> Checkbox.Focus.Thin.Selected <br/>
+               Checkbox.Focus.Thin.Selected.Dark
+          </td>
+      </tr>
+      <tr class="table-line">
+          <td> Focused outer 2px border </td>
+          <td> Checkbox.Focus.Wide <br/>
+               Checkbox.Focus.Wide.Dark
+          </td>
+      </tr>
+      <tr class="table-line">
+          <td> Checkmark fill </td>
+          <td> Checkbox.Foreground.Selected <br/>
+               Checkbox.Foreground.Selected.Dark 
+          </td>
+      </tr>
+      <tr>
+          <td> Disabled checkmark fill </td>
+          <td> Checkbox.Foreground.Disabled <br/>
+               Checkbox.Foreground.Disabled.Dark
+          </td>
+      </tr>             
+</table>
