@@ -1,7 +1,8 @@
 ---
-title: Progress Text
+title: Progress text
 category: Controls
-type: Draft
+type: Subpage
+subpageOf: Progress indicators
 ---
 
 The article is under construction. 

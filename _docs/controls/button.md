@@ -1,8 +1,8 @@
 ---
 title: Button
 codename: JButton
-type: GroupHeader
 category: Controls
+type: GroupHeader
 ---
 
 ![]({{site.baseurl}}/images/button/example.png)

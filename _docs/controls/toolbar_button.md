@@ -1,6 +1,8 @@
 ---
 title: Toolbar button
 category: Controls
+type: Subpage
+subpageOf: Toolbar
 ---
 
 A toolbar button is an icon that appears on a toolbar. 

@@ -1,6 +1,8 @@
 ---
 title: Progress bar
 category: Controls
+type: Subpage
+subpageOf: Progress indicators
 ---
 
 A progress bar informs users about the progress of a lengthy operation.

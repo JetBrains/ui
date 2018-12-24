@@ -1,7 +1,8 @@
 ---
 title: Loader
 category: Controls
-type: Draft
+type: Subpage
+subpageOf: Progress indicators
 ---
 
 The article is under construction. 
