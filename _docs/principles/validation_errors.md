@@ -323,7 +323,7 @@ Add a red light bulb on the right side of the input field if an action to fix th
 
 ### Combo box
 
-![]({{site.baseurl}}/images/validation/combobox.png)
+![]({{site.baseurl}}/images/validation/combo_box.png) 
 
 ### Tables and lists
 
