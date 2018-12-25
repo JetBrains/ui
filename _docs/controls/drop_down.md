@@ -217,7 +217,7 @@ For sizes inside the menu list see [Menu list]({{site.baseurl}}/controls/menu_li
 Follow the rules for the [input field]({{site.baseurl}}/controls/input_field/).
 
 
-## Style and sizes
+## Style
 
 <table>
 <col width="27%">
