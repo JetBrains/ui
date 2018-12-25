@@ -37,22 +37,22 @@ Use a drop-down list if:
     
 ### When not to use
 
-* If multiple selections are possible, use checkboxes.
+If multiple selections are possible, use checkboxes.
 
-* If there is a list of actions, use a menu or a split button:
+If there is a list of actions, use a menu or a split button:
 
-    ![]({{site.baseurl}}/images/dropdown/menu_button.png)	
+![]({{site.baseurl}}/images/dropdown/menu_button.png)	
 
-* If there are 4 options or less, use radio buttons. 
-	
-    ![]({{site.baseurl}}/images/dropdown/radio_buttons.png)
+If there are 4 options or less, use radio buttons. 
 
-* If users may need to enter a value that not currently in the list, use a combo box.
+![]({{site.baseurl}}/images/dropdown/radio_buttons.png)
 
-    ![]({{site.baseurl}}/images/dropdown/font_size.png)
-    
-* If a drop-down appears on a toolbar, use [toolbar drop-down]({{site.baseurl}}/controls/toolbar_drop_down/) instead.
-    ![]({{site.baseurl}}/images/toolbar_dropdown/toolbar_main.png)
+If users may need to enter a value that not currently in the list, use a combo box.
+
+![]({{site.baseurl}}/images/dropdown/font_size.png)
+
+If a drop-down appears on a toolbar, use [toolbar drop-down]({{site.baseurl}}/controls/toolbar_drop_down/) instead.
+![]({{site.baseurl}}/images/toolbar_dropdown/toolbar_main.png)
 
 
 
@@ -60,7 +60,7 @@ Use a drop-down list if:
 
 ### Label
 
-Follow the rules for the [Input Field]({{site.baseurl}}/controls/input_field/#label).
+Follow the rules for the [input field]({{site.baseurl}}/controls/input_field/#label).
 
 ![]({{site.baseurl}}/images/dropdown/labels.png)
 
@@ -68,7 +68,6 @@ Follow the rules for the [Input Field]({{site.baseurl}}/controls/input_field/#la
 ### Default value
 
 Select the most likely or the safest value by default.
-
 ![]({{site.baseurl}}/images/dropdown/imports.png)
 *The safest value is “Ask”, the behavior will not be unexpected to the user.*
 
@@ -91,13 +90,13 @@ Do **not** use an empty value as the default value. If no values are added to a 
 
 ### Control 
 
-* A drop-down menu opens on clicking the drop-down button anywhere or pressing the Down key when the drop-down is focused.
-    
-    The menu opens down by default. If there is not enough space, the menu opens up.
+A drop-down menu opens on clicking the drop-down button anywhere or pressing the Down key when the drop-down is 
+focused.      
+The menu opens down by default. If there is not enough space, the menu opens up.
 
-* When the menu opens, the default option (displayed when the menu is closed) is selected. 
+When the menu opens, the default option (displayed when the menu is closed) is selected. 
 
-* Move the selection in the menu on pressing Up and Down arrows when an item is hovered. On hover the cursor over the item just move selection, do not update the value.
+Move the selection in the menu on pressing Up and Down arrows when an item is hovered. On hover the cursor over the item just move selection, do not update the value.
 
 
 <!-- * Filter items in the list on typing:
@@ -105,49 +104,47 @@ Do **not** use an empty value as the default value. If no values are added to a 
     ![]({{site.baseurl}}/images/dropdown/filter.png)
 -->
 
-* The menu remains opened until the user selects an item, clicks outside the menu, presses the <kbd>Esc</kbd> key or 
+The menu remains opened until the user selects an item, clicks outside the menu, presses the <kbd>Esc</kbd> key or 
 switches to another app.
 
 
 ### Menu items
 
-* Use sentence-style capitalization for each menu item.
+Use sentence-style capitalization for each menu item.
   	
-  ![]({{site.baseurl}}/images/dropdown/browser.png)
+![]({{site.baseurl}}/images/dropdown/browser.png)
   
-* Avoid repeating words in drop-down list items. Move repeating words to the label or after the drop-down.
+Avoid repeating words in drop-down list items. Move repeating words to the label or after the drop-down.
   	
-    ![]({{site.baseurl}}/images/dropdown/refresh_changes.png)
+![]({{site.baseurl}}/images/dropdown/refresh_changes.png)
   
   
-* Sort items in one of the following orders:
+Sort items in one of the following orders:
   
-    * Logical order, for example in a spatial relationship:
+* Logical order, for example in a spatial relationship:
         
-        ![]({{site.baseurl}}/images/dropdown/order_logical.png)
+    ![]({{site.baseurl}}/images/dropdown/order_logical.png)
           
-    * Alphabetical or numeric order if the options are equivalent to make it easier to find items:
+* Alphabetical or numeric order if the options are equivalent to make it easier to find items:
     
-        ![]({{site.baseurl}}/images/dropdown/order_alphabetical.png)
+    ![]({{site.baseurl}}/images/dropdown/order_alphabetical.png)
         
-    * Place the most common options first. If there are more than 10 options, separate the most popular options with a line:
+* Place the most common options first. If there are more than 10 options, separate the most popular options with a line:
     
-        ![]({{site.baseurl}}/images/dropdown/order_popular.png)
+    ![]({{site.baseurl}}/images/dropdown/order_popular.png)
         
-* Group related options, add a separator and group header if possible:
+Group related options, add a separator and group header if possible:
   
-  ![]({{site.baseurl}}/images/dropdown/group.png)
+![]({{site.baseurl}}/images/dropdown/group.png)
   
-* If there are actions related to the drop-down, put them under the gear icon on the right:
+If there are actions related to the drop-down, put them under the gear icon on the right:
   
-  ![]({{site.baseurl}}/images/dropdown/scheme.png)
+![]({{site.baseurl}}/images/dropdown/scheme.png)
   
-* Enclose meta-options in pointy brackets and place meta-options at the beginning or at the end if they are secondary.
-  
-  ![]({{site.baseurl}}/images/dropdown/run_tests.png)
-  *\<Choose per test\> is a meta-options because it’s not a  real runner.*
-  
-  Do **not** assign special meanings to numeric or string values, use meta-options instead. It can be unclear that 0 or an empty string are used to disable an option.
+Enclose meta-options in pointy brackets and place meta-options at the beginning or at the end if they are secondary.
+![]({{site.baseurl}}/images/dropdown/run_tests.png)
+*\<Choose per test\> is a meta-options because it’s not a  real runner.*
+Do **not** assign special meanings to numeric or string values, use meta-options instead. It can be unclear that 0 or an empty string are used to disable an option.
   
   <table>
   <col width="53%">
@@ -162,37 +159,62 @@ switches to another app.
            -10px;"> </td>
       </tr>
   </table>
-  <p style="margin-top: -25px"><img><em>In the incorrect example empty string is used to set \<Same as language level\>,
-   which is unclear.</em></p>
+  <p style="margin-top: -25px" class="noanchor"><img><em>In the incorrect example empty string is used to set &lt;Same 
+  as language level&gt;, which is unclear.</em></p>  
+  <p class="noanchor">Replace the &lt;None&gt; option with a checkbox if it does not make the layout more complex:</p>
   
-  
-  Replace the \<None\> option with a checkbox if it does not make the layout more complex:
-  
-  <p class="label incorrect">Incorrect</p>
+  <p class="label incorrect noanchor">Incorrect</p>
   ![]({{site.baseurl}}/images/dropdown/none_incorrect.png)
   
-  <p class="label correct">Correct</p>
+  <p class="label correct noanchor">Correct</p>
   ![]({{site.baseurl}}/images/dropdown/none_correct.png)
   
-* Preview list items with images if they are associated with well-known icons. Use formatting for a list of fonts. It will help users make a choice.
-  
-  ![]({{site.baseurl}}/images/dropdown/preview.png)
-  	 	
-  
-* Use **bold** font to show default values, <font color="#2600FF">blue</font> font for values changed from the default,
- and <font color="#787878">grey</font> font to add a hint.
-  
-  ![]({{site.baseurl}}/images/dropdown/blue_text.png)	
-  *Default and Darcula are bundled schemes, Default is blue because it’s customized.*
-  
-  
-  ![]({{site.baseurl}}/images/dropdown/grey_text.png)
 
-* Submenus are not supported for the drop-down list. Use a tree view instead: 
-    ![]({{site.baseurl}}/images/dropdown/hierarchy.png)
+Preview list items with images if they are associated with well-known icons. Use formatting for a list of fonts. It will help users make a choice.
   
-  
+![]({{site.baseurl}}/images/dropdown/preview.png)
 
+  
+Use **bold** font to show default values, <font color="#2600FF">blue</font> font for values changed from the default,
+ and <font color="#787878">grey</font> font to add a hint.  
+![]({{site.baseurl}}/images/dropdown/blue_text.png)	
+*Default and Darcula are bundled schemes, Default is blue because it’s customized.*
+  
+  
+![]({{site.baseurl}}/images/dropdown/grey_text.png)
+
+Submenus are not supported for the drop-down list. Use a tree view instead: 
+![]({{site.baseurl}}/images/dropdown/hierarchy.png)
+  
+  
+## Sizes and placement
+
+### Width
+
+A drop-down width is fixed and does not change depending on the selected value.
+
+![]({{site.baseurl}}/images/dropdown/width.png)
+    
+A drop-down width should be enough to fit the longest option plus 20px, but not less than 72px.
+	
+![]({{site.baseurl}}/images/dropdown/width_sizes.png)
+
+
+### Menu
+	
+The width of a drop-down menu can either equal the drop-down control width, or be wider to fit longer items.
+
+![]({{site.baseurl}}/images/dropdown/menu_width.png)	
+	
+Choose a list length that eliminates unnecessary vertical scrolling. The minimum height of the list with scrolling is 200px. Expand the list to 600px if space is not constrained and the list does not hide meaningful information under it, e.g. the information that can be important to make a choice.
+
+![]({{site.baseurl}}/images/dropdown/menu_height.png)
+    
+For sizes inside the menu list see [Menu list layout]({{site.baseurl}}/controls/menu_list).
+
+### Placement
+
+Follow the rules for the [input field]({{site.baseurl}}/controls/input_field/).
 
 
 ## Style and sizes
@@ -216,31 +238,3 @@ switches to another app.
 </table>
 
 
-### Width
-
-* A drop-down width is fixed.
-
-    ![]({{site.baseurl}}/images/dropdown/width.png)
-    
-* A drop-down width should be enough to fit the longest option plus 20px, but not less than 72px.
-	
-    ![]({{site.baseurl}}/images/dropdown/width_sizes.png)
-    
-* Try to make multiple stacked drop-downs the same width within a view. For more details see [Layout]({{site.baseurl}}/principles/layout/).
-
-
-### Menu
-	
-* The width of a drop-down menu can either equal the drop-down control width, or be wider to fit longer items.
-
-    ![]({{site.baseurl}}/images/dropdown/menu_width.png)	
-	
-* Choose a list length that eliminates unnecessary vertical scrolling. The minimum height of the list with scrolling is 200px. Expand the list to 600px if space is not constrained and the list does not hide meaningful information under it, e.g. the information that can be important to make a choice.
-
-    ![]({{site.baseurl}}/images/dropdown/menu_height.png)
-    
-For sizes inside the menu list see [Menu list layout]({{site.baseurl}}/controls/menu_list) article.
-
-### Spacing
-
-Follow the rules for the [input field]({{site.baseurl}}/controls/input_field/).
