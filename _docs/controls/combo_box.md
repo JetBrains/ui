@@ -4,11 +4,11 @@ codename: ComboBox setEditable(true)
 category: Controls
 ---
 
-A combo box combines a [drop-down list]({{site.baseurl}}/controls/drop-down) and an [input field](({{site.baseurl}}/controls/input_field), allowing the user to select a value from the list or enter a custom value.
+A combo box combines a [drop-down list]({{site.baseurl}}/controls/drop-down) and an [input field]({{site.baseurl}}/controls/input_field), allowing the user to select a value from the list or enter a custom value.
 
 ![]({{site.baseurl}}/images/combo_box/example.png)
 
-IntelliJ platform ComboBox component `com.intellij.openapi.ui.ComboBox` extends the Swing JComboBox component, so use the Swing API. To make combo box editable call:
+Use `com.intellij.openapi.ui.ComboBox`  instead of `javax.swing.JComboBox`. To make combo box editable call:
 
 <div class="code-block__wrapper">{% highlight java %}
 ComboBox setEditable(true)
@@ -95,7 +95,7 @@ If the user needs to return to previous inputs, add such values to the end of th
 
 ![]({{site.baseurl}}/images/combo_box/maven.png)
 
-Use [control buttons]({{site.baseurl}}/controls/button/#control-button) to add values or expand the combo box, e.g. the browse button.
+Use [control buttons]({{site.baseurl}}/controls/button/#control-button) to add values or expand the combo box, e.g. the browse button `com.intellij.ui.ComboboxWithBrowseButton`:
 
 ![]({{site.baseurl}}/images/combo_box/control_button.png)
 
