@@ -93,7 +93,7 @@ If the user needs to return to previous inputs, add such values to the end of th
 
 ![]({{site.baseurl}}/images/combo_box/maven.png)
 
-Use [control buttons]({{site.baseurl}}/controls/button/#control-button) to add values or expand the combo box, e.g. the browse button `com.intellij.ui.ComboboxWithBrowseButton`:
+Use [control buttons]({{site.baseurl}}/controls/button/#control-button) to add values or expand the combo box, e.g. the browse button:
 
 ![]({{site.baseurl}}/images/combo_box/control_button.png)
 
