@@ -10033,6 +10033,14 @@ img + em {
     line-height: 1.8em;
 }
 
+.article em > br {
+    line-height: 1.8em;
+}
+
+.article td > br {
+    line-height: 1.8em;
+}
+
 .article em. i {
     font-style: italic;
 }

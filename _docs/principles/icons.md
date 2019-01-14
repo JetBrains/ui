@@ -5,6 +5,9 @@ category: Principles
 
 Follow these guidelines to create a new icon or redesign an existing one for IntelliJ-based products.
 
+<aside class="note sideblock _visible">Download a <a href="{{site.baseurl}}/images/icons/Icons template.sketch" download>Sketch file</a> with the color palette and icon examples.</aside>
+
+
 ## Style
 A common style unites several icons into a set and makes them recognizable.
 
@@ -115,13 +118,11 @@ Use basic shapes to build icons, such as squares, circles and rectangles. Using 
 </tr>
 </table>
 
-Make sure that icons have the same visual weight. The more filled an icon is, the less space it needs. Following this rule, circles, rhombuses, triangles and other non-square shapes should have larger height and width to be optically balanced with square figures.
-
+Make sure that icons have the same visual weight. The more filled an icon is, the less space it needs. Following this rule, circles, rhombuses, triangles and other non-square shapes should have larger height and width to be optically balanced with square figures.  
 ![]({{site.baseurl}}/images/icons/shapes_weight_1.png)
 *Make the circle diameter 2px bigger than square icons’ height to compensate the visual weight.*
 
-Icons with more details should occupy more space.
-
+Icons with more details should occupy more space.  
 ![]({{site.baseurl}}/images/icons/shapes_weight_2.png)
 *The eye icon is less detailed and occupies less space than a more complex scissors icon.*
 
@@ -179,7 +180,7 @@ Reduce the number of anchors, as they increase the size of the image and takes l
 ## Modifier
 A modifier is a small shape added over the base icon.
 
-* The default modifier position is the bottom right corner. If the base shape is badly recognizable with a modifier in the bottom right corner, or if several modifiers are needed, the modifier can be placed in other corners.
+The default modifier position is the bottom right corner. If the base shape is badly recognizable with a modifier in the bottom right corner, or if several modifiers are needed, the modifier can be placed in other corners.
 
   <table>
   <col width="30%">
@@ -192,15 +193,13 @@ A modifier is a small shape added over the base icon.
   </tr>
   </table>
 	
-* A modifier size is from 6px to 9px, depending on the shape weight.  Leave a 1-2px spacing between the modifier and the main shape, to make the modifier clearly visible.
-
-  ![]({{site.baseurl}}/images/icons/modifier_size.png)
-  *Modifier sizes*
+A modifier size is from 6px to 9px, depending on the shape weight.  Leave a 1-2px spacing between the modifier and the main shape, to make the modifier clearly visible.  
+![]({{site.baseurl}}/images/icons/modifier_size.png)
+*Modifier sizes*
 
 
 ## Arrows
-General rules for arrows: arrowhead is a filled triangle with a 90° pointing angle, a 2px body ends in a square stroke. An arrow’s orientation is horizontal, vertical, 45° or round. 
-
+General rules for arrows: arrowhead is a filled triangle with a 90° pointing angle, a 2px body ends in a square stroke. An arrow’s orientation is horizontal, vertical, 45° or round.  
 ![]({{site.baseurl}}/images/icons/arrows_basic.png)
 *Basic arrow icons*
 
@@ -218,24 +217,59 @@ Unfilled arrowhead can be used if there is only one arrow on an icon to reduce e
 </tr>
 </table>
 
-
-<p class="label incorrect">Incorrect</p>	
+Do **not** use other arrow styles, for example unfilled arrows or arrows with thinned tails.
+<p class="label incorrect noanchor">Incorrect</p>  
 ![]({{site.baseurl}}/images/icons/arrows_incorrect.png)
-*Do **not** use other arrow styles, for example unfilled arrows or arrows with thinned tails.*
-
+    
 
 ## Color
 Do not use color as the only differentiator between icons (except for the [Noun icon](#noun-icons)) because some people do not distinguish colors. Make sure that icons are easily distinguishable by their shape. 
 
 Do not use gradients or shadows.
 
+<aside class="note sideblock _visible">Download a <a href="{{site.baseurl}}/images/icons/Icons template.sketch" download>Sketch file</a> with the color palette.</aside>
+
+
 ### Action icons
 
 An action icon is an icon that triggers an action. It usually appears on toolbars and in dialogs. 
 There are 5 colors in the actions icons palette. Dark version is for Darcula theme.
 
-![]({{site.baseurl}}/images/icons/colors_actions_palette.png)
-*Action icons palette*
+<table>
+    <col width="8%">
+    <col width="20%">
+    <col width="8%">
+    <tr>
+        <td> <img src="{{site.baseurl}}/images/icons/action/red.png" style="margin-bottom: 0px"> </td>
+        <td style="padding-top: 30px; padding-left: 16px"> <span style="font-size: 110%"> Red </span> <br/> <span style="font-size: 80%">#DB5860 </span></td>
+        <td> <img src="{{site.baseurl}}/images/icons/action/red_dark.png" style="margin-bottom: 0px"> </td>
+        <td style="padding-top: 30px; padding-left: 16px"> <span style="font-size: 110%"> Red dark </span> <br/> <span style="font-size: 80%">#C75450 </span></td>
+    </tr>
+    <tr>
+        <td> <img src="{{site.baseurl}}/images/icons/action/yellow.png" style="margin-bottom: 0px"> </td>
+        <td style="padding-top: 30px; padding-left: 16px"> <span style="font-size: 110%"> Yellow </span> <br/> <span style="font-size: 80%">#EDA200 </span></td>
+        <td> <img src="{{site.baseurl}}/images/icons/action/yellow_dark.png" style="margin-bottom: 0px"> </td>
+        <td style="padding-top: 30px; padding-left: 16px"> <span style="font-size: 110%"> Yellow dark </span> <br/> <span style="font-size: 80%">#F0A732 </span></td>
+    </tr>
+    <tr>
+        <td> <img src="{{site.baseurl}}/images/icons/action/green.png" style="margin-bottom: 0px"> </td>
+        <td style="padding-top: 30px; padding-left: 16px"> <span style="font-size: 110%"> Green </span> <br/> <span style="font-size: 80%">#59A869 </span></td>
+        <td> <img src="{{site.baseurl}}/images/icons/action/green_dark.png" style="margin-bottom: 0px"> </td>
+        <td style="padding-top: 30px; padding-left: 16px"> <span style="font-size: 110%"> Green dark </span> <br/> <span style="font-size: 80%">#499C54 </span></td>
+    </tr>
+    <tr>
+        <td> <img src="{{site.baseurl}}/images/icons/action/blue.png" style="margin-bottom: 0px"> </td>
+        <td style="padding-top: 30px; padding-left: 16px"> <span style="font-size: 110%"> Blue </span> <br/> <span style="font-size: 80%">#389FD6 </span></td>
+        <td> <img src="{{site.baseurl}}/images/icons/action/blue_dark.png" style="margin-bottom: 0px"> </td>
+        <td style="padding-top: 30px; padding-left: 16px"> <span style="font-size: 110%"> Blue dark </span> <br/> <span style="font-size: 80%">#3592C4 </span></td>
+    </tr>
+    <tr>
+        <td> <img src="{{site.baseurl}}/images/icons/action/grey.png" style="margin-bottom: 0px"> </td>
+        <td style="padding-top: 30px; padding-left: 16px"> <span style="font-size: 110%"> Grey </span> <br/> <span style="font-size: 80%">#6E6E6E </span></td>
+        <td> <img src="{{site.baseurl}}/images/icons/action/grey_dark.png" style="margin-bottom: 0px"> </td>
+        <td style="padding-top: 30px; padding-left: 16px"> <span style="font-size: 110%"> Grey dark </span> <br/> <span style="font-size: 80%">#AFB1B3 </span></td>
+    </tr>
+</table>
 
 Use these colors according to the following rules:
 1. By default, action icons are grey and monochromatic:
@@ -283,22 +317,104 @@ If you need a new icon, color it according to its semantics. Make sure that the 
 
 A noun icon is an icon that appears in the tree view to mark different file types. It helps to locate items in the list faster and does not trigger an action.
 
-The palette for noun icons is wider, because there are lots of icons in one set:
-![]({{site.baseurl}}/images/icons/colors_nouns_palette.png)
-*Noun icons palette*
+The palette for noun icons is wider, because there are lots of icons in one set:  
 
-Use colors without opacity for small elements, like modifiers. 
-![]({{site.baseurl}}/images/icons/colors_nouns_modifier.png)
+<table>
+    <col width="8%">
+    <col width="20%">
+    <col width="8%">
+    <col width="20%">
+    <col width="8%">
+    <tr>
+        <td> <img src="{{site.baseurl}}/images/icons/noun/grey.png" style="margin-bottom: 0px"> </td>
+        <td style="padding-top: 30px; padding-left: 16px"> <span style="font-size: 110%"> Grey </span> <br/> <span style="font-size: 80%"> #9AA7B0 </span> </td>
+        <td> <img src="{{site.baseurl}}/images/icons/noun/grey_80.png" style="margin-bottom: 0px"> </td>
+        <td style="padding-top: 30px; padding-left: 16px"> <span style="font-size: 110%"> Grey 80% </span> <br/> <span style="font-size: 80%"> #9AA7B0 op. 80% </span> </td>
+        <td> <img src="{{site.baseurl}}/images/icons/noun/grey_60.png" style="margin-bottom: 0px"> </td>
+        <td style="padding-top: 30px; padding-left: 16px"> <span style="font-size: 110%"> Grey 60% </span> <br/> <span style="font-size: 80%"> #9AA7B0 op. 60% </span> </td>
+    </tr>
+    <tr>
+        <td> <img src="{{site.baseurl}}/images/icons/noun/blue.png" style="margin-bottom: 0px"> </td>
+        <td style="padding-top: 30px; padding-left: 16px"> <span style="font-size: 110%"> Blue </span> <br/> <span style="font-size: 80%"> #40B6E0 </span> </td>
+        <td> <img src="{{site.baseurl}}/images/icons/noun/blue_70.png" style="margin-bottom: 0px"> </td>
+        <td style="padding-top: 30px; padding-left: 16px"> <span style="font-size: 110%"> Blue 70% </span> <br/> <span style="font-size: 80%"> #40B6E0 op. 70% </span> </td>
+        <td> <img src="{{site.baseurl}}/images/icons/noun/blue_60.png" style="margin-bottom: 0px"> </td>
+        <td style="padding-top: 30px; padding-left: 16px"> <span style="font-size: 110%"> Blue 60% </span> <br/> <span style="font-size: 80%"> #40B6E0 op. 60%</span> </td>
+    </tr>
+    <tr>
+        <td> <img src="{{site.baseurl}}/images/icons/noun/green.png" style="margin-bottom: 0px"> </td>
+        <td style="padding-top: 30px; padding-left: 16px"> <span style="font-size: 110%"> Green </span> <br/> <span style="font-size: 80%"> #62B543 </span> </td>
+        <td> <img src="{{site.baseurl}}/images/icons/noun/green_70.png" style="margin-bottom: 0px"> </td>
+        <td style="padding-top: 30px; padding-left: 16px"> <span style="font-size: 110%"> Green 70% </span> <br/> <span style="font-size: 80%"> #62B543 op. 70%</span> </td>
+        <td> <img src="{{site.baseurl}}/images/icons/noun/green_60.png" style="margin-bottom: 0px"> </td>
+        <td style="padding-top: 30px; padding-left: 16px"> <span style="font-size: 110%"> Green 60% </span> <br/> <span style="font-size: 80%"> #62B543 op. 60%</span> </td>
+    </tr>
+    <tr>
+        <td> <img src="{{site.baseurl}}/images/icons/noun/yellow.png" style="margin-bottom: 0px"> </td>
+        <td style="padding-top: 30px; padding-left: 16px"> <span style="font-size: 110%"> Yellow </span> <br/> <span style="font-size: 80%"> #F4AF3D </span> </td>
+        <td> <img src="{{site.baseurl}}/images/icons/noun/yellow_70.png" style="margin-bottom: 0px"> </td>
+        <td style="padding-top: 30px; padding-left: 16px"> <span style="font-size: 110%"> Yellow 70% </span> <br/> <span style="font-size: 80%"> #F4AF3D op. 70%</span> </td>
+        <td> <img src="{{site.baseurl}}/images/icons/noun/yellow_60.png" style="margin-bottom: 0px"> </td>
+        <td style="padding-top: 30px; padding-left: 16px"> <span style="font-size: 110%"> Yellow 60% </span> <br/> <span style="font-size: 80%"> #F4AF3D op. 60%</span> </td>
+    </tr>
+    <tr>
+        <td> <img src="{{site.baseurl}}/images/icons/noun/purple.png" style="margin-bottom: 0px"> </td>
+        <td style="padding-top: 30px; padding-left: 16px"> <span style="font-size: 110%"> Purple </span> <br/> <span style="font-size: 80%"> #B99BF8 </span> </td>
+        <td> <img src="{{site.baseurl}}/images/icons/noun/purple_70.png" style="margin-bottom: 0px"> </td>
+        <td style="padding-top: 30px; padding-left: 16px"> <span style="font-size: 110%"> Purple 70% </span> <br/> <span style="font-size: 80%"> #B99BF8 op. 70% </span> </td>
+        <td> <img src="{{site.baseurl}}/images/icons/noun/purple_60.png" style="margin-bottom: 0px"> </td>
+        <td style="padding-top: 30px; padding-left: 16px"> <span style="font-size: 110%"> Purple 60% </span> <br/> <span style="font-size: 80%"> #B99BF8 op. 60%</span> </td>
+    </tr>
+    <tr>
+        <td> <img src="{{site.baseurl}}/images/icons/noun/pink.png" style="margin-bottom: 0px"> </td>
+        <td style="padding-top: 30px; padding-left: 16px"> <span style="font-size: 110%"> Pink </span> <br/> <span style="font-size: 80%"> #F98B9E </span> </td>
+        <td> <img src="{{site.baseurl}}/images/icons/noun/pink_70.png" style="margin-bottom: 0px"> </td>
+        <td style="padding-top: 30px; padding-left: 16px"> <span style="font-size: 110%"> Pink 70% </span> <br/> <span style="font-size: 80%"> #F98B9E op. 70%</span> </td>
+        <td> <img src="{{site.baseurl}}/images/icons/noun/pink_60.png" style="margin-bottom: 0px"> </td>
+        <td style="padding-top: 30px; padding-left: 16px"> <span style="font-size: 110%"> Pink 60% </span> <br/> <span style="font-size: 80%"> #F98B9E op. 60%</span> </td>
+    </tr>
+    <tr>
+        <td> <img src="{{site.baseurl}}/images/icons/noun/red.png" style="margin-bottom: 0px"> </td>
+        <td style="padding-top: 30px; padding-left: 16px"> <span style="font-size: 110%"> Red </span> <br/> <span style="font-size: 80%"> #F26522 </span> </td>
+        <td> <img src="{{site.baseurl}}/images/icons/noun/red_70.png" style="margin-bottom: 0px"> </td>
+        <td style="padding-top: 30px; padding-left: 16px"> <span style="font-size: 110%"> Red 70% </span> <br/> <span style="font-size: 80%"> #F26522 op. 70%</span> </td>
+        <td> <img src="{{site.baseurl}}/images/icons/noun/red_60.png" style="margin-bottom: 0px"> </td>
+        <td style="padding-top: 30px; padding-left: 16px"> <span style="font-size: 110%"> Red 60% </span> <br/> <span style="font-size: 80%"> #F26522 op. 60%</span> </td>
+    </tr>
+    <tr>
+        <td> <img src="{{site.baseurl}}/images/icons/noun/red_status.png" style="margin-bottom: 0px"> </td>
+        <td style="padding-top: 30px; padding-left: 16px"> <span style="font-size: 110%"> Red status</span> <br/> <span style="font-size: 80%"> #E05555 </span> </td>
+        <td> <img src="{{site.baseurl}}/images/icons/noun/red_status_70.png" style="margin-bottom: 0px"> </td>
+        <td style="padding-top: 30px; padding-left: 16px"> <span style="font-size: 110%"> Red status 70% </span> <br/> <span style="font-size: 80%"> #E05555 op. 70%</span> </td>
+    </tr>
+    <tr>
+        <td> <img src="{{site.baseurl}}/images/icons/noun/yellow_dark.png" style="margin-bottom: 0px"> </td>
+        <td style="padding-top: 30px; padding-left: 16px"> <span style="font-size: 110%"> Yellow dark </span> <br/> <span style="font-size: 80%"> #D9A343 </span> </td>
+    </tr>
+    <tr>
+        <td> <img src="{{site.baseurl}}/images/icons/noun/green_android.png" style="margin-bottom: 0px"> </td>
+        <td style="padding-top: 30px; padding-left: 16px"> <span style="font-size: 110%"> Green Android </span> <br/> <span style="font-size: 80%"> #A4C639 </span> </td>
+    </tr>   
+    <tr>
+        <td> <img src="{{site.baseurl}}/images/icons/noun/black.png" style="margin-bottom: 0px"> </td>
+        <td style="padding-top: 30px; padding-left: 16px"> <span style="font-size: 110%"> Black_text </span> <br/> <span style="font-size: 80%"> #231F20 op. 70% </span> </td>
+    </tr>
+</table>
+
+Select colors for new icons based on existing colors and users’ habits.
+
+Use colors with 60% opacity and grey 80% for big parts, like folder icons:
+![]({{site.baseurl}}/images/icons/colors_nouns_folder.png)
+Transparent icons are used in both light and dark themes, so in most cases there’s only one version.
 
 
 Use colors with 70% opacity for medium size elements that occupy about half of an icon, like file type icons:
 ![]({{site.baseurl}}/images/icons/colors_nouns_file.png)
 
 
-Use 60% opacity for big parts, like folder icons:
-![]({{site.baseurl}}/images/icons/colors_nouns_folder.png)
+Use colors without opacity for small elements, like modifiers. 
+![]({{site.baseurl}}/images/icons/colors_nouns_modifier.png)
 
-Select colors for new icons based on existing colors and users’ habits.
 
 
 ## Export Icons
