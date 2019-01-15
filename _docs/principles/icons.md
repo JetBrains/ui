@@ -220,7 +220,7 @@ Unfilled arrowhead can be used if there is only one arrow on an icon to reduce e
 Do **not** use other arrow styles, for example unfilled arrows or arrows with thinned tails.
 <p class="label incorrect noanchor">Incorrect</p>  
 ![]({{site.baseurl}}/images/icons/arrows_incorrect.png)
-    
+
 
 ## Color
 Do not use color as the only differentiator between icons (except for the [Noun icon](#noun-icons)) because some people do not distinguish colors. Make sure that icons are easily distinguishable by their shape. 
@@ -415,7 +415,9 @@ Use colors with 70% opacity for medium size elements that occupy about half of a
 Use colors without opacity for small elements, like modifiers. 
 ![]({{site.baseurl}}/images/icons/colors_nouns_modifier.png)
 
+## Font
 
+Use Gotham font for all icons with letters, for example file type or node icons.  
 
 ## Export Icons
 
