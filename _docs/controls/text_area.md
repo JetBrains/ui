@@ -94,24 +94,7 @@ Size text area to display an integral number of lines of text:
 Do **not** resize text area on input. It will change the position of other controls and they can become 
 hard-discoverable.
 
-Avoid horizontal scroll bars on multi-line text boxes. Use vertical scrolling and line wrapping instead:
-
-<table>
-    <tr>
-        <td> <p class="label incorrect">Incorrect</p> </td>
-        <td> <img src="{{site.baseurl}}/images/text_area/size_4.png" style="margin-bottom: -10px; margin-left: 30px"> </td>         
-    </tr>
-    <tr>
-        <td> <p class="label correct" style="margin-top: 10px;">Correct</p> </td>
-        <td> <img src="{{site.baseurl}}/images/text_area/size_5.png" style="margin-top: 10px; margin-left: 30px; margin-bottom: -10px"> </td>
-    </tr>
-</table>
-
-Horizontal scroll bar can be added if text area is for the code snippets or for the formatted input. Use context 
-menu to enable soft-wrapping.
-
-<p class="label correct noanchor">Correct</p>
-![]({{site.baseurl}}/images/text_area/horizontal_scroll.png)
+If the text is long and does not fit the text area, add [scrollbar]({{site.baseurl}}/controls/scrollbar).
 
 For placement follow the rules for the [input field]({{site.baseurl}}/controls/input_field).
 
