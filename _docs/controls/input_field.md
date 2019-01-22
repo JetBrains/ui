@@ -30,44 +30,41 @@ If the input has a specific format, select one of the following controls:
 
 ### Label
 
-The label displays the type of information the field requires. Follow the rules:
+A label accompanies each input field.
 
-* A label accompanies each input field.
-* Labels should be [short and descriptive]({{site.baseurl}}/text/writing_short/) so the user can quickly scan the form.
-* Use sentence-style capitalization.
-* Write the label either as a noun and end the label with a colon:  
-    ![]({{site.baseurl}}/images/input_field/label_noun.png) 
-    Or as a phrase with no ending punctuation:
-    ![]({{site.baseurl}}/images/input_field/label_sentence.png)
+The label displays the type of information the field requires. Labels should be [short and descriptive]({{site
+.baseurl}}/text/writing_short/) so the user can quickly scan the form.
 
-* Do **not** use labels to indicate user actions:  
-    ![]({{site.baseurl}}/images/input_field/user_action.png)
+Write the label either as a noun and end the label with a colon. Use sentence-style capitalization.
+![]({{site.baseurl}}/images/input_field/label_noun.png)
+Or as a phrase with no ending punctuation:
+![]({{site.baseurl}}/images/input_field/label_sentence.png)
 
-* Place label on the left and align with the text baseline:
 
-    ![]({{site.baseurl}}/images/input_field/label_left.png)
+Do **not** use labels to indicate user actions:  
+![]({{site.baseurl}}/images/input_field/user_action.png)
 
-    If place is constranted, place label above the input field:
+Place label on the left and align with the text baseline:
+![]({{site.baseurl}}/images/input_field/label_left.png)
+If place is constranted, place label above the input field:
+![]({{site.baseurl}}/images/input_field/label_top.png)
 
-    ![]({{site.baseurl}}/images/input_field/label_top.png)
+If an input field is disabled, disable the label:
+![]({{site.baseurl}}/images/input_field/label_disabled.png)
 
-* If an input field is disabled, disable the label:
+Make the label text selectable. The user may want to find this option on the Internet or to send question about the option to support.
 
-    ![]({{site.baseurl}}/images/input_field/label_disabled.png)
-
-* Make the label text selectable. The user may want to find this option on the Internet or to send question about the option to support.
-
-* If there are several input fields on the form, it’s recommended to make labels approximately the same length to avoid gaps between labels and fields. For example:
-    <table>
-        <tr>
-            <td> <p class="label incorrect">Incorrect</p> </td>
-            <td> <img src="{{site.baseurl}}/images/input_field/several_labels_length.png" style="margin-bottom: -10px; margin-left: 30px"> </td>         
-        </tr>
-        <tr>
-            <td> <p class="label correct">Correct</p> </td>
-            <td> <img src="{{site.baseurl}}/images/input_field/several_labels_length_1.png" style="margin-left: 30px;"> </td>
-        </tr>
-    </table>
+If there are several input fields on the form, it’s recommended to make labels approximately the same length to avoid gaps between labels and fields. For example:
+<table>
+    <tr>
+        <td> <p class="label incorrect">Incorrect</p> </td>
+        <td> <img src="{{site.baseurl}}/images/input_field/several_labels_length.png" style="margin-bottom: -10px; margin-left: 30px"> </td>         
+    </tr>
+    <tr>
+        <td> <p class="label correct">Correct</p> </td>
+        <td> <img src="{{site.baseurl}}/images/input_field/several_labels_length_1.png" style="margin-left: 30px;"> </td>
+    </tr>
+</table>
 
 
 
@@ -78,37 +75,30 @@ Placeholder is a grey text placed inside an input field. Follow the rules:
 * Do **not** use ending punctuation or ellipsis.
 * Hide placeholder when user starts typing, not on input field focus.
 
-The placeholder should be used in the following cases: 
+Use placeholder to indicate that input field is [optional]({{site.baseurl}}/principles/required_fields/):  
+![]({{site.baseurl}}/images/input_field/placeholder_optional.png)
 
-1. Use placeholder to indicate that input field is [optional]({{site.baseurl}}/principles/required_fields/):  
+Use placeholder to show inherited default value:  
+![]({{site.baseurl}}/images/input_field/placeholder_default.png)
+If user overwrites value, the value can be reset by removing value from the input field or clicking on "Reset to 
+default" link on the right:  
+![]({{site.baseurl}}/images/input_field/placeholder_reset.png)
 
-    ![]({{site.baseurl}}/images/input_field/placeholder_optional.png)
-
-2. Use placeholder to show inherited default value:  
-
-    ![]({{site.baseurl}}/images/input_field/placeholder_default.png)
-
-    If user overwrites value, the value can be reset by removing value from the input field or clicking on *Reset to default* link on the right:
-
-    ![]({{site.baseurl}}/images/input_field/placeholder_reset.png)
-
-
-3. Do **not** use placeholder to show examples. User can decide that the field is already filled. Provide examples or explanation under the input field (see [Context help]({{site.baseurl}}/principles/context_help/)):
-    <table>
-    <col width="200px">
-        <tr>
-            <td> <p class="label incorrect">Incorrect</p> </td>
-            <td> <p class="label correct">Correct</p> </td>
-        </tr>
-        <tr>
-            <td> <img src="{{site.baseurl}}/images/input_field/placeholder_examples.png" style="margin-top: -5px; margin-bottom: 5px;"> </td>
-            <td> <img src="{{site.baseurl}}/images/input_field/placeholder_examples_1.png" style="margin-top: -5px; margin-bottom: 5px;"> </td>
-        </tr>
-    </table>
+Do **not** use placeholder to show examples. User can decide that the field is already filled. Provide examples or explanation under the input field (see [Context help]({{site.baseurl}}/principles/context_help/)):
+<table>
+<col width="200px">
+    <tr>
+        <td> <p class="label incorrect">Incorrect</p> </td>
+        <td> <p class="label correct">Correct</p> </td>
+    </tr>
+    <tr>
+        <td> <img src="{{site.baseurl}}/images/input_field/placeholder_examples.png" style="margin-top: -5px; margin-bottom: 5px;"> </td>
+        <td> <img src="{{site.baseurl}}/images/input_field/placeholder_examples_1.png" style="margin-top: -5px; margin-bottom: 5px;"> </td>
+    </tr>
+</table>
         
-4. Do **not** use placeholder as field label. When the field is filled, it is difficult to understand what kind of field it is.  
-
-    ![]({{site.baseurl}}/images/input_field/placeholder_label.png)
+Do **not** use placeholder as field label. When the field is filled, it is difficult to understand what kind of field it is.  
+![]({{site.baseurl}}/images/input_field/placeholder_label.png)
 
 
 
