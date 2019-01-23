@@ -83,5 +83,5 @@ Do not show details or a link to cancel the operation for progress in trees and 
 
 ### Style
 
-Font color is #999999 on both themes as for [Empty stat]({{site.baseurl}}/principles/empty_state)[e]({{site.baseurl}}/principles/empty_state) text.
+Font color is #999999 on both themes as for [Empty state]({{site.baseurl}}/principles/empty_state) text.
 
