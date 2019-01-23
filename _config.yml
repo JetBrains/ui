@@ -15,7 +15,7 @@ logo: /logo_JetBrains_4.svg
 
 permalink: pretty
 
-gems:
+plugins:
   - jekyll-sitemap
   - jekyll-seo-tag
   - jekyll-feed
