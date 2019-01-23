@@ -311,34 +311,34 @@ If data in a cell is editable or configurable:
 <col width="159 px">
   <tr>
     <td>
-        <p style="color: #999999; margin-left: 20px; margin-top: 30px">Label</p>
+        <p style="margin-left: 20px; margin-top: 30px"><span style="color: #999999">Label</span></p>
     </td>
     <td>
-                  <img src="{{site.baseurl}}/images/table/bytecode-version-mes.png" style="margin-bottom: 9px; margin-left: 30px;" />
-    </td>
-  </tr>
-  <tr>
-    <td>
-        <p style="color: #999999; margin-left: 20px; margin-top: 30px">Column content</p>
-    </td>
-    <td>
-                  <img src="{{site.baseurl}}/images/table/columnMes.png" style="margin-bottom: 9px; margin-left: 40px;" />
+        <p style="margin-left:20px">          <img src="{{site.baseurl}}/images/table/bytecode-version-mes.png" style="margin-bottom: 9px; margin-left: 40px;" /></p>
     </td>
   </tr>
   <tr>
     <td>
-        <p style="color: #999999; margin-left: 20px; margin-top: 30px">Combo icon</p>
+        <p style="margin-left: 20px; margin-top: 30px"><span style="color: #999999">Column content</span></p>
     </td>
     <td>
-                  <img src="{{site.baseurl}}/images/table/combo-mes.png" style="margin-bottom: 9px; margin-left: 40px;" />
+        <p style="margin-left:20px">          <img src="{{site.baseurl}}/images/table/columnMes.png" style="margin-bottom: 9px; margin-left: 40px;" /></p>
     </td>
   </tr>
   <tr>
     <td>
-        <p style="color: #999999; margin-left: 20px; margin-top: 30px">Sorted column</p>
+        <p style="margin-left: 20px; margin-top: 30px"><span style="color: #999999">Combo icon</span></p>
     </td>
     <td>
-                  <img src="{{site.baseurl}}/images/table/sorted-mes.png" style="margin-bottom: 9px; margin-left: 40px;" />
+        <p style="margin-left:20px">          <img src="{{site.baseurl}}/images/table/combo-mes.png" style="margin-bottom: 9px; margin-left: 40px;" /></p>
+    </td>
+  </tr>
+  <tr>
+    <td>
+        <p style="margin-left: 20px; margin-top: 30px"><span style="color: #999999">Sorted column</span></p>
+    </td>
+    <td>
+        <p style="margin-left:20px">          <img src="{{site.baseurl}}/images/table/sorted-mes.png" style="margin-bottom: 9px; margin-left: 40px;" /></p>
     </td>
   </tr>
 </table>
