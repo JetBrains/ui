@@ -249,7 +249,7 @@ If data in a cell is editable or configurable:
 
 * Show a separate dialog for non-text data, for example, a color chooser for colors.
 
-* Do **not **show a separate dialog for editing simple data rows without a compound preview (an example of a compound preview can be found in Editor > Language Injections). For example, there is no need in a separate dialog in the Appearance & Behaviour > Path Variables table, as all editing could be done in place.
+* Do **not** show a separate dialog for editing simple data rows without a compound preview (an example of a compound preview can be found in Editor > Language Injections). For example, there is no need in a separate dialog in the Appearance & Behaviour > Path Variables table, as all editing could be done in place.
 
 * If it’s possible to enumerate less than 15 most likely or valid variants, show a combobox-like configurable with a down-arrow icon and a popup on click: 
   ![]({{site.baseurl}}/images/table/combo.png)
@@ -257,7 +257,7 @@ If data in a cell is editable or configurable:
 
 * If there are more than 15 variants, show a completion popup.
 
-* Do **not **use a full-size combobox inside tables. It looks inconsistent and has too much details for a table; a simple dropdown icon with the variants popup is enough. 
+* Do **not** use a full-size combobox inside tables. It looks inconsistent and has too much details for a table; a simple dropdown icon with the variants popup is enough. 
   <p class='label incorrect'>Incorrect</p>
   ![]({{site.baseurl}}/images/table/combo-incorrect.png)
   
