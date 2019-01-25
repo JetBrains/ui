@@ -6,7 +6,7 @@ subpageOf: Progress indicators
 ---
 
 A loader informs users about performing a lengthy operation.
-
+![]({{site.baseurl}}/images/loader/loader.png)
 
 ## When to use
 
