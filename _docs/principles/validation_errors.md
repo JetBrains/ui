@@ -175,7 +175,8 @@ When the focus is returned to the field with error, the validation is the same a
     **Implementation**: By default `DialogWrapper` disables "OK" button until all fields that participate in validation 
     become valid. Explicitly enable "OK" button for each input field:
 
-<div class="code-block__wrapper">{% highlight java %}new ValidationInto("The host cannot be reached.", myHostField).withOkEnabled();{% endhighlight %}</div>
+<div class="code-block__wrapper">{% highlight java %}new ValidationInfo("The host cannot be reached.", myHostField)
+.withOkEnabled();{% endhighlight %}</div>
   
   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`ValidationInfo` for messages in inline area is created with null component:  
   
@@ -385,7 +386,8 @@ The warning can be shown:
 
     There is an extra configuration in `ValidiationInfo` class which turns it into a warning
     info:
-<div class="code-block__wrapper">{% highlight java %}new ValidationInto("Target name is not specified.", myNameField).asWarning();{% endhighlight %}</div>
+<div class="code-block__wrapper">{% highlight java %}new ValidationInfo("Target name is not specified.", myNameField)
+.asWarning();{% endhighlight %}</div>
 
 * On the form under the controls. Show the message with the yellow warning icon.
 
