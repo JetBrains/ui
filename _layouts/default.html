@@ -148,6 +148,7 @@
 <script type="text/javascript" src="{{ site.baseurl }}/scripts/retina.min.js"></script>
 <script type="text/javascript" src="https://code.jquery.com/jquery-2.2.3.min.js"></script>
 <script type="text/javascript" src="{{ site.baseurl }}/scripts/anchors.js"></script>
+<script type="text/javascript" src="{{ site.baseurl }}/scripts/swatch.js"></script>
 
 <script type="text/javascript">
     document.getElementsByClassName("app__container")[0].onclick = function () {
@@ -158,7 +159,10 @@
         document.getElementsByClassName("app__nav")[0].style.left = "0px";
     }
 
-    $(document).ready(setAnchors);
+    $(document).ready(function() {
+        setAnchors();
+        addSwatchClickHandlers();
+    });
 </script>
 </body>
 </html>

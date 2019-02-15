@@ -450,98 +450,30 @@ The warning can be shown:
 ![]({{site.baseurl}}/images/validation/dialog_insets.png)
 
 ### Error colors
-<table>
-<col width="20%">
-<col width="20%">
-<col width="20%">
-<col width="20%">
-<th class="table-line"> </th>
-<th class="table-line"> Mac OS </th>
-<th class="table-line"> Windows </th>
-<th class="table-line"> IntelliJ </th>
-<th class="table-line"> Darcula </th>
-<tr class="table-line">
-    <td> Tooltip background </td>
-    <td> #F5E6E7 </td>
-    <td> #F5E6E7 </td>
-    <td> #F5E6E7 </td>
-    <td> #593D41 </td>
-</tr>
-<tr class="table-line">
-    <td> Tooltip border </td>
-    <td> #E0A8A9 </td>
-    <td> #E0A8A9 </td>
-    <td> #E0A8A9 </td>
-    <td> #73454B </td>
-</tr>
-<tr class="table-line">
-    <td> Focused field highlighting </td>
-    <td> #F53B3B, op. 50% </td>
-    <td> #F57D7D </td>
-    <td> #E53E4D </td>
-    <td> #8B3C3C </td>
-</tr>
-<tr class="table-line">
-    <td> Not focused field highlighting </td>
-    <td> #F7BCBC, op. 50% </td>
-    <td> #EECACA </td>
-    <td> #EBBCBC </td>
-    <td> #725252 </td>
-</tr>
-<tr class="table-line">
-    <td> Error text color </td>
-    <td> #FF0000 </td>
-    <td> #FF0000 </td>
-    <td> #FF0000 </td>
-    <td> #FF5261 </td>
-</tr>
-</table>
+
+{% swatch_table %}
+[
+    "Tooltip.errorBackground",
+    "Tooltip.errorBorder",
+    "Input.errorFocusBorder",
+    "Input.errorFocusBorderInactive",
+    "Text.errorForeground"
+]
+{% endswatch_table %}
 
 
 
 ### Warning colors
 
-<table>
-<col width="20%">
-<col width="20%">
-<col width="20%">
-<col width="20%">
-<th class="table-line"> </th>
-<th class="table-line"> Mac OS </th>
-<th class="table-line"> Windows, IntelliJ </th>
-<th class="table-line"> Darcula </th>
-<tr class="table-line">
-    <td> Tooltip background </td>
-    <td> #F5F0E6 </td>
-    <td> #F5F0E6 </td>
-    <td> #594E32 </td>
-</tr>
-<tr class="table-line">
-    <td> Tooltip border </td>
-    <td> #E0CEA8 </td>
-    <td> #E0CEA8 </td>
-    <td> #78550B </td>
-</tr>
-<tr class="table-line">
-    <td> Focused field highlighting </td>
-    <td> #EEB23E, op. 50% </td>
-    <td> #E1A336 </td>
-    <td> #AD7A0F </td>
-</tr>
-<tr class="table-line">
-    <td> Not focused field highlighting </td>
-    <td> #FFDC92, op. 50% </td>
-    <td> #EAD2A1 </td>
-    <td> #6F531F </td>
-</tr>
-<tr class="table-line">
-    <td> Warning text color </td>
-    <td> #E77D00 </td>
-    <td> #E77D00 </td>
-    <td> #DC9B2F </td>
-</tr>
-</table>
-
+{% swatch_table %}
+[
+    "Tooltip.warningBackground",
+    "Tooltip.warningBorder",
+    "Input.warningFocusBorder",
+    "Input.warningFocusBorderInactive",
+    "Text.warningForeground"
+]
+{% endswatch_table %}
 
 
 

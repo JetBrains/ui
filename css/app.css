@@ -10013,6 +10013,39 @@ table.left_header tbody th {
     overflow-x: auto
 }
 
+.swatchTable > table {
+    width: 100%;
+}
+
+.swatchTable .themeTabs {
+    padding: 10px 3% 15px 0px
+}
+
+.swatchTable .themeTabs .theme {
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.swatchTable .themeTabs .theme.active {
+    color: #1FA6FB;
+}
+
+.swatchTable .colorValue {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.swatchTable .colorValue .block {
+    width: 20px;
+    height: 20px;
+    margin-right: 8px;
+}
+
+.swatchTable .colorValue .hexCode {
+    color: inherit;
+}
+
 .article figure {
     display: block;
     margin: 10px auto
