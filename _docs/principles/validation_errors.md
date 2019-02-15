@@ -529,30 +529,11 @@ Do not allow to submit the form with the error. When the form is opened again, t
 
 ### Error colors
 
-{% swatch_table %}
-[
-    "Tooltip.errorBackground",
-    "Tooltip.errorBorder",
-    "Input.errorFocusBorder",
-    "Input.errorFocusBorderInactive",
-    "Text.errorForeground"
-]
-{% endswatch_table %}
-
-
+<div class="swatchTable" data-colors="Tooltip.errorBackground,Tooltip.errorBorder,Input.errorFocusBorder,Input.errorFocusBorderInactive,Text.errorForeground"></div>
 
 ### Warning colors
 
-{% swatch_table %}
-[
-    "Tooltip.warningBackground",
-    "Tooltip.warningBorder",
-    "Input.warningFocusBorder",
-    "Input.warningFocusBorderInactive",
-    "Text.warningForeground"
-]
-{% endswatch_table %}
-
+<div class="swatchTable" data-colors="Tooltip.warningBackground,Tooltip.warningBorder,Input.warningFocusBorder,Input.warningFocusBorderInactive,Text.warningForeground"></div>
 
 
 
