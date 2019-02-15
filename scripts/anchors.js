@@ -26,7 +26,9 @@ function setAnchors() {
     $('.paragraphAnchor, .headerAnchor').click(function (event) {
         var $anchor = $(this);
         var name = $anchor.attr('name');
-
+        if (name === undefined) {
+            return
+        }
         this.scrollIntoView({
             block: 'start',
             behavior: 'smooth'
