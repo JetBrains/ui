@@ -9,10 +9,8 @@ function setAnchors() {
         if (hasSingleImageInside($(this)) || $(this).hasClass('noanchor')) {
             return;
         }
-        var text = '';
         index++;
-        text = index < 10 ? '0' + index : index;
-
+        var text = index < 10 ? '0' + index : index;
         var block = '<div class="block">' +
             '<a class="paragraphAnchor" href="#' + text + '" name="' + text + '">' + text + '</a>' + $(this).prop('outerHTML')
             + '</div>';
