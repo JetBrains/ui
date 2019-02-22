@@ -3,7 +3,7 @@ title: Validation errors
 category: Principles
 order: 4
 ---
-
+ 
 Validation is the process of checking the values ​​specified by the user, and displaying the errors that are found.
 
 An error can appear in a **tooltip**:
