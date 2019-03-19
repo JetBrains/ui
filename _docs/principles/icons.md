@@ -59,7 +59,6 @@ Icons should be as simple as possible without losing their meaning. Clean and si
 
 ## Grid and size
 Basically, icons fit into a square artboard. Leave a transparent padding around the perimeter. For default 16px icons, the transparent border is 1px, so the icon’s visible part should be inside the 14px x 14px area.
-
 ![]({{site.baseurl}}/images/icons/grid.png)
 *14px x 14px is the area where the visible part <br/> of the icon should fit for an 16px icon.*
 
