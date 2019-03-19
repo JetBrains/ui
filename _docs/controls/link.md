@@ -6,58 +6,25 @@ category: Controls
 
 ## When to use
 
-<p class="noanchor">Use links for:</p>
+<p class="noanchor" style="margin-top: 25px; margin-bottom: 15px;">Use a link for:</p>
 
-**Local navigation** between pages of the same window. If a link opens another window, it is an action — see “Secondary actions” below.  
+Local navigation between pages of the same window. If a link opens another window, it is not a local navigation but an action, see _Secondary actions_ below.  
 ![]({{site.baseurl}}/images/link/deployment-server.png)
 *This option is in the Settings dialog. “Configure servers” opens another page of the same dialog.*
 ![]({{site.baseurl}}/images/link/color-scheme-by-scope.png)
 *Do not use a button to navigate to another page of a dialog.*    
 
-**External navigation** to web resources. External links are accompanied by an arrow icon. It shows that the user will switch to a browser and lose the current context.
+External navigation to web resources. 
 ![]({{site.baseurl}}/images/link/BOM.png)
-An exception is a help topic link in [empty states]({{site.baseurl}}/principles/empty_state/). The help icon already hints that this is an external help resource:
-![]({{site.baseurl}}/images/link/database-tw-segment.png)
 
-**Secondary actions** in packed or small UI areas.
+Secondary actions in packed or small UI areas. Action links can be of two types&nbsp;— <span style="white-space: nowrap;"><i>button-links</i></span> and _drop-down_ links. See below for [how to use]({{site.baseurl}}/controls/link/#action-links).
 ![]({{site.baseurl}}/images/link/setup-sdk.png)
 ![]({{site.baseurl}}/images/link/commit-configure.png)
-*Action links can be of two types — button-links and drop-down links. See below for [how to use]({{site.baseurl}}/controls/link/#action-links).*
 
 
 ## How to use
 
-### Placement
-
-A link can appear as:
-
-* An individual element, as in the examples above. In this case, links usually appear on the right of or below a UI element they relate to.
-
-* A part of a checkbox or radio button label or of any stand-alone text, like text in an [empty state]({{site.baseurl}}/principles/empty_state/) or in [context help]({{site.baseurl}}/principles/context_help/):
-
-    ![]({{site.baseurl}}/images/link/use-color-scheme-font.png)
-    
-    ![]({{site.baseurl}}/images/link/learn-what-is-logged.png)
-
-    Make a link the minimum phrase that is enough to understand what will happen without reading the whole text:
-    
-    ![]({{site.baseurl}}/images/link/long-link.png)
-    *"What is logged" is enough to understand what information will be opened.*
-    
-* In some but not all items of a tree or table:
-
-    ![]({{site.baseurl}}/images/link/JSHint.png) 
-
-    If a link appears in all items of a tree or table: 
-    * If this is a button-link, use a toolbar button instead. 
-    * If this is a drop-down link, use a separate table column of drop-down cells instead (see the Editing Values section in [Table]({{site.baseurl}}/controls/table/)).
-    * If moving a link to a separate table column breaks meaningful formatting, leave as is:
-        
-        ![]({{site.baseurl}}/images/link/multirepo-push.png)
-        *Links in the “Push Commits” window tree have the following format: “[remote repository] : [branch]”. Moving these links to two separate columns would break formatting that is meaningful here: it helps understand the relation between the two links. In such case, it is better to leave repeating links in the same column.*
-
-
-### Writing guideliens
+### Writing guidelines
 
 Capitalization and ellipsis:
 <table style="line-height: 180%; font-size: 80%">
@@ -86,13 +53,41 @@ When possible, replace “Learn more” and other generic phrases with more info
 ![]({{site.baseurl}}/images/link/closure-linter.png)
 
 
-### Action links
+### Link as a part of text
+A link can be a part of a checkbox or radio button label or of any stand-alone text, like text in an [empty state]({{site.baseurl}}/principles/empty_state/) or in [context help]({{site.baseurl}}/principles/context_help/):
+![]({{site.baseurl}}/images/link/use-color-scheme-font.png)
+![]({{site.baseurl}}/images/link/learn-what-is-logged.png)
+Make a link the minimum phrase that is enough to understand what will happen without reading the whole text:
+![]({{site.baseurl}}/images/link/long-link.png)
+*"What is logged" is enough to understand what information will be opened.*
 
-**Button-links** produce an immediate action or open a new window. They appear as a stand-alone element or inside regular text:        
+
+### Link in a tree or table    
+A link can be used in some but not all items of a tree or table:
+![]({{site.baseurl}}/images/link/JSHint.png) 
+
+If a link appears in all items of a tree or table: 
+* If this is a button-link, use a toolbar button instead. 
+* If this is a drop-down link, use a separate table column of drop-down cells instead (see the Editing Values section in [Table]({{site.baseurl}}/controls/table/)).
+* If moving a link to a separate table column breaks meaningful formatting, leave as is:
+![]({{site.baseurl}}/images/link/multirepo-push.png)
+*Links in the “Push Commits” window tree have the following format: “[remote repository] : [branch]”. Moving these links to two separate columns would break formatting that is meaningful here: it helps understand the relation between the two links. In such case, it is better to leave repeating links in the same column.*
+
+
+### External link icon
+External links are accompanied by an arrow icon. It shows that the user will switch to a browser and lose the current context.
+![]({{site.baseurl}}/images/link/BOM.png)
+An exception is a help topic link in [empty states]({{site.baseurl}}/principles/empty_state/). The help icon already hints that this is an external help resource so the arrow icon is unnecessary:
+![]({{site.baseurl}}/images/link/database-tw-segment.png)
+
+
+## Action links
+
+_Button-links_ produce an immediate action or open a new window. They appear as a stand-alone element or inside regular text:        
 ![]({{site.baseurl}}/images/link/setup-sdk.png)
 ![]({{site.baseurl}}/images/link/add-java-application.png)
     
-**Drop-down links** show a [context menu]({{site.baseurl}}/components/context_menu/) or a [popup]({{site.baseurl}}/components/popup/) menu. They only appear as a stand-alone element:
+_Drop-down links_ show a [context menu]({{site.baseurl}}/components/context_menu/) or a [popup]({{site.baseurl}}/components/popup/) menu. They only appear as a stand-alone element:
 ![]({{site.baseurl}}/images/link/commit-configure.png)
 ![]({{site.baseurl}}/images/link/live-templates.png)
 
@@ -120,6 +115,8 @@ Invoke additional text. Use this pattern only for secondary information when the
 
 
 ## Sizes and placement
+Place stand-alone local and external navigation links to the right of or below a UI element they relate to.
+
 Lay out button-links as buttons and dropdown-links as combo boxes. See [Layout]({{site.baseurl}}/principles/layout).
 
 Sizes:
