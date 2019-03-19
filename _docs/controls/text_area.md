@@ -103,7 +103,6 @@ Do **not** highlight a text area on selection, only if a validation error occurs
 ### History
 <p class="noanchor">Background: dialog default theme color</p>  
 <p class="noanchor">Font: Windows, IntelliJ — default, Mac OS 2px smaller than default</p>
-<p class="noanchor">Font color: 787878</p>
 
 
 
