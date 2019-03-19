@@ -251,7 +251,7 @@ Provide specific names, locations, and values of the objects involved:
 
 End the error message with a period (for details see [Punctuation]({{site.baseurl}}/text/punctuation/)).
  
-The error message should be short and descriptive. See [Writing short and clear text]({{site.baseurl}}/text/writing_short/)).
+The error message should be short and descriptive. See [Writing short and clear]({{site.baseurl}}/text/writing_short/)).
  
 Examples of common errors the and corresponding error messages:  
 

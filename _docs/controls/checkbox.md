@@ -42,7 +42,7 @@ Use the imperative form of verbs.
 Do not use negation in labels as it complicates understanding. **Exception**: "Don’t show again" checkbox.
 ![]({{site.baseurl}}/images/checkbox/label_answeryes.png)
 
-Make labels short and intelligible — see [Writing short and clear text]({{site.baseurl}}/text/writing_short).
+Make labels short and intelligible — see [Writing short and clear]({{site.baseurl}}/text/writing_short).
 
 
 ### Three-state checkbox

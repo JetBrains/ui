@@ -1,79 +1,79 @@
 ---
-title: Writing short and clear text
+title: Writing short and clear
 category: Text
 ---
-
+<p class="noanchor">
 Texts in user interfaces should be short and clear. Short texts save reading time. Clear texts lead to fewer mistakes. Editing methods described below can help with that.
+</p>
+
 
 ## Use simple constructions 
-* Use simple verb forms. Prefer present tense.
-* Use simple sentences: one idea per sentence.
-* Avoid passive voice.
 
+Use simple verb forms. Prefer present tense.
 
-This way the same meaning can be expressed with less words. Compare:
+Use simple sentences: one idea per sentence.
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;_Those resources that are available locally_ <span style="font-size:large;">→</span> _Local resources_ 
+Avoid passive voice.
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;_Maven has to use_ <span style="font-size:large;">→</span> _Maven uses_
+<p class="noanchor">
+This way the same meaning can be expressed with less words. Compare: <br/>
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;_The use of a secure connection is required_ <span style="font-size:large;">→</span> _Use secure connection_
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i>Those resources that are available locally</i> <span style="font-size:large;">→</span> <i>Local resources</i> <br/>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i>Maven has to use</i> <span style="font-size:large;">→</span> <i>Maven uses</i> <br/>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i>The use of a secure connection is required</i> <span style="font-size:large;">→</span> <i>Use secure connection</i>
+</p>
 
 
 ## Remove or elaborate generic words 
-* Words like general, advanced, and options do not add useful information and can be removed with no harm to the meaning: 
+
+Words like general, advanced, and options do not add useful information and can be removed with no harm to the meaning: 
 ![]({{site.baseurl}}/images/writing_short/generic-general.png)
 ![]({{site.baseurl}}/images/writing_short/generic-options.png)
 *No meaning is lost after removing group headers "General" and "Options".*
 
-
-* Some generic words cannot be removed. They can appear in actionable elements like buttons, checkboxes or links. Or removing a group header could break a dialog layout. In such cases, use a more informative label instead:
+Some generic words cannot be removed. They can appear in actionable elements like buttons, checkboxes or links. Or removing a group header could break a dialog layout. In such cases, use a more informative label instead:
 ![]({{site.baseurl}}/images/writing_short/generic-renamed-link.png)
 *The link "Learn more" does not explain what useful information could be there for the user to click it.*
 
 
 ## Remove obvious objects and actions 
-* Remove verbs that explain the function of a UI control:
+Remove verbs that explain the function of a UI control:
 ![]({{site.baseurl}}/images/writing_short/obvious-specify.png)
 *Text boxes are made for input — an explicit instruction "specify" duplicates the meaning expressed by the text field. Additional information can be given under the field — see [Context help]({{site.baseurl}}/principles/context_help).* 
 
-    <table>
-    <col width="59%">
-    <tr>
-        <td> <img src="{{site.baseurl}}/images/writing_short/obvious-prefer.png">
-             <em> A selected radio button means its option is "preferred".</em> </td>    
-        <td> <img src="{{site.baseurl}}/images/writing_short/obvious-allow.png">
-             <em> A checked checkbox means its feature <br>is "allowed". </em> </td>         
-    </tr>
-    </table>
+<table><col width="59%">
+  <tr>
+     <td> <img src="{{site.baseurl}}/images/writing_short/obvious-prefer.png"><em> A selected radio button means its option is "preferred". </em> </td>    
+      <td> <img src="{{site.baseurl}}/images/writing_short/obvious-allow.png"><em> A checked checkbox means its feature <br>is "allowed". </em> </td>         
+  </tr>
+</table>
 
-* Remove words with a meaning that is already expressed in the label:
-   <table>
-   <col width="59%">
-   <tr>
+Remove words with a meaning that is already expressed in the label:
+<table>
+  <col width="59%">
+    <tr>
        <td> <img src="{{site.baseurl}}/images/writing_short/obvious-contents.png">
             <em> The clipboard’s purpose is to keep information so the infinitive "to keep" is implying the obvious and can be removed.</em> </td>    
        <td> <img src="{{site.baseurl}}/images/writing_short/obvious-functionality.png">
             <em> The word “functionality” is already implied by "Drag’n’Drop" and can be removed. </em> </td>         
-   </tr>
-    </table>
+    </tr>
+</table>
 
 
 ## Do not address the user
 A user interface is for a person who uses it. Addressing this person is unnecessary because they by default perceive the text they see as for them:
 ![]({{site.baseurl}}/images/writing_short/addressing1.png)
-
-
 ![]({{site.baseurl}}/images/writing_short/addressing2.png)
 *The whole phrase after the comma is not needed because its meaning is already expressed by the verb "configure".*
 
 
 ## Remove duplicates
-* If the repeating word appears in element labels, move it to the beginning. Finding a setting becomes faster as you scan only meaningful words:
+If the repeating word appears in element labels, move it to the beginning. Finding a setting becomes faster as you scan only meaningful words:
 ![]({{site.baseurl}}/images/writing_short/duplicates.png)
 
-
-* Remove duplicates in meaning:
+Remove duplicates in meaning:
 ![]({{site.baseurl}}/images/writing_short/help-improve-notification.png)
 
 <table>
@@ -119,28 +119,22 @@ A user interface is for a person who uses it. Addressing this person is unnecess
 ## Translate from tech to human
 When you make a feature, you know how it works from the inside and can describe it from the implementation point of view: 
 ![]({{site.baseurl}}/images/writing_short/indent-options-before.png)
-
-
 A person not familiar with implementation details won’t know what the Automatic indent options detector is, why file’s indent options have been overwritten and what indent size=2 means. Translated to the “human” language, the message reads: 
-![]({{site.baseurl}}/images/writing_short/indent-options-after.png)
- 
- 
+![]({{site.baseurl}}/images/writing_short/indent-options-after.png) 
 Always write UI text from a user’s perspective. Avoid technical terms, jargon and descriptions of inner logic that a user might not know.
 
  
 ## Write for first-time users
 After writing a UI text, imagine seeing it for the first time and try to understand what might be unclear or confusing. Then correct if necessary.
-
 ![]({{site.baseurl}}/images/writing_short/first-time-file-colors-before.png)
 *For a first-time user, Enable File Colors enables or disables the other two options (but it does not).*
-
 ![]({{site.baseurl}}/images/writing_short/first-time-file-colors-after.png)
 *Rewritten: now all options are equal.*
-
-
 More examples:
-
-![]({{site.baseurl}}/images/writing_short/first-time-auto-insert.png) *Before: The title can be read as “Auto-insert when only one checkbox is on” making you ask how does it work when both checkboxes are on. After: Replacing choice with completion option makes the title unambiguous.*|![]({{site.baseurl}}/images/writing_short/first-time-smart-keys.png)*Before: What do smart Home and End keys do? What do they do if they are not smart? After: Added text explains what the options do so that the reader can make an informed choice.*
+![]({{site.baseurl}}/images/writing_short/first-time-auto-insert.png) 
+*Before: The title can be read as “Auto-insert when only one checkbox is on” making you ask how does it work when both checkboxes are on. After: Replacing choice with completion option makes the title unambiguous.*
+![]({{site.baseurl}}/images/writing_short/first-time-smart-keys.png)
+*Before: What do smart Home and End keys do? What do they do if they are not smart? After: Added text explains what the options do so that the reader can make an informed choice.*
 
 
 ## Examples
@@ -182,13 +176,7 @@ More examples:
 </tr>
 </table>
 
-
-<br>
-<br>
-<br>
-![]({{site.baseurl}}/images/writing_short/offline-mode.png)
-
- 
+![]({{site.baseurl}}/images/writing_short/offline-mode.png) 
 <table>
 <col width="30%">
 <col width="30%">
