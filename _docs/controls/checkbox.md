@@ -1,6 +1,6 @@
 ---
 title: Checkbox
-codename: JBCheckBox
+codename: JCheckBox or JBCheckBox
 category: Controls
 ---
 
@@ -24,13 +24,27 @@ Do **not** use checkboxes if:
 A label accompanies each checkbox and is placed next to it.
 ![]({{site.baseurl}}/images/checkbox/checkbox_label.png)
 
-If a label is long, split it into two lines. Avoid labels that take more than two lines. See recommendations on writing concise labels below.
+If a label is long, split it into two lines. Use HTML formatting for that.
 ![]({{site.baseurl}}/images/checkbox/label_twoline.png)
+<p class="noanchor" style="margin-top: -20px;"></p>
+<div class="code-block__wrapper">{% highlight java %}
+JCheckBox checkBox = new JCheckBox(“<html>Insert selected suggestion by  pressing space, dot,<br/>or other context-dependent keys</html>”);
+{% endhighlight %}</div>
+
+Avoid labels that take more than two lines. See recommendations on writing concise labels below.
 
 If a checkbox appears in a table, place the label into the column header and do not repeat it on every row.
 ![]({{site.baseurl}}/images/checkbox/checkbox_table.png)
-<br/>
-Writing guidelines:
+**Implementation**: Checkboxes are rendered in tables with `BooleanTableCellRenderer` and edited with `DefaultCellEditor(JCheckBox)` implementation. For any column that should be rendered as a checkbox, set both a renderer and editor for consistency. The type of data in the correspondent column of the `Table` model should either be `Boolean` or `String` containing `true` or `false`.
+
+<div class="code-block__wrapper">{% highlight java %}
+TableColumn col = table.getColumnModel().getColumn(...);
+col.setCellEditor(JBTable.createBooleanEditor());
+col.setCellRenderer(new BooleanTableCellRender());
+{% endhighlight %}</div>
+
+
+### Writing guidelines
 
 Use sentence-style capitalization. 
 
@@ -39,7 +53,8 @@ Do not use ending punctuation.
 Use the imperative form of verbs.
 ![]({{site.baseurl}}/images/checkbox/label_short.png)
 
-Do not use negation in labels as it complicates understanding. **Exception**: "Don’t show again" checkbox.
+Do not use negation in labels as it complicates understanding.  
+**Exception**: "Do not show again" checkbox.
 ![]({{site.baseurl}}/images/checkbox/label_answeryes.png)
 
 Make labels short and intelligible — see [Writing short and clear]({{site.baseurl}}/text/writing_short).
@@ -51,11 +66,19 @@ In a group of options, use the parent checkbox to show the status of its childre
 ![]({{site.baseurl}}/images/checkbox/indeterminate_checkbox.png)
 *The parent checkbox in checked, indeterminate and unchecked states*
 
+<p class="noanchor" style="margin-top: -20px; margin-bottom: 30px;">
+<b>Implementation</b>: The three-state checkbox is represented by the <code>ThreeStateCheckBox</code> class which reports the <code>ThreeStateCheckBox.State</code> enum containing <code>SELECTED, NOT_SELECTED, DONT_CARE</code> states.
+</p>
+
 When the user clicks an indeterminate checkbox for the first time, the whole group becomes checked. The second click unchecks the whole group.
 
 An indeterminate checkbox can also show the download status. An example with a remote repository:
 ![]({{site.baseurl}}/images/checkbox/indeterminate_status.png)
 *Repositories “tools-base” and “contrib” are being loaded. When loading is finished, the indeterminate checkbox will be replaced with the checked checkbox if there are commits, or an unchecked checkbox if there are no commits.*
+
+<p class="noanchor" style="margin-top: -20px; margin-bottom: 30px;">
+<b>Implementation</b>: In a table, the three-state checkbox is represented by <code>ThreeStateCheckBoxRenderer</code> that provides both <code>TableCellRenderer</code> and <code>TableEditor</code>. It accepts <code>Boolean</code> type in the column being supplied by the <code>TableModel</code> and becomes <code>DONT_CARE</code> when the value in the cell is null. Otherwise it becomes <code>SELECTED</code> for <code>Boolean.TRUE</code>, and <code>NOT_SELECTED</code> for <code>Boolean.FALSE</code>.
+</p>
 
 
 ## Placement
