@@ -125,7 +125,7 @@ Other controls:
     </tr>    
 </table>
 
-
+<!--
 ### Colors
 <p class="noanchor"> The color keys can be used only in a UI theme plugin. </p>
 
@@ -197,3 +197,4 @@ Other controls:
           </td>
       </tr>             
 </table>
+-->

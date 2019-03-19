@@ -337,7 +337,7 @@ To lay out  the button that depends on other control, e.g. input field, follow t
     </tr>
 </table>
 
-
+<!--
 ### Colors
 
 <table>
@@ -415,3 +415,4 @@ To lay out  the button that depends on other control, e.g. input field, follow t
             <td> Button.disabledBorderColor </td>
         </tr>           
 </table>
+-->

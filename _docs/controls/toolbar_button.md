@@ -62,7 +62,7 @@ Icons size is 16x16 px, icon selection is 22x22 px.
 
 For guidelines on the space between toolbar buttons see [Toolbar]({{site.baseurl}}/controls/toolbar).
 
-
+<!--
 ## Style
 
 <table>
@@ -80,5 +80,4 @@ For guidelines on the space between toolbar buttons see [Toolbar]({{site.baseurl
      </td>
  </tr>
 <table/>
-
-
+-->
