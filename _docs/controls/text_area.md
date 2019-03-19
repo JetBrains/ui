@@ -27,7 +27,6 @@ Do **not** use a text area if:
 Follow the rules for the [input field]({{site.baseurl}}/controls/input_field/).
 
 A label is required for all empty text areas. If a text area is prefilled and it’s clear from the context what data it contains, a label can be omitted. For example, the following text area is used to preview file and code templates:
-  
 ![]({{site.baseurl}}/images/text_area/no_label.png)
 *If new file template is added and the text area is empty, the label is required.*
 
