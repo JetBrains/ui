@@ -9,7 +9,7 @@ type: GroupHeader
 
 ## When to use
 
-Use a button to invoke an immediate action. In some cases use a link, toolbar buttons and a split button instead:
+Use a button to invoke an immediate action.
 
 Use a [link]({{site.baseurl}}/controls/link) instead if:
   * The action takes the user to another page of the same dialog or an external source like documentation:
