@@ -58,12 +58,17 @@ An indeterminate checkbox can also show the download status. An example with a r
 *Repositories “tools-base” and “contrib” are being loaded. When loading is finished, the indeterminate checkbox will be replaced with the checked checkbox if there are commits, or an unchecked checkbox if there are no commits.*
 
 
-## Sizes and placement
+## Placement
 
 If a checkbox depends on another control, e.g. an input field, follow the rules for [dependent controls]({{site.baseurl}}/principles/layout/#lay-out-dependent-controls). Otherwise, follow the rules for [independent controls]({{site.baseurl}}/principles/layout/#arrange-independent-controls).
 
 If there are more than 4 checkboxes in one column, consider [grouping them]({{site.baseurl}}/principles/layout/#group-controls).  
-<br/>
+
+<!-- Commenting spacing. 
+Kirill's comment: "Alignment, check to label spacing задавать не надо. Они в соответствии с гайдлайном по чекбоксам на каждую конкретную платформу. При группировке нескольких чекбоксов надо использовать правильный layout и панели. Это отдельная задача, над которой сейчас работает Алина. К чекбоксу это отношения не имеет."
+-->
+
+<!-- 
 Spacing:
 
 Label:
@@ -93,7 +98,7 @@ Other controls:
 ![]({{site.baseurl}}/images/checkbox/spacing_combobox.png)
 ![]({{site.baseurl}}/images/checkbox/spacing_longlabel.png)
 ![]({{site.baseurl}}/images/checkbox/spacing_line.png)
-
+-->
 
 ## Style
 <table>
