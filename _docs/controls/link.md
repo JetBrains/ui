@@ -92,9 +92,8 @@ _Drop-down links_ show a [context menu]({{site.baseurl}}/components/context_menu
 ![]({{site.baseurl}}/images/link/live-templates.png)
 
 Do **not** use an action link when an action is primary or when a UI is not constrained. Use a [button]({{site.baseurl}}/controls/button/) or a [drop-down list]({{site.baseurl}}/controls/drop_down/) instead. These controls can be selected from the keyboard, are bigger and easier to click and more common for a desktop UI.
-
-<p class="label incorrect noanchor">Incorrect</p> ![]({{site.baseurl}}/images/link/adroid-sdk-incorrect.png)        
-<p class="label correct noanchor">Correct</p> ![]({{site.baseurl}}/images/link/adroid-sdk-correct.png)
+<p class="label incorrect">Incorrect</p> ![]({{site.baseurl}}/images/link/adroid-sdk-incorrect.png)        
+<p class="label correct">Correct</p> ![]({{site.baseurl}}/images/link/adroid-sdk-correct.png)
 *Even though the “Edit” action is not primary, there is plenty of space to place a button.*
 
 **Usage examples**

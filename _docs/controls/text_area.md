@@ -34,10 +34,10 @@ Do **not** put units on the right of the text area.
 
 Do **not** use a [group hader]({{site.baseurl}}/controls/group_header) instead of the text area label. The horizontal 
 line is redundant here. Use [context help]({{site.baseurl}}/principles/context_help) to explain the field behavior.
-<p class="label incorrect noanchor">Incorrect</p>
+<p class="label incorrect">Incorrect</p>
 ![]({{site.baseurl}}/images/text_area/label_incorrect.png)
 
-<p class="label correct noanchor">Correct</p>
+<p class="label correct">Correct</p>
 ![]({{site.baseurl}}/images/text_area/label_correct.png)
 
 

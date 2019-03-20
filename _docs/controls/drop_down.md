@@ -163,10 +163,10 @@ Do **not** assign special meanings to numeric or string values, use meta-options
   as language level&gt;, which is unclear.</em></p>  
   <p class="noanchor">Replace the &lt;None&gt; option with a checkbox if it does not make the layout more complex:</p>
   
-  <p class="label incorrect noanchor">Incorrect</p>
+  <p class="label incorrect">Incorrect</p>
   ![]({{site.baseurl}}/images/drop_down/none_incorrect.png)
   
-  <p class="label correct noanchor">Correct</p>
+  <p class="label correct">Correct</p>
   ![]({{site.baseurl}}/images/drop_down/none_correct.png)
   
 

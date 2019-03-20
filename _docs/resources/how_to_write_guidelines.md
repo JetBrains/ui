@@ -110,7 +110,7 @@ Guideline anchors:
 * To create a text block without an anchor, do not add an empty line above. Add two spaces in the end of the previous text block.
 * To add extra vertical space without creating a paragraph, use `<br/>`. 
 * If some element gets an unnecessary anchor, use the class `noanchor`. Example:  
-<div class="code-block__wrapper">{% highlight html %}<p class="label incorrect noanchor">Incorrect</p>{% endhighlight %}</div>
+<div class="code-block__wrapper">{% highlight html %}<p class="noanchor">Use a link for:</p>{% endhighlight %}</div>
 
 The article structure can vary depending on whether a control, component or principle is described. Generally, use the sections that are described below.
 

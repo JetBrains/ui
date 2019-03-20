@@ -24,8 +24,8 @@ Use a [link]({{site.baseurl}}/controls/link) instead if:
     ![]({{site.baseurl}}/images/button/link_correct.png)  
     
 Use toolbar buttons instead if there are several buttons related to a table or list:  
-<p class="label incorrect noanchor">Incorrect</p> ![]({{site.baseurl}}/images/button/many_buttons.png)
-<p class="label correct noanchor">Correct</p> ![]({{site.baseurl}}/images/button/toolbar.png)
+<p class="label incorrect">Incorrect</p> ![]({{site.baseurl}}/images/button/many_buttons.png)
+<p class="label correct">Correct</p> ![]({{site.baseurl}}/images/button/toolbar.png)
    
 Use a [split button]({{site.baseurl}}/controls/split_button) instead if: 
    * There are several related actions (more than 2) but the space is limited and/or packed.
@@ -76,10 +76,10 @@ Add an ellipsis if additional actions such as adding more info or confirming the
 Do **not** add ellipsis if another window is opened, but no more input from the user is required. For example, About, Details. 
 
 Do **not** use the word _Now_ in the label because button always trigger an immediate action:
-<p class="label incorrect noanchor">Incorrect</p> 
+<p class="label incorrect">Incorrect</p> 
 ![]({{site.baseurl}}/images/button/check_now.png)
  
-<p class="label correct noanchor">Correct</p> 
+<p class="label correct">Correct</p> 
 ![]({{site.baseurl}}/images/button/check_for_updates.png)
 
 Use the _Close_ label only if nothing can be changed in the dialog and there is no confirmation button, for example in the Productivity Guide dialog. In all other cases, use the _Cancel_ button.

@@ -217,7 +217,7 @@ Unfilled arrowhead can be used if there is only one arrow on an icon to reduce e
 </table>
 
 Do **not** use other arrow styles, for example unfilled arrows or arrows with thinned tails.
-<p class="label incorrect noanchor">Incorrect</p>  
+<p class="label incorrect">Incorrect</p>  
 ![]({{site.baseurl}}/images/icons/arrows_incorrect.png)
 
 
