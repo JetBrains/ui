@@ -12,7 +12,11 @@ function setAnchors() {
 
     var index = 0;
     $('article > p').each(function () {
-        if (hasSingleImageInside($(this)) || hasSingleImageWithCaptionInside($(this)) || $(this).hasClass('noanchor')) {
+        if (hasSingleImageInside($(this)) ||
+            hasSingleImageWithCaptionInside($(this)) ||
+            $(this).hasClass('incorrect') ||
+            $(this).hasClass('correct') ||
+            $(this).hasClass('noanchor')) {
             return;
         }
         index++;
@@ -22,6 +26,7 @@ function setAnchors() {
             + '</div>';
         $(this).replaceWith(block)
     });
+
     $('article > h2, h3, h4, h5, h6').each(function () {
         $(this).addClass('headerAnchor');
         $(this).attr('name', $(this).attr('id'))
