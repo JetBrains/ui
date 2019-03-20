@@ -4,9 +4,15 @@ function setAnchors() {
         return img.length > 0 && p.children().length === 1 && p.text().trim().length === 0
     }
 
+    function hasSingleImageWithCaptionInside(p) {
+        var img = p.find('img');
+        var caption = p.find('em');
+        return img.length > 0 && caption.length > 0 && p.children().length === 2
+    }
+
     var index = 0;
     $('article > p').each(function () {
-        if (hasSingleImageInside($(this)) || $(this).hasClass('noanchor')) {
+        if (hasSingleImageInside($(this)) || hasSingleImageWithCaptionInside($(this)) || $(this).hasClass('noanchor')) {
             return;
         }
         index++;
