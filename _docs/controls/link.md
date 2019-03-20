@@ -108,10 +108,8 @@ Do **not** use an action link when an action is primary or when a UI is not cons
   </tr>  
 </table>
 
-<!--TODO REWRITE EXAMPLE-->
-Invoke additional text. Use this pattern only for secondary information when the screen space is constrained. To invoke additional UI components in a dialog, use a [collapsible group header]({{site.baseurl}}/components/collapsible_group_header/).
 ![]({{site.baseurl}}/images/link/tooltip-disclosure.png)
-
+<p class="noanchor" style="color: #999999; font-size: 13px; line-height: 23px">In tooltips, links are used to show additional text because tooltips are usually small. In a dialog where space is not constrained, use a <a href="{{site.baseurl}}/components/collapsible_group_header/">collapsible group header</a> to invoke additional UI components.</p>
 
 ## Sizes and placement
 Place stand-alone local and external navigation links to the right of or below a UI element they relate to.
