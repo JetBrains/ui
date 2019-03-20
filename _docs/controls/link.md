@@ -27,19 +27,19 @@ Secondary actions in packed or small UI areas. Action links can be of two types&
 ### Writing guidelines
 
 Capitalization and ellipsis:
-<table style="line-height: 180%; font-size: 80%">
+<table>
   <col width="215 px">
   <col width="195 px">
-  <th> Link type </th>
-  <th> Style </th>
-  <th> Example </th>
-  <tr>
+  <th class="table-line"> Link type </th>
+  <th class="table-line"> Style </th>
+  <th class="table-line"> Example </th>
+  <tr class="table-line">
     <td> Navigation link <br>Drop-down link <br> Button-link inside text </td>        
     <td> Sentence capitalization <br>No ellipsis</td>
     <td> <img src="{{site.baseurl}}/images/link/button-link-sentence.png" style="margin-top: 4px; margin-left: 0px"> </td>
   </tr>
   <tr>
-    <td> Stand-alone button-link <br><p style="color: #999999; line-height: 140%; margin-top: 2px">Works as a lightweight button and&nbsp;follows the same rules. </p> </td>
+    <td> Stand-alone button-link<br/><span style="color: #999999; margin-top: 2px;">Works as a lightweight<br style="line-height:100%;"/>button and&nbsp;follows<br style="line-height:100%;"/>the same rules. </span> </td>
     <td> Title capitalization <br>Ellipsis if input is required </td>
     <td> <img src="{{site.baseurl}}/images/link/button-link-title.png" style="margin-top: 4px; margin-left: 0px"> </td>
   </tr>    
@@ -117,18 +117,10 @@ Invoke additional text. Use this pattern only for secondary information when the
 Place stand-alone local and external navigation links to the right of or below a UI element they relate to.
 
 Lay out button-links as buttons and dropdown-links as combo boxes. See [Layout]({{site.baseurl}}/principles/layout).
-
-Sizes:
+<br/>
+<br/>
 <table>
-<col width="150px">
-<tr>
-    <td> External link </td>
-    <td> <img src="{{site.baseurl}}/images/link/inset-external-link.png" style="margin-left: 17px; margin-top: 4px"> </td>
-</tr>
-<tr>
-    <td> <p style="margin-top: 30px"> Drop-down link </p> </td>
-    <td> <img src="{{site.baseurl}}/images/link/inset-drop-down-link.png" style="margin-left: 0px; margin-top: 0px"> </td>
-</tr>
+<col width="130px">
 <tr>
     <td> <p style="margin-top: 16px"> Horizontal insets </p>  </td>
     <td> <img src="{{site.baseurl}}/images/link/inset-link-after.png" style="margin-left: 17px; margin-top: 0px">
