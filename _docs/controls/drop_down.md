@@ -11,28 +11,28 @@ A drop-down list is a type of button that appears in dialogs. It shows a list of
 
 ## When to use
 
+<p class="noanchor">
 Use a drop-down list if: 
+</p>
 
-* A single option should be selected.
+A single option should be selected.
 
-* The possible choices are objects or states.
-    
-    ![]({{site.baseurl}}/images/drop_down/output_level.png)
+The possible choices are objects or states.
+![]({{site.baseurl}}/images/drop_down/output_level.png)
    		
-* The number of choices is more than 4. 
+The number of choices is more than 4. 
    
-* The screen space is limited, so there is not enough room for radio buttons.
-   
-* The default value is recommended for the most users. A drop-down is a good way to hide unpopular alternatives.
+The screen space is limited, so there is not enough room for radio buttons.  
 
-    ![]({{site.baseurl}}/images/drop_down/antialiasing.png)
-    *“Subpixels” is the best choice for most users.*
+The default value is recommended for the most users. A drop-down is a good way to hide unpopular alternatives.
+
+![]({{site.baseurl}}/images/drop_down/antialiasing.png)
+*“Subpixels” is the best choice for most users.*
     
-* If there are other drop-downs in the same window and these options are not more important than others. A list of radio buttons is more noticeable than the drop-down.
+If there are other drop-downs in the same window and these options are not more important than others. A list of radio buttons is more noticeable than the drop-down.
 
-* If a layout combines various UI elements for one setting, use a drop-down even if there are 4 options or less:
-
-    ![]({{site.baseurl}}/images/drop_down/complex_layout.png)
+If a layout combines various UI elements for one setting, use a drop-down even if there are 4 options or less:
+![]({{site.baseurl}}/images/drop_down/complex_layout.png)
     
     
 ### When not to use

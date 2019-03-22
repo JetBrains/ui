@@ -13,17 +13,17 @@ A toolbar button is an icon that appears on a toolbar.
 
 ## Types
 
+<p class="noanchor">
 There are three types of toolbar buttons:
+</p>
 
-* An action button triggers an action immediately on clicking it, e.g. the Open button.
+An action button triggers an action immediately on clicking it, e.g. the Open button.
 
-* A toggle button switches the state on clicking it, e.g. a button to show and hide warnings in the output tree.
-	
+A toggle button switches the state on clicking it, e.g. a button to show and hide warnings in the output tree.
 ![]({{site.baseurl}}/images/toolbar_button/toggle.png)
 
-* A drop-down button has an arrow icon in the bottom right corner and opens a menu with actions or checkboxes. Use 
+A drop-down button has an arrow icon in the bottom right corner and opens a menu with actions or checkboxes. Use 
 [menu list]({{site.baseurl}}/controls/menu_list) guidelines for drop-down buttons.
-
 ![]({{site.baseurl}}/images/toolbar_button/drop-down.png)
 
 
