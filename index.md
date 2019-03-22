@@ -4,6 +4,49 @@ title: IntelliJ Platform UI Guidelines
 
 IntelliJ platform UI guidelines is a collection of recommendations for designers and developers to follow when creating user interfaces for IntelliJ Platform based IDEs and plugins. 
 
+<div class="separator"></div>
+
+<div class="toc-mainpage__container">
+    {% assign grouped = site.docs | group_by: 'category' %}
+        {% for group in grouped %}                
+            {% assign items = group.items | sort: 'order' %}
+                <div>
+                    <b> {{ group.name }} </b>
+                    <ul class="toc-tree__nodes-list">                    
+                        {% for item in items %}        
+                            {% if item.type == "GroupHeader" %}
+                                <li class="">
+                                        <div class="toc-tree__title-wrapper">
+                                            <a href="{{ site.baseurl }}{{ item.url }}" class="toc-tree__title toc-tree__title--link">{{ item.title }}</a>
+                                        </div>
+                                </li>
+                                {% assign subpages = group.items | where:"subpageOf", item.title %}
+                                
+                                {% for subpage in subpages %}
+                                    <li class="toc-tree__node toc-tree__node--level_0">
+                                        <div class="toc-tree__title-wrapper">
+                                            <a href="{{ site.baseurl }}{{ subpage.url }}" class="toc-tree__title toc-tree__title--link">{{ subpage.title }}</a>
+                                        </div>
+                                    </li>
+                                {% endfor %}
+                    
+                            {% elsif item.type == "Subpage" %}
+    
+                            {% else %}
+                                <li class="">
+                                    <div class="toc-tree__title-wrapper">
+                                        <a href="{{ site.baseurl }}{{ item.url }}" class="toc-tree__title toc-tree__title--link">{{ item.title }}</a>
+                                    </div>                                    
+                                </li>
+                            {% endif %}        
+                        {% endfor %}
+                    </ul>
+                </div>                
+        {% endfor %}
+</div>
+
+<div class="separator"></div>
+
 The guide aims at: 
 * Making the UI of all IntelliJ Platform based products consistent. This means applying the same visual design, ensuring consistent behaviour of common elements of the interface – from the input fields to the layout.
 * Helping programmers quickly find answers to the UI-related questions.

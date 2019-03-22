@@ -10637,6 +10637,16 @@ table .note ol, table .note ul, table .tip ol, table .tip ul, table .todo ol, ta
     font-size: 14px
 }
 
+.toc-mainpage__container {
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: row;
+}
+
+.toc-mainpage__container ul {
+    list-style-type: none;
+}
+
 @-webkit-keyframes fade-in {
     0% {
         opacity: 0
