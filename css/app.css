@@ -10639,12 +10639,27 @@ table .note ol, table .note ul, table .tip ol, table .tip ul, table .todo ol, ta
 
 .toc-mainpage__container {
     display: -webkit-flex;
+    display: -ms-flexbox;
     display: flex;
     flex-direction: row;
 }
 
 .toc-mainpage__container ul {
-    list-style-type: none;
+    padding: 0 40px 0 0;
+    font-size: 15px;
+    line-height: 1.5em;
+}
+
+.toc-mainpage__container li {
+    margin-bottom: 15px;
+}
+
+.toc-mainpage__container li::before {
+    content: '';
+}
+
+.toc-mainpage__container a:visited {
+    color: #1FA6FB;
 }
 
 @-webkit-keyframes fade-in {

@@ -15,17 +15,17 @@ IntelliJ platform UI guidelines is a collection of recommendations for designers
                     <ul class="toc-tree__nodes-list">                    
                         {% for item in items %}        
                             {% if item.type == "GroupHeader" %}
-                                <li class="">
-                                        <div class="toc-tree__title-wrapper">
-                                            <a href="{{ site.baseurl }}{{ item.url }}" class="toc-tree__title toc-tree__title--link">{{ item.title }}</a>
-                                        </div>
+                                <li>
+                                    <div>
+                                        <a href="{{ site.baseurl }}{{ item.url }}">{{ item.title }}</a>
+                                    </div>
                                 </li>
-                                {% assign subpages = group.items | where:"subpageOf", item.title %}
                                 
+                                {% assign subpages = group.items | where:"subpageOf", item.title %}                                
                                 {% for subpage in subpages %}
                                     <li class="toc-tree__node toc-tree__node--level_0">
-                                        <div class="toc-tree__title-wrapper">
-                                            <a href="{{ site.baseurl }}{{ subpage.url }}" class="toc-tree__title toc-tree__title--link">{{ subpage.title }}</a>
+                                        <div>
+                                            <a href="{{ site.baseurl }}{{ subpage.url }}"  class="toc-tree__title toc-tree__title--link">{{ subpage.title }}</a>
                                         </div>
                                     </li>
                                 {% endfor %}
@@ -33,9 +33,9 @@ IntelliJ platform UI guidelines is a collection of recommendations for designers
                             {% elsif item.type == "Subpage" %}
     
                             {% else %}
-                                <li class="">
-                                    <div class="toc-tree__title-wrapper">
-                                        <a href="{{ site.baseurl }}{{ item.url }}" class="toc-tree__title toc-tree__title--link">{{ item.title }}</a>
+                                <li>
+                                    <div>
+                                        <a href="{{ site.baseurl }}{{ item.url }}">{{ item.title }}</a>
                                     </div>                                    
                                 </li>
                             {% endif %}        
