@@ -10662,6 +10662,10 @@ table .note ol, table .note ul, table .tip ol, table .tip ul, table .todo ol, ta
     color: #1FA6FB;
 }
 
+.toc-mainpage__container .draft{
+    color: #c9c9c9;
+}
+
 @-webkit-keyframes fade-in {
     0% {
         opacity: 0
