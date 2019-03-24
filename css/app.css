@@ -10457,7 +10457,6 @@ table .note ol, table .note ul, table .tip ol, table .tip ul, table .todo ol, ta
 .toc-tree__title--selected, .toc-tree__title--selected:visited {
     cursor: default;
     color: #343434;
-    background: #f0f0f0
 }
 
 .toc-tree__title--selected:not(.toc-tree__title--child-anchor-selected), .toc-tree__title--selected:visited:not(.toc-tree__title--child-anchor-selected) {
