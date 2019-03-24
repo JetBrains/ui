@@ -2,7 +2,7 @@
 title: IntelliJ Platform UI Guidelines
 ---
 
-IntelliJ platform UI guidelines is a collection of recommendations for designers and developers to follow when creating user interfaces for IntelliJ Platform based IDEs and plugins. 
+<p class="noanchor">IntelliJ platform UI guidelines is a collection of recommendations for designers and developers to follow when creating user interfaces for IntelliJ Platform based IDEs and plugins.</p> 
 
 <div class="separator"></div>
 
@@ -55,9 +55,11 @@ IntelliJ platform UI guidelines is a collection of recommendations for designers
 
 <div class="separator"></div>
 
-The guide aims at: 
-* Making the UI of all IntelliJ Platform based products consistent. This means applying the same visual design, ensuring consistent behaviour of common elements of the interface – from the input fields to the layout.
-* Helping programmers quickly find answers to the UI-related questions.
-* Providing programmers and new members of the designers team with the basics of usability and GUI design principles adopted by IDEA designers.
+<p class="noanchor">The guide aims at:</p>
+<ul>
+<li>Making the UI of all IntelliJ Platform based products consistent. This means applying the same visual design, ensuring consistent behaviour of common elements of the interface – from the input fields to the layout.</li>
+<li>Helping programmers quickly find answers to the UI-related questions.</li>
+<li>Providing programmers and new members of the designers team with the basics of usability and GUI design principles adopted by IDEA designers.</li>
+</ul>
 
-If you are working on the UI, please follow the guide. We hope that the guide will help to avoid minor mistakes and will let programmers and designers be on the same wavelength.
+<p class="noanchor">If you are working on the UI, please follow the guide. We hope that the guide will help to avoid minor mistakes and will let programmers and designers be on the same wavelength.</p>
