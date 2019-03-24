@@ -1,6 +1,6 @@
 ---
-title: Dialog window
-category: Components 
+title: Group header
+category: Components
 type: Draft
 ---
 

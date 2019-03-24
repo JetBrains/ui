@@ -1,6 +1,6 @@
 ---
 title: Status bar
-category: Controls
+category: Components
 type: Draft
 ---
 

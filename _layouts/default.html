@@ -41,10 +41,10 @@
                     <ul class="toc-tree nav__toc">
                         {% assign grouped = site.docs | group_by: 'category' %}
                             {% for group in grouped %}
-                                {% if group.name != "Resources" %}
+                                {% if group.name != "Resources" and group.name != "Components" %}
                                     <li class="tree-element toc-tree__node toc-tree__node--level_0">
 
-                                        {% assign items = group.items | sort: 'order' %}
+                                        {% assign items = group.items | sort %}
                                         {% assign expand = false %}
 
                                         {% for item in items %}

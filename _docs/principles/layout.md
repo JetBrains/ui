@@ -195,7 +195,7 @@ Group controls to help people locate the necessary controls faster.
 <br><br>
 Groups can be made with headers or with insets:
 
-* Use **[group headers]({{site.baseurl}}/components/collapsible_group_header)** if there are at least 3–4 controls in one of the groups and all groups can be clearly labeled according to their purpose. 
+* Use **[group headers]({{site.baseurl}}/components/group_header)** if there are at least 3–4 controls in one of the groups and all groups can be clearly labeled according to their purpose. 
 
   Avoid group names like "General" or "Options" because they do not tell the purpose of a group. See more on that in the [Writing short and clear]({{site.baseurl}}/text/writing_short) article.
 
