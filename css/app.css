@@ -185,7 +185,7 @@ codename {
 }
 
 h1 {
-    margin-top: 80px;
+    margin-top: 50px;
     margin-bottom: 30px;
     letter-spacing: -1px;
     color: #161616;
@@ -9697,6 +9697,9 @@ br + kbd {
     border-bottom: 1px solid #e6e6e6;
 }
 
+.article h2:first-of-type {
+    margin-top: 70px;
+}
 
 .navigation-links__next, .navigation-links__prev {
     position: relative;
@@ -10055,10 +10058,8 @@ img + em {
 
 .note, .tip, .todo, .warning {
     margin-bottom: 20px;
-    padding: 20px 15px 20px 20px;
     letter-spacing: .3px;
     color: #343434;
-    background-color: #f5f5f5;
     font-size: 13px;
     line-height: 20px;
 }
@@ -10081,7 +10082,7 @@ img + em {
 }
 
 .sideblock.note, .sideblock.tip, .sideblock.todo, .sideblock.warning {
-    padding: 25px
+    padding: 0px
 }
 
 .note p, .tip p, .todo p, .warning p {
@@ -10130,8 +10131,8 @@ table .note ol, table .note ul, table .tip ol, table .tip ul, table .todo ol, ta
     float: right;
     clear: right;
     box-sizing: border-box;
-    width: 235px;
-    margin: 0 -310px 15px 0;
+    width: 200px;
+    margin: 4px -270px 15px 0;
     transition: opacity .3s
 }
 
@@ -10140,7 +10141,7 @@ table .note ol, table .note ul, table .tip ol, table .tip ul, table .todo ol, ta
     opacity: 1
 }
 
-@media screen and (max-width: 1600px) {
+@media screen and (max-width: 1200px) {
     .sideblock._visible {
         float: none;
         width: 85%;
@@ -10299,7 +10300,7 @@ table .note ol, table .note ul, table .tip ol, table .tip ul, table .todo ol, ta
 }
 
 .article--without-sideblocks {
-    padding-right: 100px;
+    padding-right: 180px;
 }
 
 @media screen and (max-width: 960px) {
@@ -10640,7 +10641,7 @@ table .note ol, table .note ul, table .tip ol, table .tip ul, table .todo ol, ta
     font-size: 15px;
     line-height: 1.5em;
     columns: 3;
-    column-gap: 30px;
+    column-gap: 40px;
 }
 
 .toc-mainpage__container li {
@@ -12456,7 +12457,7 @@ table .note ol, table .note ul, table .tip ol, table .tip ul, table .todo ol, ta
     }
 
     .app__container {
-        padding-left: 30%;
+        padding-left: 21%;
     }
 
     .app__container.full {
@@ -12470,7 +12471,7 @@ table .note ol, table .note ul, table .tip ol, table .tip ul, table .todo ol, ta
     }
 
     .app__container {
-        padding-left: 300px;
+        padding-left: 250px;
     }
 }
 
