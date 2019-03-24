@@ -30,12 +30,12 @@
                 <header class="header">
                     <!--<a href="{{ site.baseurl }}/">{{ site.title }}</a>-->
                     <div class="layout__container header__container">
-                        <div class="group group--align-left header__title"><a href="{{ site.baseurl }}/">{{ site.title }}</a></div>
+                        <div class="group group--align-left header__title"><a href="{{ site.baseurl }}/">IntelliJ Platform  UI&nbsp;Guidelines</a></div>
                     </div>
                 </header>
                 <div class="nav">
                     <form action="{{ site.baseurl }}/search/" method="get">
-                        <input type="text" name="q" id="search-input" placeholder="Search Guidelines">
+                        <input type="text" name="q" id="search-input" placeholder="Search">
                         <input type="submit" value="Search" style="display: none;">
                     </form>
                     <ul class="toc-tree nav__toc">
@@ -94,8 +94,8 @@
                                     </li>
                                 {% endif %}
                             {% endfor %}
-                        <div class="separator"></div>
-                        {% for group    in grouped %}
+
+                        {% for group in grouped %}
                         <li class="toc-tree__node toc-tree__node--level_0">
                             {% if group.name == "Resources" %}
                                 {% assign items = group.items | sort: 'order' %}
