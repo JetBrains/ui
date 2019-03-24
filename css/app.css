@@ -19,17 +19,19 @@ a {
     border-right-style: initial;
     border-top-color: initial;
     font-size: 0.9rem;
-    margin-left: 3px;
-    padding: 10px 10px 9px 12px;
+    margin: 8px 0 0 3px;
+    padding: 0px 10px 0px 32px;
     border-width: 0px 0px 1px 5px;
     border-image: initial;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid #FFF;
     border-left: 5px solid transparent;
     outline: none;
+    background: url("../images/search.svg") 10px 2px/100% no-repeat;
+    background-size: 16px 16px;
 }
 
 ::placeholder {
-    color: #c9c9c9;
+    color: #B3B3B3;
 }
 
 
@@ -8838,7 +8840,7 @@ input, textarea {
 .header {
     color: #343434;
     width: 250px;
-    height: 80px;
+    height: 90px;
 }
 
 .header a {
