@@ -7,42 +7,49 @@ IntelliJ platform UI guidelines is a collection of recommendations for designers
 <div class="separator"></div>
 
 <div class="toc-mainpage__container">
+    {% assign categories = "Controls, Components, Principles, Text, Resources" | split: ", " %}
     {% assign grouped = site.docs | group_by: 'category' %}
-        {% for group in grouped %}                
-            {% assign items = group.items | sort: 'order' %}
-                <div>
-                    <b> {{ group.name }} </b>
-                    <ul class="toc-tree__nodes-list">                    
-                        {% for item in items %}        
-                            {% if item.type == "GroupHeader" %}
-                                <li> <a href="{{ site.baseurl }}{{ item.url }}">{{ item.title }}</a> </li>                                
-                                
-                                {% assign subpages = group.items | where:"subpageOf", item.title %}                                
-                                {% for subpage in subpages %}
-                                    {% if item.type == "Draft" %}
-                                        <li class="toc-tree__node toc-tree__node--level_0 draft"> 
-                                            {{ subpage.title }} 
-                                        </li>
+        {% for category in categories %}
+            {% for group in grouped %}     
+                {% if category == group.name %}      
+                    {% assign items = group.items | sort %}
+                
+                        <div class="toc-section">
+                            <div class="list-header"> {{ group.name }} </div>
+                            <ul>                    
+                                {% for item in items %}        
+                                    {% if item.type == "GroupHeader" %}
+                                        <li> <a href="{{ site.baseurl }}{{ item.url }}">{{ item.title }}</a> </li>                                
+                                        
+                                        {% assign subpages = group.items | where:"subpageOf", item.title %}                                
+                                        {% for subpage in subpages %}
+                                            {% if item.type == "Draft" %}
+                                                <li class="subpage draft"> 
+                                                    {{ subpage.title }} 
+                                                </li>
+                                            {% else %}
+                                                <li class="subpage">                                        
+                                                    <a href="{{ site.baseurl }}{{ subpage.url }}">{{ subpage.title }}</a>
+                                                </li>
+                                            {% endif %}
+                                        {% endfor %}
+                            
+                                    {% elsif item.type == "Subpage" %}
+            
                                     {% else %}
-                                        <li class="toc-tree__node toc-tree__node--level_0">                                        
-                                            <a href="{{ site.baseurl }}{{ subpage.url }}"  class="toc-tree__title toc-tree__title--link">{{ subpage.title }}</a>
-                                        </li>
-                                    {% endif %}
+                                        {% if item.type == "Draft" %}
+                                            <li class="draft"> {{ item.title }} </li>
+                                        {% else %}
+                                            <li> <a href="{{ site.baseurl }}{{ item.url }}">{{ item.title }}</a> </li>
+                                        {% endif %}
+                                        
+                                    {% endif %}        
                                 {% endfor %}
-                    
-                            {% elsif item.type == "Subpage" %}
-    
-                            {% else %}
-                                {% if item.type == "Draft" %}
-                                    <li class="draft"> {{ item.title }} </li>
-                                {% else %}
-                                    <li> <a href="{{ site.baseurl }}{{ item.url }}">{{ item.title }}</a> </li>
-                                {% endif %}
-                                
-                            {% endif %}        
-                        {% endfor %}
-                    </ul>
-                </div>                
+                            </ul>
+                        </div>
+                  
+                  {% endif %}                  
+            {% endfor %}
         {% endfor %}
 </div>
 

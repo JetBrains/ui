@@ -10641,17 +10641,28 @@ table .note ol, table .note ul, table .tip ol, table .tip ul, table .todo ol, ta
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+}
+.toc-mainpage__container .toc-section {
+    padding: 0 0 35px 0;
+}
+
+.toc-mainpage__container .list-header {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 20px;
 }
 
 .toc-mainpage__container ul {
-    padding: 0 40px 0 0;
+    padding: 0 0 0 0;
     font-size: 15px;
     line-height: 1.5em;
+    columns: 3;
+    column-gap: 30px;
 }
 
 .toc-mainpage__container li {
-    margin-bottom: 15px;
+    margin-bottom: 17px;
 }
 
 .toc-mainpage__container li::before {
@@ -10664,6 +10675,11 @@ table .note ol, table .note ul, table .tip ol, table .tip ul, table .todo ol, ta
 
 .toc-mainpage__container .draft{
     color: #c9c9c9;
+}
+
+.toc-mainpage__container .subpage{
+    margin-top: -6px;
+    margin-left: 17px;
 }
 
 @-webkit-keyframes fade-in {
