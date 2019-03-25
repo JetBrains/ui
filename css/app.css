@@ -13,20 +13,20 @@ a {
 #search-input {
     -webkit-appearance: none;
     display: block;
-    width: 90%;
+    width: 86%;
     box-sizing: border-box;
     border-top-style: initial;
     border-right-style: initial;
     border-top-color: initial;
     font-size: 0.9rem;
-    margin: 8px 0 0 3px;
-    padding: 0px 10px 0px 32px;
+    margin: 5px 0 0 10px;
+    padding: 0px 10px 6px 26px;
     border-width: 0px 0px 1px 5px;
     border-image: initial;
-    border-bottom: 1px solid #FFF;
+    border-bottom: 1px solid #D9D9D9;
     border-left: 5px solid transparent;
     outline: none;
-    background: url("../images/search.svg") 10px 2px/100% no-repeat;
+    background: url("../images/search.svg") 5px 2px/100% no-repeat;
     background-size: 16px 16px;
 }
 
@@ -12455,7 +12455,7 @@ table .note ol, table .note ul, table .tip ol, table .tip ul, table .todo ol, ta
 
 @media screen and (min-width: 1200px) {
     .app__nav {
-        width: 250px
+        width: 250px;
     }
 
     .app__container {
@@ -12504,6 +12504,7 @@ table .note ol, table .note ul, table .tip ol, table .tip ul, table .todo ol, ta
 
     .app__nav {
         left: -250px;
+        background-color: #F2F2F2;
     }
 }
 
