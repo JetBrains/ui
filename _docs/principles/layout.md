@@ -1,6 +1,7 @@
 ---
 title: Layout
 category: Principles
+type: GroupHeader
 ---
 
 Arrange UI controls correctly to help people locate the necessary settings faster and understand how they are related.

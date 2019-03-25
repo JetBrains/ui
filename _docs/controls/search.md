@@ -1,7 +1,7 @@
 ---
 title: Search
 category: Controls
-type: Draft
+type: GroupHeader
 ---
 
 The article is under construction. 

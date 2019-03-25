@@ -1,8 +1,8 @@
 ---
 title: Toolbar drop-down list
-codename: ComboBoxButton
 category: Controls
-type: Draft
+type: Subpage
+subpageOf: Toolbar
 ---
 
 The article is under construction. 

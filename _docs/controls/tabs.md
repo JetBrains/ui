@@ -1,8 +1,6 @@
----
-title: Search Results
+title: Tabs
 category: Controls
-type: Subpage
-subpageOf: Search
+type: Draft
 ---
 
 The article is under construction. 
