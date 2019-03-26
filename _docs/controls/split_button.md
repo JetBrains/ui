@@ -158,7 +158,7 @@ Do **not** show the dropdown menu when the button gains focus.
   </tr>
 </table>
 
-## Sizes and Placement  
+## Sizes and placement  
 Follow the rules for the [simple button]({{site.baseurl}}/controls/button/#sizes-and-placement).
 
 ### Button

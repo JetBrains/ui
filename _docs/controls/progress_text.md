@@ -64,7 +64,7 @@ Replace progress text with the loaded data or an [empty state]({{site.baseurl}}/
 
 Do not show details or a link to cancel the operation for progress in trees and lists. Only show the process name since space is limited here.
 
-## Sizes and Placement
+## Sizes and placement
 
 ### Empty state
 
