@@ -2,6 +2,10 @@
 title: IntelliJ Platform UI Guidelines
 ---
 
+
+
+
+
 <p class="noanchor">IntelliJ platform UI guidelines is a collection of recommendations for designers and developers to follow when creating user interfaces for IntelliJ Platform based IDEs and plugins.</p> 
 
 <div class="separator"></div>
