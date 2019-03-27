@@ -1,7 +1,8 @@
 ---
 title: Master-detail layout
 category: Principles
-type: Draft
+type: Subpage
+subpageOf: Layout
 ---
 
 The article is under construction.

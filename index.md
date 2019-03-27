@@ -23,7 +23,7 @@ title: IntelliJ Platform UI Guidelines
                             <ul>                    
                                 {% for item in items %}        
                                     {% if item.type == "GroupHeader" %}
-                                        <li> <a href="{{ site.baseurl }}{{ item.url }}">{{ item.title }}</a> </li>                                
+                                        <li class="groupheader"> <a href="{{ site.baseurl }}{{ item.url }}">{{ item.title }}</a> </li>                                
                                         
                                         {% assign subpages = group.items | where:"subpageOf", item.title %}                                
                                         {% for subpage in subpages %}

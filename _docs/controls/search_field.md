@@ -1,6 +1,9 @@
 ---
 title: Search field
+codename: To be implemented
 category: Controls
+type: Subpage
+subpageOf: Search 
 ---
 
 A search field is an input field that helps users locate objects, actions or text in an application.
@@ -17,46 +20,6 @@ Use the search field when specific objects are difficult to find at a glance, fo
 * Objects aren't in a single location, for example controls are located on different setting pages. 
 
 ## How to use  
-### Placement
-
-* Put the search field on top of the on-screen content that is being searched, and align them vertically, for example, the search field in settings is aligned with the filtered settings tree: 
-   <p class="label correct">Correct</p>
-   ![]({{site.baseurl}}/images/search_field/settings.png)
-
-* The search field is not aligned with the content on the Keymap settings page, which makes it harder to relate the content and the search string:
-   <p class="label incorrect">Incorrect</p>
-   ![]({{site.baseurl}}/images/search_field/keymap-search-incorrect.png)
-
-   <p class="label correct">Correct</p>
-   ![]({{site.baseurl}}/images/search_field/keymap-search-correct.png)
-
-*   Fit the search field to the popup windows and to a toolbar if it has top borders. This way the overall form looks less complex. 
-   <p class="label incorrect">Incorrect</p>
-   ![]({{site.baseurl}}/images/search_field/log-incorrect.png)
-
-   <p class="label correct">Correct</p>
-   ![]({{site.baseurl}}/images/search_field/log-correct.png)
-
-
-<table>
-<col width="300px">
-    <tr>
-        <td> <p class="label incorrect">Incorrect</p> </td>
-        <td> <p class="label correct">Correct</p> </td>
-    </tr>
-    <tr>
-        <td> <img src="{{site.baseurl}}/images/search_field/popup-incorrect.png" style="margin-top: -5px; margin-bottom: 5px;"> </td>
-        <td> <img src="{{site.baseurl}}/images/search_field/popup-correct.png" style="margin-top: -5px; margin-bottom: 5px;"> </td>
-    </tr>
-</table>
-
-
-*   Show the search field on demand when search is supplementary to other functionality or if space is limited. For example, space in the Project view is limited and too loaded to always show the _Speed Search_ bar: 
-   ![]({{site.baseurl}}/images/search_field/ptree-correct.png)
-
-*   When searching through content that is not displayed on the screen, put the search field on top of the active frame as a popup. This makes it more prominent and gives space for search results. For example, Search Everywhere is shown on top of the main IDEA frame: 
-   ![]({{site.baseurl}}/images/search_field/search-everywhere.png)
-
 ### Label and Placeholder
 
 Do **not** add a label to the search field. The magnifying glass icon is self-explanatory. 
@@ -204,18 +167,47 @@ Add a search string to history:
 *   On Enter for searches that are executed on enter.
 *   When the search field loses focus for searches that are executed on any keystroke.
 
-## Style
+## Sizes and placement
+### Placement
 
-### Colors and Fonts
+Put the search field on top of the on-screen content that is being searched, and align them vertically, for example, the search field in settings is aligned with the filtered settings tree: 
+<p class="label correct">Correct</p>
+![]({{site.baseurl}}/images/search_field/settings.png)
 
-For a general search field use the same colors as for an input field.
+The search field is not aligned with the content on the Keymap settings page, which makes it harder to relate the content and the search string:
 
-For a search field that is fitted to the toolbar, use a narrower focus border on Mac OS. The border width is 2px in that case: 
-![]({{site.baseurl}}/images/search_field/log-focused.png)
+<p class="label incorrect">Incorrect</p>
+![]({{site.baseurl}}/images/search_field/keymap-search-incorrect.png)
 
-Use the same font for the search string as used for showing the results.
+<p class="label correct">Correct</p>
+![]({{site.baseurl}}/images/search_field/keymap-search-correct.png)
 
-Use the Context help font color for the attributes' names as they are secondary to their values.
+Fit the search field to the popup windows and to a toolbar if it has top borders. This way the overall form looks less complex. 
+<p class="label incorrect">Incorrect</p>
+![]({{site.baseurl}}/images/search_field/log-incorrect.png)
+
+<p class="label correct">Correct</p>
+![]({{site.baseurl}}/images/search_field/log-correct.png)
+
+
+<table>
+<col width="300px">
+    <tr>
+        <td> <p class="label incorrect">Incorrect</p> </td>
+        <td> <p class="label correct">Correct</p> </td>
+    </tr>
+    <tr>
+        <td> <img src="{{site.baseurl}}/images/search_field/popup-incorrect.png" style="margin-top: -5px; margin-bottom: 5px;"> </td>
+        <td> <img src="{{site.baseurl}}/images/search_field/popup-correct.png" style="margin-top: -5px; margin-bottom: 5px;"> </td>
+    </tr>
+</table>
+
+Show the search field on demand when search is supplementary to other functionality or if space is limited. For example, space in the Project view is limited and too loaded to always show the _Speed Search_ bar: 
+   
+![]({{site.baseurl}}/images/search_field/ptree-correct.png)
+
+When searching through content that is not displayed on the screen, put the search field on top of the active frame as a popup. This makes it more prominent and gives space for search results. For example, Search Everywhere is shown on top of the main IDEA frame: 
+![]({{site.baseurl}}/images/search_field/search-everywhere.png)
 
 ### Sizes
 
@@ -254,3 +246,17 @@ Between search string and completion popup:
 
 Completion popup: 
 ![]({{site.baseurl}}/images/search_field/completion-mes.png)
+
+## Style
+
+### Colors and Fonts
+
+For a general search field use the same colors as for an input field.
+
+For a search field that is fitted to the toolbar, use a narrower focus border on Mac OS. The border width is 2px in that case: 
+![]({{site.baseurl}}/images/search_field/log-focused.png)
+
+Use the same font for the search string as used for showing the results.
+
+Use the Context help font color for the attributes' names as they are secondary to their values.
+

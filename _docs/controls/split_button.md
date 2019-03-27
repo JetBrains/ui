@@ -1,5 +1,6 @@
 ---
 title: Split button
+codename: JBOptionButton
 type: Subpage
 subpageOf: Button
 category: Controls
@@ -11,32 +12,32 @@ The Split button is a button which has two parts — the main action on the left
 
 ## When to use
 
-Use the split button:
+<p class="noanchor">Use the split button:</p>
 
-* When more than 2 related actions are possible but the space is limited and/or packed:
+When more than 2 related actions are possible but the space is limited and/or packed:
 For example, it is useful for the Commit actions group in the Commit dialog:
 ![]({{site.baseurl}}/images/split_button/button-and-dropdown-menu.png)
 
-   The Split button is not useful in the Replace popup, since not all actions are related, for example Open in Find Window is not related to the main action. Such actions are hard to find in the drop-down menu:
+<p class="noanchor">The Split button is not useful in the Replace popup, since not all actions are related, for example Open in Find Window is not related to the main action. Such actions are hard to find in the drop-down menu:</p>
 
-   <p class="label incorrect">Incorrect</p>
-   ![]({{site.baseurl}}/images/split_button/not-related-incorrect.png)
+<p class="label incorrect">Incorrect</p>
+![]({{site.baseurl}}/images/split_button/not-related-incorrect.png)
 
-   <p class="label correct">Correct</p>
-   ![]({{site.baseurl}}/images/split_button/not-related.png)
+<p class="label correct">Correct</p>
+![]({{site.baseurl}}/images/split_button/not-related.png)
 
-   In the Adjust Code Style dialog only 1 related action is possible and it does not save a lot of space:
-   <p class="label incorrect">Incorrect</p>
-   ![]({{site.baseurl}}/images/split_button/space-not-limited-incorrect.png)
+<p class="noanchor">In the Adjust Code Style dialog only 1 related action is possible and it does not save a lot of space:</p>
+<p class="label incorrect">Incorrect</p>
+![]({{site.baseurl}}/images/split_button/space-not-limited-incorrect.png)
 
-   <p class="label correct">Correct</p>
-   ![]({{site.baseurl}}/images/split_button/space-not-limited.png)
+<p class="label correct">Correct</p>
+![]({{site.baseurl}}/images/split_button/space-not-limited.png)
 
-* To hide actions which are dangerous and uncommon. Dangerous means an action can destroy users’ data and cannot be easily undone. It is less possible to accidentally click an action hidden in a menu.  It is recommended to hide even a single related uncommon dangerous action. 
+To hide actions which are dangerous and uncommon. Dangerous means an action can destroy users’ data and cannot be easily undone. It is less possible to accidentally click an action hidden in a menu.  It is recommended to hide even a single related uncommon dangerous action. 
 For example, Force Push can override remote commits from other authors and should not be easily available:
 ![]({{site.baseurl}}/images/split_button/dangerous.png)
 
-   If an action is dangerous but common, do not hide it under the split button, use simple buttons. An action should follow the [principles for dangerous actions’]({{site.baseurl}}/principles/dangerous_actions/) behavior.
+<p class="noanchor">If an action is dangerous but common, do not hide it under the split button, use simple buttons. An action should follow the [principles for dangerous actions’]({{site.baseurl}}/principles/dangerous_actions/) behavior.</p>
 
 Do **not** use the Split Button in other cases, use simple [Buttons]({{site.baseurl}}/controls/button/) instead. 
 
@@ -98,12 +99,9 @@ Do **not** duplicate the main action in the dropdown menu, otherwise it is confu
 The Split button can be reduced to simple action buttons which are layed out automatically next to each other. This is controlled by the following option in settings:  
 _Appearance & Behavior > Appearance > Merge buttons in dialogs_
 
-For example, the Commit button reduced to its components (the option is disabled) looks like the following:
+<p class="noanchor">For example, the Commit button reduced to its components (the option is disabled) looks like the following:</p>
 
 ![]({{site.baseurl}}/images/split_button/reduced.png)
-
-## Placement  
-Follow the rules for the [simple button]({{site.baseurl}}/controls/button/#placement).
 
 ## Keyboard navigation & shortcuts
 
@@ -160,44 +158,12 @@ Do **not** show the dropdown menu when the button gains focus.
   </tr>
 </table>
 
+## Sizes and placement  
+Follow the rules for the [simple button]({{site.baseurl}}/controls/button/#sizes-and-placement).
 
-## Style
+### Button
 
-#### Button
-
-Basic styles (enabled, disabled, default, pressed) are the same as for simple buttons for both parts of the split button.
-
-<table>
-  <col width="200 px">      
-  <col width="200 px">      
-  <tr>
-    <td><p style="margin-top:10px">Windows:</p></td>
-    <td><p style="margin-top:10px">Mac:</p></td>
-    <td><p style="margin-top:10px">Darcula:</p></td>
-  </tr>
-  <tr>
-    <td><img src="{{site.baseurl}}/images/split_button/win-button.png" style="margin-top: 15px; margin-left: 0px;"></td>
-    <td><img src="{{site.baseurl}}/images/split_button/mac.png" style="margin-top: 15px; margin-left: 0px;"></td>
-    <td><img src="{{site.baseurl}}/images/split_button/darcula.png" style="margin-top: 15px; margin-left: 0px;"></td>
-  </tr>
-</table>
-
-
-#### Menu
-
-* Increase line height in the dropdown menu to lessen the chance of choosing the wrong menu item by mistake.
-
-* Leave 2px around the separator inactive to lessen the chance of choosing the wrong menu item by mistake:
-![]({{site.baseurl}}/images/split_button/selected.png)
-
-* Align the dropdown with the button left border:
-![]({{site.baseurl}}/images/split_button/alignment.png)
-
-### Sizes
-
-#### Button
-
-The width of the split button equals to the width of the main button (follow the rules of the [simple button]({{site.baseurl}}/controls/button/#style)) plus the width of the drop-down button. 
+The width of the split button equals to the width of the main button (follow the rules of the [simple button]({{site.baseurl}}/controls/button/#37)) plus the width of the drop-down button. 
 
 <table>
   <col width="200 px">      
@@ -217,15 +183,44 @@ The width of the split button equals to the width of the main button (follow the
 
 A different width for the split button makes it easier to understand that this button is different from other buttons in the dialog.
 
-The Split button height is the same as for the [simple button]({{site.baseurl}}/controls/button/#style).
+### Drop-down menu
 
-#### Drop-down menu
-
-Follow the rules for  menus with regard to sizes, colors, fonts and spacing.
+Follow the rules for menus with regard to sizes, colors, fonts and spacing.
 
 Menu item height and spacing between the menu and the button:
 
 ![]({{site.baseurl}}/images/split_button/button-and-dropdown-sizes.png)
 
 
+## Style
+
+### Button
+
+Basic styles (enabled, disabled, default, pressed) are the same as for [simple buttons]({{site.baseurl}}/controls/button/#style) for both parts of the split button.
+
+<table>
+  <col width="200 px">      
+  <col width="200 px">      
+  <tr>
+    <td><p style="margin-top:10px">Windows:</p></td>
+    <td><p style="margin-top:10px">Mac:</p></td>
+    <td><p style="margin-top:10px">Darcula:</p></td>
+  </tr>
+  <tr>
+    <td><img src="{{site.baseurl}}/images/split_button/win-button.png" style="margin-top: 15px; margin-left: 0px;"></td>
+    <td><img src="{{site.baseurl}}/images/split_button/mac.png" style="margin-top: 15px; margin-left: 0px;"></td>
+    <td><img src="{{site.baseurl}}/images/split_button/darcula.png" style="margin-top: 15px; margin-left: 0px;"></td>
+  </tr>
+</table>
+
+
+### Menu
+
+Increase line height in the dropdown menu to lessen the chance of choosing the wrong menu item by mistake.
+
+Leave 2px around the separator inactive to lessen the chance of choosing the wrong menu item by mistake:
+![]({{site.baseurl}}/images/split_button/selected.png)
+
+Align the dropdown with the button left border:
+![]({{site.baseurl}}/images/split_button/alignment.png)
 
