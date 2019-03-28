@@ -16,72 +16,96 @@ Or **inline**, above the confirmation buttons:
 
 ## Principles
 
+<p class="noanchor">
 Always try not to let the user enter invalid data. To achieve this:
-1. Use controls that are constrained to valid values. For example, use a combo box or a slider instead of the input field.
+</p>
 
+Use controls that are constrained to valid values. For example, use a combo box or a slider instead of the input field.
 
-2. Limit the characters users can enter. For example, if only numbers are supported in a field, and this is obvious to the user, ignore input of letters instead of showing an error:
-  ![]({{site.baseurl}}/images/validation/port_correct.png)
-  If it’s not obvious that only numbers can be entered, allow to enter any sign and perform validation.
-  ![]({{site.baseurl}}/images/validation/font_error.png)
+Limit the characters users can enter. For example, if only numbers are supported in a field, and this is obvious to the user, ignore input of letters instead of showing an error:
+![]({{site.baseurl}}/images/validation/port_correct.png)
+If it’s not obvious that only numbers can be entered, allow to enter any sign and perform validation.
+![]({{site.baseurl}}/images/validation/font_error.png)
 
-3. Provide a default value if possible. Even if the user decides to change the default value, it gives a clue on the expected input format.
+Provide a default value if possible. Even if the user decides to change the default value, it gives a clue on the expected input format.
 
-4. Write instructions and examples on how to fill a form using [Context Help]({{site.baseurl}}/principles/context_help/).
+Write instructions and examples on how to fill a form using [сontext Help]({{site.baseurl}}/principles/context_help/).
 
 If it’s not possible to limit input, try to show an error as soon as possible so that the user can quickly return and fix it.
 
 ## Validation types and usage
 
-There are three types of validation:
+
 
 <table>
-<col width="25%">
-<col width="50%">
-<col width="20%">
-<th class="table-line"> Validation type </th>
+<col width="3%">
+<col width="40%">
+<col width="40%">
+<th class="table-line"> </th>
 <th class="table-line"> What to validate </th>
+<th class="table-line"> Validation type </th>
 <th class="table-line"> Format </th>
 <tr class="table-line">
-    <td> Immediately on input </td>
-    <td> Characters.<br /><br />
-         Maximum input size or value.
+    <td><p><span style="color: #999999">1</span></p></td>
+    <td> Non-allowed characters<br /><br />
+         Too big or long values
     </td>
+    <td> Immediately on input </td>
     <td> Tooltip </td>
 </tr>
 <tr class="table-line">
-    <td> On focus loss </td>
-    <td> Minimum input size or value.<br /><br />  
-         Values that can be checked only when the full value is entered, e.g. existing file name.
+    <td><p><span style="color: #999999">2</span></p></td>
+    <td> Non-allowed values in dialogs<br />  
+         For example, an existing file name, a value that does not match the pattern, or a value that’s too small
     </td>
+    <td> On sending the form or on focus loss </td>
     <td> Tooltip </td>
 </tr>
-<tr>
+<tr class="table-line">
+    <td><p><span style="color: #999999">3</span></p></td>
+    <td> Empty required fields in dialogs </td>
+    <td> Disable the confirmation button or check on sending the form </td>
+    <td> Tooltip </td>
+</tr>
+<tr class="table-line">
+    <td><p><span style="color: #999999">4</span></p></td>
+    <td> Non-allowed or empty values in the main window  </td>
+    <td> On Enter or focus loss </td>
+    <td> Tooltip </td>
+</tr>
+<tr class="table-line">
+    <td><p><span style="color: #999999">5</span></p></td>
+    <td> Remote connection  </td>
     <td> On sending the form </td>
-    <td> Empty required fields.<br /><br />  
-         Value or a set of values if validation is slow or attempts are limited, e.g. due to connection to a remote server.  
-    </td>
     <td> Tooltip or inline </td>
+</tr>
+<tr class="table-line">
+    <td><p><span style="color: #999999">6</span></p></td>
+    <td> Complex values in multi-page dialogs </td>
+    <td> On reopening the form or when the values are used </td>
+    <td> Tooltip, inline or notification </td>
 </tr>
 </table>
 
-The details on how and when to use each type of validation are provided below.
 
-### 1. Immediately on input
+### 1. Non-allowed characters or too big values
 
-**When to use**: If a non-allowed character is entered, or the maximum input size or value is exceeded.
+If a non-allowed character is entered, or the maximum input size or value is exceeded, validate it immediately on input.
 
-**How it works**: The field is highlighted with red and the error appears in the tooltip.
+#### How it works
+
+The field is highlighted with red and the error appears in the tooltip.
 
 ![]({{site.baseurl}}/images/validation/create_class.png)
-*Non-allowed symbol entered.*
+
+If the maximum value is exceeded, specify what values are allowed (e.g. a range for numeric values, or the number of symbols):
 
 ![]({{site.baseurl}}/images/validation/port_error.png)
-*If the maximum value is exceeded, specify what values are allowed (e.g. a range for numeric values, or the number of symbols).*
 
 Hide the error when the incorrect symbol is deleted.
-<br><br>
-**Implementation**: 
+
+#### Implementation
+
 <div class="code-block__wrapper">{% highlight java %}// Fields initializers
 private JTextField myPort = new JTextField();
 private static final String MESSAGE = "The port number should be between 0 and 65535.";
@@ -117,98 +141,153 @@ myPort.getDocument().addDocumentListener(new DocumentAdapter() {
 
 
 
-### 2. On focus loss
+### 2. Non-allowed values in dialogs
 
-**When to use**: If the value that was entered is too short or small, or if a non-allowed value is entered.
-       
-  Do **not** validate empty fields on focus loss. Users should be able to fill the form in a random order, so do not interrupt them.
+A non-allowed value is a value that can be checked only when fully entered. For example, an existing file name, value that does not match the pattern or a value that’s too small/short. 
 
-**How it works**: Validation is triggered immediately after focus loss if the field has been filled. If an error is detected, the field is highlighted in light-red. The focus does not return to the field automatically.
+If a non-allowed value is entered, validate it on focus loss or on sending the form, depending on what happens faster.
+
+Do **not** validate non-allowed values on input, it will interrupt the user. 
+
+Do **not** validate empty fields on focus loss. Users should be able to fill the form in a random order, so do not interrupt them.
+
+
+#### How it works
+
+On sending the form, the field is highlighted in red and the error tooltip appears.
+
+![]({{site.baseurl}}/images/validation/exesting_name.png)
+
+If validated on focus loss, highlight the field in light-red. Do not return focus to the field with the error automatically.
 
 ![]({{site.baseurl}}/images/validation/focus_loss.png)
 
-The error tooltip appears when the invalid field gets focus or on hover of the field.
-Hide the field highlighting and the tooltip when the user fixes the invalid value:
+The error tooltip appears when the invalid field gets the focus or on hovering over the field.
+
+When the user changes the value, the tooltip disappears and error highlighting is replaced with the regular focus:
 
 ![]({{site.baseurl}}/images/validation/fix_error.png)
 
-When the focus is returned to the field with error, the validation is the same as immediate on input validation.
+When the focus is returned to the field with an error, use validation on input. Otherwise, it can be unclear for the user how to initiate validation.
 
-**Implementation**: Add `andStartOnFocusLost()` call on `ComponentValidator` before installing it on a component:
+#### Implementation
+Add `andStartOnFocusLost()` call on `ComponentValidator` before installing it on a component:
 <div class="code-block__wrapper">{% highlight java %}new ComponentValidator(getDisposable()).withValidator(...).
     andStartOnFocusLost().installOn(component);{% endhighlight %}</div>
 
-### 3. On sending the form
 
-**When to use**:
+### 3. Empty required fields in dialogs
 
-* For empty required fields in complex forms:
-    * Forms with more than 3 input fields or combo boxes.
-    * Forms with at least one control (checkbox, table, etc.) besides an input field and a combo box.  
-  
-    If a form is complex, always enable the “OK” button. Otherwise, it can be hard to understand what should be done to complete the form.
-  
-    If a form is simple, just disable the confirmation button until all required fields have been filled:
+#### Simple form
+If a form is simple, disable the confirmation button until all required fields have been filled:
+![]({{site.baseurl}}/images/validation/simple_dialog.png)
 
-    ![]({{site.baseurl}}/images/validation/simple_dialog.png)    
+#### Complex form
 
-* If validation is slow or attempts are limited, e.g. due to connection to a remote server.
+If a form is complex, always enable the “Add” button. Otherwise, it can be hard to understand what should be done to complete the form. 
 
-**How to use**: Validation is performed when the user clicks the confirmation button, e.g. the “OK” button. 
+Complex forms are:
 
-* If it’s possible to determine the fields with errors, highlight all these fields, move the focus to the first invalid field, put the cursor to the end of the line and show the tooltip.
+* Forms with more than 3 input fields or combo boxes.
+* Forms with at least one control (checkbox, table, and so on) apart from an input field and a combo box.
 
-    ![]({{site.baseurl}}/images/validation/complex_dialog.png)
+**Never** validate empty required fields on input or focus loss. Users should be able to fill the form in a random order, so do not interrupt them.
 
-    Hide the tooltip and the red highlighting when the user starts editing the invalid value or entering symbols into the empty required field.
-    
-    Show the error tooltip for the next field when it gets the focus, hover or the user clicks the “OK” button one more time. 
+#### How to use
 
-* If it’s not possible to determine the fields with errors, show the error message inline under the fields:
+Validation is performed when the user clicks the confirmation button (for example, the “Add” button).
 
-    ![]({{site.baseurl}}/images/validation/example_inline.png)
+Highlight all empty required fields, move the focus to the first invalid field and show the tooltip.
 
-    An inline error only appears on clicking the confirmation button. The dialog is resized to fit the error message. Do not leave an empty space for the error in advance.
-    
-    Make the error message selectable. The user may want to find this message on the Internet or to send a question about the option to support.
-    
-    **Implementation**: By default `DialogWrapper` disables "OK" button until all fields that participate in validation 
+![]({{site.baseurl}}/images/validation/complex_dialog.png)
+
+Hide the tooltip and the red highlighting when the user starts editing the invalid value or entering symbols into the empty required field.
+
+Show the error tooltip for the next field when it gets the focus, hover or the user clicks the “Add” button one more time.
+ 
+#### Implementation
+
+By default `DialogWrapper` disables "OK" button until all fields that participate in validation 
     become valid. Explicitly enable "OK" button for each input field:
 
 <div class="code-block__wrapper">{% highlight java %}new ValidationInfo("The host cannot be reached.", myHostField)
 .withOkEnabled();{% endhighlight %}</div>
   
-  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`ValidationInfo` for messages in inline area is created with null component:  
-  
-  <div class="code-block__wrapper">{% highlight java %} new ValidationInfo("The host cannot be reached. Check the address and 
+
+### 4. Non-allowed or empty values in the main window
+
+If a non-allowed or an empty value is entered into a field that’s within the Properties view, for example, in UI Designers like the Android Studio Layout Editor, validate it on pressing Enter or focus loss.
+
+#### How it works
+
+On Enter, the field is highlighted with red and the error tooltip appears.
+![]({{site.baseurl}}/images/validation/main_window.png)
+
+If validated on focus loss, the field is highlighted with light-red. The focus is not returned to the field automatically.
+
+Hide the field highlighting and the tooltip when the user fixes the invalid value.
+
+
+
+### 5. Remote connection
+
+If validation is slow or attempts are limited, for example, due to connection to a remote server, validate values on sending the form.
+
+If it’s not possible to detect the fields with errors, show the error message inline under the fields:
+![]({{site.baseurl}}/images/validation/example_inline.png)
+
+An inline error only appears on clicking the confirmation button. The dialog is resized to fit the error message. Do **not** leave an empty space for the error in advance.
+
+Hide the error messages once any field related to the error is edited. Set the dialog to its original size when the error disappears. 
+
+#### Implementation
+
+`ValidationInfo` for messages in inline area is created with null component:  
+ <div class="code-block__wrapper">{% highlight java %} new ValidationInfo("The host cannot be reached. Check the address and 
      credentials.");{% endhighlight %}</div>
+
+
+
+### 6. Complex values in multi-page dialogs
+
+If a value is complex, for example, a list of values, a regexp, or a value copied value from another place, and it appears in a multi-page dialog, such as Settings, Project Structure or Run Configurations, show a dialog informing the user about an error on clicking the confirmation button.
+
+
+For example, in a complex Resource patterns field
+![]({{site.baseurl}}/images/validation/comlex_field.png)
+
+<p class="noanchor">
+show the following dialog on pressing the confirmation button:
+</p>
+![]({{site.baseurl}}/images/validation/confirmation_dialog.png)
+
+It should be possible to close the Settings dialog and save the entered data if the user wants to fix the values later or needs additional data outside of the modal Settings dialog.
+
+If an invalid field is not empty, highlight it on reopening the Settings dialog or report the error when the entered data is used.
+
 
 ## Tooltip
 
+<p class="noanchor">
 An error tooltip appears in two cases:
+</p>
 
-1. If the field with an error gets focus:
+If the field with an error gets focus:
+![]({{site.baseurl}}/images/validation/example_tooltip.png)
 
-	![]({{site.baseurl}}/images/validation/example_tooltip.png)
+<p class="noanchor">
+If the field loses focus, hide the tooltip and highlight the field with light-red:
+</p>
+![]({{site.baseurl}}/images/validation/incorrect_symbol_non_focused.png)
 
-    If the field loses focus, hide the tooltip and highlight the field with light-red:
 
-	![]({{site.baseurl}}/images/validation/incorrect_symbol_non_focused.png)
-
-
-2. On hover over the field or the element with an error:
-	
-	![]({{site.baseurl}}/images/validation/incorrect_symbol_hover.png)
-	
-	![]({{site.baseurl}}/images/validation/table_hover.png)
+On hover over the field or the element with an error:
+![]({{site.baseurl}}/images/validation/incorrect_symbol_hover.png)
+![]({{site.baseurl}}/images/validation/table_hover.png)
 	
 Show the tooltip above the field and move it 40px right, so that the controls above it are not overlapped. 
 If there is an important info above the field, the tooltip can be shown on the right.
 
-Always use field highlighting and a tooltip instead of an inline error in the dialog if it’s possible to determine which field is invalid. 
-A tooltip is preferable because it appears in the context and the form layout does not change.
-
-Make the message in tooltip selectable. The user may want to find this message on the Internet or to send a question about the option to support.
 
 
 ## Error message text
@@ -251,9 +330,9 @@ Provide specific names, locations, and values of the objects involved:
 
 End the error message with a period (for details see [Punctuation]({{site.baseurl}}/text/punctuation/)).
  
-The error message should be short and descriptive. See [Writing short and clear]({{site.baseurl}}/text/writing_short/)).
+The error message should be short and descriptive. See [Writing short and clear]({{site.baseurl}}/text/writing_short/).
  
-Examples of common errors the and corresponding error messages:  
+Examples of common errors and corresponding error messages:  
 
 <table>
 <col width="25%">
@@ -312,6 +391,43 @@ Use encouraging tone:
 </table>
 
 
+## Warning
+
+![]({{site.baseurl}}/images/validation/warning.png)
+
+A warning informs the user that something is configured incorrectly, but does not prevent them from applying the changes.
+
+A warning can appear on input, focus loss, or on reopening a filled form. For example, make the empty field Target name as warning on reopening:
+
+![]({{site.baseurl}}/images/validation/warning_dialog.png)
+
+<p class="noanchor">
+The warning can be shown:
+</p>
+
+In a tooltip for a specific field. Follow the rules for [the error tooltip](#tooltip). 
+
+<div class="code-block__wrapper">{% highlight java %}new ValidationInfo("Target name is not specified.", myNameField)
+.asWarning();{% endhighlight %}</div>
+
+
+On the form under the controls. Show the message with the yellow warning icon.
+![]({{site.baseurl}}/images/validation/warning_inline.png)
+
+ On the "Problems" page in complex multi-page dialogs. Show warnings and fix options:
+
+![]({{site.baseurl}}/images/validation/problems.png)
+*Problems page in the Project Structure dialog.*
+
+<p class="noanchor">
+Mark all navigation elements for areas that contain warnings with yellow icons.<br/>
+
+Update the problems counter when a problem is detected. When all problems have been fixed, do not show the “Problems” tab.<br/>
+
+On a particular page, highlight the element that contains a warning in yellow or add warning icon next to it.
+</p>
+
+
 ## UI elements with validation errors
 
 ### Input field
@@ -328,11 +444,15 @@ Add a red light bulb on the right side of the input field if an action to fix th
 
 ### Tables and lists
 
-![]({{site.baseurl}}/images/validation/table.png)
+![]({{site.baseurl}}/images/validation/table_error.png)
 
-When the field in a table loses focus, highlight the text in red and show an error tooltip on mouse hover or when the line gets focus:
+When the field in a table loses focus, show an error icon. An error tooltip appears on mouse hover or when the line gets focus:
 ![]({{site.baseurl}}/images/validation/table_hover.png)
-**Implementation**:
+
+Use a warning icon for warnings:
+![]({{site.baseurl}}/images/validation/table_warning.png)
+
+#### Implementation
 <div class="code-block__wrapper">{% highlight java %}JTextField cellEditor = new JTextField();
 cellEditor.putClientProperty(DarculaUIUtil.COMPACT_PROPERTY, Boolean.TRUE);
 cellEditor.getDocument().addDocumentListener(new DocumentAdapter() {
@@ -356,6 +476,13 @@ col0.setCellRenderer(new DefaultTableCellRenderer() {
 });
 {% endhighlight %}</div>
 
+
+### Trees and lists
+
+Add an error or warning icon on the right side of the invalid line.
+![]({{site.baseurl}}/images/validation/list.png)
+
+
 ### Multi-page dialog
    
 If validation in a multi-page form can be performed only on clicking the confirmation button, then:
@@ -363,82 +490,33 @@ If validation in a multi-page form can be performed only on clicking the confirm
 * Open the first page with an error or stay on the opened page if it has errors on clicking the confirmation button. 
 
 ![]({{site.baseurl}}/images/validation/multipage1.png)
-*The Scopes page is the first page with an error, so open it on clicking the “OK” button. However, if the Path Variable page is open and the user clicks the confirmation button, stay on this page as it contains an error.*
-
-If there are several items on one page (e.g. errors in several Live Templates), color all invalid tree items in red and navigate to the first invalid item or stay on the opened one if it has errors:
-
-![]({{site.baseurl}}/images/validation/multipage2.png)
-
-
-## Warning
-
-![]({{site.baseurl}}/images/validation/warning.png)
-
-A warning informs the user that something is configured incorrectly, but does not prevent them from applying the changes.
-
-A warning can appear on input, focus loss, or on reopening a filled form. For example, make the empty field Target name as warning on reopening:
-
-![]({{site.baseurl}}/images/validation/warning_dialog.png)
-
-The warning can be shown:
-
-* In a tooltip for a specific field. Follow the rules for [the error tooltip](#tooltip). 
-
-    There is an extra configuration in `ValidiationInfo` class which turns it into a warning
-    info:
-<div class="code-block__wrapper">{% highlight java %}new ValidationInfo("Target name is not specified.", myNameField)
-.asWarning();{% endhighlight %}</div>
-
-* On the form under the controls. Show the message with the yellow warning icon.
-
-    ![]({{site.baseurl}}/images/validation/warning_inline.png)
-
-* On the Problems page in complex multi-page dialogs. Show warnings and fix options:
-
-    ![]({{site.baseurl}}/images/validation/problems.png)
-    *Problems page in the Project Structure dialog.*
-    
-    Mark all navigation elements for areas that contain warnings with yellow icons. 
-    
-    Update the problems counter when a problem is detected. When all problems have been fixed, do not show the “Problems” tab.
-    
-    On a particular page, highlight the element that contains a warning in yellow. On selection or mouse hover, show a tooltip with a warning message:
-
-    ![]({{site.baseurl}}/images/validation/artifacts.png)
-    
+   
 
 
 ## Avoid mistakes
 
-* Do not show an error in a message box. Users are pulled out of the context, they need to close the dialog and locate the invalid field.
-
-    ![]({{site.baseurl}}/images/validation/message_box.png)
+Do not show an error in a message box. Users are pulled out of the context, they need to close the dialog and locate the invalid field.
+![]({{site.baseurl}}/images/validation/message_box.png)
     
   
-* Do not allow to click "OK" button if a form contains empty required fields. For this, the Cancel button should be used, and the OK button should be disabled. Otherwise, if users accidentally leave the field empty, they can expect that the value was entered correctly.
-    
-    ![]({{site.baseurl}}/images/validation/wildcard.png)
+Do not allow to click "OK" button if a form contains empty required fields. For this, the Cancel button should be used, and the OK button should be disabled. Otherwise, if users accidentally leave the field empty, they can expect that the value was entered correctly.
+![]({{site.baseurl}}/images/validation/wildcard.png)
 
-* Do not show error message inside the empty required field. It looks like a prefilled field, not like an error message. 
-    
-    ![]({{site.baseurl}}/images/validation/goto_line.png)
+Do not show error message inside the empty required field. It looks like a prefilled field, not like an error message. 
+![]({{site.baseurl}}/images/validation/goto_line.png)
 
-* Do not underline the field label. It looks like a spell error and poorly visible.
+Do not underline the field label. It looks like a spell error and poorly visible.   
+![]({{site.baseurl}}/images/validation/underline.png)
     
-    ![]({{site.baseurl}}/images/validation/underline.png)
-    
-* Do not shake a form and show an error with a delay. A shaking form is distracting and time-consuming. 
-    
-    ![]({{site.baseurl}}/images/validation/new_class.png)
+Do not shake a form and show an error with a delay. A shaking form is distracting and time-consuming. 
+![]({{site.baseurl}}/images/validation/new_class.png)
 
-* Do not show an error immediately after opening a form. It distracts the user from filling the form.
+Do not show an error immediately after opening a form. It distracts the user from filling the form.
+![]({{site.baseurl}}/images/validation/add_tfs.png)
 
-    ![]({{site.baseurl}}/images/validation/add_tfs.png)
-
-* Do not allow to submit the form with the error. When the form is opened again, the value is reset, so users don’t know
+Do not allow to submit the form with the error. When the form is opened again, the value is reset, so users don’t know
  if they entered incorrect data.
-
-    ![]({{site.baseurl}}/images/validation/save.png)
+![]({{site.baseurl}}/images/validation/save.png)
 
 
 
@@ -449,6 +527,7 @@ The warning can be shown:
 
 ![]({{site.baseurl}}/images/validation/dialog_insets.png)
 
+<!--
 ### Error colors
 <table>
 <col width="20%">
@@ -541,12 +620,4 @@ The warning can be shown:
     <td> #DC9B2F </td>
 </tr>
 </table>
-
-
-
-
-
-
-
-
-
+-->
