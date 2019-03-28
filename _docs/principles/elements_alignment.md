@@ -1,7 +1,7 @@
 ---
 title: Elements Alignment
 category: Principles
-type: Draft
+draft: true
 ---
 
 The article is under construction. 

@@ -1,7 +1,7 @@
 ---
 title: Punctuation
 category: Text
-type: Draft
+draft: true
 ---
 
 The article is under construction. 

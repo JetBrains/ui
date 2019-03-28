@@ -62,6 +62,9 @@
 
                                             <ul class="toc-tree__nodes-list">
                                                 {% for item in items %}
+                                                    {% if item.draft %}
+
+                                                    {% else %}
                                                         {% if item.type == "GroupHeader" %}
 
                                                             <li class="tree-element toc-tree__node toc-tree__node--level_1 ">
@@ -72,17 +75,19 @@
                                                                     </div>
                                                             </li>
 
-
                                                             {% assign subpages = group.items | where:"subpageOf", item.title %}
                                                             {% for subpage in subpages %}
-                                                                <li class="toc-tree__node toc-tree__node--level_2 {% if subpage.url == page.url %}toc-tree__title--selected{% endif %}">
-                                                                    <div class="toc-tree__title-wrapper">
-                                                                        <a href="{{ site.baseurl }}{{ subpage.url }}" class="toc-tree__title toc-tree__title--link">{{ subpage.title }}</a>
-                                                                    </div>
-                                                                </li>
+                                                                {% if subpage.draft %}
+                                                                {% else %}
+                                                                    <li class="toc-tree__node toc-tree__node--level_2 {% if subpage.url == page.url %}toc-tree__title--selected{% endif %}">
+                                                                        <div class="toc-tree__title-wrapper">
+                                                                            <a href="{{ site.baseurl }}{{ subpage.url }}" class="toc-tree__title toc-tree__title--link">{{ subpage.title }}</a>
+                                                                        </div>
+                                                                    </li>
+                                                                {% endif %}
                                                             {% endfor %}
 
-                                                        {% elsif item.type == "Draft" or item.type == "Subpage" %}
+                                                        {% elsif item.type == "Subpage" %}
 
                                                         {% else %}
                                                             <li class="toc-tree__node toc-tree__node--level_1 {% if item.url == page.url %}toc-tree__title--selected{% endif %}">
@@ -91,6 +96,7 @@
                                                                        class="toc-tree__title toc-tree__title--link">{{ item.title }}</a></div>
                                                             </li>
                                                         {% endif %}
+                                                    {% endif %}
                                                 {% endfor %}
                                             </ul>
                                         </li>

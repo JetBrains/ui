@@ -1,7 +1,7 @@
 ---
-title: Color Box
+title: Color box
 category: Controls
-type: Draft
+draft: true
 ---
 
 The article is under construction. 

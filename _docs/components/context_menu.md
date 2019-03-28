@@ -1,7 +1,7 @@
 ---
 title: Context menu
 category: Components
-type: Draft
+draft: true
 ---
 
 The article is under construction. 

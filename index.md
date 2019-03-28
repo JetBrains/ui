@@ -2,10 +2,6 @@
 title: IntelliJ Platform UI Guidelines
 ---
 
-
-
-
-
 <p class="noanchor">IntelliJ platform UI guidelines is a collection of recommendations for designers and developers to follow when creating user interfaces for IntelliJ Platform based IDEs and plugins.</p> 
 
 <div class="separator"></div>
@@ -16,21 +12,24 @@ title: IntelliJ Platform UI Guidelines
         {% for category in categories %}
             {% for group in grouped %}     
                 {% if category == group.name %}      
-                    {% assign items = group.items | sort %}
+                    {% assign items = group.items | sort: 'title' %}
                 
                         <div class="toc-section">
                             <div class="list-header"> {{ group.name }} </div>
                             <ul>                    
                                 {% for item in items %}        
                                     {% if item.type == "GroupHeader" %}
-                                        <li class="groupheader"> <a href="{{ site.baseurl }}{{ item.url }}">{{ item.title }}</a> </li>                                
-                                        
+                                        {% if item.draft %}
+                                            <li class="groupheader draft"> {{ item.title }} </li>
+                                        {% else %}
+                                            <li class="groupheader"> 
+                                                <a href="{{ site.baseurl }}{{ item.url }}">{{ item.title }}</a> 
+                                            </li>                                
+                                        {% endif %}
                                         {% assign subpages = group.items | where:"subpageOf", item.title %}                                
                                         {% for subpage in subpages %}
-                                            {% if item.type == "Draft" %}
-                                                <li class="subpage draft"> 
-                                                    {{ subpage.title }} 
-                                                </li>
+                                            {% if subpage.draft %}
+                                                <li class="subpage draft"> {{ subpage.title }} </li>
                                             {% else %}
                                                 <li class="subpage">                                        
                                                     <a href="{{ site.baseurl }}{{ subpage.url }}">{{ subpage.title }}</a>
@@ -41,10 +40,12 @@ title: IntelliJ Platform UI Guidelines
                                     {% elsif item.type == "Subpage" %}
             
                                     {% else %}
-                                        {% if item.type == "Draft" %}
+                                        {% if item.draft %}
                                             <li class="draft"> {{ item.title }} </li>
                                         {% else %}
-                                            <li> <a href="{{ site.baseurl }}{{ item.url }}">{{ item.title }}</a> </li>
+                                            <li> 
+                                                <a href="{{ site.baseurl }}{{ item.url }}">{{ item.title }}</a> 
+                                            </li>
                                         {% endif %}
                                         
                                     {% endif %}        
@@ -67,3 +68,15 @@ title: IntelliJ Platform UI Guidelines
 </ul>
 
 <p class="noanchor">If you are working on the UI, please follow the guide. We hope that the guide will help to avoid minor mistakes and will let programmers and designers be on the same wavelength.</p>
+
+
+
+{% assign grouped = site.docs | group_by: 'category' %}
+    {% for group in grouped %}     
+        {% assign items = group.items | sort %}
+            {% for item in items %}
+                 {% if item.draft %}
+                    {{ item.title }}
+                 {% endif %}
+             {% endfor %}
+             {% endfor %}

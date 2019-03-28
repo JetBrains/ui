@@ -1,7 +1,7 @@
 ---
 title: Group header
 category: Components
-type: Draft
+draft: true
 ---
 
 The article is under construction. 

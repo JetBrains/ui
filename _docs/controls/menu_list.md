@@ -1,7 +1,7 @@
 ---
 title: Menu list
 category: Controls
-type: Draft
+draft: true
 ---
 
 The article is under construction. 

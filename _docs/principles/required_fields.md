@@ -1,7 +1,7 @@
 ---
 title: Required fields
 category: Principles
-type: Draft
+draft: true
 ---
 
 The article is under construction. 
