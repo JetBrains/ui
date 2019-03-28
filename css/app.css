@@ -13,13 +13,13 @@ a {
 #search-input {
     -webkit-appearance: none;
     display: block;
-    width: 86%;
+    width: 80%;
     box-sizing: border-box;
     border-top-style: initial;
     border-right-style: initial;
     border-top-color: initial;
     font-size: 0.9rem;
-    margin: 5px 0 25px 10px;
+    margin: 5px 0 20px 10px;
     padding: 0px 10px 6px 26px;
     border-width: 0px 0px 1px 5px;
     border-image: initial;
@@ -61,7 +61,7 @@ ol, ul {
 
 .nav .tree-selector {
     position: absolute;
-    top: 6px;
+    top: 0;
     left: 6px;
     opacity: 0;
 }
@@ -73,7 +73,7 @@ ol, ul {
 .nav .tree-selector  + ul {
     height: 30px;
     margin: -40px 0 12px 0;
-    background: url("../images/arrow-right.svg") no-repeat 13px 20px;
+    background: url("../images/arrow-right.svg") no-repeat 13px 14px;
     background-size: 6px 10px;
 }
 
@@ -91,7 +91,7 @@ ol, ul {
     height:auto;
     margin: -25px 0 0 0;
     padding: 25px 0 0 0;
-    background: url("../images/arrow-down.svg") no-repeat 11px 7px;
+    background: url("../images/arrow-down.svg") no-repeat 11px 2px;
     background-size: 10px 6px;
 }
 
@@ -10435,9 +10435,9 @@ table .note ol, table .note ul, table .tip ol, table .tip ul, table .todo ol, ta
 }
 
 .toc-tree__title {
-    padding-top: 6px;
+    padding-top: 0px;
     padding-right: 5px;
-    padding-bottom: 6px;
+    padding-bottom: 12px;
     outline: 0;
     cursor: default;
     color: #343434;
@@ -10850,9 +10850,20 @@ table .note ol, table .note ul, table .tip ol, table .tip ul, table .todo ol, ta
     -webkit-flex: 1;
     -ms-flex: 1;
     flex: 1;
-    padding: 0 0 60px;
+    padding: 0 0 80px;
     will-change: transform;
     -webkit-overflow-scrolling: touch
+}
+
+.nav__toc::before {
+    display: block;
+    content: '';
+    width: 100%;
+    height: 10px;
+    position: sticky;
+    top: 0;
+    z-index: 50;
+    background: linear-gradient(180deg, #fff, rgba(255,255,255,0));
 }
 
 .nav__toc::after {
