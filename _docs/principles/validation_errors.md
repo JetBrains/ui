@@ -74,7 +74,7 @@ If it’s not possible to limit input, try to show an error as soon as possible 
     <td> Tooltip </td>
 </tr>
 <tr class="table-line">
-    <td><p><span style="color: #999999">5.</span></p></td>
+    <td><p><span style="color: #999999">5</span></p></td>
     <td> Remote connection  </td>
     <td> On sending the form </td>
     <td> Tooltip or inline </td>
@@ -414,7 +414,7 @@ In a tooltip for a specific field. Follow the rules for [the error tooltip](#too
 On the form under the controls. Show the message with the yellow warning icon.
 ![]({{site.baseurl}}/images/validation/warning_inline.png)
 
- On the Problems page in complex multi-page dialogs. Show warnings and fix options:
+ On the "Problems" page in complex multi-page dialogs. Show warnings and fix options:
 
 ![]({{site.baseurl}}/images/validation/problems.png)
 *Problems page in the Project Structure dialog.*
@@ -424,12 +424,8 @@ Mark all navigation elements for areas that contain warnings with yellow icons.<
 
 Update the problems counter when a problem is detected. When all problems have been fixed, do not show the “Problems” tab.<br/>
 
-On a particular page, highlight the element that contains a warning in yellow. On selection or mouse hover, show a tooltip with a warning message:
+On a particular page, highlight the element that contains a warning in yellow or add warning icon next to it.
 </p>
-![]({{site.baseurl}}/images/validation/artifacts.png)
-
-
-
 
 
 ## UI elements with validation errors
@@ -450,7 +446,7 @@ Add a red light bulb on the right side of the input field if an action to fix th
 
 ![]({{site.baseurl}}/images/validation/table_error.png)
 
-When the field in a table loses focus, highlight the text in red and show an error tooltip on mouse hover or when the line gets focus:
+When the field in a table loses focus, show an error icon. An error tooltip appears on mouse hover or when the line gets focus:
 ![]({{site.baseurl}}/images/validation/table_hover.png)
 
 Use a warning icon for warnings:
