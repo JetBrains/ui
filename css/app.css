@@ -10850,7 +10850,7 @@ table .note ol, table .note ul, table .tip ol, table .tip ul, table .todo ol, ta
     -webkit-flex: 1;
     -ms-flex: 1;
     flex: 1;
-    padding: 0 0 10px;
+    padding: 0 0 60px;
     will-change: transform;
     -webkit-overflow-scrolling: touch
 }
