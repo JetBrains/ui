@@ -57,6 +57,7 @@ ol, ul {
 
 .nav .tree-label:hover{
     font-weight: bold;
+    color: #161616;
 }
 
 .nav .tree-selector {
@@ -190,7 +191,7 @@ h1 {
     margin-top: 50px;
     margin-bottom: 30px;
     letter-spacing: -1px;
-    color: #161616;
+    color: #212121;
     font-size: 52px;
     line-height: 72px;
 }
@@ -212,7 +213,7 @@ h2 {
     margin-top: 100px;
     margin-bottom: 20px;
     letter-spacing: -.5px;
-    color: #161616;
+    color: #212121;
     font-size: 36px;
     line-height: 1.25;
 }
@@ -233,7 +234,7 @@ h2._color-light {
 h3 {
     margin-top: 50px;
     margin-bottom: 15px;
-    color: #161616;
+    color: #212121;
     font-size: 22px;
     line-height: 30px
 }
@@ -255,7 +256,7 @@ h4 {
     margin-top: 20px;
     margin-bottom: 10px;
     letter-spacing: .2px;
-    color: #161616;
+    color: #212121;
     font-size: 16px;
     line-height: 22px
 }
@@ -10432,6 +10433,7 @@ table .note ol, table .note ul, table .tip ol, table .tip ul, table .todo ol, ta
 
 .toc-tree__title-wrapper:hover .toc-tree__title--link:not(.toc-tree__title--selected), .toc-tree__title-wrapper:hover .toc-tree__title--link:visited:not(.toc-tree__title--selected) {
     font-weight: bold;
+    color: #161616;
 }
 
 .toc-tree__title {
@@ -10459,11 +10461,10 @@ table .note ol, table .note ul, table .tip ol, table .tip ul, table .todo ol, ta
 
 .toc-tree__title--selected, .toc-tree__title--selected:visited {
     cursor: default;
-    color: #343434;
+    color: #161616;
 }
 
 .toc-tree__title--selected:not(.toc-tree__title--child-anchor-selected), .toc-tree__title--selected:visited:not(.toc-tree__title--child-anchor-selected) {
-    letter-spacing: -.5px;
     font-weight: 700
 }
 
@@ -12713,6 +12714,25 @@ table .note ol, table .note ul, table .tip ol, table .tip ul, table .todo ol, ta
 .add-emphasis {
     color: #542828;
     font-style: italic
+}
+
+.article .mainpage-preheader {
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 36px;
+    color: #212121;
+    margin-top: 40px;
+    margin-bottom: 3px;
+}
+
+.article .mainpage-header {
+    font-size: 74px;
+    font-weight: 700;
+    letter-spacing: -1.2px;
+    color: #212121;
+    line-height: 105px;
+    margin-bottom: 28px;
+    margin-left: -5px;
 }
 
 /*# sourceMappingURL=app.css.map*/

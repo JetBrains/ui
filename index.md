@@ -1,10 +1,11 @@
 ---
-title: IntelliJ Platform UI Guidelines
+
 ---
 
-<p class="noanchor">IntelliJ platform UI guidelines is a collection of recommendations for designers and developers to follow when creating user interfaces for IntelliJ Platform based IDEs and plugins.</p> 
-
-<div class="separator"></div>
+<p class="noanchor mainpage-preheader">IntelliJ Platform</p>
+<p class="noanchor mainpage-header">UI Guidelines</p>
+<p class="noanchor">When working on an IntelliJ Platform based IDE or a plugin, use these guidelines to create consistent and usable user interfaces.</p>
+<p class="noanchor" style="font-size: 15px; margin-bottom: 60px">This is a work in progress. If you encounter bugs or require help, please <a href="https://github.com/JetBrains/ui/issues">contact us</a>.</p>
 
 <div class="toc-mainpage__container">
     {% assign categories = "Controls, Components, Principles, Text, Resources" | split: ", " %}
@@ -57,26 +58,3 @@ title: IntelliJ Platform UI Guidelines
             {% endfor %}
         {% endfor %}
 </div>
-
-<div class="separator"></div>
-
-<p class="noanchor">The guide aims at:</p>
-<ul>
-<li>Making the UI of all IntelliJ Platform based products consistent. This means applying the same visual design, ensuring consistent behaviour of common elements of the interface – from the input fields to the layout.</li>
-<li>Helping programmers quickly find answers to the UI-related questions.</li>
-<li>Providing programmers and new members of the designers team with the basics of usability and GUI design principles adopted by IDEA designers.</li>
-</ul>
-
-<p class="noanchor">If you are working on the UI, please follow the guide. We hope that the guide will help to avoid minor mistakes and will let programmers and designers be on the same wavelength.</p>
-
-
-
-{% assign grouped = site.docs | group_by: 'category' %}
-    {% for group in grouped %}     
-        {% assign items = group.items | sort %}
-            {% for item in items %}
-                 {% if item.draft %}
-                    {{ item.title }}
-                 {% endif %}
-             {% endfor %}
-             {% endfor %}
