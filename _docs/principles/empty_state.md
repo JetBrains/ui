@@ -90,12 +90,10 @@ The master area is usually a list or a tree, and, if empty, its instructional te
 *The “Add Java application configuration” link is a shortcut to creating a new configuration instead of clicking the + button in the toolbar. See more on actions below.*
 
 
-## Layout and colors
+## Sizes and placement
 Minimum text width is 40 characters. If an area is too narrow to show the minimum text width, show text in area fields, and if no fields are left, under the area borders.
 
 Use non-breaking spaces in an action name and shortcut, so it is not split into two lines.
-
-The link should not be underlined.
 
 The text is center-aligned. If possible, the center for the help topic link should be calculated with an 11 px inset on the left. This helps visually align the help link with the lines above it.
 ![]({{site.baseurl}}/images/empty_state/database-tw-markup1.png) 
@@ -106,6 +104,11 @@ Fields and vertical spaces:
 The text should wrap when a UI area’s width changes:
 ![]({{site.baseurl}}/images/empty_state/database-tw-horizontal.png)
 ![]({{site.baseurl}}/images/empty_state/database-tw.png)
+
+
+## Style
+
+The link should not be underlined.
 
 In Darcula:
 ![]({{site.baseurl}}/images/empty_state/database-tw-darcula.png)
