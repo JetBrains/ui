@@ -276,7 +276,7 @@ h4._color-light {
 
 .link, a {
     cursor: pointer;
-    color: #1FA6FB;
+    color: #1796E6;
     transition: color .2s
 }
 
@@ -10656,7 +10656,7 @@ table .note ol, table .note ul, table .tip ol, table .tip ul, table .todo ol, ta
 }
 
 .toc-mainpage__container a:visited {
-    color: #1FA6FB;
+    color: #1796E6;
 }
 
 .toc-mainpage__container .draft{
