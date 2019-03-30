@@ -54,7 +54,7 @@ If invalid value is entered, highlight field with red and show error message and
 ![]({{site.baseurl}}/images/numeric_fields/error.png)
 
 
-Do not use spinner. Spinner is good if it's needed to change parameter to 1-3 points using mouse. As IntelliJ IDEA users usually use keyboard, spinner button just clutters the screen.   
+Do not use spinner. Spinner is good if it's needed to change parameter to 1-3 points using mouse. As users of IntelliJ IDEs usually use keyboard, spinner button just clutters the screen.   
 ![]({{site.baseurl}}/images/numeric_fields/spinner.png)
 
 

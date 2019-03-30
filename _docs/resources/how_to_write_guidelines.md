@@ -3,7 +3,7 @@ title: How to write guidelines
 category: Resources
 ---
 
-<p class="noanchor">This page describes the workflow and basic rules of writing articles for IntelliJ IDEA UI Guidelines.</p>
+<p class="noanchor">This page describes the workflow and basic rules of writing articles for IntelliJ Platform UI Guidelines.</p>
 
 ## Workflow
 
