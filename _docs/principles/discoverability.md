@@ -1,7 +1,6 @@
 ---
-title: Popup
-category: Components 
-type: GroupHeader
+title: Discoverability
+category: Principles 
 draft: true
 ---
 

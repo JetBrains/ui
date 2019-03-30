@@ -1,6 +1,6 @@
 ---
-title: Elements Alignment
-category: Principles
+title: Tool window
+category: Components
 draft: true
 ---
 

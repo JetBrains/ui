@@ -1,6 +1,6 @@
 ---
-title: Group header
-category: Components
+title: Tooltip
+category: Controls
 draft: true
 ---
 

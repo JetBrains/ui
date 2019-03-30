@@ -1,8 +1,6 @@
 ---
-title: Context help
+title: Mnemonics
 category: Principles
-type: Subpage
-subpageOf: Help
 draft: true
 ---
 

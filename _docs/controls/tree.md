@@ -1,8 +1,6 @@
 ---
-title: Search results
+title: Tree
 category: Controls
-type: Subpage
-subpageOf: Search
 draft: true
 ---
 

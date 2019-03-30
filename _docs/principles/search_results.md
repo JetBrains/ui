@@ -1,8 +1,8 @@
 ---
-title: Context help
+title: Search results
 category: Principles
 type: Subpage
-subpageOf: Help
+subpageOf: Search
 draft: true
 ---
 

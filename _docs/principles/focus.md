@@ -1,7 +1,6 @@
 ---
-title: Popup
-category: Components 
-type: GroupHeader
+title: Focus
+category: Principles 
 draft: true
 ---
 

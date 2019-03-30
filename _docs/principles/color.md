@@ -1,7 +1,6 @@
 ---
-title: Popup
-category: Components 
-type: GroupHeader
+title: Color
+category: Principles 
 draft: true
 ---
 

@@ -1,7 +1,6 @@
 ---
-title: Search
-category: Controls
-type: GroupHeader
+title: Typography
+category: Resources
 draft: true
 ---
 

@@ -1,7 +1,6 @@
 ---
-title: Popup
-category: Components 
-type: GroupHeader
+title: Main menu
+category: Components
 draft: true
 ---
 

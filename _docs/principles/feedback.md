@@ -1,8 +1,6 @@
 ---
-title: Context help
+title: UI feedback
 category: Principles
-type: Subpage
-subpageOf: Help
 draft: true
 ---
 

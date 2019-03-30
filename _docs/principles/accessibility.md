@@ -1,7 +1,6 @@
 ---
-title: Popup
-category: Components 
-type: GroupHeader
+title: Accessibility
+category: Principles 
 draft: true
 ---
 

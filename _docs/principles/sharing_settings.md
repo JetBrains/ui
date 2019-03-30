@@ -1,8 +1,6 @@
 ---
-title: Context help
+title: Sharing settings
 category: Principles
-type: Subpage
-subpageOf: Help
 draft: true
 ---
 

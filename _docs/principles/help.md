@@ -1,8 +1,7 @@
 ---
-title: Context help
+title: Help
 category: Principles
-type: Subpage
-subpageOf: Help
+type: GroupHeader 
 draft: true
 ---
 

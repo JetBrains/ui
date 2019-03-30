@@ -2,8 +2,6 @@
 title: Search field
 codename: To be implemented
 category: Controls
-type: Subpage
-subpageOf: Search 
 ---
 
 A search field is an input field that helps users locate objects, actions or text in an application.

@@ -32,7 +32,7 @@ A label is required for all empty text areas. If a text area is prefilled and it
 
 Do **not** put units on the right of the text area.
 
-Do **not** use a [group hader]({{site.baseurl}}/controls/group_header) instead of the text area label. The horizontal 
+Do **not** use a [group header]({{site.baseurl}}/controls/group_header) instead of the text area label. The horizontal 
 line is redundant here. Use [context help]({{site.baseurl}}/principles/context_help) to explain the field behavior.
 <p class="label incorrect">Incorrect</p>
 ![]({{site.baseurl}}/images/text_area/label_incorrect.png)

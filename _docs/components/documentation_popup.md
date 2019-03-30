@@ -1,8 +1,8 @@
 ---
-title: Context help
-category: Principles
+title: Documentation popup
+category: Components
 type: Subpage
-subpageOf: Help
+subpageOf: Popup
 draft: true
 ---
 

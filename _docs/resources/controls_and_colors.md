@@ -1,7 +1,6 @@
 ---
-title: Popup
-category: Components 
-type: GroupHeader
+title: UI controls and colors
+category: Resources
 draft: true
 ---
 

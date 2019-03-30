@@ -1,8 +1,6 @@
 ---
-title: Context help
+title: Persistent UI
 category: Principles
-type: Subpage
-subpageOf: Help
 draft: true
 ---
 
