@@ -1,8 +1,6 @@
 ---
 title: Context help
 category: Principles
-type: Subpage
-subpageOf: Help
 draft: true
 ---
 

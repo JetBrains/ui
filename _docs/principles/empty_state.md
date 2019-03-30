@@ -1,8 +1,6 @@
 ---
 title: Empty state
 category: Principles
-type: Subpage
-subpageOf: Help
 ---
 
 Always provide instructions in an empty UI area on how to make it not empty. Instructions help users understand what the area is for and how to work with it.

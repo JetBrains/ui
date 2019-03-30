@@ -1,8 +1,6 @@
 ---
 title: Default values
 category: Principles
-type: Subpage
-subpageOf: Help
 draft: true
 ---
 
