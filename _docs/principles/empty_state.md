@@ -22,8 +22,18 @@ Required part that explains the current state and what the area is for.
 The general pattern is “_No [entity] added._”
 * At the end of the text explaining the reason, add the action that needs to be performed to fill the area. This shows that the UI area can be filled by the user and not by an external system. If _added, created, configured_ or other such verbs act as synonyms in a particular case, use the verb _added_ for consistency.
 * End the reason text with a dot.
-![]({{site.baseurl}}/images/empty_state/libraries-before-after.png)
-*Avoid ”Nothing to show” as it is not informative.*
+
+<table>
+<col width="300px">
+    <tr>
+        <td> <p class="label incorrect" style="margin: 10px 0 -35px 20px;">Incorrect</p> </td>
+        <td> <p class="label correct" style="margin: 10px 0 -35px 20px;">Correct</p> </td>
+    </tr>
+    <tr>
+        <td> <img src="{{site.baseurl}}/images/empty_state/libraries-before.png"> <em> Avoid ”Nothing to show” as it is not informative.</em> </td>
+        <td> <img src="{{site.baseurl}}/images/empty_state/libraries-after.png"> </td>
+    </tr>
+</table>
 
 The reason can be elaborated:  
 ![]({{site.baseurl}}/images/empty_state/tasks-before-launch.png) 
@@ -31,8 +41,10 @@ The reason can be elaborated:
 
 
 The reason should be clear to users:  
+<p class="label incorrect">Incorrect</p>
 ![]({{site.baseurl}}/images/empty_state/sql-dialect-before.png) 
 *The word mapping introduces a new entity while there are already two in the table header — path and SQL dialect. In the instructions, it is better to use already existing entities to connect them to what users see on the screen.*
+<p class="label correct">Correct</p>
 ![]({{site.baseurl}}/images/empty_state/sql-dialect-after.png)
 *The word “individual” is used in contrast with the project SQL dialect above the table. The verb specified is used instead of added because, in the table, SQL dialects are not added but selected from a drop-down list in the SQL Dialect column.*
 
@@ -68,8 +80,10 @@ If an action that fills an empty area cannot be tied to a link, explain users wh
 ![]({{site.baseurl}}/images/empty_state/database-tw-segment.png) 
 
 **For tables, trees and lists**, provide instructions according to [these rules]({{site.baseurl}}/principles/context_help). Show instructional text as a help tooltip or as an inline text. Smaller UI areas rarely require an in-depth explanation compared to complex tool windows. A short help text should be enough and it does not require switching contexts.
+<p class="label incorrect">Incorrect</p>
 ![]({{site.baseurl}}/images/empty_state/todo-filters-incorrect.png) 
 *Do not use a help topic link in a table and UI areas other than tool windows.* 
+<p class="label correct">Correct</p>
 ![]({{site.baseurl}}/images/empty_state/todo-filters-correct.png) 
 *Place an inline help text under the table. See the Context help topic for where to show help for other UI elements and layouts.*
 
@@ -95,7 +109,13 @@ Minimum text width is 40 characters. If an area is too narrow to show the minimu
 
 Use non-breaking spaces in an action name and shortcut, so it is not split into two lines.
 
-The text is center-aligned. If possible, the center for the help topic link should be calculated with an 11 px inset on the left. This helps visually align the help link with the lines above it.
+Use non-breaking spaces for articles and prepositions in the instructional text.
+<p class="label incorrect">Incorrect</p>
+![]({{site.baseurl}}/images/empty_state/nbsp-incorrect.png)
+<p class="label correct">Correct</p>
+![]({{site.baseurl}}/images/empty_state/nbsp-correct.png)
+
+The text is center-aligned. If possible, the center for the help topic link should be calculated with an 16 px inset on the left. This helps visually align the help link with the lines above it.
 ![]({{site.baseurl}}/images/empty_state/database-tw-markup1.png) 
 
 Fields and vertical spaces:
