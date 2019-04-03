@@ -11,7 +11,7 @@ A combo box combines a [drop-down list]({{site.baseurl}}/controls/drop-down) and
 Use `com.intellij.openapi.ui.ComboBox`  instead of `javax.swing.JComboBox`. To make combo box editable call:
 
 <div class="code-block__wrapper">{% highlight java %}
-ComboBox setEditable(true)
+comboBox.setEditable(true)
 {% endhighlight %}</div>
 
 
@@ -97,8 +97,7 @@ Use [control buttons]({{site.baseurl}}/controls/button/#control-button) to add v
 
 ![]({{site.baseurl}}/images/combo_box/control_button.png)
 
-<div class="code-block__wrapper">{% highlight java %}
-ExtendableTextComponent.Extension browseExtension =
+<div class="code-block__wrapper">{% highlight java %}ExtendableTextComponent.Extension browseExtension =
   ExtendableTextComponent.Extension.create(AllIcons.General.OpenDisk, AllIcons.General.OpenDiskHover,
                                          "Open file", () -> System.out.println("Browse file clicked"));
 

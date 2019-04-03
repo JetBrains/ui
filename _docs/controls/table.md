@@ -123,7 +123,7 @@ Add a toolbar to provide actions which help manipulate data in the table (add, r
 
 ![]({{site.baseurl}}/images/table/too-long-line.png)
 
-See more on toolbars [here]({{site.baseurl}}/controls/toolbar/).  
+Use the `com.intellij.ui.ToolbarDecorator` class to implement such a toolbar. See more on toolbars [here]({{site.baseurl}}/controls/toolbar/).  
 
 ### Zebra striping and inner borders 
 

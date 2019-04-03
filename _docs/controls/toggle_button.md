@@ -41,15 +41,15 @@ Do not add the word "On" or "Off" to the item name, since the state description 
 
 
 ### Control
-Toggle button is implemented with the com.intellij.ui.components.OnOffButton class. But generally, you shouldn't use the class directly. The IDE automatically places the buttons in the search feed if you follow one of the patterns described below:
+Toggle button is implemented with the `com.intellij.ui.components.OnOffButton` class. But generally, you shouldn't use the class directly. The IDE automatically places the buttons in the search feed if you follow one of the patterns described below:
 
 
-1. If this is a system or editor or another kind of settings, just register corresponding BooleanOptionDescription for the option. The options can be bound (but not limited) to:
+1. If this is a system or editor or another kind of settings, just register corresponding `BooleanOptionDescription` for the option. The options can be bound (but not limited) to:
 
-   - A SearchHitProvider instance which is registered in PlatformExtensions.xml with the <search.topHitProvider implementation="fq.class.name"/> tag. For example, see the com.intellij.ide.ui.SystemOptionsTopHitProvider class that represents matching of "Reopen last project on startup" checkbox to BooleanOptionDescription.
+   - A `SearchHitProvider` instance which is registered in PlatformExtensions.xml with the <search.topHitProvider implementation="fq.class.name"/> tag. For example, see the `com.intellij.ide.ui.SystemOptionsTopHitProvider` class that represents matching of "Reopen last project on startup" checkbox to BooleanOptionDescription.
 
-   - com.intellij.ide.ui.EditorOptionDescription bound to com.intellij.openapi.editor.ex.EditorSettingsExternalizable which under the hood works with the editor.xml.
-2. Implement your own action that's inherited from com.intellij.openapi.actionSystem.ToggleAction and registered in the IDE's PlatfromAction.xml or plugin.xml.
+   - `com.intellij.ide.ui.EditorOptionDescription` bound to `com.intellij.openapi.editor.ex.EditorSettingsExternalizable` which under the hood works with the editor.xml.
+2. Implement your own action that's inherited from `com.intellij.openapi.actionSystem.ToggleAction` and registered in the IDE's PlatformActions.xml or plugin.xml.
 
 
 

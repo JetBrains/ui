@@ -40,6 +40,13 @@ Remove the loader as soon as the process completes.
 </tr>
 
 <tr>
+    <td colspan="2">
+    <div class="code-block__wrapper">{% highlight java %}ExpandableTextField textField = new ExpandableTextField();
+textField.addExtension(Extension.create(new AnimatedIcon.Default(),null, null));{% endhighlight %}</div>
+    </td> 
+</tr>
+
+<tr>
     <td> <p style="margin-top: 16px"> <span style="color: #999999"> In a corner </span> </p>  </td>
     <td> <img src="{{site.baseurl}}/images/loader/placement_corner.png" style="margin-left: 17px; margin-top: 0px">
     </td>

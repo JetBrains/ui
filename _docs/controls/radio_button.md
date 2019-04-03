@@ -48,6 +48,13 @@ A label accompanies each checkbox and is placed next to it.
 If a label is long, split it into two lines. Avoid labels that take more than two lines. See recommendations on writing concise labels below.
 ![]({{site.baseurl}}/images/radiobutton/twoline_label.png)
 
+To implement this, use HTML formatting:
+
+<p class="noanchor" style="margin-top: -20px;"></p>
+<div class="code-block__wrapper">{% highlight java %}
+JRadioButton radioButton = new JRadioButton(
+    "<html>Show options before adding<br>to version control</html>");
+{% endhighlight %}</div>
 
 ### Writing guidelines
 

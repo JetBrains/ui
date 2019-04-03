@@ -28,7 +28,9 @@ If a label is long, split it into two lines. Use HTML formatting for that.
 ![]({{site.baseurl}}/images/checkbox/label_twoline.png)
 <p class="noanchor" style="margin-top: -20px;"></p>
 <div class="code-block__wrapper">{% highlight java %}
-JCheckBox checkBox = new JCheckBox(“<html>Insert selected suggestion by  pressing space, dot,<br/>or other context-dependent keys</html>”);
+JCheckBox checkBox = new JCheckBox(
+    "<html>Insert selected suggestion by  pressing space, dot,<br/>" +
+    "or other context-dependent keys</html>");
 {% endhighlight %}</div>
 
 Avoid labels that take more than two lines. See recommendations on writing concise labels below.
@@ -67,7 +69,7 @@ In a group of options, use the parent checkbox to show the status of its childre
 *The parent checkbox in checked, indeterminate and unchecked states*
 
 <p class="noanchor" style="margin-top: -20px; margin-bottom: 30px;">
-<b>Implementation</b>: The three-state checkbox is represented by the <code>ThreeStateCheckBox</code> class which reports the <code>ThreeStateCheckBox.State</code> enum containing <code>SELECTED, NOT_SELECTED, DONT_CARE</code> states.
+<b>Implementation</b>: The three-state checkbox is represented by the <code>ThreeStateCheckBox</code> class which represents its state with the <code>ThreeStateCheckBox.State</code> enum containing <code>SELECTED, NOT_SELECTED, DONT_CARE</code> states.
 </p>
 
 When the user clicks an indeterminate checkbox for the first time, the whole group becomes checked. The second click unchecks the whole group.

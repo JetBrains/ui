@@ -1,5 +1,6 @@
 ---
 title: Link
+codename: LinkLabel
 category: Controls
 ---
 ![]({{site.baseurl}}/images/link/adjust-colors.png)
@@ -77,6 +78,11 @@ If a link appears in all items of a tree or table:
 ### External link icon
 External links are accompanied by an arrow icon. It shows that the user will switch to a browser and lose the current context.
 ![]({{site.baseurl}}/images/link/BOM.png)
+
+<div class="code-block__wrapper">{% highlight java %}LinkLabel<Object> linkLabel = new LinkLabel<>(text, AllIcons.Ide.External_link_arrow, (_0, _1) -> BrowserUtil.browse(link));    
+linkLabel.setIconTextGap(0);
+linkLabel.setHorizontalTextPosition(SwingConstants.LEFT);{% endhighlight %}</div>
+
 An exception is a help topic link in [empty states]({{site.baseurl}}/principles/empty_state/). The help icon already hints that this is an external help resource so the arrow icon is unnecessary:
 ![]({{site.baseurl}}/images/link/database-tw-segment.png)
 
@@ -90,6 +96,8 @@ _Button-links_ produce an immediate action or open a new window. They appear as 
 _Drop-down links_ show a [context menu]({{site.baseurl}}/components/context_menu/) or a [popup]({{site.baseurl}}/components/popup/) menu. They only appear as a stand-alone element:
 ![]({{site.baseurl}}/images/link/commit-configure.png)
 ![]({{site.baseurl}}/images/link/live-templates.png)
+
+Use `com.intellij.ui.components.labels.DropDownLink` to implement a drop-down link.
 
 Do **not** use an action link when an action is primary or when a UI is not constrained. Use a [button]({{site.baseurl}}/controls/button/) or a [drop-down list]({{site.baseurl}}/controls/drop_down/) instead. These controls can be selected from the keyboard, are bigger and easier to click and more common for a desktop UI.
 <p class="label incorrect">Incorrect</p> ![]({{site.baseurl}}/images/link/adroid-sdk-incorrect.png)        

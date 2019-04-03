@@ -183,6 +183,9 @@ The help button appears in the bottom-left corner of a dialog and shows help in 
 A control button is an icon placed inside  a control:
 ![]({{site.baseurl}}/images/button/input_browse.png)
 
+To place a button inside a text field, use the `com.intellij.ui.components.fields.ExtendableTextField` class and
+its `addExtension` method.
+
 Do **not** place the control button on the right of a control:
 ![]({{site.baseurl}}/images/button/control_button.png)
 
@@ -190,7 +193,9 @@ The shortcut for a control button is <kbd>Shift+Enter</kbd>.
  
 ### Browse
 A browse button opens a dialog with the disk, a tree view or a table of values. 
-Use an input field with the browse icon for a file/folder path selected from the disk:
+Use an input field with the browse icon for a file/folder path selected from the disk.
+To implement this, use `com.intellij.openapi.ui.TextFieldWithBrowseButton`.
+
 ![]({{site.baseurl}}/images/button/input_browse.png)
 
 Use an input field with the table icon for classes, methods or environment variables:
