@@ -8975,14 +8975,13 @@ input, textarea {
     }
 }
 
-.code {
-    padding: 2px 0;
-    white-space: normal;
-    font-family: "Roboto Mono", Menlo, Monaco, Consolas, "Courier New", monospace;
-    font-size: 87%;
-    font-weight: 600;
-    font-style: normal;
-    line-height: 1.79em
+code:not([data-lang]) {
+    font-family: monospace;
+    font-size: 95%;
+    color: #3d3e43;
+    background: #f2f2f2;
+    border-radius: 3px;
+    padding: 2px 5px;
 }
 
 .code-block__copy-button, .code-block__wrapper {
