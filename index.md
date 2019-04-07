@@ -2,9 +2,8 @@
 
 ---
 
-<p class="noanchor mainpage-preheader">IntelliJ Platform</p>
-<p class="noanchor mainpage-header">UI Guidelines</p>
-<p class="noanchor">When working on an IntelliJ Platform based IDE or a plugin, use these guidelines to create consistent and usable user interfaces.</p>
+<p class="noanchor mainpage-header">IntelliJ Platform UI&nbsp;Guidelines</p>
+<p class="noanchor">When working on an IntelliJ Platform based IDE or a plugin, use these guidelines to&nbsp;create consistent and usable user interfaces.</p>
 <p class="noanchor" style="font-size: 15px; margin-bottom: 60px">This is a work in progress. If you encounter bugs or require help, please <a href="https://github.com/JetBrains/ui/issues">contact us</a>.</p>
 
 <div class="toc-mainpage__container">

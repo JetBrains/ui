@@ -12726,12 +12726,12 @@ table .note ol, table .note ul, table .tip ol, table .tip ul, table .todo ol, ta
 }
 
 .article .mainpage-header {
-    font-size: 74px;
+    font-size: 54px;
     font-weight: 700;
     letter-spacing: -1.2px;
     color: #212121;
-    line-height: 105px;
-    margin-bottom: 28px;
+    line-height: 68px;
+    margin-bottom: 40px;
     margin-left: -5px;
 }
 
