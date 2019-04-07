@@ -67,20 +67,14 @@ Make labels short and intelligible — see [Writing short and clear]({{site.base
 In a group of options, use the parent checkbox to show the status of its children.
 ![]({{site.baseurl}}/images/checkbox/indeterminate_checkbox.png)
 *The parent checkbox in checked, indeterminate and unchecked states*
-
-<p class="noanchor" style="margin-top: -20px; margin-bottom: 30px;">
-<b>Implementation</b>: The three-state checkbox is represented by the <code>ThreeStateCheckBox</code> class which represents its state with the <code>ThreeStateCheckBox.State</code> enum containing <code>SELECTED, NOT_SELECTED, DONT_CARE</code> states.
-</p>
+**Implementation**: The three-state checkbox is represented by the `ThreeStateCheckBox` class which represents its state with the `ThreeStateCheckBox.State` enum containing `SELECTED, NOT_SELECTED, DONT_CARE` states.
 
 When the user clicks an indeterminate checkbox for the first time, the whole group becomes checked. The second click unchecks the whole group.
 
 An indeterminate checkbox can also show the download status. An example with a remote repository:
 ![]({{site.baseurl}}/images/checkbox/indeterminate_status.png)
 *Repositories “tools-base” and “contrib” are being loaded. When loading is finished, the indeterminate checkbox will be replaced with the checked checkbox if there are commits, or an unchecked checkbox if there are no commits.*
-
-<p class="noanchor" style="margin-top: -20px; margin-bottom: 30px;">
-<b>Implementation</b>: In a table, the three-state checkbox is represented by <code>ThreeStateCheckBoxRenderer</code> that provides both <code>TableCellRenderer</code> and <code>TableEditor</code>. It accepts <code>Boolean</code> type in the column being supplied by the <code>TableModel</code> and becomes <code>DONT_CARE</code> when the value in the cell is null. Otherwise it becomes <code>SELECTED</code> for <code>Boolean.TRUE</code>, and <code>NOT_SELECTED</code> for <code>Boolean.FALSE</code>.
-</p>
+**Implementation**: In a table, the three-state checkbox is represented by `ThreeStateCheckBoxRenderer` that provides both `TableCellRenderer` and `TableEditor`. It accepts `Boolean` type in the column being supplied by the `TableModel` and becomes `DONT_CARE` when the value in the cell is null. Otherwise it becomes `SELECTED` for `Boolean.TRUE`, and `NOT_SELECTED` for `Boolean.FALSE`.
 
 
 ## Placement
