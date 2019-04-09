@@ -3,7 +3,7 @@
 
 title: IntelliJ Platform UI Guidelines
 #url: "https://long-pig.cloudvent.net"
-baseurl: /intellij
+baseurl: /ui
 google_analytics_key:
 show_full_navigation: true
 markdown: kramdown
