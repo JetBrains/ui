@@ -27,6 +27,14 @@ function setAnchors() {
         $(this).replaceWith(block)
     });
 
+    //Put asides into block.div to top align with paragraph
+    $('article > aside').each(function () {
+        if ($(this.previousElementSibling).hasClass('block')) {
+            $(this).addClass('_aligned');
+            $(this).appendTo($(this.previousElementSibling));
+        }
+    });
+
     $('article > h2, h3, h4, h5, h6').each(function () {
         $(this).addClass('headerAnchor');
         $(this).attr('name', $(this).attr('id'))

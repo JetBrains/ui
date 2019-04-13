@@ -10130,9 +10130,9 @@ table .note ol, table .note ul, table .tip ol, table .tip ul, table .todo ol, ta
 
 .sideblock {
     opacity: 0;
+    box-sizing: border-box;
     float: right;
     clear: right;
-    box-sizing: border-box;
     width: 200px;
     margin: 4px -270px 15px 0;
     transition: opacity .3s
@@ -10141,6 +10141,12 @@ table .note ol, table .note ul, table .tip ol, table .tip ul, table .todo ol, ta
 .sideblock._visible {
     display: block;
     opacity: 1
+}
+
+.sideblock._aligned {
+    position: absolute;
+    top: 0;
+    right: 0;
 }
 
 @media screen and (max-width: 1200px) {
