@@ -217,13 +217,6 @@ For a search field that is not fitted to a toolbar, set the minimum width to 200
 
 For a search which is fitted to the toolbar, expand the field to the toolbar width.  
 
-<table>
-  <tr>
-    <td><img src="{{site.baseurl}}/images/search_field/icon-mes-1.png" style="margin-top: 10px; margin-bottom: 5px;"></td>
-    <td><img src="{{site.baseurl}}/images/search_field/icon-mes-2.png" style="margin-top: 10px; margin-bottom: 5px;"></td>
-  </tr>
-</table>
-
 Center-align icons and the search string with the one-line search field vertically. Adjust the right and left paddings to the higher search fields: 
 ![]({{site.baseurl}}/images/search_field/search-icon-position-small.png)
 ![]({{site.baseurl}}/images/search_field/search-icon-position-big.png)
