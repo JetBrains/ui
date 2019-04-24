@@ -10,7 +10,7 @@ Use for:
 * Headers in tables, dialogs, message boxes, notifications and tooltips
 * Labels of UI elements groups 
 
-<aside class="note sideblock _visible">The current Windows guidelines use sentence capitalization for actions. Some Microsoft products still title-capitalize actions according to the previous guidelines. Mac OS X also title-capitalizes actions. Since IntelliJ IDEs are cross-platform, we use title capitalization as well.</aside>
+<aside class="note sideblock _visible">The current Windows guidelines use sentence capitalization for actions. Some Microsoft products still title-capitalize actions according to the previous guidelines. macOS also title-capitalizes actions. Since IntelliJ IDEs are cross-platform, we use title capitalization as well.</aside>
 
 
 ### Rules

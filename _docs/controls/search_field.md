@@ -106,7 +106,7 @@ The default shortcut for the New Line action:
 <table>
   <col width="150 px">      
   <tr>
-    <td style="padding-bottom: 10px;"><p style="color: #999999; margin-top: 0px; margin-left: 20px;">Mac OS X</p></td>
+    <td style="padding-bottom: 10px;"><p style="color: #999999; margin-top: 0px; margin-left: 20px;">macOS</p></td>
     <td><kbd>⇧⌘⏎</kbd></td>
   </tr>
   <tr>

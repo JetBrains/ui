@@ -253,7 +253,7 @@ For text labels, specify insets from the bounding box:
 
 Parameters for regular labels that make bounding boxes in Sketch the same size as in Java (already used in Sketch libraries symbols):
 <span style="line-height:2;">   
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; *Mac OS X*: SF UI Text Medium / 13 size / –0.1 character spacing / 16 line spacing  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; *macOS*: SF UI Text Medium / 13 size / –0.1 character spacing / 16 line spacing  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; *Windows*: Segoe UI Regular / 12 size / 16 line spacing    
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; *Linux*: Ubuntu Regular / 15 size / 18 line spacing  
 </span>
