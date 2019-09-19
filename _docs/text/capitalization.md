@@ -5,12 +5,18 @@ category: Text
 
 ## Title
 
-Use for:
-* Actions — buttons, menus, and links that invoke an action
-* Headers in tables, dialogs, message boxes, notifications and tooltips
-* Labels of UI elements groups 
-
 <aside class="note sideblock _visible">The current Windows guidelines use sentence capitalization for actions. Some Microsoft products still title-capitalize actions according to the previous guidelines. macOS also title-capitalizes actions. Since IntelliJ IDEs are cross-platform, we use title capitalization as well.</aside>
+
+Use for:
+* Actions in buttons, menus, and tooltips
+* Headers in tables, dialogs, and message boxes
+* Headers of UI control groups  
+
+Do **not** use for:
+* Actions in links 
+* Actions in the popup on Alt+Enter: quick-fixes, intention actions and others
+* Headers in notifications
+
 
 
 ### Rules
@@ -28,9 +34,9 @@ Do not capitalize articles, prepositions and conjunctions: *Side-by-Side, Drag-a
 
 ### Examples
 <p class="noanchor">
-<i>Compare With…</i> — the short preposition with is capitalized because it is the last word. <br/>
+<i>Compare With…</i> — the short preposition <i>with</i> is capitalized as the last word. <br/><br/>
 
-<i>Compare with Latest Repository Version</i> — with is not capitalized when in the middle. <br/>
+<i>Compare with Latest Repository Version</i> — <i>with</i> is not capitalized when in the middle. <br/><br/>
 
 <i>Check Out from Version Control</i> — <i>out</i> is a part of the phrasal verb <i>check out</i> and is capitalized.
 </p>
@@ -39,18 +45,22 @@ Do not capitalize articles, prepositions and conjunctions: *Side-by-Side, Drag-a
 ## Sentence
 
 Use for:
-* Labels for UI controls: text boxes, checkboxes, radio buttons, comboboxes, etc.
-* Items in comboboxes, lists, trees and tables
-* Body text in error messages, tooltips, notifications, status descriptions and any kind of instructions (but title-capitalize their headers)
+* Labels of UI controls: text boxes, checkboxes, radio buttons, combo boxes, etc.
+* Items in combo boxes, lists, trees and tables
+* Links
+* Actions in the popup on Alt+Enter
+* Header and body text in notifications
+* Body text in error messages, tooltips, status descriptions and any kind of instructions
+
 
 ### Rules
 Capitalize the first word in a sentence, proper nouns and adjectives, and abbreviations.
 
 ### Examples
 <p class="noanchor">
-<i>Control+Shift+F</i> — keyboard button names are considered proper nouns. <br/>
+<i>Control+Shift+F</i> — keyboard button names are considered proper nouns. <br/><br/>
 
-<i>Accept the terms of the License Agreement</i> — License Agreement is a proper noun. <br/>
+<i>Accept the terms of the License Agreement</i> — License Agreement is a proper noun. <br/><br/>
 
 <i>Side-by-side layout</i> — only the first word of a hyphenated phase is capitalized.
 </p>
