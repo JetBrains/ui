@@ -27,24 +27,9 @@ Secondary actions in packed or small UI areas. Action links can be of two types&
 
 ### Writing guidelines
 
-Capitalization and ellipsis:
-<table>
-  <col width="215 px">
-  <col width="195 px">
-  <th class="table-line"> Link type </th>
-  <th class="table-line"> Style </th>
-  <th class="table-line"> Example </th>
-  <tr class="table-line">
-    <td> Navigation link <br>Drop-down link <br> Button-link inside text </td>        
-    <td> Sentence capitalization <br>No ellipsis</td>
-    <td> <img src="{{site.baseurl}}/images/link/button-link-sentence.png" style="margin-top: 4px; margin-left: 0px"> </td>
-  </tr>
-  <tr>
-    <td> Stand-alone button-link<br/><span style="color: #999999; margin-top: 2px;">Works as a lightweight<br style="line-height:100%;"/>button and&nbsp;follows<br style="line-height:100%;"/>the same rules. </span> </td>
-    <td> Title capitalization <br>Ellipsis if input is required </td>
-    <td> <img src="{{site.baseurl}}/images/link/button-link-title.png" style="margin-top: 4px; margin-left: 0px"> </td>
-  </tr>    
-</table>  
+Use sentence capitalization.
+ 
+Add an ellipsis to a button-link if it opens another UI area where input is possible. See examples for the [Button]({{site.baseurl}}/controls/button/#button_ellipsis).
 
 Do not use words like “navigate” or “click here”. A link implies navigation or clicking:
 ![]({{site.baseurl}}/images/link/proxy-settings.png)

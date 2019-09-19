@@ -70,7 +70,7 @@ The label should be short, not more than 5 words. If it’s not obvious what ele
     </tr>
 </table>
 
-
+<a name="button_ellipsis"></a>
 Add an ellipsis if additional actions such as adding more info or confirming the action are required:
 ![]({{site.baseurl}}/images/button/buttons_with_ellipsis.png)
 Do **not** add ellipsis if another window is opened, but no more input from the user is required. For example, About, Details. 
