@@ -26,12 +26,8 @@ A drop-down button has an arrow icon in the bottom right corner and opens a menu
 
 
 ## When to use
-For actions users perform most often. Rely on usage statistics. 
 
-If an action is new and it seems to be useful, add it to the corresponding toolbar. Remove it after several releases if it’s not popular, used by less than ~5% of users compared to the most frequently clicked button on this toolbar.
-
-If an action is rather popular but there is no icon that conveys this action clearly, use the main menu or context menu instead. For the most popular actions, it makes sense to design a new icon.
-
+Follow the rules for [toolbar]({{site.baseurl}}/controls/toolbar/#what-items-to-add-on-toolbar).
 
 ## How to use
 
