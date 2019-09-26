@@ -31,9 +31,8 @@ Write instructions and examples on how to fill a form using [сontext help]({{si
 
 If it’s not possible to limit input, try to show an error as soon as possible so that the user can quickly return and fix it.
 
+
 ## Validation types and usage
-
-
 
 <table>
 <col width="3%">
