@@ -76,7 +76,7 @@ If it’s not possible to limit input, try to show an error as soon as possible 
     <td> On sending the form </td>
     <td> Tooltip or inline </td>
 </tr>
-<tr class="table-line">
+<tr>
     <td><p><span style="color: #999999">6</span></p></td>
     <td> Complex values in multi-page dialogs </td>
     <td> On reopening the form or when the values are used </td>
