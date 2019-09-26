@@ -200,11 +200,11 @@ Select the most convenient units.
 
 <table>
 <col width="60%">
-  <tr class="table-line">
+  <tr>
       <td> <p class="label incorrect">Incorrect</p> </td>
       <td> <p class="label correct">Correct</p> </td>
   </tr>
-  <tr class="table-line">
+  <tr>
       <td> <img src="{{site.baseurl}}/images/data_formats/connection_incorrect.png" style="margin-top: 0px; 
       margin-bottom: 5px;"> </td>
       <td> <img src="{{site.baseurl}}/images/data_formats/connection_correct.png" style="margin-top: 0px; margin-bottom:
@@ -216,11 +216,11 @@ Place units after the input field.
 
 <table>
 <col width="60%">
-  <tr class="table-line">
+  <tr>
       <td> <p class="label incorrect">Incorrect</p> </td>
       <td> <p class="label correct">Correct</p> </td>
   </tr>
-  <tr class="table-line">
+  <tr>
       <td> <img src="{{site.baseurl}}/images/data_formats/caret_incorrect.png" style="margin-top: 0px; 
       margin-bottom: 5px;"> </td>
       <td> <img src="{{site.baseurl}}/images/data_formats/caret_correct.png" style="margin-top: 0px; margin-bottom:
@@ -241,11 +241,11 @@ Include the unit in the column header if all values share the same unit. Convert
 
 <table>
 <col width="60%">
-  <tr class="table-line">
+  <tr>
       <td> <p class="label incorrect">Incorrect</p> </td>
       <td> <p class="label correct">Correct</p> </td>
   </tr>
-  <tr class="table-line">
+  <tr>
       <td> <img src="{{site.baseurl}}/images/data_formats/table_units_incorrect.png" style="margin-top: 0px; 
       margin-bottom: 5px;"> </td>
       <td> <img src="{{site.baseurl}}/images/data_formats/table_units_correct.png" style="margin-top: 0px; margin-bottom:
@@ -258,11 +258,11 @@ Be consistent with the precision of the significand.
 
 <table>
 <col width="60%">
-  <tr class="table-line">
+  <tr>
       <td> <p class="label incorrect">Incorrect</p> </td>
       <td> <p class="label correct">Correct</p> </td>
   </tr>
-  <tr class="table-line">
+  <tr>
       <td> <img src="{{site.baseurl}}/images/data_formats/precision_incorrect.png" style="margin-top: 0px; 
       margin-bottom: 5px;"> </td>
       <td> <img src="{{site.baseurl}}/images/data_formats/precision_correct.png" style="margin-top: 0px; margin-bottom:
