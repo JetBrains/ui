@@ -7,11 +7,9 @@ order: 4
 Validation is the process of checking the values ​​specified by the user, and displaying the errors that are found.
 
 An error can appear in a **tooltip**:
-
-  ![]({{site.baseurl}}/images/validation/example_tooltip.png)
+![]({{site.baseurl}}/images/validation/example_tooltip.png)
 
 Or **inline**, above the confirmation buttons:
-
 ![]({{site.baseurl}}/images/validation/example_inline.png)
 
 ## Principles
@@ -29,7 +27,7 @@ If it’s not obvious that only numbers can be entered, allow to enter any sign 
 
 Provide a default value if possible. Even if the user decides to change the default value, it gives a clue on the expected input format.
 
-Write instructions and examples on how to fill a form using [сontext Help]({{site.baseurl}}/principles/context_help/).
+Write instructions and examples on how to fill a form using [сontext help]({{site.baseurl}}/principles/context_help/).
 
 If it’s not possible to limit input, try to show an error as soon as possible so that the user can quickly return and fix it.
 
@@ -179,12 +177,12 @@ Add `andStartOnFocusLost()` call on `ComponentValidator` before installing it on
 ### 3. Empty required fields in dialogs
 
 #### Simple form
-If a form is simple, disable the confirmation button until all required fields have been filled:
+If a form is simple, move the focus to the first required field and disable the confirmation button until all required fields have been filled. It is clear from the form behavior that input is required, showing validation messages is redundant.
 ![]({{site.baseurl}}/images/validation/simple_dialog.png)
 
 #### Complex form
 
-If a form is complex, always enable the “Add” button. Otherwise, it can be hard to understand what should be done to complete the form. 
+If a form is complex, always enable the confirmation button. Otherwise, it can be hard to understand what should be done to complete the form. 
 
 Complex forms are:
 
@@ -197,7 +195,7 @@ Complex forms are:
 
 Validation is performed when the user clicks the confirmation button (for example, the “Add” button).
 
-Highlight all empty required fields, move the focus to the first invalid field and show the tooltip.
+Highlight all invalid fields, move the focus to the first invalid field and show the tooltip.
 
 ![]({{site.baseurl}}/images/validation/complex_dialog.png)
 
