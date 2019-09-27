@@ -89,7 +89,7 @@ Allow single-click activation using mouse: click on a drop-down, the drop-down o
 
 #### Menu items
 
-Follow the rules for the [drop-down list]({{site.baseurl}}/controls/drop_down/).
+Follow the rules for the [drop-down list]({{site.baseurl}}/controls/drop_down/#menu-items).
 
 If it’s necessary to configure options in a toolbar drop-down list, add customization actions at the top or at the bottom of the list and separate them with a line. Use title case capitalization for actions.
 
