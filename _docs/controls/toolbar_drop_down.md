@@ -84,6 +84,9 @@ Filter items in the list on typing:
 
 Close the menu if the user selects an item, clicks outside the menu, presses the Esc key or switches to another app.
 
+Allow single-click activation using mouse: click on a drop-down, the drop-down opens, select an item by hovering, close the drop-down with the new item selected by releasing the mouse button.
+
+
 #### Menu items
 
 Follow the rules for the [drop-down list]({{site.baseurl}}/controls/drop_down/).

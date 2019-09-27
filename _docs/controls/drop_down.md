@@ -98,7 +98,6 @@ When the menu opens, the default option (displayed when the menu is closed) is s
 
 Move the selection in the menu on pressing Up and Down arrows when an item is hovered. On hover the cursor over the item just move selection, do not update the value.
 
-
 <!-- * Filter items in the list on typing:
     
     ![]({{site.baseurl}}/images/drop_down/filter.png)
@@ -107,6 +106,7 @@ Move the selection in the menu on pressing Up and Down arrows when an item is ho
 The menu remains opened until the user selects an item, clicks outside the menu, presses the <kbd>Esc</kbd> key or 
 switches to another app.
 
+Allow single-click activation using mouse: click on a drop-down, the drop-down opens, select an item by hovering, close the drop-down with the new item selected by releasing the mouse button.
 
 ### Menu items
 
