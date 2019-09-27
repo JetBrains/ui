@@ -31,6 +31,7 @@ Use a [split button]({{site.baseurl}}/controls/split_button) instead if:
    * There are several related actions (more than 2) but the space is limited and/or packed.
    * The action is not common and is dangerous, for example, can destroy user data and cannot be easily undone.
 
+Use a [built-in button]({{site.baseurl}}/controls/built_in_button) instead if it's related to an input field, combo box, search field. 
 
 
 ## How to use
@@ -179,71 +180,12 @@ The help button appears in the bottom-left corner of a dialog and shows help in 
 ![]({{site.baseurl}}/images/button/helpButton_mac.png)
 
 
-## Control button
-A control button is an icon placed inside  a control:
-![]({{site.baseurl}}/images/button/input_browse.png)
-
-To place a button inside a text field, use the `com.intellij.ui.components.fields.ExtendableTextField` class and
-its `addExtension` method.
-
-Do **not** place the control button on the right of a control:
-![]({{site.baseurl}}/images/button/control_button.png)
-
-The shortcut for a control button is <kbd>Shift+Enter</kbd>.
- 
-### Browse
-A browse button opens a dialog with the disk, a tree view or a table of values. 
-Use an input field with the browse icon for a file/folder path selected from the disk.
-To implement this, use `com.intellij.openapi.ui.TextFieldWithBrowseButton`.
-
-![]({{site.baseurl}}/images/button/input_browse.png)
-
-Use an input field with the table icon for classes, methods or environment variables:
-![]({{site.baseurl}}/images/button/input_table.png)
-
-Do **not** place the button on the right of the control: 
-![]({{site.baseurl}}/images/button/browse_buttons.png)  
-
-
-### Add value
-The Plus button works the same way as the Browse button, the only difference is that the selected value is added, instead of overwriting the existing one. Place the plus icon inside the control.
-![]({{site.baseurl}}/images/button/plus.png)
-
-
-### Expand field
-Use the [expandable input field]({{site.baseurl}}/controls/input_field/#input-field-types) instead of the Show Viewer
- button to open a popup with a multiline input field. 
-![]({{site.baseurl}}/images/button/input_expand.png)
-
-
-### Variables
-Use a combo box instead of the Variables button:
-![]({{site.baseurl}}/images/button/variables_combobox.png)
-This icon works as a combo box.
-
-
-### Copy, Info
-<p></p>
-<table>
-<col width="130px">
-    <tr>
-        <td> <img src="{{site.baseurl}}/images/button/copy_button.png" style="margin-top: -5px"></td>
-        <td> Do not use the Copy button, the content can be selected and copied using the Cmd/Ctrl+C shortcut or the context menu. </td>
-    </tr>
-    <tr>
-        <td> <img src="{{site.baseurl}}/images/button/info_button.png" style="margin-top: -5px"></td>
-        <td> Do not use the info button to open an external link. Use context help instead.</td>
-    </tr>
-</table>
-
-
 ## Sizes and placement
 The button width accommodates the length of the label plus standard indents 14px, but not less than the 72px.
 
 ![]({{site.baseurl}}/images/button/sizes.png)     
     
 The button height is fixed, so the label is always a single line.
-
 
 To lay out  the button that depends on other control, e.g. input field, follow the rules for [dependent controls]({{site
 .baseurl}}/principles/layout/#lay-out-dependent-controls). Otherwise, follow

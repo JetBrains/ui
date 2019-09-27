@@ -93,26 +93,9 @@ If the user needs to return to previous inputs, add such values to the end of th
 
 ![]({{site.baseurl}}/images/combo_box/maven.png)
 
-Use [control buttons]({{site.baseurl}}/controls/button/#control-button) to add values or expand the combo box, e.g. the browse button:
+Use [built-in buttons]({{site.baseurl}}/controls/built_in_button) to add values or expand the combo box, e.g. the browse button:
 
-![]({{site.baseurl}}/images/combo_box/control_button.png)
-
-<div class="code-block__wrapper">{% highlight java %}ExtendableTextComponent.Extension browseExtension =
-  ExtendableTextComponent.Extension.create(AllIcons.General.OpenDisk, AllIcons.General.OpenDiskHover,
-                                         "Open file", () -> System.out.println("Browse file clicked"));
-
-ComboBox<String> eComboBox = new ComboBox<>(STRING_VALUES);
-eComboBox.setEditable(true);
-eComboBox.setEditor(new BasicComboBoxEditor(){
-  @Override
-  protected JTextField createEditorComponent() {
-    ExtendableTextField ecbEditor = new ExtendableTextField();
-    ecbEditor.addExtension(browseExtension);
-    ecbEditor.setBorder(null);
-    return ecbEditor;
-  }
-});
-{% endhighlight %}</div>
+![]({{site.baseurl}}/images/combo_box/built_in_button.png)
 
 ## Validation
 
