@@ -113,15 +113,15 @@ If users are more likely to re-enter the entire value, select the whole text, wh
 
 ### Input field types
 
-If input text can be long and place is constrained, use an expandable input field `com.intellij.ui.components.fields.ExpandableTextField`.
+If input text can be long and place is constrained, use an expandable input field `com.intellij.ui.components.fields.ExpandableTextField`. For more details see [built-in buttons]({{site.baseurl}}/controls/built_in_button/#expand-field).
 ![]({{site.baseurl}}/images/input_field/expandable_1.png)
 
-If input data is secured, replace it with dots `JPasswordField`:
+If input data is secured, replace it with dots `JPasswordField`.
 ![]({{site.baseurl}}/images/input_field/password.png)
 
-If there are many predefined values (for example, code snippets, commit author), add completion to the input field `com.intellij.util.textCompletion.TextFieldWithCompletion`:
+If there are many predefined values (for example, code snippets, commit author), add completion to the input field `com.intellij.util.textCompletion.TextFieldWithCompletion`.
 ![]({{site.baseurl}}/images/input_field/completion.png)
-An input field with completion looks the same way as a regular input field. When an empty input field gets the focus, show a tooltip after a delay to indicate that code completion is supported:
+An input field with completion looks the same way as a regular input field. When an empty input field gets the focus, show a tooltip after a delay to indicate that code completion is supported.
 ![]({{site.baseurl}}/images/input_field/completion_tooltip.png)
 Show the completion popup when the user starts typing or presses <kbd>Ctrl+Space</kbd>.
 
