@@ -58,7 +58,7 @@ Labeled inputs are input fields, spinners, and combo boxes (both editable and no
 
 * Align the right borders for inputs with similar length. 
 
-   To make inputs with control buttons right-aligned, do not use control buttons. Use [inputs with built-in icons]({{site.baseurl}}/controls/button#control-button) instead:
+   To make inputs with control buttons right-aligned, do not use control buttons. Use [inputs with built-in icons]({{site.baseurl}}/controls/built_in_button) instead:
 
 ![]({{site.baseurl}}/images/layout/right-alignment-incorrect.png)
 
