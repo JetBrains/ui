@@ -104,13 +104,18 @@ Structure a single guideline as follows:
 * Start each guideline with a text description and provide an image *under* it if necessary. Do **not** use a reversed order (image than text).  
 * Place an additional text under the image only if it does not make sense placing it with the text above the image.
 
-Guideline anchors:
+Guideline numbered anchors:
 * Each paragraph `<p>` is assigned a numbered anchor. An anchor helps referencing a particular guideline. Structure the article so that each guideline is a single paragraph.
 * To start a new paragraph, add an empty line above.
 * To create a text block without an anchor, do not add an empty line above. Add two spaces in the end of the previous text block.
 * To add extra vertical space without creating a paragraph, use `<br/>`. 
-* If some element gets an unnecessary anchor, use the class `noanchor`. Example:  
-<div class="code-block__wrapper">{% highlight html %}<p class="noanchor">Use a link for:</p>{% endhighlight %}</div>
+* If some element gets an unnecessary anchor, use the class `noanchor`. Note that Markdown does not work inside the `<p>` tag, replace it with HTML. Example:  
+<div class="code-block__wrapper">{% highlight html %}
+<p class="noanchor">
+For when to use the empty state, see the 
+<a href="{{site.baseurl}}/principles/empty_state">Empty State</a>.
+</p>
+{% endhighlight %}</div>
 
 The article structure can vary depending on whether a control, component or principle is described. Generally, use the sections that are described below.
 

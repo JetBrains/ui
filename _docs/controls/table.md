@@ -137,7 +137,7 @@ Do **not** use stripes In a simple data set as guides to track content between c
 <p class='label incorrect'>Incorrect</p>
 ![]({{site.baseurl}}/images/table/table-zebra-incorrect.png)
 
-<p class="noanchor">Default line height, [proper column width]({{site.baseurl}}/controls/table/#sizes-and-placement) and highlighting rows on mouse hover should provide enough guidance to track content. For example, look at the same table without stripes, with bigger line height and adjusted column width:</p> 
+<p class="noanchor">Default line height, <a href="{{site.baseurl}}/controls/table/#sizes-and-placement">proper column width</a> and highlighting rows on mouse hover should provide enough guidance to track content. For example, look at the same table without stripes, with bigger line height and adjusted column width:</p> 
 
 <p class='label correct'>Correct</p>
 ![]({{site.baseurl}}/images/table/table.png)
