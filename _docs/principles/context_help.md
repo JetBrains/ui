@@ -10,7 +10,7 @@ There are three ways to show context help:
 * as [inline help text]({{site.baseurl}}/components/inline_help_text)
 * in an [empty state]({{site.baseurl}}/principles/empty_state)
 
-<p class="noanchor">This article covers the first two. For when to use the empty state, see the <a href="{{site.baseurl}}/principles/empty_state">Empty State</a>.</p> 
+<p class="noanchor">This article explains when to use the first two. For when to use the empty state, see the <a href="{{site.baseurl}}/principles/empty_state">Empty state</a>.</p> 
 
 
 ## Inline text or a tooltip
