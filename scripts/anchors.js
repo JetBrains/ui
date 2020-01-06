@@ -21,18 +21,22 @@ function setAnchors() {
         }
         index++;
         var text = index < 10 ? '0' + index : index;
-        var block = '<div class="block">' +
-            '<a class="paragraphAnchor" href="#' + text + '" name="' + text + '">' + text + '</a>' + $(this).prop('outerHTML')
-            + '</div>';
-        $(this).replaceWith(block)
-    });
 
-    //Put asides into block.div to top align with paragraph
-    $('article > aside').each(function () {
-        if ($(this.previousElementSibling).hasClass('block')) {
-            $(this).addClass('_aligned');
-            $(this).appendTo($(this.previousElementSibling));
+        if ($(this.nextElementSibling).hasClass('sideblock')) {  //puts aside inside the div with p and aligns to the top of div
+            $(this.nextElementSibling).addClass('_aligned');
+            block = '<div class="block">' +
+                    '<a class="paragraphAnchor" href="#' + text + '" name="' + text + '">' + text + '</a>'
+                    + $(this).prop('outerHTML')
+                    + $(this.nextElementSibling).prop('outerHTML')
+                    + '</div>';
+            $(this.nextElementSibling).remove();
+        } else {
+            block = '<div class="block">' +
+                    '<a class="paragraphAnchor" href="#' + text + '" name="' + text + '">' + text + '</a>'
+                    + $(this).prop('outerHTML')
+                    + '</div>';
         }
+        $(this).replaceWith(block)
     });
 
     $('article > h2, h3, h4, h5, h6').each(function () {
