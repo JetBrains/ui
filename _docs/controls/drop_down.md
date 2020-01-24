@@ -68,6 +68,7 @@ Follow the rules for the [input field]({{site.baseurl}}/controls/input_field/#la
 ### Default value
 
 Select the most likely or the safest value by default.
+
 ![]({{site.baseurl}}/images/drop_down/imports.png)
 *The safest value is “Ask”, the behavior will not be unexpected to the user.*
 
