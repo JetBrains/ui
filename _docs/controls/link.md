@@ -81,7 +81,6 @@ _Button-links_ produce an immediate action or open a new window. They appear as 
 _Drop-down links_ show a [context menu]({{site.baseurl}}/components/context_menu/) or a [popup]({{site.baseurl}}/components/popup/) menu. They only appear as a stand-alone element:
 ![]({{site.baseurl}}/images/link/commit-configure.png)
 ![]({{site.baseurl}}/images/link/live-templates.png)
-
 Use `com.intellij.ui.components.labels.DropDownLink` to implement a drop-down link.
 
 Do **not** use an action link when an action is primary or when a UI is not constrained. Use a [button]({{site.baseurl}}/controls/button/) or a [drop-down list]({{site.baseurl}}/controls/drop_down/) instead. These controls can be selected from the keyboard, are bigger and easier to click and more common for a desktop UI.
