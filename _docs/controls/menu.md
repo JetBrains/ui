@@ -1,8 +1,7 @@
 ---
-title: Menu list
+title: Menu
 category: Controls
-type: Subpage
-subpageOf: Menu
+type: GroupHeader
 draft: true
 ---
 

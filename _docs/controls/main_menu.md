@@ -1,6 +1,8 @@
 ---
 title: Main menu
-category: Components
+category: Controls
+type: Subpage
+subpageOf: Menu
 draft: true
 ---
 

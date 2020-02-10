@@ -1,6 +1,8 @@
 ---
 title: Context menu
-category: Components
+category: Controls
+type: Subpage
+subpageOf: Menu
 draft: true
 ---
 
