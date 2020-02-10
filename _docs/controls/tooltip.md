@@ -1,6 +1,8 @@
 ---
 title: Tooltip
 category: Controls
+type: Subpage
+subpageOf: Context help
 ---
 
 A tooltip shows an action name or provides useful information about an action or a setting.

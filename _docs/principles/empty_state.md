@@ -1,6 +1,8 @@
 ---
 title: Empty state
-category: Principles
+category: Controls
+type: Subpage
+subpageOf: Context help
 ---
 
 Provide instructions in an empty UI area on how to fill it with data. Instructions help users understand what the area is for and how to work with it.  

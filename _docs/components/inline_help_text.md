@@ -1,6 +1,9 @@
 ---
 title: Inline help text
-category: Components
+category: Controls
+type: Subpage
+subpageOf: Context help
+
 ---
 Inline help text provides useful information about a setting.
 

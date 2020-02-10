@@ -1,6 +1,7 @@
 ---
 title: Context help
-category: Principles
+category: Controls
+type: GroupHeader
 ---
 
 Use context help to briefly explain how a functionality works if it is not clear from the UI and the application behavior. Provide full description of the functionality in [product web help](https://www.jetbrains.com/help/idea/).
