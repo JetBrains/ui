@@ -8,8 +8,8 @@ category: Text
 <aside class="note sideblock _visible">The current Windows guidelines use sentence capitalization for actions. Some Microsoft products still title-capitalize actions according to the previous guidelines. macOS also title-capitalizes actions. Since IntelliJ IDEs are cross-platform, we use title capitalization as well.</aside>
 
 Use for:
-* Actions in buttons, menus, and tooltips
-* Headers in tables, dialogs, and message boxes
+* Actions in buttons, menus and tooltips
+* Headers in tables, popups, message boxes and dialogs
 * Headers of UI control groups  
 
 Do **not** use for:
