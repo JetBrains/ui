@@ -1,36 +1,37 @@
 ---
 title: Notifications
 category: Principles
+type: GroupHeader
 ---
 
 Notifications inform users about the status of user or system initiated operations. They can have different actions depending on the message.
 
 There are four types of notifications:
 
-- [Alerts]({{site.baseurl}}/components/alert)
-- [Banners]()
-- [Toasts]()
-- [Tool window balloons]()
+- [Alert]({{site.baseurl}}/principles/alert)
+- [Banner]({{site.baseurl}}/principles/banner)
+- [Toast]({{site.baseurl}}/principles/toast)
+- [Tool window balloon]({{site.baseurl}}/principles/tool_window_balloon)
 
 ## What notification to use
 
-There are two factors to consider when deciding which notification type to use.
+Consider two factors when deciding which notification type to use.
 
-#### 1. User action 
+**User action** 
 
-Are the users required to address the notification before they can proceed with current tasks?
+<p class="noanchor"> Are the users required to address the notification before they can proceed with current tasks?</p>
   - Required immediately
   - Required, but not immediately
   - Not required
 
-#### 2. Context of trigger
-
-What initiated the notification? Does the initiation point to a particular context or location?
+**Context of trigger**
+  
+<p class="noanchor"> What initiated the notification? Does the initiation point to a particular context or location?</p>
   - File tab
   - Tool windows
   - Other
 
-After determining these factors for your scenario, use the following table to determine which notification to use:
+Use the following table to determine which notification to use based on the two factors:
 
 <table>
   <col width="25%">
@@ -92,4 +93,4 @@ After determining these factors for your scenario, use the following table to de
   </tr>
 </table>
 
-**Note**: As an exception for Sticky Toasts, if your scenario is a highly recommended action, consider using Banners across all files for visibility
+**Exception**: If the action is highly recommended, consider using Banners across all files for visibility instead of Sticky toast.

@@ -1,6 +1,8 @@
 ---
 title: Alert
-category: Components
+type: Subpage
+subpageOf: Notifications
+category: Principles
 draft: true
 ---
 
