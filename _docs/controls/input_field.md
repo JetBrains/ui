@@ -18,8 +18,8 @@ If input has to be in a specific format, use one of the following controls:
 * If the previous user input must be preserved, use a [combo box]({{site.baseurl}}/controls/combo_box/).
 * Use a [text area]({{site.baseurl}}/controls/text_area/) for long (commit message) or multi-line (code snippet) input. If place is constrained, use an [expandable input field]({{site.baseurl}}/controls/input_field/#input-field-types).
 * Use a [slider]({{site.baseurl}}/controls/slider) if a precise value is not required, or if it’s possible to provide feedback on the effect of setting changes. If place is constrained, use an input field. 
-* Use a [search field]({{site.baseurl}}/controls/search/) to input a search query.
-* Use [calendar]({{site.baseurl}}/controls/calendar/) to set a date. 
+* Use a [search field]({{site.baseurl}}/controls/search_field/) to input a search query.
+* Use [calendar]({{site.baseurl}}г/controls/calendar/) to set a date. 
 * Use [color box]({{site.baseurl}}/controls/color_box/) to choose a color. 
 
 
