@@ -156,6 +156,8 @@ See the table below to understand in which cases to show date and time.
 
 ## Quantities of data
 
+Use decimal numeral system.
+
 <table>
 <col width="120px">
 <col width="60px">
