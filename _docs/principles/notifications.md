@@ -35,9 +35,9 @@ Use the following table to determine which notification to use based on the two 
 
 <table>
   <col width="23%">
+  <col width="15%">
   <col width="auto">
-  <col width="auto">
-  <col width="42%">
+  <col width="45%">
   <th class="table-line">User action</th>
   <th class="table-line">Context</th>
   <th class="table-line">Type</th>
@@ -54,7 +54,7 @@ Use the following table to determine which notification to use based on the two 
       Opening projects in new window<br/><br/>
       When trying to rename a method, but a conflict is found<br/><br/>
       Need a dependency before using a feature<br/>
-      <img src="{{site.baseurl}}/images/notifications/alert.png" style="margin-left: 0" />
+      <img src="{{site.baseurl}}/images/notifications/alert.png" style="margin-left: -5px" />
    </td>
   </tr>
   <tr class="table-line">
@@ -77,7 +77,7 @@ Use the following table to determine which notification to use based on the two 
     <td>
       Status of task completion<br/><br/>
       When Find Usages is invoked on a method, use a tool window balloon to show the feedback since the results will be found in the Find tool window<br/>
-      <img src="{{site.baseurl}}/images/notifications/toolwindow-balloon.png" style="margin-left: 0" />
+      <img src="{{site.baseurl}}/images/notifications/toolwindow_balloon.png" style="margin-left: 0" />
     </td>
   </tr>
   <tr class="table-line">
@@ -86,7 +86,7 @@ Use the following table to determine which notification to use based on the two 
     <td>Sticky toasts</td>
     <td>
       IDE and Plugin Updates
-      <img src="{{site.baseurl}}/images/notifications/sticky-toast.png" style="margin-left: 0" />
+      <img src="{{site.baseurl}}/images/notifications/sticky_toast.png" style="margin-left: 0" />
     </td>
   </tr>
   <tr class="table-line">
@@ -96,7 +96,7 @@ Use the following table to determine which notification to use based on the two 
     <td>
       Module imported<br/><br/>
       Framework detection
-      <img src="{{site.baseurl}}/images/notifications/timed-toast.png" style="margin-left: 0" />
+      <img src="{{site.baseurl}}/images/notifications/timed_toast.png" style="margin-left: 0" />
     </td>
   </tr>
 </table>
