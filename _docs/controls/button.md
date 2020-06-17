@@ -111,10 +111,10 @@ On hovering over a button, show a tooltip with the shortcut and the action name 
         <td> <img src="{{site.baseurl}}/images/button/default_save_win.png" style="margin-top: -5px"> <em style="margin-bottom: 5px;">Windows</em> </td>
     </tr>
 </table>
-The default button confirms the main purpose of a dialog and is triggered by pressing <kbd>Enter</kbd> or 
-<kbd>Ctrl+Enter</kbd>.  
+The default button confirms the main purpose of a dialog. It is triggered by pressing <kbd>Enter</kbd> or 
+<kbd>Ctrl+Enter</kbd> on Windows/Linux and <kbd>Enter</kbd> or <kbd>Cmd+Enter</kbd> on macOS.  
 **Exception**: If the focus is on an element that uses the <kbd>Enter</kbd> key (e.g. a text 
-area or a table row), the default button is triggered only by <kbd>Ctrl+Enter</kbd>.
+area), the default button is triggered only by <kbd>Ctrl+Enter</kbd> on Windows/Linux and <kbd>Cmd+Enter</kbd> on macOS.
 
 The default button should be always present in a dialog. Only one button in a dialog can be the default one. 
 
