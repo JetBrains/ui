@@ -7,7 +7,7 @@ type: GroupHeader
 A toolbar provides quick access to frequently used actions and filters. It appears in dialogs, pop-ups, tool windows, lists, trees, and tables.
 
 ![]({{site.baseurl}}/images/toolbar/example.png)
-la
+
 ## Toolbar items
 
 The following controls can appear on a toolbar:
