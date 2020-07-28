@@ -12453,7 +12453,7 @@ table .note ol, table .note ul, table .tip ol, table .tip ul, table .todo ol, ta
 }
 
 .app__nav {
-    position: absolute;
+    position: fixed;
     z-index: 1;
     top: 0;
     bottom: 0;
@@ -12463,6 +12463,66 @@ table .note ol, table .note ul, table .tip ol, table .tip ul, table .todo ol, ta
 
 .app__nav--visible {
     left: 0
+}
+
+.doc__nav_ctr {
+    position: sticky;
+    top: 72px;
+    float: right;
+    margin-right: -116px; /* 60px before 1200 vw */
+    z-index: 2;
+}
+
+.sub_nav_btn {
+    height: 48px;
+    width: 48px;
+    border: 1px solid #eee;
+    border-radius: 4px;
+    background: url("../images/toc.svg") center no-repeat;
+    background-color: white;
+    background-size: 36px;
+}
+
+.sub_nav_btn:hover {
+    background-color: #ececec;
+}
+
+.sub__nav {
+    position: absolute;
+    right: 0;
+    width: 200px;
+    border: 1px solid #eee;
+    border-radius: 4px;
+    padding: 12px;
+    background: #fcfcfc;
+    display: none;
+}
+
+.sub__nav.active {
+    display: block;
+}
+
+.sub_nav_item {
+    display: block;
+    font-size: 12px;
+    line-height: 16px;
+    text-decoration: none;
+    color: #1796E6;
+    padding-bottom: 6px;
+    user-select: none;
+}
+
+.sub_nav_item.active {
+    font-weight: bold;
+}
+
+a.sub_nav_item:active, a.sub_nav_item:visited {
+    text-decoration: none;
+    color: #1796E6; 
+}
+
+.sub_nav_item.h3 {
+    padding-left: 12px;
 }
 
 .app__main {
