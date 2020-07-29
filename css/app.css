@@ -10323,13 +10323,19 @@ table .note ol, table .note ul, table .tip ol, table .tip ul, table .todo ol, ta
     padding-right: 180px;
 }
 
+@media screen and (max-width: 1200px) {
+    .article--without-sideblocks {
+        padding-right: 18%;
+    }
+}
+
 @media screen and (max-width: 960px) {
     .article {
         padding-right: 170px
     }
 
     .article--without-sideblocks {
-        padding-right: 20px
+        padding-right: 6%;
     }
 }
 
@@ -12475,6 +12481,24 @@ table .note ol, table .note ul, table .tip ol, table .tip ul, table .todo ol, ta
     float: right;
     margin-right: -116px; /* 60px before 1200 vw */
     z-index: 2;
+}
+
+@media screen and (max-width: 960px) {
+    .doc__nav_ctr {
+        margin-right: -60px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .doc__nav_ctr {
+        margin-right: -50px;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .doc__nav_ctr {
+        display: none;
+    }
 }
 
 .sub_nav_btn {
