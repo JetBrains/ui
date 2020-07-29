@@ -98,7 +98,13 @@ function setAnchors() {
         var text  = $item.text()
         var hash = $item.attr('id')
         
-        var $docHeader = $('<a>', { class: $item.is('h3') ? 'sub_nav_item h3' : 'sub_nav_item', text, href: `#${hash}` }).appendTo($subNav)
+        var $docHeader = $('<a>',
+            {
+                class: $item.is('h3') ? 'sub_nav_item h3' : 'sub_nav_item',
+                text: text,
+                href: `#${hash}`
+            }).appendTo($subNav);
+        
         $docHeader.click(function (event) {
             var link = $(this).attr('href').substr(1);
             if (link === undefined) {
@@ -123,25 +129,21 @@ function setAnchors() {
             showSubNav = false;
             toggleActive($subNav, true);
 
-            // var SCROLL_THRESHOLD = 50;
+            // Filter items above offsetTop
+            var cur = scrollItems.filter(function(item) {
+                var itemOffset = $(item).offset().top;
+                if (itemOffset < 50) return true;
+            });
 
-            // // Filter items above scrollTop
-            // var cur = scrollItems.filter(function(item) {
-            //     var itemOffset = $(item).offset().top;
-            //     if (itemOffset < SCROLL_THRESHOLD) return true;
-            // });
+            // Get the id of the current element
+            var id = cur && cur.length ? cur[cur.length - 1].id : "";
 
-            // // Get the id of the current element
-            // var id = cur && cur.length ? cur[cur.length - 1].id : "";
-
-            // if (lastId !== id) {
-            //     // Set/remove active class
-            //     subNavItems.each(function() {
-            //         $(this).removeClass('active');
-            //         if ($(this).attr('href').substr(1) === id) $(this).addClass('active');
-            //     });
-            //     lastId = id;
-            // }
+            if (lastId !== id) {
+                subNavItems.each(function () {
+                    toggleActive($(this), $(this).attr('href').substr(1) !== id);
+                });
+                lastId = id;
+            }
         }
     }, true);
 
