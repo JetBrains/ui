@@ -84,13 +84,8 @@ function setAnchors() {
     // Don't built doc nav unnecessarily
     if ($articleHeaders.length === 0) return;
 
-    // Insert document outline button
-    var $docNavCtr = $('<div>', { class: 'doc__nav_ctr' }).prependTo('.article');
-    var $outlineBtn = $('<div>', { class: 'sub_nav_btn' }).appendTo($docNavCtr);
-
     // Scaffold sub-navigation menu
-    var $subNav = $('<nav>', { class: 'sub__nav' }).appendTo($docNavCtr);
-    var showSubNav = false;
+    var $subNav = $('<nav>', { class: 'sub__nav' }).insertAfter('.article h1');
     var scrollItems = [];
 
     // Only include h2 and h3
@@ -103,7 +98,7 @@ function setAnchors() {
         
         var $docHeader = $('<a>',
             {
-                class: $item.is('h3') ? 'sub_nav_item h3' : 'sub_nav_item',
+                class: $item.is('h3') ? 'sub__nav_item h3' : 'sub__nav_item',
                 text: text,
                 href: `#${hash}`
             }).appendTo($subNav);
@@ -151,9 +146,4 @@ function setAnchors() {
             }
         }
     }, true);
-
-    $outlineBtn.click(function () {
-        toggleActive($subNav, showSubNav);
-        showSubNav = !showSubNav;
-    });
 }

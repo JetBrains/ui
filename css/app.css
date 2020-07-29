@@ -5120,8 +5120,9 @@ input, textarea {
 }
 
 .hamburger {
-    position: relative;
+    position: fixed;
     overflow: hidden;
+    z-index: 1;
     width: 50px;
     height: 50px;
     text-indent: -9999px;
@@ -8963,15 +8964,15 @@ input, textarea {
 }
 
 .header__nav-toggle {
-    display: none;
+    display: block;
     margin-top: 10px;
     margin-bottom: -11px;
     margin-left: 25px;
 }
 
-@media screen and (max-width: 960px) {
+@media screen and (min-width: 1900px) {
     .header__nav-toggle {
-        display: block;
+        display: none;
     }
 }
 
@@ -12465,7 +12466,8 @@ table .note ol, table .note ul, table .tip ol, table .tip ul, table .todo ol, ta
     z-index: 1;
     top: 0;
     bottom: 0;
-    left: 10px;
+    left: -250px;
+    background-color: #F2F2F2;
     transition: left .2s, width .2s;
     display: flex;
     flex-direction: column;
@@ -12475,81 +12477,38 @@ table .note ol, table .note ul, table .tip ol, table .tip ul, table .todo ol, ta
     left: 0
 }
 
-.doc__nav_ctr {
-    position: sticky;
-    top: 76px;
-    float: right;
-    margin-right: -116px; /* 60px before 1200 vw */
-    z-index: 2;
-}
-
-@media screen and (max-width: 960px) {
-    .doc__nav_ctr {
-        margin-right: -60px;
-    }
-}
-
-@media screen and (max-width: 768px) {
-    .doc__nav_ctr {
-        margin-right: -50px;
-    }
-}
-
-@media screen and (max-width: 640px) {
-    .doc__nav_ctr {
-        display: none;
-    }
-}
-
-.sub_nav_btn {
-    height: 44px;
-    width: 44px;
-    border: 1px solid #d1d1d1;
-    border-radius: 4px;
-    background: url("../images/toc.svg") center no-repeat;
-    background-color: white;
-    background-size: 24px;
-}
-
-.sub_nav_btn:hover {
-    background-color: #ececec;
-}
-
 .sub__nav {
-    position: absolute;
-    right: 0;
-    width: 200px;
-    border-radius: 4px;
-    padding: 12px;
-    background: #fcfcfc;
-    display: none;
-    box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.26), 0px 0px 1.3px rgba(0, 0, 0, 0.3);
+    position: fixed;
+    top: 170px;
+    left: 32px;
+    max-width: 220px;
+    margin-left: 8px;
+    margin-bottom: 32px;
 }
 
 .sub__nav.active {
     display: block;
 }
 
-.sub_nav_item {
+a.sub__nav_item {
     display: block;
-    font-size: 12px;
+    font-size: 13px;
+    color: #343434;
     line-height: 16px;
     text-decoration: none;
-    color: #1796E6;
-    padding-bottom: 6px;
-    user-select: none;
+    padding-bottom: 16px;
 }
 
-.sub_nav_item.active {
-    font-weight: bold;
-}
-
-a.sub_nav_item:active, a.sub_nav_item:visited {
+a.sub__nav_item:active, a.sub__nav_item:visited {
     text-decoration: none;
-    color: #1796E6; 
+    color: #343434;
 }
 
-.sub_nav_item.h3 {
+a.sub__nav_item:hover {
+    color: #1796E6;
+}
+
+.sub__nav_item.h3 {
     padding-left: 12px;
 }
 
@@ -12565,7 +12524,6 @@ a.sub_nav_item:active, a.sub_nav_item:visited {
     -ms-flex-direction: column;
     flex-direction: column;
     transition: margin-left .2s;
-    will-change: transform;
     -webkit-overflow-scrolling: touch;
 }
 
@@ -12579,10 +12537,19 @@ a.sub_nav_item:active, a.sub_nav_item:visited {
     -webkit-flex-direction: column;
     -ms-flex-direction: column;
     flex-direction: column;
+    margin: 0 auto;
 }
 
 .app__container .iconsSite {
     flex: 1;
+}
+
+@media screen and (max-width: 1280px) {
+    .sub__nav {
+        position: static;
+        max-width: none;
+        margin-left: 0;
+    }
 }
 
 @media screen and (min-width: 1200px) {
@@ -12591,11 +12558,11 @@ a.sub_nav_item:active, a.sub_nav_item:visited {
     }
 
     .app__container {
-        padding-left: 21%;
+        /* padding-left: 21%; */
     }
 
     .app__container.full {
-        padding-left: 300px;
+        padding-left: 340px;
     }
 }
 
@@ -12604,8 +12571,10 @@ a.sub_nav_item:active, a.sub_nav_item:visited {
         width: 250px;
     }
 
-    .app__container {
-        padding-left: 250px;
+    a.sub__nav_item, 
+    a.sub__nav_item:active, 
+    a.sub__nav_item:visited {
+        color: #1796E6;
     }
 }
 
@@ -12615,6 +12584,34 @@ a.sub_nav_item:active, a.sub_nav_item:visited {
     flex: 1 0 auto;
     padding: 10px 25px 150px 10%;
     max-width: 800px;
+}
+
+@media screen and (min-width: 1900px) {
+    .app__nav {
+        left: 0;
+    }
+
+    .sub__nav {
+        left: 16%;
+    }
+
+    .app__content {
+        max-width: 850px;
+        padding-left: 12%;
+    }
+}
+
+@media screen and (min-width: 1440px) and (max-width: 1899px) {
+    .sub__nav {
+        left: 5%;
+    }
+}
+
+@media screen and (max-width: 1280px) {
+    .app__content {
+        padding-left: 5%;
+        max-width: 900px;
+    }
 }
 
 @media screen and (max-width: 960px) {
