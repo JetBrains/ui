@@ -81,6 +81,9 @@ function setAnchors() {
         event.preventDefault();
     });
 
+    // Don't built doc nav unnecessarily
+    if ($articleHeaders.length === 0) return;
+
     // Insert document outline button
     var $docNavCtr = $('<div>', { class: 'doc__nav_ctr' }).prependTo('.article');
     var $outlineBtn = $('<div>', { class: 'sub_nav_btn' }).appendTo($docNavCtr);
