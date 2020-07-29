@@ -88,7 +88,7 @@ function setAnchors() {
     // Scaffold sub-navigation menu
     var $subNav = $('<nav>', { class: 'sub__nav' }).appendTo($docNavCtr);
     var showSubNav = false;
-    //var scrollItems = [];
+    var scrollItems = [];
 
     // Only include h2 and h3
     $articleHeaders.each(function () {
@@ -117,22 +117,24 @@ function setAnchors() {
             event.preventDefault();
         });
         
-        //scrollItems.push($item[0]);
+        scrollItems.push($item[0]);
     });
 
     // Bind to scroll
-    // var lastId;
-    // var subNavItems = $('.sub__nav').find('.sub_nav_item');
+    var lastId;
+    var subNavItems = $('.sub__nav').find('.sub_nav_item');
 
     document.addEventListener('scroll', function (event) {
         if (event.target.className === 'app__main') {
             showSubNav = false;
             toggleActive($subNav, true);
 
+            var SCROLL_THRESHOLD = 50;
+
             // Filter items above offsetTop
             var cur = scrollItems.filter(function(item) {
                 var itemOffset = $(item).offset().top;
-                if (itemOffset < 50) return true;
+                if (itemOffset < SCROLL_THRESHOLD) return true;
             });
 
             // Get the id of the current element
