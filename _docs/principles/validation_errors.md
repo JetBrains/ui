@@ -247,10 +247,11 @@ Hide the error messages once any field related to the error is edited. Set the d
 
 ### 6. Complex values in multi-page dialogs
 
-If a value is complex, for example, a list of values, a regexp, or a value copied value from another place, and it appears in a multi-page dialog, such as Settings, Project Structure or Run Configurations, show a dialog informing the user about an error on clicking the confirmation button.
+If a value is complex, for example, a list of values, a regexp, or a value copied from another place, and it appears in a multi-page dialog, such as Settings, Project Structure or Run Configurations, show a dialog informing the user about an error on clicking the confirmation button.
 
-
+<p class="noanchor">
 For example, in a complex Resource patterns field
+</p>
 ![]({{site.baseurl}}/images/validation/comlex_field.png)
 
 <p class="noanchor">
