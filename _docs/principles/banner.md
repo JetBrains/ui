@@ -58,14 +58,14 @@ Use to suggest actions that are required to unblock the user’s workflow.
 
 ### Actions
 
-*   The action name should be [short and descriptive](https://jetbrains.design/intellij/text/writing_short/), preferably not longer than two- three words.
+*   The action name should be [short and descriptive](https://jetbrains.design/intellij/text/writing_short/), preferably not longer than two–three words.
 *   Use sentence case capitalization.
 *   Limit the number of actions to two to make the call to action clear in the specific context.
 *   Use the built-in 'Hide' action instead of creating a separate one.
 
 ### Icon (optional)
 
-*   16x16 icons can be used to complement the message, e.g. an error icon to draw attention or a gift icon to advertise functionality.
+*   16x16 icons can be used to complement the message, e.g. a gift icon to advertise functionality.
 
 ### Placement
 
