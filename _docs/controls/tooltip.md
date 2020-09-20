@@ -102,7 +102,7 @@ Always show the required information in a tooltip:
   </tr>
 </table>
 
-
+<!--
 <p class="noanchor"><strong>Implementation</strong></p>
 
 <p class="noanchor">Action</p>
@@ -124,6 +124,7 @@ new HelpTooltip().setDescription("Useful when moving constants (static final fie
 {% endhighlight %}</div>
 
 <p class="noanchor"><br/></p>
+-->
 
 Show a shortcut if an action or a setting has one. Do not show a single shortcut in a tooltip.
 
