@@ -21,7 +21,7 @@ Use a banner if user actions should attract  attention in a file tab, tool windo
 
 Do **not** use a banner if there is no particular UI component it can be tied to. Use a [balloon notification](link) in the main window instead.
 
-For all other cases, choose another [notification type](https://jetbrains.design/intellij/principles/notifications/#02).
+For all other cases, choose another [notification type]({{site.baseurl}}/controls/notifications/#02).
 
 ### Types of banners
 
@@ -53,12 +53,12 @@ Use to suggest actions that are required to unblock the user’s workflow.
 
 ### Message
 
-*   The message should be [short and descriptive](https://jetbrains.design/intellij/text/writing_short/) (two sentences at most) and follow the [Punctuation](link) guide.
+*   The message should be [short and descriptive]({{site.baseurl}}/text/writing_short/) (two sentences at most) and follow the [Punctuation](link) guide.
 *   Use sentence case capitalization.
 
 ### Actions
 
-*   The action name should be [short and descriptive](https://jetbrains.design/intellij/text/writing_short/), preferably not longer than two–three words.
+*   The action name should be [short and descriptive]({{site.baseurl}}/text/writing_short/), preferably not longer than two–three words.
 *   Use sentence case capitalization.
 *   Limit the number of actions to two to make the call to action clear in the specific context.
 *   Use the built-in 'Hide' action instead of creating a separate one.

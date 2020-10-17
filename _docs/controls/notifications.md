@@ -8,10 +8,10 @@ Notifications inform users about the status of user or system initiated operatio
 
 There are four types of notifications:
 
-- [Alert]({{site.baseurl}}/principles/alert)
-- [Banner]({{site.baseurl}}/principles/banner)
-- [Toast]({{site.baseurl}}/principles/toast)
-- [Tool window balloon]({{site.baseurl}}/principles/tool_window_balloon)
+- [Alert]({{site.baseurl}}/controls/alert)
+- [Banner]({{site.baseurl}}/controls/banner)
+- [Toast]({{site.baseurl}}/controls/toast)
+- [Tool window balloon]({{site.baseurl}}/controls/tool_window_balloon)
 
 ## What notification to use
 

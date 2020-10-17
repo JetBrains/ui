@@ -94,7 +94,7 @@ If a process consists of substeps that can fail but do not terminate the process
 
 ![]({{site.baseurl}}/images/progress_bar/progress_color.png)
 
-Do **not** color progress bar to show the final result of the task, use [notifications]({{site.baseurl}}/principles/notifications/). In case of success, show notification for the user-initiated tasks, in case of failure — for all tasks.
+Do **not** color progress bar to show the final result of the task, use [notifications]({{site.baseurl}}/controls/notifications/). In case of success, show notification for the user-initiated tasks, in case of failure — for all tasks.
 
 
 ### Process control
