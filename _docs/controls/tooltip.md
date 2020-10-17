@@ -198,7 +198,7 @@ new HelpTooltip().setDescription(*LONG*_TEXT).installOn(component);
 
 ### Writing guidelines
 
-Make the help text [short and informative]({{site.baseurl}}/text/writing_short).
+Make the help text [short and descriptive]({{site.baseurl}}/text/writing_short).
 
 In a help tooltip, do not repeat an action or a setting name in the text.
 

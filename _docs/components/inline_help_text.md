@@ -62,7 +62,7 @@ Avoid using brackets.
 
 ### Writing guidelines
 
-Make help text [short and informative]({{site.baseurl}}/text/writing_short). 
+Make help text [short and descriptive]({{site.baseurl}}/text/writing_short). 
 
 Do not repeat the setting name in the help text.
 
