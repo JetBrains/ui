@@ -1,8 +1,8 @@
 ---
-title: Alert
+title: Tool window balloon
 type: Subpage
 subpageOf: Notifications
-category: Principles
+category: Controls
 draft: true
 ---
 

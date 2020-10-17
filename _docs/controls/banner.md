@@ -2,7 +2,7 @@
 title: Banner
 type: Subpage
 subpageOf: Notifications
-category: Principles
+category: Controls
 ---
 
 A banner notification informs the user about the state of a specific context in the project. For example, when there is a missing or broken configuration for some file.

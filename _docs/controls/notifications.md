@@ -1,6 +1,6 @@
 ---
 title: Notifications
-category: Principles
+category: Controls
 type: GroupHeader
 ---
 

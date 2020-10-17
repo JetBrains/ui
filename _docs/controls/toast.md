@@ -2,7 +2,7 @@
 title: Toast
 type: Subpage
 subpageOf: Notifications
-category: Principles
+category: Controls
 draft: true
 ---
 
