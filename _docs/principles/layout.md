@@ -4,255 +4,259 @@ category: Principles
 type: GroupHeader
 ---
 
-Arrange UI controls correctly to help people locate the necessary settings faster and understand how they are related.
-<br>
+<div class="noanchor">
+Arrange UI controls in dialogs according to the rules below to help people locate the necessary settings faster and understand how they are related. <br/><br/>
 
-This article describes how to arrange:
+Independent controls:
+<ul>
+<li><a href="{{site.baseurl}}/principles/layout/#labeled-input-controls">Labeled input controls:</a> fields, combo boxes, text areas, etc.</li>
+<li><a href="{{site.baseurl}}/principles/layout/#checkboxes-and-radio-buttons">Checkboxes and radio buttons</a></li>
+<li><a href="{{site.baseurl}}/principles/layout/#buttons-and-links">Buttons and links</a></li> 
+<li><a href="{{site.baseurl}}/principles/layout/#lists-trees-and-tables">Lists, trees, tables</a></li>
+</ul>
 
-* [Independent controls](#arrange-independent-controls)
+<a href="{{site.baseurl}}/principles/layout/#dependent-controls">Dependent controls</a> — controls that depend on a parent control. <br/><br/>
 
-  * [Labeled inputs:](#labeled-inputs) fields, combo boxes, spinners
+<a href="{{site.baseurl}}/principles/layout/#group-controls">Group controls</a> to help people locate the necessary settings faster. <br/><br/><br/>
 
-  * [Buttons, checkboxes, radio buttons](#buttons-checkboxes-and-radio-buttons) 
+See <a href="{{site.baseurl}}/components/dialog_window">Dialog window</a> for buttons and other controls at the bottom of a dialog.
 
-  * [Lists, trees, tables](#lists-trees-and-tables)
+</div>
 
-* [Dependent controls](#lay-out-dependent-controls)
-* [Groups of controls](#group-controls-with-headers-or-insets)
-
-For [links]({{site.baseurl}}/controls/link), use combo box layouts for dropdown-links and button layouts for button-links.
-
-
-## Column layout
-* Lay out UI controls in columns. Use 1 – 4 columns. Do not use more than 4 columns: it is likely that such layout would not fit into a panel. 
-
-![]({{site.baseurl}}/images/layout/columns-example-with-2.png)
-*An example with 2 columns*
-
-* Combine different column layouts in a single panel if necessary:
-
-![]({{site.baseurl}}/images/layout/columns-combined.png)
-
-How many columns to use depends on a set of controls to be laid out. Read below for how to arrange particular kinds of controls.
+## Independent controls
 
 
-## Arrange independent controls
+### Labeled input controls 
 
-### Labeled inputs
+Labeled input controls are: [input field]({{site.baseurl}}/controls/input_field), [combo box]({{site.baseurl}}/controls/combo_box), [drop-down list]({{site.baseurl}}/controls/drop_down), [text area]({{site.baseurl}}/controls/text_area), and spinner.
 
-Labeled inputs are input fields, spinners, and combo boxes (both editable and non-editable).
+By default, put input controls with labels of similar length on different lines and align their input boxes on the left side. 
 
-* If there are at least 2 labeled inputs on nearby lines and their labels have similar length, arrange them in **2 columns** — put labels into the first column and inputs into the second one:
+![]({{site.baseurl}}/images/layout/1_01_input_similar_labels.png)
 
-![]({{site.baseurl}}/images/layout/2-column-fields.png)
+Do **not** align input boxes on the left side if one label is twice as long as the other one or even longer.
 
-* Align the left borders in groups of inputs in the following way:
+![]({{site.baseurl}}/images/layout/1_02_input_different_labels_incorrect.png)
 
-  If all labels are similar in length, left-align inputs across all groups:
+![]({{site.baseurl}}/images/layout/1_02_input_different_labels_correct.png)
 
-![]({{site.baseurl}}/images/layout/2-column-groups-aligned.png)
+If several related input controls have labels of up to 10 characters and their input boxes are short, organize them in two columns. Do **not** use more than two columns.
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;If labels length in groups differs noticeably, left-align only inside groups:
+![]({{site.baseurl}}/images/layout/1_03_short_inputs.png)
 
-![]({{site.baseurl}}/images/layout/2-column-groups-not-aligned.png)
+If an input box is long, and the horizontal space is limited, place the label above the box. Otherwise, always put the label and the box on the same line.
 
-* Align the right borders for inputs with similar length. 
-
-   To make inputs with control buttons right-aligned, do not use control buttons. Use [inputs with built-in icons]({{site.baseurl}}/controls/built_in_button) instead:
-
-![]({{site.baseurl}}/images/layout/right-alignment-incorrect.png)
-
-![]({{site.baseurl}}/images/layout/right-alignment-correct.png)
-
-* Always left-align the labels. This alignment is inconsistent with Mac OS, but the aim here is consistency throughout the JetBrains IDEs across all supported platforms:
-
-![]({{site.baseurl}}/images/layout/labels-left-align.png)
-
-* Put both a label and an input into **1 column** in the following cases:
-
-  * If labels differ considerably in length.
-  
-  ![]({{site.baseurl}}/images/layout/2-column-alignment-wrong.png)
-  *It is hard to connect the shorter label and its input.*
-  
-  ![]({{site.baseurl}}/images/layout/2-column-alignment-right.png)
-  *Better to have non-aligned inputs than a disconnected label.*
-  
-  * If labeled inputs do not appear on nearby lines:
-  
-  ![]({{site.baseurl}}/images/layout/1-column-fields-and-checkboxes.png)
-  
-  * If a labeled input might have a long string of text and appears in a narrow panel, e.g. a [popup]({{site.baseurl}}/components/popup). In this case, place the label above the input and make the input take the whole width of the panel:
-  
-  ![]({{site.baseurl}}/images/layout/1-column-combobox.png)
-
-* Arrange in **4 columns** if there are two labeled inputs with the following properties:
-  * labels are no longer than 10 characters, 
-  * common values for inputs are short.
-<br><br>
-  Use only when space is limited:
-
-![]({{site.baseurl}}/images/layout/4-column-fields-one-line.png)
-*Leave plenty of space between the end of the first input and the label of the next one.*
+![]({{site.baseurl}}/images/layout/1_04_input_top_label.png)
 
 
-### Buttons, checkboxes and radio buttons
+#### Separated by other controls  
 
-* The default layout is **1 column**: 
+If there are two input controls with labels of similar length that are separated from each other by a single control, align their input boxes on the left side.
 
-![]({{site.baseurl}}/images/layout/1-column-checkboxes.png)
-![]({{site.baseurl}}/images/layout/1-column-radios.png)
+![]({{site.baseurl}}/images/layout/1_05_separated_by_one.png)
 
-* If there are 2–3 checkboxes, radio buttons or buttons with labels no longer than 30 characters, arrange them in **a line in 1 column**:
+Align only the input boxes of the neighboring input controls. If there're several input controls on a page, and they are separated from each other by two or more other UI elements, do **not** align their input boxes.
 
-![]({{site.baseurl}}/images/layout/1-column-1-row-radios.png)
+![]({{site.baseurl}}/images/layout/1_06_separated_by_two.png)
 
-* Do not arrange radio buttons and buttons in more than 1 column.
+If input groups are separated by a group of other UI controls, align only the boxes located within one group.
 
-![]({{site.baseurl}}/images/layout/2-column-radios-incorrect.png)
+![]({{site.baseurl}}/images/layout/1_07_separated_groups.png)
 
-* If there are 6 and more checkboxes, do one of the following: 
-  * If labels are no longer than 30 characters, arrange them in **2 columns**:
-  
-  ![]({{site.baseurl}}/images/layout/2-column-checkboxes.png)
-  
-  * If labels are no longer than 15 characters, arrange them in **3 columns**:
-  
-  ![]({{site.baseurl}}/images/layout/3-column-checkboxes.png)
-  
-  * Or try [grouping](#group-controls-with-headers-or-insets) them.
 
-For instructions on how to arrange buttons or checkboxes at the bottom of a modal dialog, see [Dialog window]({{site.baseurl}}/components/dialog_window).
+#### Labels and right borders
+
+<aside class="note sideblock _visible">This alignment is inconsistent with macOS guidelines, but the aim is to maintain consistency in all JetBrains IDEs on all supported platforms.</aside>
+
+Always left-align labels. 
+
+![]({{site.baseurl}}/images/layout/1_08_label_alignment.png)
+
+Align the right borders of input boxes that have a similar length. For alignment, use [built-in icons]({{site.baseurl}}/controls/built_in_button). Do **not** use buttons.
+
+![]({{site.baseurl}}/images/layout/1_09_built_in_button.png)
+
+
+### Checkboxes and radio buttons
+
+By default, put independent checkboxes and radio button groups on different lines.
+
+![]({{site.baseurl}}/images/layout/2_01_checkbox_radio_column.png)
+
+If there is a group of 2–3 checkboxes with short labels (1–3 words), place them on the same line. The same rule applies to radio buttons. With this alignment, controls form a short sentence making it easier to understand their meaning compared to when they are split into several lines.
+
+![]({{site.baseurl}}/images/layout/2_02_checkbox_radio_line.png)
+
+When there is an input control on one line and a group of checkboxes or radio buttons on the next line, and their labels are of similar length (one is no more that 5 characters longer than the other), align the input box with the checkbox/radio button. 
+
+<p class="noanchor">If one label is much longer than the other, do <b>not</b> align these UI elements.</p>
+
+![]({{site.baseurl}}/images/layout/2_03_align_group_labels.png)
+
+If a checkbox group does not have a label, align it with other independent controls by the left side.
+
+![]({{site.baseurl}}/images/layout/2_03_align_without_group_labels.png)
+
+4 and more checkboxes can be arranged in columns:
+
+* Arrange checkboxes with labels of up to 30 characters in 2 columns.
+
+![]({{site.baseurl}}/images/layout/2_04_checkbox_2_columns.png)
+
+* Arrange checkboxes with labels of up to 15 characters in 3 columns.
+
+![]({{site.baseurl}}/images/layout/2_05_checkbox_3_columns.png)
+
+Do **not** arrange radio buttons from one group in several columns. Splitting a group of radio buttons into two or more columns makes it unclear that all these radio buttons belong to the same setting.
+
+![]({{site.baseurl}}/images/layout/2_06_radio_columns_incorrect.png)
+
+
+### Buttons and links
+
+Align an independent button or link to the left with other controls. 
+
+![]({{site.baseurl}}/images/layout/3_01_button_column.png)
+
+![]({{site.baseurl}}/images/layout/3_01_link_column.png)
+
+If there are 2–3 buttons or links with labels of up to 30 characters each, place them on one line.
+
+![]({{site.baseurl}}/images/layout/3_02_button_line.png)
+
+Do **not** arrange buttons or links in several columns. Such a layout takes more time to parse visually.
+
+![]({{site.baseurl}}/images/layout/3_03_button_columns.png)
 
 
 ### Lists, trees and tables
 
-* If a table, list or tree has to take the whole width of the containing panel to make its contents visible, put it in **1 column**:
+Choose a control width such that most of the common values are visible. Take the whole width of the dialog if necessary. 
 
-![]({{site.baseurl}}/images/layout/1-column-table-full-length.png)
+![]({{site.baseurl}}/images/layout/4_01_table_full_width.png)
 
-* If the panel is noticeably wider than the content of a table, list or tree, fix the control's width and leave the space to the right of it empty:
+If the dialog containing the control is noticeably wider than the control itself, reduce the length of the control.
 
-![]({{site.baseurl}}/images/layout/1-column-table-fixed.png)
+<p class="noanchor">Do <b>not</b> put other independent controls to the right of a list, tree, or table. They would look like dependent controls in the <a href="{{site.baseurl}}/principles/masterdetail_layout">master-detail layout</a>.</p> 
 
-* Do **not** put independent controls to the second column if there is an empty space to the right of a list, tree or table. Controls in the second column usually depend on the selection in a list. 
-
-
-## Lay out dependent controls
-Use the correct alignment to show that controls are related.
-<br><br>
-* Generally, align dependent controls in several lines. 
-  
-  * For labeled inputs, align by the input's left border:
-  
-  ![]({{site.baseurl}}/images/layout/align-field.png)
-  
-  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;If a label is long or the input is very short, align by the label and add a horizontal inset:
-  
-  ![]({{site.baseurl}}/images/layout/align-field-long-label.png)
-  
-  * For checkboxes and radio buttons, align with their label: 
-  
-  ![]({{site.baseurl}}/images/layout/align-checkbox.png)
-
-  * If the depending control takes the whole width of a panel, align by the main control's left border:
-  
-  ![]({{site.baseurl}}/images/layout/align-wide-component.png)
-
-* If there is a small number of controls and their labels and inputs are short, align in one line. This way the user needs to read just one line and it is quicker to see that the controls are dependent:
-  
-![]({{site.baseurl}}/images/layout/line-combo.png)
-  
-![]({{site.baseurl}}/images/layout/line-buttons.png)
-  
-![]({{site.baseurl}}/images/layout/line-checkbox-radio.png)
-  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Make sure that labels of all controls and inputs lie on the same baseline:
-
-![]({{site.baseurl}}/images/layout/line-checkbox-radio-undeline.png)
-
-* If the main control takes the whole width of a panel, a dependent drop-down link can be placed in the top-right corner:
-
-![]({{site.baseurl}}/images/layout/align-wide-component-top-right.png)
-
-* Align context hints according to the rules in the [Context help]({{site.baseurl}}/principles/context_help) article:
-
-![]({{site.baseurl}}/images/layout/align-hint.png)
-
-* If the controls are not dependent, left-align them all. Otherwise, the user might think that controls are dependent:
-
-![]({{site.baseurl}}/images/layout/align-incorrect.png)
-*The spinners do not depend on the top checkbox. However, it looks like they do because their labels are aligned.*
-
-![]({{site.baseurl}}/images/layout/align-incorrect-corrected.png)
-*Left-aligned controls do not look dependent. Also, the labels are quicker to read with the repeating words "Grid lines" moved to the group header.*
-
-For laying out controls dependent on a list, tree or table, see [Master-detail layouts]({{site.baseurl}}/principles/master_detail_layout).
+![]({{site.baseurl}}/images/layout/4_02_table_fixed_width.png)
 
 
-## Group controls with headers or insets
+If there are several lists, trees, or tables in a dialog, make them of the same width.
 
-Group controls to help people locate the necessary controls faster.
-<br><br>
-Groups can be made with headers or with insets:
+![]({{site.baseurl}}/images/layout/4_03_aligned_lists.png)
 
-* Use **[group headers]({{site.baseurl}}/controls/group_header)** if there are at least 3–4 controls in one of the groups and all groups can be clearly labeled according to their purpose. 
 
-  Avoid group names like "General" or "Options" because they do not tell the purpose of a group. See more on that in the [Writing short and clear]({{site.baseurl}}/text/writing_short) article.
+## Dependent controls
 
-![]({{site.baseurl}}/images/layout/group-headers.png)
-*Use group headers because there are more than 4 controls in the first group.*
+<p class="noanchor">Align controls according to the rules below to show that they are related.</p>
 
-* Use **vertical insets** instead of group headers if there are less than 3–4 controls in all groups or it is hard to find clear group names.
+Place 2–3 related UI controls on the same line if each control takes up to 30 characters. This way the user needs to read just one line, and it is quicker to see that the controls depend on each other.
 
-  Vertical insets also help to break a long list of controls into easily readable pieces. Compare:
+![]({{site.baseurl}}/images/layout/5_01_dependent_one_line.png)
+
+<p class="noanchor">In all other cases, place interrelated controls on different lines:</p> 
+
+Main control: **labeled input control**. 
+
+* Align other dependent elements with the left border of the input box.
+
+![]({{site.baseurl}}/images/layout/5_03_dependent_on_field_checkbox.png)
+
+![]({{site.baseurl}}/images/layout/5_03_dependent_on_field_button.png)
+
+* If an input’s label is long or the input box is very short, align by the label and add a horizontal inset.
+
+![]({{site.baseurl}}/images/layout/5_04_dependent_on_field_long_label.png)
+
+Main control: **checkbox** or **radio button**. Align dependent controls by the label. 
+
+![]({{site.baseurl}}/images/layout/5_02_dependent_on_checkbox.png)
+
+When the main control or one of the dependent controls takes the whole width of a panel, left align all elements.
+
+![]({{site.baseurl}}/images/layout/5_05_whole_width_text_area.png)
+*The text area is the main control, the button is the dependent control.*
+
+![]({{site.baseurl}}/images/layout/5_06_whole_width_checkbox.png)
+*The checkbox is the main control, the table is the dependent control.*
+
+When the main control takes the whole width of a panel, and there is one small dependent control (for example, a drop-down list), place this dependent control to the top-right corner, above the main control.
+
+![]({{site.baseurl}}/images/layout/5_07_whole_width_top_right_corner.png)
+
+See [Master-detail layout]({{site.baseurl}}/principles/masterdetail_layout) for more information on how to lay out controls if they depend on lists or trees.
+
+See the [Inline help text]({{site.baseurl}}/controls/inline_help_text/#placement) and [Tooltip]({{site.baseurl}}/controls/tooltip/#question-mark-icon-for-help-tooltips) articles for details on how to arrange help information in dialogs.
+
+If controls do **not** depend on each other, left-align them all. Otherwise, the user might think that controls are linked.
+
+![]({{site.baseurl}}/images/layout/5_09_incorrect_alignment.png)
+*The spinners do not depend on the top checkbox.*
+
+
+## Group controls
+
+<p class="noanchor">Group controls to help people locate the necessary controls faster.</p>
+
+<p class="noanchor">Use headers or insets to create groups:</p>
+
+If there are several groups of controls in a dialog, and one of the groups contains at least 3–4 controls, use [group headers]({{site.baseurl}}/controls/group_header) in all groups. Label the headers so that they reflect the functionality of controls within groups.
+
+![]({{site.baseurl}}/images/layout/6_01_group_headers.png)
+*Group headers are used because there are more than 4 controls in the first group.*
+
+Use **vertical insets** instead of group headers if there are less than 3–4 controls in all groups or it is hard to find clear group names.
+
+<p class="noanchor">Vertical insets also help to break a long list of controls into easily readable pieces. Compare:</p>
 
 <p class="label incorrect">Incorrect</p>
 
-![]({{site.baseurl}}/images/layout/group-insets-incorrect.png)
+![]({{site.baseurl}}/images/layout/6_02_group_insets_incorrect.png)
 *The list of controls is hard to scan quickly because the controls "stick" together.*
 
 <p class="label correct">Correct</p>
 
-![]({{site.baseurl}}/images/layout/group-insets-correct.png)
-*Scanning a list of controls becomes easier when vertical insets are added between groups of controls.*
+![]({{site.baseurl}}/images/layout/6_02_group_insets_correct.png)
+*Scanning a list of controls becomes easier when vertical insets are added between the groups of controls.*
 
-* Do not create groups when there are just 1–3 controls on a panel:
+Do not create groups when there are only 1–3 controls on a panel.
 
 <p class="label incorrect">Incorrect</p>
 
-![]({{site.baseurl}}/images/layout/group-headers-incorrect.png)
+![]({{site.baseurl}}/images/layout/6_03_group_incorrect.png)
 *Each group has less than 3 controls. Group headers only add noise in this case because control labels are enough to understand their purpose.*
 
 <p class="label correct">Correct</p>
 
-![]({{site.baseurl}}/images/layout/group-headers-correct.png)
+![]({{site.baseurl}}/images/layout/6_03_group_correct.png)
 
-* Ensure that there are no accidental groups. Sometimes controls are automatically laid out so that an unexpected inset creates a false group. False groups hinder understanding the UI.
+Treat groups with extra care and make sure that elements within a group are actually related. An unnecessary inset may create a false impression that the controls are grouped. This complicates the UI and might cause confusion.
 
 <p class="label incorrect">Incorrect</p>
 
-![]({{site.baseurl}}/images/layout/group-chb-incorrect.png)
+![]({{site.baseurl}}/images/layout/6_04_inset_incorrect.png)
 *The first checkbox depends on the combo box which is shown with the horizontal inset. However, the checkboxes appear grouped because they are closer.*
 
 <p class="label correct">Correct</p>
 
-![]({{site.baseurl}}/images/layout/group-chb-correct.png)
+![]({{site.baseurl}}/images/layout/6_04_inset_correct.png)
 *The first checkbox is closer to its main control and it is easier to see that the combo box and the checkbox are related.*
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Horizontal insets also matter for grouping controls:
+Horizontal insets also matter for grouping controls.
 
 <p class="label incorrect">Incorrect</p>
 
-![]({{site.baseurl}}/images/layout/group-length-incorrect.png)
-*The checkboxes and the "Length" fields are connected but look independent because the horizontal inset between them is bigger than the vertical inset below the second checkbox.*
+![]({{site.baseurl}}/images/layout/6_05_hor_inset_incorrect.png)
+*The checkboxes and the "Length" fields look independent because the horizontal inset between them is bigger than the vertical inset below the second checkbox.*
 
 <p class="label correct">Better</p>
 
-![]({{site.baseurl}}/images/layout/group-length-better.png)
-*With a smaller horizontal and bigger vertical insets, the checkboxes and the "Length" fields look related. However, it could be made better if the repeating word "Separator" appears only once.* 
+![]({{site.baseurl}}/images/layout/6_05_hor_inset_better.png)
+*With a smaller horizontal and bigger vertical insets, the checkboxes and the "Length" fields look related. However, it could be made better if the repeating word “Separator” appears only once.* 
 
 <p class="label correct">Correct</p>
 
-![]({{site.baseurl}}/images/layout/group-length-correct.png)
-*Correct grouping and no duplicates facilitate understanding the UI.*
+![]({{site.baseurl}}/images/layout/6_05_hor_inset_correct.png)
+*Correct grouping and no duplicates help understanding the UI quicker.*
+
