@@ -8,7 +8,7 @@ Use context help to briefly explain how a functionality works if it is not clear
 
 There are three ways to show context help:
 * in a [help tooltip]({{site.baseurl}}/controls/tooltip)
-* as [inline help text]({{site.baseurl}}/components/inline_help_text)
+* as [inline help text]({{site.baseurl}}/controls/inline_help_text)
 * in an [empty state]({{site.baseurl}}/principles/empty_state)
 
 <p class="noanchor">This article explains when to use the first two. For when to use the empty state, see the <a href="{{site.baseurl}}/principles/empty_state">Empty state</a>.</p> 
@@ -106,5 +106,5 @@ Do not explain each option. Too many help icons or too much inline text make a d
 
 ## How to use
 
-See [Inline help text]({{site.baseurl}}/components/inline_help_text) and [Tooltip]({{site.baseurl}}/controls/tooltip).
+See [Inline help text]({{site.baseurl}}/controls/inline_help_text) and [Tooltip]({{site.baseurl}}/controls/tooltip).
 
