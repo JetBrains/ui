@@ -197,7 +197,7 @@ If controls do **not** depend on each other, left-align them all. Otherwise, the
 
 ## Group controls
 
-<p class="noanchor">Group controls to help people locate the necessary controls faster.</p>
+<p class="noanchor">Group controls to help people locate the necessary options faster.</p>
 
 <p class="noanchor">Use headers or insets to create groups:</p>
 
@@ -231,7 +231,7 @@ Do not create groups when there are only 1–3 controls on a panel.
 
 ![]({{site.baseurl}}/images/layout/6_03_group_correct.png)
 
-Treat groups with extra care and make sure that elements within a group are actually related. An unnecessary inset may create a false impression that the controls are grouped. This complicates the UI and might cause confusion.
+Treat insets with extra care and make sure that elements within a group are actually related. An unnecessary inset may create a false impression that the controls are grouped. This complicates the UI and might cause confusion.
 
 <p class="label incorrect">Incorrect</p>
 
