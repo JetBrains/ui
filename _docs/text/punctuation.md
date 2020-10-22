@@ -119,9 +119,10 @@ Use contractions only if the action name has 4 and more words, and the contracte
 
 
 ## Quotation marks
+Use single quotation marks by default.
+
 <aside class="note sideblock _visible">Use a straight single quotation mark ' <span style="color: #999999;">U+0027</span>. Do not use opening and closing quotation marks ‘ ’ <span style="color: #999999;">U+2018, U+2019</span>.</aside>
 
-Use single quotation marks by default.
 <p class="noanchor" style="margin: -10px 0 36px 20px; line-height: 240%;">
 <i>Indexing library 'KotlinJavaRuntime'<br/>
 Error parsing '.mvn/maven.config'<br/>
