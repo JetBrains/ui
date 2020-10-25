@@ -9699,6 +9699,10 @@ br + kbd {
     border-bottom: 1px solid #e6e6e6;
 }
 
+.article .table-line-vertical {
+    border-right: 1px solid #e6e6e6;
+}
+
 .article h2:first-of-type {
     margin-top: 70px;
 }
@@ -9957,6 +9961,10 @@ br + kbd {
 td, th {
     padding: 10px 3% 15px 0px;
     vertical-align: top;
+}
+
+table.table-left-padding td, table.table-left-padding th {
+    padding: 13px 15px 15px 13px;
 }
 
 th {
