@@ -28,7 +28,7 @@ Give the tool window a name:
 * The name should be [short and descriptive]({{site.baseurl}}/text/writing_short/), preferably not longer than two words.
 * Use title-case capitalization.
 
-If there are tabs in the tool window header, add a colon after the tool window name. Otherwise, do not add it.
+Show the tool window name in the tool window button and header. If there are tabs in the tool window header, add a colon after the tool window name. Otherwise, do not add it.
 
 ![]({{site.baseurl}}/images/tool_window/pull_requests.png)
 
