@@ -1,6 +1,6 @@
 ---
 title: Typography
-category: Resources
+category: Principles
 ---
 
 ## IDE font
@@ -39,7 +39,7 @@ Use the built-in text styles from the table below whenever possible.
 <col width="30%">
   <th class="table-line"> Name </th>
   <th class="table-line"> Font size </th>
-  <th class="table-line"> Usage&nbsp;&nbsp;&nbsp;<a href="{{site.baseurl}}/resources/typography/#examples" style="font-size: 14px;font-weight: 500;">Examples</a> </th>
+  <th class="table-line"> Usage&nbsp;&nbsp;&nbsp;<a href="{{site.baseurl}}/principles/typography/#examples" style="font-size: 14px;font-weight: 500;">Examples</a> </th>
   
   <tr>
     <td class="table-line table-line-vertical"> <span style="font-size: 26px"> <strong>H0 bold</strong> </span> </td>

@@ -40,7 +40,7 @@ Select the tool window orientation depending on the content. Vertical tool windo
 
 Do **not** show the tool window button if the tool window is not relevant to the current project configuration. For example, do not show the Maven tool window for a project without Maven configuration files.
 
-Do **not** show the tool window button if the tool window has no content. For example, do not show the Find tool window before search is invoked.
+If a tool window has no content yet, show its button by default only if the window contains basic functionality that is likely to be used for all projects, for example, Version Control or Problems. Otherwise, do not show the tool window button by default.
 
 Add a toolbar for [frequently used actions and filters]({{site.baseurl}}/controls/toolbar/#what-items-to-add-on-toolbar). Use a horizontal toolbar for vertical tool windows and a vertical toolbar for horizontal tool windows. For more details see the [toolbar guidelines]({{site.baseurl}}/controls/toolbar/#sizes-and-placement).
 
