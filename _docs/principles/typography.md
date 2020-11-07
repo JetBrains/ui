@@ -190,7 +190,7 @@ The IDE text colors are in the table below. The editor text colors are managed b
 <th class="table-line"> Color key </th>  
   <tr class="table-line">
     <td> Default </td>
-    <td> 1D1D1D </td>
+    <td> 000 </td>
     <td> <span style="color: #BBBBBB">BBB</span> </td>
     <td>
         Labels, inputs, <br/> trees, etc.
