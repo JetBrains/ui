@@ -10,7 +10,7 @@ There are four types of notifications:
 
 - [Alert]({{site.baseurl}}/controls/alert)
 - [Banner]({{site.baseurl}}/controls/banner)
-- [Toast]({{site.baseurl}}/controls/toast)
+- [Balloon]({{site.baseurl}}/controls/balloon)
 - [Tool window balloon]({{site.baseurl}}/controls/tool_window_balloon)
 
 ## What notification to use
@@ -83,7 +83,7 @@ Use the following table to determine which notification to use based on the two 
   <tr class="table-line">
     <td></td>
     <td>All but file tabs or tool windows</td>
-    <td>Sticky toasts</td>
+    <td>Sticky balloons</td>
     <td>
       IDE and Plugin Updates
       <img src="{{site.baseurl}}/images/notifications/sticky_toast.png" style="margin-left: 0" />
@@ -92,7 +92,7 @@ Use the following table to determine which notification to use based on the two 
   <tr class="table-line">
     <td></td>
     <td></td>
-    <td>Timed toasts</td>
+    <td>Timed balloons</td>
     <td>
       Module imported<br/><br/>
       Framework detection
@@ -101,4 +101,4 @@ Use the following table to determine which notification to use based on the two 
   </tr>
 </table>
 
-**Exception**: If the action is highly recommended, consider using Banners across all files for visibility instead of Sticky toast.
+**Exception**: If the action is highly recommended, consider using Banners across all files for visibility instead of Sticky balloon.
