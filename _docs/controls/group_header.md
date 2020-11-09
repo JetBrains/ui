@@ -13,7 +13,7 @@ A group header clearly labels a group of UI controls.
 
 Follow the rules in [Groups of controls]({{site.baseurl}}/principles/groups_of_controls).
 
-Do **not** use group headers when each group contains 3 controls and less. Separate with [vertical insets]({{site.baseurl}}/principles/layout/#organize_with_insets) instead.
+Do **not** use group headers when each group contains 3 controls and less. Separate with [vertical insets]({{site.baseurl}}/principles/layout/#organize-with-insets) instead.
 
 <p class="label incorrect"> Incorrect </p>
 

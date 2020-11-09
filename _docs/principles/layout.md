@@ -4,9 +4,10 @@ category: Principles
 type: GroupHeader
 ---
 
-<div class="noanchor">
-Arrange UI controls in dialogs according to the rules below to help people locate the necessary settings faster and understand how they are related. <br/><br/>
 
+Arrange UI controls in dialogs according to the rules below to help people locate the necessary settings faster and understand how they are related. <br/>
+
+<div class="noanchor">
 Independent controls:
 <ul>
 <li><a href="{{site.baseurl}}/principles/layout/#labeled-input-controls">Labeled input controls:</a> fields, combo boxes, text areas, etc.</li>
@@ -16,12 +17,13 @@ Independent controls:
 </ul>
 
 <a href="{{site.baseurl}}/principles/layout/#dependent-controls">Dependent controls</a> — controls that depend on a parent control. <br/><br/>
+</div>
 
-<a href="{{site.baseurl}}/principles/layout/#group-controls">Group controls</a> to help people locate the necessary settings faster. <br/><br/><br/>
+Organize controls into easily readable groups with <a href="{{site.baseurl}}/principles/layout/#organize-with-insets">vertical and horizontal insets</a>.
 
 See <a href="{{site.baseurl}}/components/dialog_window">Dialog window</a> for buttons and other controls at the bottom of a dialog.
 
-</div>
+
 
 ## Independent controls
 
@@ -197,20 +199,9 @@ If controls do **not** depend on each other, left-align them all. Otherwise, the
 *The spinners do not depend on the top checkbox.*
 
 
-## Group controls
+## Organize with insets
 
-<p class="noanchor">Group controls to help people locate the necessary options faster.</p>
-
-<p class="noanchor">Use headers or insets to create groups:</p>
-
-If there are several groups of controls in a dialog, and one of the groups contains at least 3–4 controls, use [group headers]({{site.baseurl}}/controls/group_header) in all groups. Label the headers so that they reflect the functionality of controls within groups.
-
-![]({{site.baseurl}}/images/layout/6_01_group_headers.png)
-*Group headers are used because there are more than 4 controls in the first group.*
-
-Use **vertical insets** instead of group headers if there are less than 3–4 controls in all groups or it is hard to find clear group names.
-
-<p class="noanchor">Vertical insets also help to break a long list of controls into easily readable pieces. Compare:</p>
+Use vertical insets to break a list of controls into easily readable groups. Compare:
 
 <p class="label incorrect">Incorrect</p>
 
@@ -221,17 +212,6 @@ Use **vertical insets** instead of group headers if there are less than 3–4 co
 
 ![]({{site.baseurl}}/images/layout/6_02_group_insets_correct.png)
 *Scanning a list of controls becomes easier when vertical insets are added between the groups of controls.*
-
-Do not create groups when there are only 1–3 controls on a panel.
-
-<p class="label incorrect">Incorrect</p>
-
-![]({{site.baseurl}}/images/layout/6_03_group_incorrect.png)
-*Each group has less than 3 controls. Group headers only add noise in this case because control labels are enough to understand their purpose.*
-
-<p class="label correct">Correct</p>
-
-![]({{site.baseurl}}/images/layout/6_03_group_correct.png)
 
 Treat insets with extra care and make sure that elements within a group are actually related. An unnecessary inset may create a false impression that the controls are grouped. This complicates the UI and might cause confusion.
 
@@ -262,3 +242,4 @@ Horizontal insets also matter for grouping controls.
 ![]({{site.baseurl}}/images/layout/6_05_hor_inset_correct.png)
 *Correct grouping and no duplicates help understanding the UI quicker.*
 
+See [Groups of controls]({{site.baseurl}}/principles/groups_of_controls) for how to organize a bigger group of controls.
