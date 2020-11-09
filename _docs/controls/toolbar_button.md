@@ -1,5 +1,5 @@
 ---
-title: Toolbar icon button
+title: Icon button
 codename: ActionButton
 category: Controls
 type: Subpage

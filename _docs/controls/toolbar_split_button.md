@@ -1,36 +1,33 @@
 ---
-title: Toolbar icon split button
+title: Split icon button
 category: Controls
 type: Subpage
 subpageOf: Toolbar
 ---
 
-A toolbar icon split button appears on a horizontal toolbar and consists of two parts: the main icon and a triangle icon for the actions list.
+A split icon button appears on a horizontal toolbar and consists of two parts: the main icon and a triangle icon for the actions list.
 
 ![]({{site.baseurl}}/images/toolbar_split_button/example.png)
-
-On clicking an action from the list, the action starts, and it’s icon replaces the main icon.
 
 
 ## When to use
 
-The toolbar icon split button helps reduce the number of icons on the toolbar and minimize visual noise.
+The split icon button helps reduce the number of icons on the toolbar and minimize visual noise.
 
-Use toolbar split button for a group of similar actions if there are already many icons on the toolbar and:
+Use the split icon button for a group of similar actions if there are already many icons on the toolbar and:
 
 * The user invokes one action more often than others,
 
 * Or if the user invokes one action several times, then switches to another action and invokes it several times but does not switch between actions too often.
 
-For example, profiler actions can be grouped in a split button.
-
 ![]({{site.baseurl}}/images/toolbar_split_button/group_actions.png)
+*Profiler actions are grouped into a split button*
 
 If the user invokes actions with the same frequency or often switches from one action to another, use separate icons for each action.
 
 To decide whether to add the whole group of actions on the toolbar, follow the rules for the [toolbar]({{site.baseurl}}/controls/toolbar/#what-items-to-add-on-toolbar).
 
-Use the toolbar split button on horizontal toolbars only, as it’s too wide for vertical toolbars.
+Use the split icon button on horizontal toolbars only, as it’s too wide for vertical toolbars.
 
 
 ## How to use
@@ -38,13 +35,12 @@ Use the toolbar split button on horizontal toolbars only, as it’s too wide for
 Make sure that all actions in the popup menu have icons. When an action is launched its icon will be used as the main icon.
 
 ![]({{site.baseurl}}/images/toolbar_split_button/behavior.png)
-
-The user clicks Profile Allocations, the action starts, and its icon is shown as the main icon.
+*The user clicks Profile Allocations, the action starts, and its icon is shown as the main icon.*
 
 
 ## Built-in behavior
 
-The main icon and the triangle icon are highlighted separately, the line between two parts is added on hover. The tooltip for the main icon action is shown on hovering over it.
+On hover, the main icon and the triangle icon are highlighted separately, and the line between two parts is added. The tooltip for the main icon action is shown on hovering over it.
 
 ![]({{site.baseurl}}/images/toolbar_split_button/hover.png)
 
