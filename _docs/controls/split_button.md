@@ -194,28 +194,6 @@ Menu item height and spacing between the menu and the button:
 
 ## Style
 
-### Button
-
-Basic styles (enabled, disabled, default, pressed) are the same as for [simple buttons]({{site.baseurl}}/controls/button/#style) for both parts of the split button.
-
-<table>
-  <col width="200 px">      
-  <col width="200 px">      
-  <tr>
-    <td><p style="margin-top:10px">Windows:</p></td>
-    <td><p style="margin-top:10px">Mac:</p></td>
-    <td><p style="margin-top:10px">Darcula:</p></td>
-  </tr>
-  <tr>
-    <td><img src="{{site.baseurl}}/images/split_button/win-button.png" style="margin-top: 15px; margin-left: 0px;"></td>
-    <td><img src="{{site.baseurl}}/images/split_button/mac.png" style="margin-top: 15px; margin-left: 0px;"></td>
-    <td><img src="{{site.baseurl}}/images/split_button/darcula.png" style="margin-top: 15px; margin-left: 0px;"></td>
-  </tr>
-</table>
-
-
-### Menu
-
 Increase line height in the dropdown menu to lessen the chance of choosing the wrong menu item by mistake.
 
 Leave 2px around the separator inactive to lessen the chance of choosing the wrong menu item by mistake:

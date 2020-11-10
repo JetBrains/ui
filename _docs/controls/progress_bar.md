@@ -129,12 +129,5 @@ The progress form and sizes are the same in all themes.
 ![]({{site.baseurl}}/images/progress_bar/sizes.png)
 
 
-## Style
-
-<!--The process name font size is default, the progress details font size is 2 pt smaller for Mac OS themes and default for Windows and Linux themes. The process name color is default, details color — <span style="color:#787878">#787878</span>.-->
-
-![]({{site.baseurl}}/images/progress_bar/colors.png)
-
-
 
 

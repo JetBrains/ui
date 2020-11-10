@@ -226,64 +226,6 @@ To lay out  the button that depends on other control, e.g. input field, follow t
  </table>
 
 
-
-## Style
-<table>
-<col width="21%">
-<col width="22%">
-<col width="22%">
-<col width="22%">
-<col width="22%">
-    <tr>
-        <td>  </td>
-        <td style="margin-left: 20px"> Mac OS </td>
-        <td> Windows </td>
-        <td> Darcula </td>
-        <td> IntelliJ </td>
-    </tr>
-    <tr>
-        <td> <p style="color: #999999; margin-top: -5px;"> Regular </p></td>
-        <td> <img src="{{site.baseurl}}/images/button/regular_mac.png" style="margin: -5px 0 0 0"></td>
-        <td> <img src="{{site.baseurl}}/images/button/regular_win.png" style="margin: -5px 0 0 0"></td>
-        <td> <img src="{{site.baseurl}}/images/button/regular_dark.png" style="margin: -5px 0 0 0"></td>
-        <td> <img src="{{site.baseurl}}/images/button/regular_intellij.png" style="margin: -5px 0 0 0"></td>
-    </tr>
-    <tr>
-        <td> <p style="color: #999999; margin-top: -5px;"> Default </p></td>
-        <td> <img src="{{site.baseurl}}/images/button/default_mac.png" style="margin: -5px 0 0 0"></td>
-        <td> <img src="{{site.baseurl}}/images/button/default_win.png" style="margin: -5px 0 0 0"></td>
-        <td> <img src="{{site.baseurl}}/images/button/default_dark.png" style="margin: -5px 0 0 0"></td>
-        <td> <img src="{{site.baseurl}}/images/button/default_intellij.png" style="margin: -5px 0 0 0"></td>
-    </tr>
-    <tr>
-        <td> <p style="color: #999999; margin-top: -5px;"> Focused </p></td>
-        <td> <img src="{{site.baseurl}}/images/button/focused_mac.png" style="margin: -5px 0 0 0"></td>
-        <td> <img src="{{site.baseurl}}/images/button/focused_win.png" style="margin: -5px 0 0 0"><em style="margin: 0">and hovered</em></td>
-        <td> <img src="{{site.baseurl}}/images/button/focused_dark.png" style="margin: -5px 0 0 0"></td>
-        <td> <img src="{{site.baseurl}}/images/button/focused_intellij.png" style="margin: -5px 0 0 0"></td>
-    </tr>
-    <tr>
-        <td> <p style="color: #999999; margin-top: -5px;"> Disabled </p></td>
-        <td> <img src="{{site.baseurl}}/images/button/disabled_mac.png" style="margin: -5px 0 0 0"></td>
-        <td> <img src="{{site.baseurl}}/images/button/disabled_win.png" style="margin: -5px 0 0 0"></td>
-        <td> <img src="{{site.baseurl}}/images/button/disabled_dark.png" style="margin: -5px 0 0 0"></td>
-        <td> <img src="{{site.baseurl}}/images/button/disabled_intellij.png" style="margin: -5px 0 0 0"></td>
-    </tr>
-    <tr>
-        <td> <p style="color: #999999; margin-top: -5px;"> Pressed </p></td>
-        <td></td>
-        <td> <img src="{{site.baseurl}}/images/button/pressed_win.png" style="margin: -5px 0 0 0"></td>
-        <td> </td>
-    </tr>
-    <tr>
-        <td> <p style="color: #999999; margin-top: -5px;"> Help </p></td>
-        <td> <img src="{{site.baseurl}}/images/button/helpButton_mac.png" style="margin: -5px 0 0 0"></td>
-        <td> <img src="{{site.baseurl}}/images/button/helpButton_win.png" style="margin: -2px 0 0 0"></td>
-        <td> <img src="{{site.baseurl}}/images/button/helpButton_dark.png" style="margin: -6px 0 0 0"></td>
-        <td> <img src="{{site.baseurl}}/images/button/helpButton_intellij.png" style="margin: -6px 0 0 0"></td>
-    </tr>
-</table>
-
 <!--
 ### Colors
 

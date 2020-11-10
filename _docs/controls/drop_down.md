@@ -218,24 +218,3 @@ For sizes inside the menu list see [Menu list]({{site.baseurl}}/controls/menu_li
 Follow the rules for the [input field]({{site.baseurl}}/controls/input_field/).
 
 
-## Style
-
-<table>
-<col width="27%">
-<col width="27%">
-<col width="27%">
-    <tr>
-        <td style="margin-left: 20px"> Mac OS </td>
-        <td> Windows </td>
-        <td> Darcula </td>
-        <td> IntelliJ </td>
-    </tr>
-    <tr>
-        <td> <img src="{{site.baseurl}}/images/drop_down/mac_os.png" style="margin: -5px 0 0 0"></td>
-        <td> <img src="{{site.baseurl}}/images/drop_down/win.png" style="margin: -5px 0 0 0"></td>
-        <td> <img src="{{site.baseurl}}/images/drop_down/darcula.png" style="margin: -5px 0 0 0"></td>
-        <td> <img src="{{site.baseurl}}/images/drop_down/intellij.png" style="margin: -5px 0 0 0"></td>
-    </tr>
-</table>
-
-

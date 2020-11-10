@@ -87,34 +87,3 @@ Use a colon at the end of a group label.
 
 If a radio button group depends on another control, e.g. a checkbox, follow the rules for [dependent controls]({{site.baseurl}}/principles/layout/#lay-out-dependent-controls). Otherwise, follow the rules for [independent controls]({{site.baseurl}}/principles/layout/#arrange-independent-controls).
 
-
-## Style
-
-<table>
-<col width="21%">
-<col width="20%">
-<col width="25%">
-<col width="21%">
-<col width="21%">
-    <tr>
-        <td>  </td>
-        <td style="margin-left: 20px"> Mac OS </td>
-        <td> Windows </td>
-        <td> Darcula </td>
-        <td> IntelliJ </td>
-    </tr>
-    <tr>
-        <td> <p style="color: #999999; margin-top: -5px"> Unchecked,<br style="line-height:12px"/> checked </p></td>
-        <td> <img src="{{site.baseurl}}/images/radiobutton/radio-macos.png" style="margin: -5px 0 0 0"></td>
-        <td> <img src="{{site.baseurl}}/images/radiobutton/radio-windows.png" style="margin: -5px 0 0 0"></td>
-        <td> <img src="{{site.baseurl}}/images/radiobutton/radio-darcula.png" style="margin: -5px 0 0 0"></td>
-        <td> <img src="{{site.baseurl}}/images/radiobutton/radio-intellij.png" style="margin: -5px 0 0 0"></td>
-    </tr>
-    <tr>
-        <td>  </td>
-        <td> <p style="color: #999999; margin-top: -5px;"> Enabled,<br style="line-height:12px"/> focused,<br style="line-height:12px"/> disabled </p> </td>
-        <td> <p style="color: #999999; margin-top: -5px;"> Enabled,<br style="line-height:12px"/> focused,<br style="line-height:12px"/> hovered,<br style="line-height:12px"/> disabled </p> </td>
-        <td>   </td>
-        <td>   </td>        
-    </tr>    
-</table>

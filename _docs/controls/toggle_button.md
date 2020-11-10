@@ -56,31 +56,4 @@ Toggle button is implemented with the `com.intellij.ui.components.OnOffButton` c
 The toggle button changes state when it is clicked with the mouse or when <kbd>Enter</kbd> is pressed on the item line.
 
 
-## Style
-
-<table>
-<col width="21%">
-<col width="22%">
-<col width="22%">
-<col width="22%">
-<col width="22%">
-    <tr>
-        <td>  </td>
-        <td style="margin-left: 20px"> Mac OS, IntelliJ </td>
-        <td> Windows </td>
-        <td> Darcula </td>
-    </tr>
-    <tr>
-        <td> <p style="color: #999999; margin-top: -5px;"> On </p></td>
-        <td> <img src="{{site.baseurl}}/images/toggle_button/on_mac.png" style="margin: -5px 0 0 0"></td>
-        <td> <img src="{{site.baseurl}}/images/toggle_button/on_win.png" style="margin: -5px 0 0 0"></td>
-        <td> <img src="{{site.baseurl}}/images/toggle_button/on_dark.png" style="margin: -5px 0 0 0"></td>
-    </tr>
-    <tr>
-        <td> <p style="color: #999999; margin-top: -5px;"> Off </p></td>
-        <td> <img src="{{site.baseurl}}/images/toggle_button/off_mac.png" style="margin: -5px 0 0 0"></td>
-        <td> <img src="{{site.baseurl}}/images/toggle_button/off_win.png" style="margin: -5px 0 0 0"></td>
-        <td> <img src="{{site.baseurl}}/images/toggle_button/off_dark.png" style="margin: -5px 0 0 0"></td>
-    </tr>
-</table>
 

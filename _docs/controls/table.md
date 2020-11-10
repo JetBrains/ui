@@ -340,15 +340,7 @@ Left-align all the other content.
 <col width="159 px">
   <tr>
     <td>
-        <p style="margin-left: 20px; margin-top: 30px"><span style="color: #999999">Windows</span></p>
-    </td>
-    <td>
-        <p style="margin-left:20px">          <img src="{{site.baseurl}}/images/table/fileColors.png" style="margin-bottom: 9px; margin-left: 40px;" /></p>
-    </td>
-  </tr>
-  <tr>
-    <td>
-        <p style="margin-left: 20px; margin-top: 30px"><span style="color: #999999">Mac OS / IntelliJ</span></p>
+        <p style="margin-left: 20px; margin-top: 30px"><span style="color: #999999">IntelliJ</span></p>
     </td>
     <td>
         <p style="margin-left:20px">          <img src="{{site.baseurl}}/images/table/Mac.png" style="margin-bottom: 9px; margin-left: 40px;" /></p>
