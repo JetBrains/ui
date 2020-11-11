@@ -215,6 +215,6 @@ For sizes inside the menu list see [Menu list]({{site.baseurl}}/controls/menu_li
 
 ### Placement
 
-Follow the rules for the [input field]({{site.baseurl}}/controls/input_field/).
+Follow the rules for the [input field]({{site.baseurl}}/controls/input_field/#placement).
 
 

@@ -85,5 +85,5 @@ Use a colon at the end of a group label.
 
 ## Sizes and placement
 
-If a radio button group depends on another control, e.g. a checkbox, follow the rules for [dependent controls]({{site.baseurl}}/principles/layout/#lay-out-dependent-controls). Otherwise, follow the rules for [independent controls]({{site.baseurl}}/principles/layout/#arrange-independent-controls).
+If a radio button group depends on another control, e.g. a checkbox, follow the rules for [dependent controls]({{site.baseurl}}/principles/layout/#dependent-controls). Otherwise, follow the rules for [independent controls]({{site.baseurl}}/principles/layout/#independent-controls).
 

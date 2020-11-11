@@ -79,10 +79,7 @@ An indeterminate checkbox can also show the download status. An example with a r
 
 ## Placement
 
-If a checkbox depends on another control, e.g. an input field, follow the rules for [dependent controls]({{site.baseurl}}/principles/layout/#lay-out-dependent-controls). Otherwise, follow the rules for [independent controls]({{site.baseurl}}/principles/layout/#arrange-independent-controls).
-
-If there are more than 4 checkboxes in one column, consider [grouping them]({{site.baseurl}}/principles/layout/#group-controls).  
-
+If a checkbox depends on another control, e.g. an input field, follow the rules for [dependent controls]({{site.baseurl}}/principles/layout/#dependent-controls). Otherwise, follow the rules for [independent controls]({{site.baseurl}}/principles/layout/#independent-controls).
 
 <!--
 ### Colors

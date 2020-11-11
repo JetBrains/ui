@@ -187,10 +187,10 @@ The button width accommodates the length of the label plus standard indents 14px
     
 The button height is fixed, so the label is always a single line.
 
-To lay out  the button that depends on other control, e.g. input field, follow the rules for [dependent controls]({{site
-.baseurl}}/principles/layout/#lay-out-dependent-controls). Otherwise, follow
- the rules for [independent controls]({{site.baseurl}}/principles/layout/#arrange-independent-controls).
- 
+To lay out  the button that depends on other control, e.g. input field, follow the rules for [dependent controls]({{site.baseurl}}/principles/layout/#dependent-controls). Otherwise, follow
+ the rules for [independent controls]({{site.baseurl}}/principles/layout/#independent-controls).
+
+<!--
  <table>
  <col width="140px">
  <col width="200px">
@@ -224,7 +224,7 @@ To lay out  the button that depends on other control, e.g. input field, follow t
          <td> <img src="{{site.baseurl}}/images/button/size_5.png" style="margin: -5px 0 0 0"></td>
      </tr>
  </table>
-
+-->
 
 <!--
 ### Colors

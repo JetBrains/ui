@@ -103,10 +103,10 @@ Do **not** use an action link when an action is primary or when a UI is not cons
 ![]({{site.baseurl}}/images/link/tooltip-disclosure.png)
 <p class="noanchor" style="color: #999999; font-size: 13px; line-height: 23px">In tooltips, links are used to show additional text because tooltips are usually small. In a dialog where space is not constrained, use a <a href="{{site.baseurl}}/components/group_header/">collapsible group header</a> to invoke additional UI components.</p>
 
-## Sizes and placement
-Place stand-alone local and external navigation links to the right of or below a UI element they relate to.
-
+## Placement
 Lay out button-links as buttons and dropdown-links as combo boxes. See [Layout]({{site.baseurl}}/principles/layout).
+
+<!--
 <br/>
 <br/>
 <table>
@@ -121,6 +121,5 @@ Lay out button-links as buttons and dropdown-links as combo boxes. See [Layout](
     <td> Vertical inset </td>
     <td> <img src="{{site.baseurl}}/images/link/inset-link-below.png" style="margin-left: 0px; margin-top: 4px"> </td>
 </tr>
-
-    
 </table>
+-->
