@@ -8,7 +8,7 @@ subpageOf: Toolbar
 
 A toolbar icon button is an icon that appears on a toolbar. 
 
-![]({{site.baseurl}}/images/toolbar_button/example.png)
+![]({{site.baseurl}}/images/icon_button/example.png)
 
 
 
@@ -18,11 +18,11 @@ A toolbar icon button is an icon that appears on a toolbar.
 An action button triggers an action immediately on clicking it, e.g. the Open button.
 
 A toggle button switches the state on clicking it, e.g. a button to show and hide warnings in the output tree.	
-![]({{site.baseurl}}/images/toolbar_button/toggle.png)
+![]({{site.baseurl}}/images/icon_button/toggle.png)
 
 A drop-down button has an arrow icon in the bottom right corner and opens a menu with actions or checkboxes. Use 
 [menu list]({{site.baseurl}}/controls/menu_list) guidelines for drop-down buttons.
-![]({{site.baseurl}}/images/toolbar_button/drop-down.png)
+![]({{site.baseurl}}/images/icon_button/drop-down.png)
 
 
 ## When to use
@@ -37,7 +37,7 @@ Provide a recognizable icon. Use an [existing icon]({{site.baseurl}}/resources/i
 Provide a short and descriptive name for a toolbar icon button. Show a tooltip with the button name on mouse hover. 
 Include a shortcut if there is one. See [Context help]({{site.baseurl}}/principles/context_help) for details.
 
-![]({{site.baseurl}}/images/toolbar_button/tooltip.png)
+![]({{site.baseurl}}/images/icon_button/tooltip.png)
 
 Highlight a toolbar icon button on mouse hover. Highlight a toolbar icon button with a brighter color on clicking it.
 
@@ -46,7 +46,7 @@ Highlight a toolbar icon button on mouse hover. Highlight a toolbar icon button 
 
 * Drop-down buttons remain highlighted while the menu is opened.
 
-![]({{site.baseurl}}/images/toolbar_button/states.png)
+![]({{site.baseurl}}/images/icon_button/states.png)
 
 If an action is not available in this context, disable the corresponding button and gray out the icon. For toolbar drop-down buttons, disable the arrow icon as well. Do **not** highlight a disabled icon on mouse hover. 
 

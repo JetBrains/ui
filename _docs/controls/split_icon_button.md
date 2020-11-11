@@ -7,7 +7,7 @@ subpageOf: Toolbar
 
 A split icon button appears on a horizontal toolbar and consists of two parts: the main icon and a triangle icon for the actions list.
 
-![]({{site.baseurl}}/images/toolbar_split_button/example.png)
+![]({{site.baseurl}}/images/split_icon_button/example.png)
 
 
 ## When to use
@@ -20,7 +20,7 @@ Use the split icon button for a group of similar actions if there are already ma
 
 * Or if the user invokes one action several times, then switches to another action and invokes it several times but does not switch between actions too often.
 
-![]({{site.baseurl}}/images/toolbar_split_button/group_actions.png)
+![]({{site.baseurl}}/images/split_icon_button/group_actions.png)
 *Profiler actions are grouped into a split button*
 
 If the user invokes actions with the same frequency or often switches from one action to another, use separate icons for each action.
@@ -34,7 +34,7 @@ Use the split icon button on horizontal toolbars only, as it’s too wide for ve
 
 Make sure that all actions in the popup menu have icons. When an action is launched its icon will be used as the main icon.
 
-![]({{site.baseurl}}/images/toolbar_split_button/behavior.png)
+![]({{site.baseurl}}/images/split_icon_button/behavior.png)
 *The user clicks Profile Allocations, the action starts, and its icon is shown as the main icon.*
 
 
@@ -42,13 +42,13 @@ Make sure that all actions in the popup menu have icons. When an action is launc
 
 On hover, the main icon and the triangle icon are highlighted separately, and the line between two parts is added. The tooltip for the main icon action is shown on hovering over it.
 
-![]({{site.baseurl}}/images/toolbar_split_button/hover.png)
+![]({{site.baseurl}}/images/split_icon_button/hover.png)
 
 The main icon invokes its action on click. The triangle icon opens the actions menu on click:
 
-![]({{site.baseurl}}/images/toolbar_split_button/click.png)
+![]({{site.baseurl}}/images/split_icon_button/click.png)
 
 If some actions are unavailable, the corresponding menu items are disabled. The action menu should always open, even if all the items in it are disabled.
 
-![]({{site.baseurl}}/images/toolbar_split_button/disabled.png)
+![]({{site.baseurl}}/images/split_icon_button/disabled.png)
 
