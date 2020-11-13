@@ -12,7 +12,9 @@ A toolbar provides quick access to frequently used actions and filters. It appea
 
 The following controls can appear on a toolbar:
 
-* [Icon button]({{site.baseurl}}/controls/icon_button): action, toggle, drop-down or split button.
+* [Icon button]({{site.baseurl}}/controls/icon_button): action, toggle, or drop-down
+  
+* [Split icon button]({{site.baseurl}}/controls/split_icon_button)
 
 * [Toolbar drop-down list]({{site.baseurl}}/controls/toolbar_drop_down)
 
