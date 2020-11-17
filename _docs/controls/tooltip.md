@@ -246,7 +246,7 @@ Always place the question mark icon to the right of the corresponding UI compone
 
 <img src="{{site.baseurl}}/images/tooltip/tooltip_style.png" style="margin-left: 0">
 
-## Control’s built-in behavior 
+## Built-in behavior 
 
 All tooltips appear on hover (not on click), including the help tooltip with the question mark icon.
 
