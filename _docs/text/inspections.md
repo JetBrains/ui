@@ -80,6 +80,9 @@ Remove unnecessary words:
 * Inspections highlight code problems, it's their primary functionality. Don't explain it in descriptions:
   ![]({{site.baseurl}}/images/inspections/purpuse.png)
 
+For text formatting, see [Description text]({{site.baseurl}}/controls/description_text/#text).
+
+
 ### Editor messages
 
 Describe the problem in the highlighted code in the current context.
@@ -103,7 +106,7 @@ Use single quotes for the referenced piece of code.
 
 ### Capitalization
 
-* Use [title case]({{site.baseurl}}/text/capitalization/#title) for group and subgroup names.
+Use [title case]({{site.baseurl}}/text/capitalization/#title) for group and subgroup names.
 
-* Use [sentence case]({{site.baseurl}}/text/capitalization/#sentence) for everything else: inspection names, inspection descriptions, inspection texts in editor tooltips and quick-fixes.
+Use [sentence case]({{site.baseurl}}/text/capitalization/#sentence) for everything else: inspection names, inspection descriptions, inspection texts in editor tooltips and quick-fixes.
 
