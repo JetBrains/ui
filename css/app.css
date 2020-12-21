@@ -10335,12 +10335,18 @@ table .note ol, table .note ul, table .tip ol, table .tip ul, table .todo ol, ta
 }
 
 .article--without-sideblocks {
-    padding-right: 180px;
+    padding-right: 20%;
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (min-width: 1900px) {
     .article--without-sideblocks {
-        padding-right: 18%;
+        padding-right: 0;
+    }
+}
+
+@media screen and (min-width: 1440px) and (max-width: 1899px) {
+    .article--without-sideblocks {
+        padding-right: 80px;
     }
 }
 
