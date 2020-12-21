@@ -5,8 +5,7 @@ type: Subpage
 subpageOf: Context help
 ---
 
-Provide instructions in an empty UI area on how to fill it with data. Instructions help users understand what the area is for and how to work with it.  
-Empty UI areas described here are: 
+Provide instructions in an empty UI area on how to fill it with data. Empty UI areas described here are: 
 * [Tool window, list, tree or table](#tool-windows-lists-trees-and-tables)
 * [Details area in a master-detail layout](#master-detail-layout)
 * Empty search results — TBD
@@ -19,11 +18,9 @@ Instructional text for these UI areas consists of three parts:
 
 ### 1. Reason why empty
 
-Required part that explains the current state and what the area is for.
+Explain the current state.
 
-The general pattern is “_No [entity] added._”
-* At the end of the text explaining the reason, add the action that needs to be performed to fill the area. This shows that the UI area can be filled by the user and not by an external system. If _added, created, configured_ or other such verbs act as synonyms in a particular case, use the verb _added_ for consistency.
-* End the reason text with a dot.
+The default pattern is “_No [entity] added._” If _added, created, configured_ or other such verbs act as synonyms in a particular case, use the verb _added_ for consistency.
 
 <table>
 <col width="300px">
@@ -37,12 +34,8 @@ The general pattern is “_No [entity] added._”
     </tr>
 </table>
 
-The reason can be elaborated:  
-![]({{site.baseurl}}/images/empty_state/tasks-before-launch.png) 
-*“Tasks to run before launch” better explains what the area is for than just “Tasks”.*
 
-
-The reason should be clear to users:  
+Make the reason descriptive:  
 <p class="label incorrect">Incorrect</p>
 ![]({{site.baseurl}}/images/empty_state/sql-dialect-before.png) 
 *The word mapping introduces a new entity while there are already two in the table header — path and SQL dialect. In the instructions, it is better to use already existing entities to connect them to what users see on the screen.*
@@ -53,57 +46,58 @@ The reason should be clear to users:
 
 ### 2. Actions to fill the area
 
-This is a required part that makes it easier to understand which action to start with, instead of searching for the appropriate icon on the toolbar. It also educates about the shortcut for this action.
+Required part. An action makes it easier to understand what to start with, instead of searching for the appropriate icon on the toolbar. It can also educate about the shortcut.
 
 Use one or two actions. Three or more actions would make it harder to choose what to start from. 
-![]({{site.baseurl}}/images/empty_state/maven-tw.png) 
-*Instructions with two actions.*
-
-Pattern: “[Action link] [(Shortcut)]”. Do not add a full stop after an action. If there are two actions, put a comma between them.
-
-Use sentence style for an action. This is against the general recommendation but here an action appears as part of a paragraph and title-capitalization would disrupt reading.
-
-Wording: 
-* Avoid words that describe physical actions like _press_ or _click_ — they are obvious from how the link works. 
-* Avoid saying _add new_. Just use _add_ because all that is added is new in the context of an empty UI area. 
+![]({{site.baseurl}}/images/empty_state/maven-tw.png)
 
 If an action opens a menu, open it at the same position where it would be opened with the corresponding toolbar button. This would explain which toolbar icon opens the menu.
 
-If an action that fills an empty area cannot be tied to a link, explain users what to do. Treat the explanation text as a usual text, both in terms of wording and syntax:
-![]({{site.baseurl}}/images/empty_state/todo-tw.png) 
-*TODO items are actually detected not by the word “TODO” in a comment but by the regex pattern specified in the settings. The instruction text should be formatted as “...write [first pattern from settings] in a source code comment” to account for a rare case when the default pattern has been redefined.*
+
+If an action cannot be tied to a link, explain  what to do.
+![]({{site.baseurl}}/images/empty_state/todo-tw.png)
+
+Hide the area's toolbar if it does not have the same action as in the empty state. Usually, all other toolbar actions are not relevant in this case.
+<p class="label incorrect">Incorrect</p>
+![]({{site.baseurl}}/images/empty_state/todo-tw-toolbar-incorrect.png)
 
 
 ### 3. Help topic
 
-<p class="noanchor">Optional part.</p>
-
-**For tool windows**, provide a link to a help topic if any that explains the concept and the whole set of functionality behind it, like a “Getting started” topic. Add the question mark icon in the beginning:
+**Tool windows:** provide a link to a help topic that explains the functionality. Add the question mark icon in the beginning.
 ![]({{site.baseurl}}/images/empty_state/database-tw-segment.png) 
 
-**For tables, trees and lists**, provide instructions according to [these rules]({{site.baseurl}}/principles/context_help). Show instructional text as a help tooltip or as an inline text. Smaller UI areas rarely require an in-depth explanation compared to complex tool windows. A short help text should be enough and it does not require switching contexts.
+**Tables, trees and lists:** provide instructions according to the [Context help]({{site.baseurl}}/principles/context_help) rules. Smaller UI areas rarely require an in-depth explanation compared to complex tool windows. A short help text should be enough, and it does not require switching contexts.
 <p class="label incorrect">Incorrect</p>
 ![]({{site.baseurl}}/images/empty_state/todo-filters-incorrect.png) 
 *Do not use a help topic link in a table and UI areas other than tool windows.* 
 <p class="label correct">Correct</p>
 ![]({{site.baseurl}}/images/empty_state/todo-filters-correct.png) 
-*Place an inline help text under the table. See the Context help topic for where to show help for other UI elements and layouts.*
+*Place an inline help text under the table.*
+
+
+### Writing guidelines
+
+See [Punctuation]({{site.baseurl}}/text/punctuation) and [Capitalization]({{site.baseurl}}/text/capitalization).
+
+Make the reason text short and descriptive. See [Writing short and clear]({{site.baseurl}}/text/writing_short/).
+
+In actions, avoid words that describe physical actions like _press_ or _click_ — they are obvious from how the link works.
+
+Avoid saying _add new_. Just use _add_ because all that is added is new in the context of an empty UI area.
 
 
 ## Master-detail layout
-Instructional text for the detail area in a master-detail layout has only the action part.  
-The detail area is filled when an item is selected in the master part. This behavior is obvious and mustn’t be explained — the reason why the area is empty is not needed.  
-The action is an obvious one but it serves as a visual marker to where the settings for the selected item are found.  
-The help topic, if needed, can be provided in the master area.
+Provide only the action part for the detail area in a master-detail layout. The detail area is filled when an item is selected in the master part. This behavior is obvious and does not need to be explained.  
 
-The general pattern for the action is “_Select_ [entity] _to configure_”.
+The default pattern for the action is “_Select_ [entity] _to configure_”.
 
-The master area is usually a list or a tree, and, if empty, its instructional text should follow the guidelines for lists and trees.
+The master area is usually a list or a tree, its empty state instructions should follow the guidelines for lists and trees.
 
 ![]({{site.baseurl}}/images/empty_state/app-servers.png) 
 
 ![]({{site.baseurl}}/images/empty_state/run-configs.png) 
-*The “Add Java application configuration” link is a shortcut to creating a new configuration instead of clicking the + button in the toolbar. See more on actions below.*
+*The “Add Java application configuration” link is a shortcut to creating a new configuration instead of clicking the + button in the toolbar.*
 
 
 ## Sizes and placement

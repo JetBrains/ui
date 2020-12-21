@@ -4,7 +4,7 @@ category: Principles
 order: 4
 ---
  
-Validation is the process of checking the values ​​specified by the user, and displaying the errors that are found.
+Validation is the process of checking the values specified by the user, and displaying the errors that are found.
 
 An error can appear in a **tooltip**:
 ![]({{site.baseurl}}/images/validation/example_tooltip.png)
@@ -105,7 +105,7 @@ Hide the error when the incorrect symbol is deleted.
 
 <div class="code-block__wrapper">{% highlight java %}// Fields initializers
 private JTextField myPort = new JTextField();
-private static final String MESSAGE = "The port number should be between 0 and 65535.";
+private static final String MESSAGE = "The port number should be between 0 and 65535";
 
 // Components initialization
 new ComponentValidator(project).withValidator(v -> {
@@ -207,7 +207,7 @@ Show the error tooltip for the next field when it gets the focus, hover or the u
 By default `DialogWrapper` disables "OK" button until all fields that participate in validation 
     become valid. Explicitly enable "OK" button for each input field:
 
-<div class="code-block__wrapper">{% highlight java %}new ValidationInfo("The host cannot be reached.", myHostField)
+<div class="code-block__wrapper">{% highlight java %}new ValidationInfo("The host cannot be reached", myHostField)
 .withOkEnabled();{% endhighlight %}</div>
   
 
@@ -247,10 +247,11 @@ Hide the error messages once any field related to the error is edited. Set the d
 
 ### 6. Complex values in multi-page dialogs
 
-If a value is complex, for example, a list of values, a regexp, or a value copied value from another place, and it appears in a multi-page dialog, such as Settings, Project Structure or Run Configurations, show a dialog informing the user about an error on clicking the confirmation button.
+If a value is complex, for example, a list of values, a regexp, or a value copied from another place, and it appears in a multi-page dialog, such as Settings, Project Structure or Run Configurations, show a dialog informing the user about an error on clicking the confirmation button.
 
-
+<p class="noanchor">
 For example, in a complex Resource patterns field
+</p>
 ![]({{site.baseurl}}/images/validation/comlex_field.png)
 
 <p class="noanchor">
@@ -325,9 +326,9 @@ Provide specific names, locations, and values of the objects involved:
 
 
 
-End the error message with a period (for details see [Punctuation]({{site.baseurl}}/text/punctuation/)).
+For a period at the end of an error message, see [Punctuation]({{site.baseurl}}/text/punctuation/#period).
  
-The error message should be short and descriptive. See [Writing short and clear]({{site.baseurl}}/text/writing_short/).
+Make the error message short and descriptive. See [Writing short and clear]({{site.baseurl}}/text/writing_short/).
  
 Examples of common errors and corresponding error messages:  
 
@@ -338,27 +339,27 @@ Examples of common errors and corresponding error messages:
 <th class="table-line"> Error message </th>
 <tr class="table-line">
     <td> Empty required field </td>
-    <td> Specify the port number. </td>
+    <td> Specify the port number </td>
 </tr>
 <tr class="table-line">
     <td> Incorrect symbol </td>
-    <td> “/” is not an allowed symbol. </td>
+    <td> “/” is not an allowed symbol </td>
 </tr>
 <tr class="table-line">
     <td> Incorrect value </td>
-    <td> The port number should be between XXX and XXXX.<br /><br />  
-         The file name should be at least 4 symbols. <br /><br /> 
-         The name is already in use. <br /><br />
-         The user name or password is incorrect.
+    <td> The port number should be between XXX and XXXX<br /><br />  
+         The file name should be at least 4 symbols <br /><br /> 
+         The name is already in use <br /><br />
+         The user name or password is incorrect
     </td>
 </tr>
 <tr class="table-line">
     <td> Incorrect format </td>
-    <td> The email format should be xxx@xxx.com. </td>
+    <td> The email format should be xxx@xxx.com </td>
 </tr>
 <tr>
     <td> Missing file </td>
-    <td> The file is not found. </td>
+    <td> The file is not found </td>
 </tr>
 </table>
 
@@ -404,7 +405,7 @@ The warning can be shown:
 
 In a tooltip for a specific field. Follow the rules for [the error tooltip](#tooltip). 
 
-<div class="code-block__wrapper">{% highlight java %}new ValidationInfo("Target name is not specified.", myNameField)
+<div class="code-block__wrapper">{% highlight java %}new ValidationInfo("Target name is not specified", myNameField)
 .asWarning();{% endhighlight %}</div>
 
 

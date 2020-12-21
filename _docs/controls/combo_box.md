@@ -108,23 +108,3 @@ more details see [Validation errors]({{site.baseurl}}/principles/validation_erro
 ## Sizes and placement
 
 Follow the [drop-down guidelines]({{site.baseurl}}/controls/drop_down/#sizes-and-placement).
-
-## Style
-
-<table>
-<col width="28%">
-<col width="28%">
-<col width="28%">
-    <tr>
-        <td style="margin-left: 20px"> Mac OS </td>
-        <td> Windows </td>
-        <td> Darcula </td>
-        <td> IntelliJ </td>
-    </tr>
-    <tr>
-        <td> <img src="{{site.baseurl}}/images/combo_box/mac.png" style="margin: -5px 0 0 0"></td>
-        <td> <img src="{{site.baseurl}}/images/combo_box/win.png" style="margin: -5px 0 0 0"></td>
-        <td> <img src="{{site.baseurl}}/images/combo_box/darcula.png" style="margin: -5px 0 0 0"></td>
-        <td> <img src="{{site.baseurl}}/images/combo_box/intellij.png" style="margin: -5px 0 0 0"></td>
-    </tr>
-</table>

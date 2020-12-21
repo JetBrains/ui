@@ -94,7 +94,7 @@ If a process consists of substeps that can fail but do not terminate the process
 
 ![]({{site.baseurl}}/images/progress_bar/progress_color.png)
 
-Do **not** color progress bar to show the final result of the task, use [notifications]({{site.baseurl}}/principles/notifications/). In case of success, show notification for the user-initiated tasks, in case of failure — for all tasks.
+Do **not** color progress bar to show the final result of the task, use [notifications]({{site.baseurl}}/controls/notifications/). In case of success, show notification for the user-initiated tasks, in case of failure — for all tasks.
 
 
 ### Process control
@@ -127,13 +127,6 @@ Hide the progress bar as soon as the process completes.
 The progress form and sizes are the same in all themes.
 
 ![]({{site.baseurl}}/images/progress_bar/sizes.png)
-
-
-## Style
-
-<!--The process name font size is default, the progress details font size is 2 pt smaller for Mac OS themes and default for Windows and Linux themes. The process name color is default, details color — <span style="color:#787878">#787878</span>.-->
-
-![]({{site.baseurl}}/images/progress_bar/colors.png)
 
 
 

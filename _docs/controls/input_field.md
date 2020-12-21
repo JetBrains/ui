@@ -167,10 +167,12 @@ If input value is longer than the field width, show the beginning of the value w
 
 ### Placement
 
-If the input field depends on another control, for example, a checkbox, follow the rules for [dependent controls]({{site.baseurl}}/principles/layout/#lay-out-dependent-controls). Otherwise, follow the rules for [independent controls]({{site.baseurl}}/principles/layout/#arrange-independent-controls).
+If the input field depends on another control, for example, a checkbox, follow the rules for [dependent controls]({{site.baseurl}}/principles/layout/#dependent-controls). Otherwise, follow the rules for [independent controls]({{site.baseurl}}/principles/layout/#independent-controls).
 
+<!--
 ![]({{site.baseurl}}/images/input_field/sizes_label.png)
 
 ![]({{site.baseurl}}/images/input_field/sizes_button.png)
 
 ![]({{site.baseurl}}/images/input_field/sizes_several.png)
+-->

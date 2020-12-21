@@ -26,7 +26,7 @@ To filter values or change the appearance in the control below:
 ![]({{site.baseurl}}/images/toolbar_dropdown/toolbar_filter.png)
 
 
-Use a [toolbar drop-down button]({{site.baseurl}}/controls/toolbar_button/#04) instead of a drop-down list in the following cases:
+Use a [toolbar drop-down button]({{site.baseurl}}/controls/icon_button/#04) instead of a drop-down list in the following cases:
 
 * If there is a list of actions:
 

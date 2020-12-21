@@ -17,7 +17,7 @@ Do **not** use a text area if:
 * Input consists of several words. Use an [input field]({{site.baseurl}}/controls/input_field) instead.
 * There is not enough space for a text area, or if input is normally short but can occasionally be long or multi-line. Use an [expandable input field]({{site.baseurl}}/controls/input_field#input-field-types) field instead.
 * Values are added one by one. Use a [table]({{site.baseurl}}/controls/table) instead.
-* Text is read-only. Use a [textual output]({{site.baseurl}}/controls/text_output) instead.
+* Text is read-only. Use a [description text]({{site.baseurl}}/controls/description_text) instead.
 
 
 ## How to use

@@ -225,7 +225,8 @@ Do **not** use a full-size combobox inside tables. It looks inconsistent and has
 
 ## Sizes and placement
 
-Choose a column width appropriate for the most common values, but no less than 65 px. Too wide columns make it hard to read data.
+### Sizes
+Choose a column width appropriate for the most common values, but no less than **65 px**. Too wide columns make it hard to read data.
 
 <p class='label correct'>Correct</p>
 ![]({{site.baseurl}}/images/table/fileColors.png)
@@ -233,7 +234,7 @@ Choose a column width appropriate for the most common values, but no less than 6
 <p class='label incorrect'>Incorrect</p>
 ![]({{site.baseurl}}/images/table/fileColorsTooWide.png)
   
-Minimum table width is 350px. If a table is too narrow after you have adjusted columns width, add space to the rightmost column.
+Minimum table width is **350px**. If a table is too narrow after you have adjusted columns width, add space to the rightmost column.
 
 Add space to the rightmost column if you need to align it with other tables in the same window.
 
@@ -241,6 +242,9 @@ If content doesn’t fit a cell’s width, cut the text by the right border:
 ![]({{site.baseurl}}/images/table/too-long-line.png)
 <p class="noanchor">Do <b>not</b> put ellipsis at the end of a cropped line, as it can be confused with the content. Also, ellipsis can form a separate redundant column when content in the majority of cells in one column doesn’t fit its width.</p> 
 <p class="noanchor">Do <b>not</b> add a fade-away gradient for cropped text, as it adds too many shades to a table text, and they attract too much attention.</p>
+
+
+### Placement
 
 Do **not** put vertical elements (for example, diagrams) in the middle of a table, as they prevent users from scanning data easily:
 
@@ -252,10 +256,12 @@ Do **not** put vertical elements (for example, diagrams) in the middle of a tabl
 <p class='label correct'>Correct</p>
 ![]({{site.baseurl}}/images/table/history.png)
 
-Right-align numbers when it is useful to compare them by their length: 
+Right-align numbers when it is useful to compare them by their length. Left-align all the other content. 
 ![]({{site.baseurl}}/images/table/rightAlignNumbers.png)
-Left-align all the other content.  
 
+For aligning in a dialog with other controls, see [Layout]({{site.baseurl}}/principles/layout).
+
+<!--
 ### Sizes
 
 <table>
@@ -296,7 +302,6 @@ Left-align all the other content.
   </tr>
 </table>
 
-
 ### Spacing
 
 <table>
@@ -334,21 +339,14 @@ Left-align all the other content.
     </td>
   </tr>
 </table>
+-->
 
 ## Style
 <table>
 <col width="159 px">
   <tr>
     <td>
-        <p style="margin-left: 20px; margin-top: 30px"><span style="color: #999999">Windows</span></p>
-    </td>
-    <td>
-        <p style="margin-left:20px">          <img src="{{site.baseurl}}/images/table/fileColors.png" style="margin-bottom: 9px; margin-left: 40px;" /></p>
-    </td>
-  </tr>
-  <tr>
-    <td>
-        <p style="margin-left: 20px; margin-top: 30px"><span style="color: #999999">Mac OS / IntelliJ</span></p>
+        <p style="margin-left: 20px; margin-top: 30px"><span style="color: #999999">IntelliJ</span></p>
     </td>
     <td>
         <p style="margin-left:20px">          <img src="{{site.baseurl}}/images/table/Mac.png" style="margin-bottom: 9px; margin-left: 40px;" /></p>

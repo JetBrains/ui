@@ -52,7 +52,7 @@
                         {% assign grouped = site.docs | group_by: 'category' %}
                             {% for category in categories %}
                                 {% for group in grouped %}
-                                    {% if group.name != "Components" and category == group.name %}
+                                    {% if category == group.name %}
                                         <li class="tree-element toc-tree__node toc-tree__node--level_0">
 
                                             {% assign items = group.items | sort %}

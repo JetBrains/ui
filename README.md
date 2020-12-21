@@ -1,7 +1,7 @@
-# IntelliJ Platform Guidelines
-This is a repository for IntelliJ Platform user interface guidelines.
+# IntelliJ platform guidelines
+This is a repository for IntelliJ platform user interface guidelines: [https://jetbrains.design/intellij/](https://jetbrains.design/intellij/) 
 
-## Working With the Site Locally
+## Working with the site locally
 To check out and run a local copy of the site follow the steps described below.
 
 ### Pre-requirements
@@ -19,7 +19,7 @@ To check out and run a local copy of the site follow the steps described below.
 
 
 
-### Checking Out Site Repository
+### Checking out site repository
 To check out the source code run the following command:
 ```
 git clone https://github.com/JetBrains/ui.git
@@ -31,7 +31,7 @@ cd ui/
 bundle install
 ```  
 
-### Building and Previewing
+### Building and previewing
 To start the web-server go to the project directory and run:
 ```
 bundle exec jekyll serve
