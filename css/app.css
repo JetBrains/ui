@@ -8841,7 +8841,6 @@ input, textarea {
 
 .header {
     color: #343434;
-    width: 250px;
     height: 90px;
 }
 
@@ -10909,13 +10908,7 @@ table .note ol, table .note ul, table .tip ol, table .tip ul, table .todo ol, ta
     position: sticky;
     top: 0;
     z-index: 50;
-    background: linear-gradient(180deg, #fff, rgba(255,255,255,0));
-}
-
-@media screen and (max-width: 960px) {
-    .nav__toc::before {
-        background: linear-gradient(180deg, #F2F2F2, rgba(255,255,255,0));
-    }
+    background: linear-gradient(180deg, rgb(var(--nav-background-color)), rgba(var(--nav-background-color), 0));
 }
 
 .nav__toc::after {
@@ -12490,7 +12483,11 @@ table .note ol, table .note ul, table .tip ol, table .tip ul, table .todo ol, ta
     flex: 1;
     -webkit-flex-direction: column;
     -ms-flex-direction: column;
-    flex-direction: column
+    flex-direction: column;
+
+    /* Variables */
+    --nav-width: 260px;
+    --nav-background-color: 245, 245, 245;
 }
 
 .app--blur {
@@ -12503,11 +12500,13 @@ table .note ol, table .note ul, table .tip ol, table .tip ul, table .todo ol, ta
     z-index: 1;
     top: 0;
     bottom: 0;
-    left: -250px;
-    background-color: #F2F2F2;
+    left: calc(var(--nav-width) * -1);
+    padding-left: 10px;
+    background-color: rgb(var(--nav-background-color));
     transition: left .2s, width .2s;
     display: flex;
     flex-direction: column;
+    box-sizing: border-box;
 }
 
 .app__nav--visible {
@@ -12591,21 +12590,13 @@ a.sub__nav_item:hover {
 
 @media screen and (min-width: 1200px) {
     .app__nav {
-        width: 250px;
-    }
-
-    .app__container {
-        /* padding-left: 21%; */
-    }
-
-    .app__container.full {
-        padding-left: 340px;
+        width: var(--nav-width);
     }
 }
 
 @media screen and (max-width: 1200px) {
     .app__nav {
-        width: 250px;
+        width: var(--nav-width);
     }
 
     a.sub__nav_item, 
@@ -12666,11 +12657,6 @@ a.sub__nav_item:hover {
 
     .header__nav-toggle {
         margin-left: 25px;
-    }
-
-    .app__nav {
-        left: -250px;
-        background-color: #F2F2F2;
     }
 }
 
