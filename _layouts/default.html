@@ -32,7 +32,7 @@
 <div id="root" class="layout">
     <div data-reactroot="" class="layout">
         <div class="app">
-            <div class="hamburger _type-close _white header__nav-toggle" title="Show navigation" onclick="toggleMenu()">
+            <div class="hamburger _type-close _white header__nav-toggle" title="Show navigation" onclick="toggleMenu(true)">
                 <div class="hamburger__icon"></div>
             </div>
             <div class="app__nav">
@@ -155,11 +155,15 @@
 
 <script type="text/javascript">
     document.getElementsByClassName("app__container")[0].onclick = function () {
-        document.getElementsByClassName("app__nav")[0].style.left = null;
+        toggleMenu(false);
     };
 
-    function toggleMenu() {
-        document.getElementsByClassName("app__nav")[0].style.left = "0px";
+    function toggleMenu(showMenu) {
+        if (showMenu) {
+            document.getElementsByClassName("app__nav")[0].style.left = "0px";
+        } else {
+            document.getElementsByClassName("app__nav")[0].style.left = null;
+        }
     }
 
     $(document).ready(setAnchors);

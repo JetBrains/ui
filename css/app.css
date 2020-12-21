@@ -12573,11 +12573,16 @@ a.sub__nav_item:hover {
     -webkit-flex-direction: column;
     -ms-flex-direction: column;
     flex-direction: column;
-    margin: 0 auto;
 }
 
 .app__container .iconsSite {
     flex: 1;
+}
+
+@media screen and (min-width: 1900px) {
+    .app__container.full {
+        padding-left: var(--nav-width);
+    }
 }
 
 @media screen and (max-width: 1280px) {
@@ -12603,6 +12608,16 @@ a.sub__nav_item:hover {
     a.sub__nav_item:active, 
     a.sub__nav_item:visited {
         color: #1796E6;
+    }
+
+    .app__container.full {
+        padding-top: 60px;
+    }
+}
+
+@media screen and (min-width: 960px) {
+    .app__container:not(.full) {
+        margin: 0 auto;
     }
 }
 
