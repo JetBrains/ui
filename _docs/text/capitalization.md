@@ -5,8 +5,6 @@ category: Text
 
 ## Title
 
-<aside class="note sideblock _visible">The current Windows guidelines use sentence capitalization for actions. Some Microsoft products still title-capitalize actions according to the previous guidelines. macOS also title-capitalizes actions. Since IntelliJ IDEs are cross-platform, we use title capitalization as well.</aside>
-
 Use for:
 * Actions in buttons, menus and tooltips
 * Headers in tables, popups, message boxes and dialogs
@@ -17,7 +15,7 @@ Do **not** use for:
 * Actions in the popup on Alt+Enter: quick-fixes, intention actions and others
 * Headers in notifications
 
-
+<aside class="sideblock note">The current Windows guidelines use sentence capitalization for actions. Some Microsoft products still title-capitalize actions according to the previous guidelines. macOS also title-capitalizes actions. Since IntelliJ IDEs are cross-platform, we use title capitalization as well.</aside>
 
 ### Rules
 

@@ -17,9 +17,9 @@ Use the following controls or layouts:
 
 Use **group headers** if all rules apply:
 
-<aside class="note sideblock _visible">If there are less than 3 controls in all groups, consider separating with <a href="{{site.baseurl}}/controls/group_header/#03">vertical insets</a>.</aside>
-
 * Each group contains **no** more than 10 controls
+
+<aside class="sideblock note">If there are less than 3 controls in all groups, consider separating with <a href="{{site.baseurl}}/controls/group_header/#03">vertical insets</a>.</aside>
 
 * All groups occupy no more than 2 heights of the dialog in its default size
 

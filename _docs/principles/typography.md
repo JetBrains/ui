@@ -32,7 +32,7 @@ Users can change the default font size in Settings. If the default font size is 
 
 Use the built-in text styles from the table below whenever possible.
 
-<aside class="note sideblock _visible">Text styles are to be implemented, <a href="https://youtrack.jetbrains.com/issue/IDEA-219895">IDEA-219895</a> </aside>
+<aside class="sideblock warning">Text styles are to be implemented, <a href="https://youtrack.jetbrains.com/issue/IDEA-219895">IDEA-219895</a> </aside>
 
 <table style="width: 100%;" class="table-left-padding">
 <col width="23%">

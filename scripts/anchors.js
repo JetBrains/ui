@@ -21,21 +21,11 @@ function setAnchors() {
         }
         index++;
         var text = index < 10 ? '0' + index : index;
-
-        if ($(this.nextElementSibling).hasClass('sideblock')) {  //puts aside inside the div with p and aligns to the top of div
-            $(this.nextElementSibling).addClass('_aligned');
-            block = '<div class="block">' +
-                    '<a class="paragraphAnchor" href="#' + text + '" name="' + text + '">' + text + '</a>'
-                    + $(this).prop('outerHTML')
-                    + $(this.nextElementSibling).prop('outerHTML')
-                    + '</div>';
-            $(this.nextElementSibling).remove();
-        } else {
-            block = '<div class="block">' +
-                    '<a class="paragraphAnchor" href="#' + text + '" name="' + text + '">' + text + '</a>'
-                    + $(this).prop('outerHTML')
-                    + '</div>';
-        }
+        var block = '<div class="block">' +
+                '<a class="paragraphAnchor" href="#' + text + '" name="' + text + '">' + text + '</a>'
+                + $(this).prop('outerHTML')
+                + '</div>';
+                
         $(this).replaceWith(block)
     });
 

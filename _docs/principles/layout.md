@@ -71,10 +71,10 @@ If input groups are separated by a group of other UI controls, align only the bo
 
 Always left-align labels.
 
-<aside class="note sideblock _visible">This alignment is inconsistent with macOS guidelines, but the aim is to maintain consistency in all JetBrains IDEs on all supported platforms.</aside>
-
-
 ![]({{site.baseurl}}/images/layout/1_08_label_alignment.png)
+
+<aside class="sideblock note">This alignment is inconsistent with macOS guidelines, but the aim is to maintain consistency in all JetBrains IDEs on all supported platforms.</aside>
+
 
 Align the right borders of input boxes that have a similar length. For alignment, use [built-in icons]({{site.baseurl}}/controls/built_in_button). Do **not** use buttons.
 

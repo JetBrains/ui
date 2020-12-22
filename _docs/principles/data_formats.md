@@ -4,7 +4,6 @@ category: Principles
 ---
 
 ## Numbers
-<aside class="note sideblock _visible">If there is a space between the number and the unit, use a non-breaking space.</aside>
 <p class="noanchor"><br /></p>
 <table>
 <col width="30%">
@@ -47,7 +46,7 @@ category: Principles
     <td></td>
   </tr>
 </table>
-
+<aside class="sideblock note">If there is a space between the number and the unit, use a non-breaking space.</aside>
 
 ## Date and time
 

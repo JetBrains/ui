@@ -5,7 +5,7 @@ category: Principles
 
 Follow these guidelines to create a new icon or redesign an existing one for IntelliJ-based products.
 
-<aside class="note sideblock _visible">Download a <a href="{{site.baseurl}}/images/icons/Icons template.sketch" download>Sketch file</a> with the&nbsp;color palette and icon examples.</aside>
+<aside class="sideblock note">Download a <a href="{{site.baseurl}}/images/icons/Icons template.sketch" download>Sketch file</a> with the&nbsp;color palette and icon examples.</aside>
 
 
 ## Style
@@ -145,7 +145,7 @@ Use a 2px stroke as the main drawing line. Consistent line weight makes icons co
 
 Align pixels on the X and Y axis and round to the nearest whole pixel, or 0.5px if it’s not possible to align to integer pixels. Aligning icons off the pixel grid will make the icon blurry when it’s rasterized.
 
-<aside class="note sideblock _visible">To check what an icon will look like when rasterized use the View > Canvas > Show Pixels on Zoom option <kbd>Ctrl+P</kbd> in Sketch, View > Pixel Preview <kbd>Alt+Ctrl+Y</kbd> in Illustrator.</aside>
+<aside class="sideblock note">To check what an icon will look like when rasterized use the View > Canvas > Show Pixels on Zoom option <kbd>Ctrl+P</kbd> in Sketch, View > Pixel Preview <kbd>Alt+Ctrl+Y</kbd> in Illustrator.</aside>
 
 <table>
 <col width="30%">
@@ -231,7 +231,7 @@ Do not use gradients or shadows.
 An action icon is an icon that triggers an action. It usually appears on toolbars and in dialogs. 
 There are 5 colors in the actions icons palette. Dark version is for Darcula theme.
 
-<aside class="note sideblock _visible">Download a <a href="{{site.baseurl}}/images/icons/Icons template.sketch" download>Sketch file</a> with the&nbsp;color palette.</aside>
+<aside class="sideblock note">Download a <a href="{{site.baseurl}}/images/icons/Icons template.sketch" download>Sketch file</a> with the&nbsp;color palette.</aside>
 
 
 <table>
@@ -422,7 +422,7 @@ Use Gotham font for all icons with letters, for example file type or node icons.
 
 Use the SVG format for icons files. Use camelCase capitalization for icon names:
 
-<aside class="note sideblock _visible">Install the <a href="https://www.sketchapp.com/extensions/plugins/svgo-compressor/">Svgo-compressor plugin</a> in Sketch to optimize icons before save.</aside>
+<aside class="sideblock note">Install the <a href="https://www.sketchapp.com/extensions/plugins/svgo-compressor/">svgo-compressor plugin</a> in Sketch to optimize icons before save.</aside>
 
 <div class="code-block__wrapper">iconName.svg</div>
 

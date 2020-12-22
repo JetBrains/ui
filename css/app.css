@@ -10122,6 +10122,10 @@ table .note ol, table .note ul, table .tip ol, table .tip ul, table .todo ol, ta
     overflow: hidden
 }
 
+.note {
+    background-color: #E6EEF7
+}
+
 .tip {
     background-color: #FFFBE8
 }
@@ -10137,18 +10141,11 @@ table .note ol, table .note ul, table .tip ol, table .tip ul, table .todo ol, ta
 }
 
 .sideblock {
-    opacity: 0;
     box-sizing: border-box;
-    float: right;
-    clear: right;
-    width: 200px;
-    margin: 4px -270px 15px 0;
-    transition: opacity .3s
-}
-
-.sideblock._visible {
-    display: block;
-    opacity: 1
+    width: 100%;
+    margin: 20px 0 30px 0;
+    padding: 12px 16px !important;
+    border-radius: 8px;
 }
 
 .sideblock._aligned {
@@ -10158,15 +10155,6 @@ table .note ol, table .note ul, table .tip ol, table .tip ul, table .todo ol, ta
 }
 
 @media screen and (max-width: 1200px) {
-    .sideblock._visible {
-        float: none;
-        background: #f5f5f5;
-        width: 100%;
-        margin: 20px 0 30px 0;
-        padding: 10px 20px;
-        border-radius: 5px;
-    }
-
     .sideblock._aligned {
         position: inherit;
     }
@@ -10182,14 +10170,6 @@ table .note ol, table .note ul, table .tip ol, table .tip ul, table .todo ol, ta
 .sideblock > ol, .sideblock > ul {
     clear: left;
     margin-left: 0
-}
-
-@media screen and (max-width: 960px) {
-    .sideblock {
-        width: 144px;
-        margin-right: -170px;
-        display: none
-    }
 }
 
 .seealso {

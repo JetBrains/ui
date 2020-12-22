@@ -138,7 +138,7 @@ Provide guidelines on how to use the control, component or principle. Group guid
 * Any other recommendations specific to this control
 
 Use notes for links to additional materials, sources, useful facts and examples. To insert a note, use:
-<div class="code-block__wrapper">{% highlight html %}<aside class="note sideblock _visible">Note text</aside>{% endhighlight %}</div>
+<div class="code-block__wrapper">{% highlight html %}<aside class="sideblock note">Note text</aside>{% endhighlight %}</div>
 
 Use formatting for <kbd>shortcuts</kbd>:
 <div class="code-block__wrapper">{% highlight html %}<kbd>Ctrl+Space</kbd>{% endhighlight %}</div>
