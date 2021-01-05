@@ -19,9 +19,9 @@ a {
     border-right-style: initial;
     border-top-color: initial;
     font-size: 0.9rem;
-    margin: 5px 0 20px 10px;
-    padding: 0px 10px 6px 26px;
-    border-width: 0px 0px 1px 5px;
+    margin: 5px 0 20px 20px;
+    padding: 0 0 6px 26px;
+    border-width: 0 0 1px 5px;
     border-image: initial;
     border-bottom: 1px solid #D9D9D9;
     border-left: 5px solid transparent;
@@ -56,14 +56,13 @@ ol, ul {
 }
 
 .nav .tree-label:hover{
-    font-weight: bold;
-    color: #161616;
+    background-color: #e6e6e6;
 }
 
 .nav .tree-selector {
     position: absolute;
-    top: 0;
-    left: 6px;
+    top: 6px;
+    left: 16px;
     opacity: 0;
 }
 
@@ -71,9 +70,9 @@ ol, ul {
     left: 26px;
 }
 
-.nav .tree-selector  + ul {
+.nav .tree-selector + ul {
     height: 30px;
-    margin: -40px 0 12px 0;
+    margin: -35px 0 6px 10px;
     background: url("../images/arrow-right.svg") no-repeat 13px 14px;
     background-size: 6px 10px;
 }
@@ -90,9 +89,9 @@ ol, ul {
 
 .nav .tree-selector:checked + ul {
     height:auto;
-    margin: -25px 0 0 0;
-    padding: 25px 0 0 0;
-    background: url("../images/arrow-down.svg") no-repeat 11px 2px;
+    margin: -20px 0 0 0;
+    padding: 20px 0 0 0;
+    background: url("../images/arrow-down.svg") no-repeat 21px 2px;
     background-size: 10px 6px;
 }
 
@@ -112,7 +111,6 @@ blockquote, q {
 
 blockquote:after, blockquote:before, q:after, q:before {
     content: '';
-    content: none
 }
 
 table {
@@ -180,10 +178,16 @@ codename {
     margin-bottom: 30px;
 }
 
+@media screen and (max-width: 1280px) {
+    codename {
+        margin-top: 30px;
+        font-size: 16px;
+    }
+}
+
 @media screen and (max-width: 640px) {
     codename {
-        margin-top: -5px;
-        font-size: 16px;
+        margin-top: 20px;
     }
 }
 
@@ -8851,7 +8855,7 @@ input, textarea {
 
 .header__container {
     min-height: 50px;
-    padding: 11px 25px 3px 20px
+    padding: 11px 25px 3px 30px
 }
 
 .header__container--blur > :not(.no-blur) {
@@ -10475,14 +10479,13 @@ table .note ol, table .note ul, table .tip ol, table .tip ul, table .todo ol, ta
 }
 
 .toc-tree__title-wrapper:hover .toc-tree__title--link:not(.toc-tree__title--selected), .toc-tree__title-wrapper:hover .toc-tree__title--link:visited:not(.toc-tree__title--selected) {
-    font-weight: bold;
-    color: #161616;
+    background-color: #e6e6e6;
 }
 
 .toc-tree__title {
-    padding-top: 0px;
+    padding-top: 6px;
     padding-right: 5px;
-    padding-bottom: 12px;
+    padding-bottom: 6px;
     outline: 0;
     cursor: default;
     color: #343434;
@@ -10559,11 +10562,11 @@ table .note ol, table .note ul, table .tip ol, table .tip ul, table .todo ol, ta
 }
 
 .toc-tree__node--level_0 .toc-tree__title {
-    padding-left: 26px
+    padding-left: 36px
 }
 
 .toc-tree__node--level_0 .toc-tree__anchor .toc-tree__title, .toc-tree__node--level_1 .toc-tree__title {
-    padding-left: 46px
+    padding-left: 56px
 }
 
 .toc-tree__node--level_0 .toc-tree__expander {
@@ -12501,7 +12504,6 @@ table .note ol, table .note ul, table .tip ol, table .tip ul, table .todo ol, ta
     top: 0;
     bottom: 0;
     left: calc(var(--nav-width) * -1);
-    padding-left: 10px;
     background-color: rgb(var(--nav-background-color));
     transition: left .2s, width .2s;
     display: flex;
@@ -12528,11 +12530,11 @@ table .note ol, table .note ul, table .tip ol, table .tip ul, table .todo ol, ta
 
 a.sub__nav_item {
     display: block;
-    font-size: 13px;
+    font-size: 14px;
     color: #343434;
-    line-height: 16px;
+    line-height: 19px;
     text-decoration: none;
-    padding-bottom: 16px;
+    padding: 8px 20px 8px 8px;
 }
 
 a.sub__nav_item:active, a.sub__nav_item:visited {
@@ -12541,7 +12543,8 @@ a.sub__nav_item:active, a.sub__nav_item:visited {
 }
 
 a.sub__nav_item:hover {
-    color: #1796E6;
+    background-color: #f5f5f5;
+    border-radius: 3px;
 }
 
 .sub__nav_item.h3 {
@@ -12596,6 +12599,7 @@ a.sub__nav_item:hover {
 @media screen and (min-width: 1200px) {
     .app__nav {
         width: var(--nav-width);
+
     }
 }
 
@@ -12608,6 +12612,11 @@ a.sub__nav_item:hover {
     a.sub__nav_item:active, 
     a.sub__nav_item:visited {
         color: #1796E6;
+    }
+
+    a.sub__nav_item:hover {
+        text-decoration: underline;
+        background-color: transparent;
     }
 
     .app__container.full {
