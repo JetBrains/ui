@@ -178,7 +178,7 @@ codename {
     margin-bottom: 30px;
 }
 
-@media screen and (max-width: 1280px) {
+@media screen and (max-width: 1200px) {
     codename {
         margin-top: 30px;
         font-size: 16px;
@@ -10574,7 +10574,7 @@ table .note ol, table .note ul, table .tip ol, table .tip ul, table .todo ol, ta
 }
 
 .toc-tree__node--level_1 .toc-tree__anchor .toc-tree__title, .toc-tree__node--level_2 .toc-tree__title {
-    padding-left: 66px
+    padding-left: 76px
 }
 
 .toc-tree__node--level_1 .toc-tree__expander {
@@ -10900,7 +10900,8 @@ table .note ol, table .note ul, table .tip ol, table .tip ul, table .todo ol, ta
     flex: 1;
     padding: 0 0 80px;
     will-change: transform;
-    -webkit-overflow-scrolling: touch
+    -webkit-overflow-scrolling: touch;
+    overflow-y: scroll;
 }
 
 .nav__toc::before {
@@ -10917,7 +10918,7 @@ table .note ol, table .note ul, table .tip ol, table .tip ul, table .todo ol, ta
 .nav__toc::after {
     display: block;
     height: 50px;
-    content: ''
+    content: '';
 }
 
 
@@ -10935,7 +10936,8 @@ table .note ol, table .note ul, table .tip ol, table .tip ul, table .todo ol, ta
 
 .nav__toc:hover::-webkit-scrollbar {
     width: 6px;
-    border-radius: 3px
+    border-radius: 3px;
+    background-color: transparent;
 }
 
 .nav__toc:hover::-webkit-scrollbar-thumb {
@@ -12517,8 +12519,8 @@ table .note ol, table .note ul, table .tip ol, table .tip ul, table .todo ol, ta
 
 .sub__nav {
     position: fixed;
-    top: 170px;
-    left: 32px;
+    top: 157px;
+    left: 24px;
     max-width: 220px;
     margin-left: 8px;
     margin-bottom: 32px;
@@ -12548,7 +12550,7 @@ a.sub__nav_item:hover {
 }
 
 .sub__nav_item.h3 {
-    padding-left: 12px;
+    padding-left: 24px;
 }
 
 .app__main {
@@ -12588,7 +12590,7 @@ a.sub__nav_item:hover {
     }
 }
 
-@media screen and (max-width: 1280px) {
+@media screen and (max-width: 1200px) {
     .sub__nav {
         position: static;
         max-width: none;
@@ -12653,13 +12655,7 @@ a.sub__nav_item:hover {
     }
 }
 
-@media screen and (min-width: 1440px) and (max-width: 1899px) {
-    .sub__nav {
-        left: 5%;
-    }
-}
-
-@media screen and (max-width: 1280px) {
+@media screen and (max-width: 1200px) {
     .app__content {
         padding-left: 5%;
         max-width: 900px;
