@@ -31,13 +31,11 @@ Show more than 5 lines only when a text cannot be shortened for legal purposes.
 JCheckBox checkBox = new JCheckBox("Send usage statistics when using EAP versions");
 
 JPanel panel = UI.PanelFactory.panel(checkBox).
-
    withComment("<p>Help JetBrains improve its products by sending anonymous data about features and plugins used, hardware and software configuration, statistics on types of files, number of files per project, etc.</p>
   <br/>
   <p>Please note that this will not include personal data or any sensitive information, such as source code, file names, etc. The data sent complies with the <a href=\"http://jetbrains.com\">JetBrains Privacy Policy</a></p>").
 
-   createPanel();
-
+createPanel();
 {% endhighlight %}</div>
 
 
