@@ -10,14 +10,35 @@ To check out and run a local copy of the site follow the steps described below.
  * [Mac OS](http://jekyll.tips/jekyll-casts/install-jekyll-on-os-x/)
  * [Windows](http://jekyll.tips/jekyll-casts/install-jekyll-on-windows/)
  * [Linux](http://jekyll.tips/jekyll-casts/install-jekyll-on-linux/)
-2. Install bundler:
+
+2. Install [IntelliJ IDEA](https://www.jetbrains.com/idea/download/#section=mac) or [WebStorm](https://www.jetbrains.com/webstorm/download/#section=mac)
+
+3. Install bundler:
 
     ```
     gem install bundler
     ```
-3. Install [IntelliJ IDEA](https://www.jetbrains.com/idea/download/#section=mac) or [WebStorm](https://www.jetbrains.com/webstorm/download/#section=mac)
 
+4. Install mac developer tools:
+   ```
+   xcode-select —install
+   ```
 
+5. Install ruby version manager chruby:
+   ```
+   brew install chruby ruby-install
+   ```
+
+   Open new terminal tab. Install ruby 3.0:
+   ```
+   ruby-install ruby 3.0.0
+   ```
+
+   Set ruby 3.0 as default. Add the following lines to the ~/.bash_profile or ~/.zshrc file:
+   ```
+     source /usr/local/opt/chruby/share/chruby/chruby.sh
+     chruby ruby-3.0
+   ```
 
 ### Checking out site repository
 To check out the source code run the following command:
