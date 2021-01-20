@@ -1,6 +1,6 @@
 ---
 title: Got It tooltip
-codename: TBD
+codename: com.intellij.ui.GotItTooltip
 category: Controls
 ---
 
@@ -44,7 +44,7 @@ Do **not** use the tooltip if there is no space to attach it. Instead, use a [ba
 
 ![]({{site.baseurl}}/images/got_it_tooltip/09_required_and_optional_information.png)
 
-Always show the body text.
+Always add the body text.
 
 Add a header if the body text is 2 lines and more. A short header can quickly explain what this tooltip is about.
 
@@ -54,19 +54,35 @@ Add a shortcut, if the tooltip describes a single action that has a shortcut.
 
 ![]({{site.baseurl}}/images/got_it_tooltip/11_shortcut.png)
 
-Add the Got It button if a timeout is not set for a tooltip. If it is set, hide the button.
+Implementation:
+<div class="code-block__wrapper">{% highlight java %}
+val GOT_IT_TEXT = "Learn the most useful shortcuts and essential IDE features interactively";
+val shortcut = ...;
+val tooltip = GotItTooltip("ide.features.trainer", GOT_IT_TEXT, project)
+              .withHeader("IDE features trainer");
+              .withShortcut(shortcut);
+{% endhighlight %}</div>
 
-![]({{site.baseurl}}/images/got_it_tooltip/05_suggest_keyboard_actions.png)
-*The tooltip about keyboard interaction does not have the "Got it" button. The tooltip disappears after a timeout or a user action.*
 
 ### Link
 Add a local link if users might want to revert changes in a feature or configure it.
 
 ![]({{site.baseurl}}/images/got_it_tooltip/12_link_action.png)
 
+<div class="code-block__wrapper">{% highlight java %}
+new GotItTooltip("some.id", "Show output result in the editor", project)
+    .withLink("Disable for all files", this::actionMethodReference);
+{% endhighlight %}</div>
+
+
 Add an external link if there is a help source that can further explain the functionality.
 
 ![]({{site.baseurl}}/images/got_it_tooltip/13_link_help.png)
+
+<div class="code-block__wrapper">{% highlight java %}
+new GotItTooltip("some.id", GOT_IT_TEXT, project)
+    .withBrowserLink("How to use", URL("https://www.jetbrains.com/howtouse"));
+{% endhighlight %}</div>
 
 Do <b>not</b> add more than one link.
 
@@ -75,10 +91,11 @@ Do <b>not</b> add more than one link.
 
 Show no more than 5 lines of body text. If the text does not fit, leave only the essential information and add a link to a help article.
 
+Use sentence case both for the header and body text, and follow the [punctuation rules]({{site.baseurl}}/text/punctuation).
+
 Make the help text [short and descriptive]({{site.baseurl}}/text/writing_short).
 
 Avoid using style formatting. It makes the tooltip harder to read.
-
 <table>
 <col width="50%">
   <tr>
@@ -104,6 +121,14 @@ Do **not** cover the information the user is currently working with.
 <p class="label correct">Correct</p>
 ![]({{site.baseurl}}/images/got_it_tooltip/15_location_correct.png)
 
+<p class="noanchor">
+<b>Implementation.</b> See four predefined point providers in the <code>GotItTooltip</code> class. 
+</p>
+<div class="code-block__wrapper">{% highlight java %}
+new GotItTooltip("some.id", "You can rename usages", project)
+    .show(gutterComponent, GotItTooltip.TOP_MIDDLE)
+{% endhighlight %}</div>
+
 
 ### Timeout
 
@@ -115,7 +140,15 @@ Consider adding a timeout if:
 ![]({{site.baseurl}}/images/got_it_tooltip/05_suggest_keyboard_actions.png)
 *The Got It tooltip has a timeout because the text is short, the user has just started the Rename refactoring, and is very likely looking at this place.*
 
-Do **not** show the Got It button if a tooltip has a timeout.
+<p class="noanchor">
+Note that adding a timeout automatically hides the Got It button.<br/><br/>
+
+<b>Implementation.</b> Default timeout duration is 5 seconds. A custom duration can be set:
+</p>
+<div class="code-block__wrapper">{% highlight java %}
+new GotItTooltip("refactorings", "Press Tab to show options", project)
+    .withTimeout(3000)
+{% endhighlight %}</div>
 
 
 ### Versioning

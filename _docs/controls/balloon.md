@@ -62,7 +62,7 @@ Briefly describe the event and the context in which it occurred, e.g. a particul
 
 [Write short and clear]({{site.baseurl}}/text/writing_short) as the title should fit in one line.
 
-Use  sentence case and follow the [punctuation rules]({{site.baseurl}}/text/punctuation).
+Use sentence case and follow the [punctuation rules]({{site.baseurl}}/text/punctuation).
 
 If the message fits well in one sentence and does not require a separate title, choose either a title or a body:
 * Use title-only message when it’s short and fits in one line:
