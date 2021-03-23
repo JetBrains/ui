@@ -32,7 +32,7 @@ Users can change the default font size in Settings. If the default font size is 
 
 Use the built-in text styles from the table below whenever possible.
 
-<aside class="note sideblock _visible">Text styles are to be implemented, <a href="https://youtrack.jetbrains.com/issue/IDEA-219895">IDEA-219895</a> </aside>
+<aside class="note sideblock _visible"><a href="https://github.com/JetBrains/intellij-community/blob/2b64d3b15dbd16ae03b3f0fd40a503c65601e3b0/platform/platform-impl/src/com/intellij/internal/LabelSizeDemoAction.kt#L13">Implementation example for&nbsp;font styles</a> </aside>
 
 <table style="width: 100%;" class="table-left-padding">
 <col width="23%">
@@ -42,7 +42,7 @@ Use the built-in text styles from the table below whenever possible.
   <th class="table-line"> Usage&nbsp;&nbsp;&nbsp;<a href="{{site.baseurl}}/principles/typography/#examples" style="font-size: 14px;font-weight: 500;">Examples</a> </th>
   
   <tr>
-    <td class="table-line table-line-vertical"> <span style="font-size: 26px"> <strong>H0 bold</strong> </span> </td>
+    <td class="table-line table-line-vertical"> <span style="font-size: 26px"> <strong>H0 bold</strong> </span> <div style="margin: 10px 0 5px -5px"><code>JBFont.h0().asBold()</code></div></td>
     <td class="table-line table-line-vertical"> Default + 12 </td>
     <td>
         Rich text headers. See the "What’s New" page example below.          
@@ -50,19 +50,19 @@ Use the built-in text styles from the table below whenever possible.
   </tr>
 
   <tr>
-    <td class="table-line table-line-vertical"> <span style="font-size: 23px"> <strong>H1 bold</strong> </span> </td>
+    <td class="table-line table-line-vertical"> <span style="font-size: 23px"> <strong>H1 bold</strong> </span> <div style="margin: 10px 0 5px -5px"><code>JBFont.h1().asBold()</code></div></td>
     <td class="table-line table-line-vertical"> Default + 9 </td>
     <td> </td>    
   </tr>
 
   <tr>
-    <td class="table-line table-line-vertical"> <span style="font-size: 19px"> H2 </span> </td>
+    <td class="table-line table-line-vertical"> <span style="font-size: 19px"> H2 </span> <div style="margin: 10px 0 5px -5px"><code>JBFont.h2()</code></div></td>
     <td class="table-line-vertical"> Default + 5 </td>
     <td class="table-line"> </td>    
   </tr>
 
   <tr class="table-line">
-    <td class="table-line-vertical"> <span style="font-size: 19px"> <strong>H2 bold</strong> </span> </td>
+    <td class="table-line-vertical"> <span style="font-size: 19px"> <strong>H2 bold</strong> </span> <div style="margin: 10px 0 5px -5px"><code>JBFont.h2().asBold()</code></div></td>
     <td class="table-line-vertical"> </td>    
     <td>
         Small page header. Examples: Plugin name, GitHub timeline header
@@ -70,7 +70,7 @@ Use the built-in text styles from the table below whenever possible.
   </tr>
 
   <tr>
-    <td class="table-line table-line-vertical"> <span style="font-size: 17px"> H3 </span> </td>
+    <td class="table-line table-line-vertical"> <span style="font-size: 17px"> H3 </span> <div style="margin: 10px 0 5px -5px"><code>JBFont.h3()</code></div></td>
     <td class="table-line-vertical"> Default + 3 </td>
     <td class="table-line">
         Accent body text 
@@ -78,7 +78,7 @@ Use the built-in text styles from the table below whenever possible.
   </tr>
 
   <tr class="table-line">
-    <td class="table-line-vertical"> <span style="font-size: 17px"> <strong>H3 bold</strong> </span> </td>
+    <td class="table-line-vertical"> <span style="font-size: 17px"> <strong>H3 bold</strong> </span> <div style="margin: 10px 0 5px -5px"><code>JBFont.h3().asBold()</code></div></td>
     <td class="table-line-vertical"> </td>    
     <td>
         Headers in dialogs with a small number of elements (Customize page on Welcome screen, Login page in Get from VCS dialog)
@@ -86,7 +86,7 @@ Use the built-in text styles from the table below whenever possible.
   </tr>
 
   <tr class="table-line">
-    <td class="table-line-vertical"> <strong>H4 bold <br/> (Default bold)</strong> </td>
+    <td class="table-line-vertical"> <strong>H4 bold <br/> (Default bold)</strong> <div style="margin: 10px 0 5px -5px"> <code>JBFont.h4().asBold()</code> <code>JBFont.regular().asBold()</code> </div> </td>
     <td class="table-line-vertical"> Default </td>    
     <td>
         Header in dialogs with a large number of elements (Run configurations dialog), notification header, breadcrumbs in settings, header in navigation popup, accent elements in lists and trees. <br/><br/>
@@ -95,7 +95,7 @@ Use the built-in text styles from the table below whenever possible.
   </tr>
 
   <tr class="table-line">
-    <td class="table-line-vertical"> Default </td>
+    <td class="table-line-vertical"> Default <div style="margin: 10px 0 5px -5px"><code>JBFont.regular()</code></div></td>
     <td class="table-line-vertical"> Default </td>
     <td>
         Labels, inputs, links, trees, tables and other controls; text outputs, notifications, shortcuts
@@ -114,7 +114,7 @@ Use the built-in text styles from the table below whenever possible.
   </tr>
 
   <tr>
-    <td class="table-line table-line-vertical"> <span style="font-size: 13px"> Medium </span> </td>
+    <td class="table-line table-line-vertical"> <span style="font-size: 13px"> Medium </span> <div style="margin: 10px 0 5px -5px"><code>JBFont.medium()</code></div></td>
     <td class="table-line-vertical">
         macOS: Default - 1 <br/>
         Win: Default <br/>
@@ -126,7 +126,7 @@ Use the built-in text styles from the table below whenever possible.
   </tr>
 
   <tr class="table-line">
-    <td class="table-line-vertical"> <span style="font-size: 13px"> <strong>Medium bold</strong> </span> </td>
+    <td class="table-line-vertical"> <span style="font-size: 13px"> <strong>Medium bold</strong> </span> <div style="margin: 10px 0 5px -5px"><code>JBFont.medium().asBold()</code></div></td>
     <td class="table-line-vertical"> </td>
     <td>
         Module in the navigation bar
@@ -134,7 +134,7 @@ Use the built-in text styles from the table below whenever possible.
   </tr>
 
   <tr>
-    <td class="table-line-vertical"> <span style="font-size: 12px"> Small </span> </td>
+    <td class="table-line-vertical"> <span style="font-size: 12px"> Small </span> <div style="margin: 10px 0 5px -5px"><code>JBFont.small()</code></div></td>
     <td class="table-line-vertical">
         macOS: Default - 2 <br/>
         Win: Default <br/>
