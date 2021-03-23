@@ -106,7 +106,8 @@ Use single quotes for the referenced piece of code.
 
 ### Capitalization
 
-Use [title case]({{site.baseurl}}/text/capitalization/#title) for group and subgroup names.
-
-Use [sentence case]({{site.baseurl}}/text/capitalization/#sentence) for everything else: inspection names, inspection descriptions, inspection texts in editor tooltips and quick-fixes.
+Use [sentence case]({{site.baseurl}}/text/capitalization/#sentence) for everything: 
+* Inspection names and descriptions
+* Names of inspection groups and subgroups in settings
+* Inspection texts in editor tooltips and quick-fixes 
 
