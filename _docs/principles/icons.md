@@ -416,7 +416,7 @@ Use colors without opacity for small elements, like modifiers.
 
 ## Font
 
-Use Gotham font for all icons with letters, for example file type or node icons.  
+To make a new icon with a letter, reuse letters from [existing icons]({{site.baseurl}}/resources/icons_list). If there's no suitable letter in existing icons, use a common sans-serif font like Arial or Open Sans.
 
 ## Export Icons
 
