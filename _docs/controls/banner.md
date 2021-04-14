@@ -19,7 +19,7 @@ Use a banner if user actions should attract  attention in a file tab, tool windo
 ![]({{site.baseurl}}/images/banner/dialog-example.png)
 *The component needs to be installed in order to run the available virtual devices.*
 
-Do **not** use a banner if there is no particular UI component it can be tied to. Use a [balloon notification](link) in the main window instead.
+Do **not** use a banner if there is no particular UI component it can be tied to. Use a [balloon notification]({{site.baseurl}}/controls/balloon) in the main window instead.
 
 For all other cases, choose another [notification type]({{site.baseurl}}/controls/notifications/#02).
 
@@ -53,7 +53,7 @@ Use to suggest actions that are required to unblock the user’s workflow.
 
 ### Message
 
-*   The message should be [short and descriptive]({{site.baseurl}}/text/writing_short/) (two sentences at most) and follow the [Punctuation](link) guide.
+*   The message should be [short and descriptive]({{site.baseurl}}/text/writing_short/) (two sentences at most) and follow the [Punctuation]({{site.baseurl}}/text/punctuation/) guide.
 *   Use sentence case capitalization.
 
 ### Actions
