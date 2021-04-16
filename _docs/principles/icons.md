@@ -5,7 +5,7 @@ category: Principles
 
 Follow these guidelines to create a new icon or redesign an existing one for IntelliJ-based products.
 
-<aside class="note sideblock _visible">Download a <a href="{{site.baseurl}}/images/icons/Icons template.sketch" download>Sketch file</a> with the&nbsp;color palette and icon examples.</aside>
+<aside class="note sideblock _visible">See all icons in the <a href="{{site.baseurl}}/resources/icons_list">Icons list</a>. <br/><br/> Use the <a href="https://www.figma.com/community/plugin/948276470997072333/IntelliJ-Icons">IntelliJ Icons Figma plugin</a> to quickly find and use icons in UI mockups.</aside>
 
 
 ## Style
