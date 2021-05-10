@@ -50,7 +50,7 @@ If an inspection is powered by a third-party code quality tool, use the name of 
 
 ### Descriptions
 
-Start descriptions with a verb, e.g. "Checks", “Validates”. Use “Run” for external tools. Do not begin a description with "This inspection".
+Start descriptions with a verb, e.g. “Reports”. Use “Run” for external tools. Do not begin a description with "This inspection".
 ![]({{site.baseurl}}/images/inspections/start.png)
 
 Provide details, such as:
