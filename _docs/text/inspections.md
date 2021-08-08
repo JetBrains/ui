@@ -98,7 +98,7 @@ If a quick-fix is not available, describe in more detail a way to resolve the pr
 
 ### Quick-fixes
 
-Describe the action that fixes the problem. For wording, follow the rules for [buttons](https://controls/button/#label) and [menu actions](https://controls/menu/).
+Describe the action that fixes the problem. For wording, follow the rules for [buttons]({{site.baseurl}}/controls/button/#label) and [menu actions]({{site.baseurl}}/controls/menu/).
 
 Use single quotes for the referenced piece of code.
 
