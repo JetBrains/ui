@@ -108,24 +108,24 @@ private JTextField myPort = new JTextField();
 private static final String MESSAGE = "The port number should be between 0 and 65535";
 
 // Components initialization
-new ComponentValidator(project).withValidator(v -> {
+new ComponentValidator(project).withValidator(() -> {
   String pt = myPort.getText();
   if (StringUtil.isNotEmpty(pt)) {
     try {
       int portValue = Integer.parseInt(pt);
       if (portValue >= 0 && portValue <= 65535) {
-        v.updateInfo(null);
+        return null;
       }
       else {
-        v.updateInfo(new ValidationInfo(MESSAGE, myPort));
+        return new ValidationInfo(MESSAGE, myPort);
       }
     }
     catch (NumberFormatException nfe) {
-      v.updateInfo(new ValidationInfo(MESSAGE, myPort));
+      return new ValidationInfo(MESSAGE, myPort);
     }
   }
   else {
-    v.updateInfo(null);
+    return null;
   }
 }).installOn(myPort);
 
