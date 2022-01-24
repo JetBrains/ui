@@ -11,7 +11,7 @@ Balloon notifications inform users of the events or system states related to a p
 ![]({{site.baseurl}}/images/balloon/01_example.png)
 
 
-## When to Use
+## When to use
 
 Use a balloon notification if:
 * There is no need to point to a particular context or location in the interface.
@@ -21,7 +21,7 @@ Use a balloon notification if:
 In other cases, choose another <a href="{{site.baseurl}}/controls/notifications">notification type</a>.
 </p>
 
-## How to Use
+## How to use
 
 ### Message severity
 
@@ -119,4 +119,13 @@ If no actions are available, provide more details in the body text, e.g. how to 
 <p class='label correct'>Correct</p>
 
 ![]({{site.baseurl}}/images/balloon/09_error_correct.png)
+
+### Naming a notification group
+Each balloon notification belongs to a group. Groups can be seen in _Settings > Appearance & Behavior > Notifications_. 
+
+To name a notification group, follow these rules:  
+* Name the group with an ending to the phrase “Notifications in this group notify the user about…“. Examples: _Automatic indent detection_, _Content root duplicates_.  
+* If a name about a particular process or event cannot be given, use the name of a subsystem or plugin. Examples: _HTTP Client_, _Power Save Mode_.  
+* When a group contains notifications about errors or problems, do not use a verb. Example: _Debugger errors_, not _Debugger errors ~~found~~_.
+* Do **not** use words "notification" or "group". They are implied from the settings context.
 
