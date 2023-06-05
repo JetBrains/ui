@@ -83,7 +83,7 @@ Remove unnecessary words:
 For text formatting, see [Description text]({{site.baseurl}}/controls/description_text/#text).
 
 
-### Editor messages
+### Editor messages and tooltips
 
 Describe the problem in the highlighted code in the current context.
 
@@ -92,8 +92,8 @@ Describe the problem in the highlighted code in the current context.
 
 Use single quotes for the highlighted piece of code if it is referenced in the error message.
 
-If a quick-fix is not available, describe in more detail a way to resolve the problem:
-
+If a quick-fix is not available, describe how to resolve the problem in more detail.
+Put the detailed description only in the tooltip.
 ![]({{site.baseurl}}/images/inspections/editor-error-message-detail.png)
 
 ### Quick-fixes
