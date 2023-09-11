@@ -1,3 +1,5 @@
+[![official JetBrains project](https://jb.gg/badges/official.svg)](https://confluence.jetbrains.com/display/ALL/JetBrains+on+GitHub)
+
 # IntelliJ platform guidelines
 This is a repository for IntelliJ platform user interface guidelines: [https://jetbrains.design/intellij/](https://jetbrains.design/intellij/)
 
