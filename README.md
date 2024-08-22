@@ -1,5 +1,7 @@
 [![official JetBrains project](https://jb.gg/badges/official.svg)](https://confluence.jetbrains.com/display/ALL/JetBrains+on+GitHub)
 
+🛑 **The content of this repository has been moved to https://github.com/JetBrains/intellij-sdk-docs. Please report any issues and ideas there. The content is published at https://plugins.jetbrains.com/docs/intellij/ui-guidelines-welcome.html.**
+
 # IntelliJ platform guidelines
 This is a repository for IntelliJ platform user interface guidelines: [https://jetbrains.design/intellij/](https://jetbrains.design/intellij/)
 
